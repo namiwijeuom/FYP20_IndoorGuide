@@ -1,0 +1,137 @@
+%% 3-D Indoor Scenario 
+mapFileName = "FabConvert.com_autosave_market.stl";
+fc = 5.8e9;
+lambda = physconst("lightspeed")/fc;
+
+%% Antenna configuration
+% The transmit antenna is a 4-element uniform linear array (ULA) which has twice of the wavelength between the elements. 
+% The receive antenna is a 4x4 uniform rectangular array (URA) which has one wavelength between the elements
+txArray = arrayConfig("Size",[4 1],"ElementSpacing",2*lambda);
+rxArray = arrayConfig("Size",[4 4],"ElementSpacing",lambda);
+
+%% Visualize transmitter and receiver arrays
+helperViewArray(txArray)
+helperViewArray(rxArray);
+
+%% Antenna placement
+tx = txsite("cartesian", ...
+    "Antenna",txArray, ...
+    "AntennaPosition",[735; 600; 175], ...
+    'TransmitterFrequency',5.8e9);
+
+rx = rxsite("cartesian", ...
+    "Antenna",rxArray, ...
+    "AntennaPosition",[50;-200; 75], ...
+    "AntennaAngle",[0;90]);
+
+%% Load the environment map
+siteviewer("SceneModel",mapFileName);
+show(tx,"ShowAntennaHeight",false)
+show(rx,"ShowAntennaHeight",false)
+
+%% Ray Tracing Configuration
+pm = propagationModel("raytracing", ...
+    "CoordinateSystem","cartesian", ...
+    "Method","sbr", ...
+    "AngularSeparation","low", ...
+    "MaxNumReflections",3, ...
+    "SurfaceMaterial","wood");
+
+%% Perform ray tracing
+rays = raytrace(tx,rx,pm);
+rays = rays{1,1};
+
+%% Display Ray Tracing Results
+disp('Number of Interactions per Ray:');
+disp([rays.NumInteractions]);
+
+disp('Propagation Distances:');
+disp([rays.PropagationDistance]);
+
+disp('Path Loss per Ray:');
+disp([rays.PathLoss]);
+
+plot(rays,"Colormap",jet,"ColorLimits",[100, 160])
+
+
+
+%% Deterministic Channel Model from Ray Tracing
+rtChan = comm.RayTracingChannel(rays,tx,rx);
+rtChan.SampleRate = 300e6;
+rtChan.ReceiverVirtualVelocity = [0.1; 0.1; 0];
+
+% Display Channel Profile
+showProfile(rtChan);
+
+% Obtain Channel Information
+rtChanInfo = info(rtChan);
+disp(rtChanInfo);
+
+numTx = rtChanInfo.NumTransmitElements;
+numRx = rtChanInfo.NumReceiveElements;
+
+% Communication System Parameters
+cfgLDPCEnc = ldpcEncoderConfig(dvbs2ldpc(1/2));
+cfgLDPCDec = ldpcDecoderConfig(cfgLDPCEnc);
+numCodewordsPerFrame = 4;
+codewordLen = cfgLDPCEnc.BlockLength;
+
+bitsPerCarrier = 6;
+modOrder = 2^bitsPerCarrier;
+codeRate = cfgLDPCEnc.CodeRate;
+
+% OFDM Modulator and Demodulator
+fftLen = 256; 
+cpLen = fftLen/4; 
+numGuardBandCarriers = [9; 8];
+pilotCarrierIdx = [19:10:119, 139:10:239]';
+numDataCarriers = fftLen - sum(numGuardBandCarriers) - length(pilotCarrierIdx) - 1;
+
+numOFDMSymbols = numCodewordsPerFrame * codewordLen / bitsPerCarrier / numDataCarriers / numTx;
+
+ofdmMod = comm.OFDMModulator( ...
+    "FFTLength",fftLen, ....
+    "NumGuardBandCarriers",numGuardBandCarriers, ...
+    "InsertDCNull",true, ...
+    "PilotInputPort",true, ...
+    "PilotCarrierIndices",pilotCarrierIdx, ...
+    "CyclicPrefixLength",cpLen, ...
+    "NumSymbols",numOFDMSymbols, ...
+    "NumTransmitAntennas",numTx);
+
+ofdmDemod = comm.OFDMDemodulator(ofdmMod);
+ofdmDemod.NumReceiveAntennas = numRx;
+
+cd = comm.ConstellationDiagram( ...    
+    "ReferenceConstellation", qammod(0:modOrder-1, modOrder, 'UnitAveragePower', true), ...
+    "XLimits", [-2 2], ...
+    "YLimits", [-2 2]);
+
+errRate = comm.ErrorRate;
+
+EbNo = 30;  % in dB
+SNR = convertSNR(EbNo,"ebno", "BitsPerSymbol",bitsPerCarrier, "CodingRate",codeRate);
+SNRLin = 10^(SNR/10);  % Linear SNR value
+
+rng(100); % Set RNG for repeatability
+
+[txWave, srcBits] = helperIndoorRayTracingWaveformGen(numCodewordsPerFrame, cfgLDPCEnc, modOrder, ofdmMod);
+
+% Pass through the Ray Tracing Channel
+chanIn = [txWave; zeros(fftLen + cpLen, numTx)];
+[chanOut, CIR] = rtChan(chanIn);
+
+% Add AWGN to the received signal
+rxWave = awgn(chanOut, SNRLin, numTx/numRx, 'linear');
+
+% Process the received signal and calculate the BER
+[decBits, eqSym] = helperIndoorRayTracingRxProcessing(rxWave, CIR, rtChanInfo, cfgLDPCDec, modOrder, ofdmDemod, SNRLin);
+cd(eqSym(:));
+
+% Calculate BER
+ber = errRate(srcBits, double(decBits));
+disp(['BER: ', num2str(ber(1))]);
+
+% BER vs. Eb/No Simulation Loop
+EbNoRange = 27:36;
+helperIndoorRayTracingSimulationLoop(cfgLDPCEnc, cfgLDPCDec, ofdmMod, ofdmDemod, rtChan, errRate, modOrder, numCodewordsPerFrame, EbNoRange);
