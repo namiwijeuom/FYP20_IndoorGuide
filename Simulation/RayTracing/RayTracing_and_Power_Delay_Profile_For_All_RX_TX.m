@@ -94,10 +94,23 @@ rx3 = rxsite("cartesian", ...
 
 %% Load the environment map
 siteviewer("SceneModel",mapFileName);
-show(tx,"ShowAntennaHeight",false)
+show(tx,"ShowAntennaHeight",false,"ClusterMarkers",true)
 show(rx1,"ShowAntennaHeight",false)
 show(rx2,"ShowAntennaHeight",false)
 show(rx3,"ShowAntennaHeight",false)
+
+%% Label TX and RX locations
+% Extract positions for TX and RX sites
+txPos = tx.AntennaPosition;
+rx1Pos = rx1.AntennaPosition;
+rx2Pos = rx2.AntennaPosition;
+rx3Pos = rx3.AntennaPosition;
+% Label the TX and RX using 'text' function
+% Adjust the position slightly for better label visualization
+text(txPos(1), txPos(2), 'TX', 'FontSize', 12, 'FontWeight', 'bold', 'Color', 'r'); % Label TX
+text(rx1Pos(1), rx1Pos(2), 'RX1', 'FontSize', 12, 'FontWeight', 'bold', 'Color', 'b'); % Label RX1
+text(rx2Pos(1), rx2Pos(2), 'RX2', 'FontSize', 12, 'FontWeight', 'bold', 'Color', 'b'); % Label RX2
+text(rx3Pos(1), rx3Pos(2), 'RX3', 'FontSize', 12, 'FontWeight', 'bold', 'Color', 'b'); % Label RX3
 
 %% Ray Tracing Configuration
 pm1 = propagationModel("raytracing", ...
@@ -122,13 +135,13 @@ pm3 = propagationModel("raytracing", ...
                         "SurfaceMaterial","glass");
 
 %% Perform ray tracing for all receivers
-rays1 = raytrace(tx,rx1,pm1,"Type","power");
+rays1 = raytrace(tx,rx1,pm2,"Type","power");
 rays1 = rays1{1,1};
 
-rays2 = raytrace(tx,rx2,pm1,"Type","power");
+rays2 = raytrace(tx,rx2,pm2,"Type","power");
 rays2 = rays2{1,1};
 
-rays3 = raytrace(tx,rx3,pm1,"Type","power");
+rays3 = raytrace(tx,rx3,pm2,"Type","power");
 rays3 = rays3{1,1};
 
 %% Display Ray Tracing Results for all receivers
