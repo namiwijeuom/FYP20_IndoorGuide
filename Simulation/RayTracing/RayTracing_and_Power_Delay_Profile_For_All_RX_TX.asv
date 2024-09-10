@@ -134,27 +134,33 @@ rays3 = rays3{1,1};
 %% Display Ray Tracing Results for all receivers
 disp('Number of Interactions per Ray for rx1:');
 disp([rays1.NumInteractions]);
+
 disp('Propagation Distances for rx1:');
 disp([rays1.PropagationDistance]);
+
 disp('Path Loss per Ray for rx1:');
 disp([rays1.PathLoss]);
 
 disp('Number of Interactions per Ray for rx2:');
 disp([rays2.NumInteractions]);
+
 disp('Propagation Distances for rx2:');
 disp([rays2.PropagationDistance]);
+
 disp('Path Loss per Ray for rx2:');
 disp([rays2.PathLoss]);
 
 disp('Number of Interactions per Ray for rx3:');
 disp([rays3.NumInteractions]);
+
 disp('Propagation Distances for rx3:');
 disp([rays3.PropagationDistance]);
+
 disp('Path Loss per Ray for rx3:');
 disp([rays3.PathLoss]);
 
 %% Plot Ray Tracing Results
-plot(rays1,"Colormap",jet,"ColorLimits",[100, 160])
+plot(rays1,"Colormap",jet,"ColorLimits",[100, 160],l)
 hold on;
 plot(rays2,"Colormap",jet,"ColorLimits",[100, 160])
 plot(rays3,"Colormap",jet,"ColorLimits",[100, 160])
