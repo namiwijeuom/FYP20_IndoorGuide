@@ -90,3 +90,6 @@ threshold = 1e-6;       % Convergence threshold
 
 % Output the final position
 fprintf('Final position from C-Taylor Algorithm: x = %.2f, y = %.2f\n', x_final, y_final);
+
+
+%There is a error when returning coordinates
