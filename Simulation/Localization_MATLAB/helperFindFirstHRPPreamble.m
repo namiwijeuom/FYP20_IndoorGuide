@@ -4,33 +4,31 @@ function firstOccurrence = helperFindFirstHRPPreamble(signal, preamble, cfg)
 % Copyright 2021 The MathWorks, Inc.
 
     persistent preamDet
-    if isempty(preamDet)
-      % Find multiple preambles (Nsync total)
-      maxCorr = max(abs(filter( flipud(preamble) , 1, signal)));
-      thr = 0.5*maxCorr; % make sure all peaks are found
-      preamDet = comm.PreambleDetector(Preamble=preamble, Threshold=thr);
-    else
-      reset(preamDet);
+    if (~isempty(preamDet))
+        reset(preamDet);
     end
-
-    retryCount = 0 ;
+    % Find multiple preambles (Nsync total)
+    maxCorr = max(abs(filter( flipud(preamble) , 1, signal)));
+    thr = 0.5*maxCorr; % make sure all peaks are found
+    preamDet = comm.PreambleDetector(Preamble=preamble, Threshold=thr);
+    
+    retryCount = 0;
     preamDetected = false;
-    maxRetries = 5 ; 
+    maxRetries = 5;
     
-    while ~preamDetected && retryCount < maxRetries
+    while (~preamDetected) && (retryCount < maxRetries)
     
-        [preamPos, corrMat] = preamDet(signal); 
+        [preamPos, corrMat] = preamDet(signal);
     
         if isempty(preamPos)
-            
-            preamDet.Threshold = (0.5 - retryCount*0.1 )*maxCorr; % make sure all peaks are found
             retryCount = retryCount + 1 ;
+            preamDet.Threshold = (0.5 - retryCount*0.1 )*maxCorr; % make sure all peaks are found
         else
-            preamDetected = true; 
+            preamDetected = true;
         end
-       
+    
     end
-
+    
     if ~preamDetected
         error("Preamble detection failed after maximum retries.");
     else
