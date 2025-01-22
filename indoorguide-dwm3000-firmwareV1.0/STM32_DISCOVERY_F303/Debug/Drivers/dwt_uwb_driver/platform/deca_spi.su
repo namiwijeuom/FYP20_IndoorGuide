@@ -1,0 +1,6 @@
+../Drivers/dwt_uwb_driver/platform/deca_spi.c:37:5:openspi	4	static
+../Drivers/dwt_uwb_driver/platform/deca_spi.c:48:5:closespi	4	static
+../Drivers/dwt_uwb_driver/platform/deca_spi.c:60:5:writetospiwithcrc	32	static
+../Drivers/dwt_uwb_driver/platform/deca_spi.c:88:5:writetospi	32	static
+../Drivers/dwt_uwb_driver/platform/deca_spi.c:121:10:spi_cs_low_delay	16	static
+../Drivers/dwt_uwb_driver/platform/deca_spi.c:145:5:readfromspi	32	static
