@@ -1,0 +1,42 @@
+# Ignore everything in indoorguide-firmware
+indoorguide-dwm3000-firmwareV1.0/*
+
+# Unignore f1 and f3
+!indoorguide-dwm3000-firmwareV1.0/STM_Nucleo_F446/
+!indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/
+!indoorguide-dwm3000-firmwareV1.0/STM32_WB55RG/
+
+
+# Existing MATLAB-specific ignores
+*.asv
+*.m~
+*.autosave
+*.slx.r*
+*.mdl.r*
+
+# Derived content-obscured files
+*.p
+
+# Compiled MEX files
+*.mex*
+
+# Packaged app and toolbox files
+*.mlappinstall
+*.mltbx
+
+# Deployable archives
+*.ctf
+
+# Generated helpsearch folders
+helpsearch*/
+
+# Code generation folders
+slprj/
+sccprj/
+codegen/
+
+# Cache files
+*.slxc
+
+# Cloud based storage dotfile
+.MATLABDriveTag
