@@ -1,8 +1,10 @@
-# Final Year Project - IndoorGuide 
-In the recent years, positioning and navigation systems such as Google Maps have accomplished significant achievements in making life easy of the users specially in outdoor environments. A wide-scale spread of smart phones and other wireless devices are leading to the development of a variety of services, including indoor localization. However,
-positioning and navigating in an indoor environment has its own unique challenges and problems because of the specific complexities and diversities of an indoor environment
-like in a supermarket. In this project, the answer to the question,**”Can we develop a precise indoor localization system for a supermarket where we can give the list of the grocery items and the system will guide us just like Google Maps?”** is explored.
+# IndoorGuide - Your Smart Shopping Assistant 
+* IndoorGuide is the final year project conducted by my team and me. It is an indoor localization and navigation system that guides a user in a supermarket to buy a list of items while showing discounts and offers available on the items.
+* The user will get a mobile application and the user’s real-time location is obtained from the UWB-based indoor localization system. The shortest path to the closest item based on the user’s current location is shown first and the shortest path to the next closest item is displayed when the user collects the current item. If the user doesn’t follow the given path, the user is rerouted to the item showing another path.
+* In the meantime, the user can get valuable information in the mobile application, such as the availability of items, advertisements, discounts, and ongoing offers, when they use the indoor positioning system to find items in the environment.
 
-IndoorGuide project will mainly focus on developing an accurate indoor positioning solution which has an accuracy less than 1 m. The indoor positioning system will be robust
-for any sensor failure or faulty readings. The system is to be tested in an indoor environment with dynamic obstacles and situations. The outcome will be integrated with an inventory management system where the users can get valuable information such as stock availability, advertisements,discounts and ongoing offers when they are using the indoor positioning system to find items in the environment.
+Explore our solution - https://youtu.be/IXNKlyKqeg8?si=o1pcjw2xVUhqVVBc
 
+End-to-End System - https://drive.google.com/file/d/1L4dQrP4LGbEzoqHtrbHvkKhWELOynQtG/view?usp=drive_link 
+
+![Logo](https://github.com/user-attachments/assets/5d63cb22-bd56-49b5-81a8-f62c1640bc21)
