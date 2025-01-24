@@ -1,5 +1,6 @@
 
 %% ---------------------- Environment Layout ------------------------------
+clear; clc; close all;
 
 anchors = [11.5 , 0.25;
            1.5  , 3.25;
@@ -15,30 +16,46 @@ environment  = createEnvironment('PG_Seminar_Room_Inverted.jpg');
 showBaseStations(anchors); 
 
 % Define items and their locations
-items = {
-        'Vegetables', 'Fruits', 'Meat', 'Grains';
-        'Juices', 'Snacks', 'Fish', 'Bread';
-        'MilkPowder', 'Rice', 'Nuts', 'Spices';
-        'IceCream', 'Chocolates', 'Oil', 'Soda'
-        };
+items = {'Vegetables', 'Fruits', 'Meat', 'Grains','Juices', 'Snacks', 'Fish', 'Bread','MilkPowder', 'Rice', 'Nuts', 'Spices','IceCream', 'Chocolates', 'Oil', 'Soda'};
 
-item_locations = [10 , 9; 
-                  2 ,8; 
-                  2 , 2; 
-                  11, 3; 
-                  8 ,6];
+item_locations = [  10, 9; % Vegetables
+                    2, 8 ; % Fruits
+                    3, 5 ; % Meat
+                    6, 7 ; % Grains
+                    10, 1 ; % Juices
+                    5, 10 ; % Snacks
+                    0, 5 ; % Fish
+                    8, 8 ; % Bread
+                    11, 3; % MilkPowder
+                    1, 11 ; % Rice
+                    1, 2; % Nuts
+                    3, 11; % Spices
+                    6, 3; % IceCream
+                    9, 5; % Chocolates
+                    4, 1; % Oil
+                    12, 7 ]; % Soda
 
-item_locations_for_A_Star = [   9 , 10; 
-                                8 , 2; 
-                                2 , 2; 
-                                3, 11; 
-                                6 , 8    ];
+item_locations_for_A_Star = [  9, 10; % Vegetables
+                    8, 2 ; % Fruits
+                    5, 3 ; % Meat
+                    7, 6 ; % Grains
+                    1, 10 ; % Juices
+                    10, 5 ; % Snacks
+                    5, 0 ; % Fish
+                    8, 8 ; % Bread
+                    3, 11; % MilkPowder
+                    11, 1 ; % Rice
+                    2, 1; % Nuts
+                    11, 3; % Spices
+                    3, 6; % IceCream
+                    5, 9; % Chocolates
+                    1, 4; % Oil
+                    7, 12 ]; % Soda
 
-
-%% Mark item locations
+% Mark item locations
 for i = 1:length(items)
    plot(item_locations(i,1), item_locations(i,2), 'bo', 'MarkerSize', 8, 'LineWidth', 2); 
-   text(item_locations(i,1) + 0.5, item_locations(i,2), items{i}, 'Color', 'blue');
+   text(item_locations(i,1)+0.2, item_locations(i,2), items{i}, 'Color', 'blue');
 end
 
 %% Only for Simulation purpose
@@ -488,7 +505,7 @@ end
 % end
 function selectedItems = grocerySelectionDialog()
     % Define your items for selection
-    items = {'Vegetables', 'Fruits', 'Meat', 'MilkPowder', 'Biscuits'};
+    items = {'Vegetables', 'Fruits', 'Meat', 'Grains','Juices', 'Snacks', 'Fish', 'Bread','MilkPowder', 'Rice', 'Nuts', 'Spices','IceCream', 'Chocolates', 'Oil', 'Soda'};
 
     % Create a UI figure
     fig = uifigure('Name', 'Grocery Selection', 'Position', [200 200 400 400]);
