@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "DWM3000"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "DWM3000")
+        (spec "default")
+    )
+)
