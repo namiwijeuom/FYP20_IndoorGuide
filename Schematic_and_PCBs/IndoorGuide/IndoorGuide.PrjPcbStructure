@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=0_Block_Diagram.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=0_Block_Diagram.SchDoc|Designator=1_MCU|SchDesignator=1_MCU|FileName=1_MCU.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=1_MCU.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=0_Block_Diagram.SchDoc|Designator=Power|SchDesignator=Power|FileName=3_Power.SchDoc|SheetNumber=4|SymbolType=Normal|RawFileName=3_Power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=0_Block_Diagram.SchDoc|Designator=UWB_Transciver|SchDesignator=UWB_Transciver|FileName=2_UWB_Transceiver.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=2_UWB_Transceiver.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
