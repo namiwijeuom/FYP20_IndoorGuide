@@ -2,10 +2,10 @@
 %% ---------------------- Environment Layout ------------------------------
 clear; clc; close all;
 
-anchors = [11.5 , 0.25;
-           1.5  , 3.25;
-           1.5  ,   10;
-           11.5 , 11.5];
+anchors = [11.71 , 0.50;
+           0.00  , 1.70;
+           0.70  , 9.44;
+           11.21 , 11.64];
 
       
 environment  = createEnvironment('PG_Seminar_Room_Inverted.jpg');
@@ -503,10 +503,69 @@ end
 % else
 %     disp('No items were selected.');
 % end
-function selectedItems = grocerySelectionDialog()
-    % Define your items for selection
-    items = {'Vegetables', 'Fruits', 'Meat', 'Grains','Juices', 'Snacks', 'Fish', 'Bread','MilkPowder', 'Rice', 'Nuts', 'Spices','IceCream', 'Chocolates', 'Oil', 'Soda'};
+% function selectedItems = grocerySelectionDialog()
+%     % Define your items for selection
+%     items = {'Vegetables', 'Fruits', 'Meat', 'Grains','Juices', 'Snacks', 'Fish', 'Bread','MilkPowder', 'Rice', 'Nuts', 'Spices','IceCream', 'Chocolates', 'Oil', 'Soda'};
+% 
+%     % Create a UI figure
+%     fig = uifigure('Name', 'Grocery Selection', 'Position', [200 200 400 400]);
+% 
+%     % Add a logo to the dialog
+%     logo = uiimage(fig);
+%     logo.Position = [150 320 100 50]; % Adjust position [x, y, width, height]
+%     logo.ImageSource = 'logo.png'; % Provide the path to your logo file
+% 
+%     % Add a label for the prompt
+%     lbl = uilabel(fig, 'Text', 'Select the Items You Need:');
+%     lbl.Position = [50 280 300 30];
+%     lbl.FontSize = 12;
+% 
+%     % Add a listbox for item selection
+%     listbox = uilistbox(fig, 'Items', items, 'MultiSelect', 'on');
+%     listbox.Position = [50 100 300 150];
+%     listbox.FontSize = 12;
+% 
+%     % Add a confirmation button
+%     btnConfirm = uibutton(fig, 'Text', 'Confirm', ...
+%         'Position', [100 40 100 30], ...
+%         'ButtonPushedFcn', @(btn, event) confirmSelection());
+% 
+%     % Add a dismissal button
+%     btnDismiss = uibutton(fig, 'Text', 'Dismiss', ...
+%         'Position', [200 40 100 30], ...
+%         'ButtonPushedFcn', @(btn, event) dismissDialog());
+% 
+%     % Initialize selectedItems as empty
+%     selectedItems = {};
+% 
+%     % Pause execution until user action
+%     uiwait(fig);
+% 
+%     % Callback for confirm button
+%     function confirmSelection()
+%         selectedItems = listbox.Value; % Get the selected items
+%         uiresume(fig); % Resume execution
+%         delete(fig); % Close the dialog
+%     end
+% 
+%     % Callback for dismiss button
+%     function dismissDialog()
+%         selectedItems = {}; % Set selectedItems to empty
+%         uiresume(fig); % Resume execution
+%         delete(fig); % Close the dialog
+%     end
+% end
 
+function selectedItems = grocerySelectionDialog()
+    % Load the database of telephone numbers from a CSV file
+    phoneData = readtable('Modified_User_Purchase_History.csv', 'TextType', 'string');
+    validNumbers = string(phoneData.PhoneNumber); % Ensure conversion to string
+    validNumbers = strtrim(validNumbers); % Trim any spaces
+
+    % Initialize selectedItems as empty
+    selectedItems = {};
+    listbox = []; % Declare listbox as a persistent variable
+    
     % Create a UI figure
     fig = uifigure('Name', 'Grocery Selection', 'Position', [200 200 400 400]);
 
@@ -515,34 +574,65 @@ function selectedItems = grocerySelectionDialog()
     logo.Position = [150 320 100 50]; % Adjust position [x, y, width, height]
     logo.ImageSource = 'logo.png'; % Provide the path to your logo file
 
-    % Add a label for the prompt
-    lbl = uilabel(fig, 'Text', 'Select the Items You Need:');
-    lbl.Position = [50 280 300 30];
-    lbl.FontSize = 12;
+    % Add a label for phone number entry
+    lblPhone = uilabel(fig, 'Text', 'Enter Your Telephone Number:');
+    lblPhone.Position = [50 250 300 30];
+    lblPhone.FontSize = 12;
 
-    % Add a listbox for item selection
-    listbox = uilistbox(fig, 'Items', items, 'MultiSelect', 'on');
-    listbox.Position = [50 100 300 150];
-    listbox.FontSize = 12;
+    % Add an edit field for phone number input
+    phoneInput = uieditfield(fig, 'text');
+    phoneInput.Position = [50 220 300 30];
 
-    % Add a confirmation button
-    btnConfirm = uibutton(fig, 'Text', 'Confirm', ...
-        'Position', [100 40 100 30], ...
-        'ButtonPushedFcn', @(btn, event) confirmSelection());
+    % Add a validate button
+    btnValidate = uibutton(fig, 'Text', 'Validate', ...
+        'Position', [150 180 100 30], ...
+        'ButtonPushedFcn', @(btn, event) validatePhoneNumber());
 
-    % Add a dismissal button
-    btnDismiss = uibutton(fig, 'Text', 'Dismiss', ...
-        'Position', [200 40 100 30], ...
-        'ButtonPushedFcn', @(btn, event) dismissDialog());
+    % Callback for validate button
+    function validatePhoneNumber()
+        enteredNumber = strtrim(string(phoneInput.Value)); % Ensure input is string and trimmed
+        if any(validNumbers == enteredNumber)
+            uialert(fig, 'Phone number validated! Proceed with item selection.', 'Success');
+            showItemSelection();
+        else
+            uialert(fig, 'Invalid phone number. Please try again.', 'Error');
+        end
+    end
 
-    % Initialize selectedItems as empty
-    selectedItems = {};
+    % Function to display item selection UI
+    function showItemSelection()
+        % Hide phone validation controls
+        lblPhone.Visible = 'off';
+        phoneInput.Visible = 'off';
+        btnValidate.Visible = 'off';
 
-    % Pause execution until user action
-    uiwait(fig);
+        % Add a label for the prompt
+        lbl = uilabel(fig, 'Text', 'Select the Items You Need:');
+        lbl.Position = [50 280 300 30];
+        lbl.FontSize = 12;
+
+        % Add a listbox for item selection
+        listbox = uilistbox(fig, 'Items', {'Vegetables', 'Fruits', 'Meat', 'Grains', 'Juices', 'Snacks', 'Fish', 'Bread', 'MilkPowder', 'Rice', 'Nuts', 'Spices', 'IceCream', 'Chocolates', 'Oil', 'Soda'}, 'MultiSelect', 'on');
+        listbox.Position = [50 100 300 150];
+        listbox.FontSize = 12;
+
+        % Add a confirmation button
+        btnConfirm = uibutton(fig, 'Text', 'Confirm', ...
+            'Position', [100 40 100 30], ...
+            'ButtonPushedFcn', @(btn, event) confirmSelection());
+
+        % Add a dismissal button
+        btnDismiss = uibutton(fig, 'Text', 'Dismiss', ...
+            'Position', [200 40 100 30], ...
+            'ButtonPushedFcn', @(btn, event) dismissDialog());
+    end
 
     % Callback for confirm button
     function confirmSelection()
+        if isempty(listbox)
+            uialert(fig, 'No items selected.', 'Error');
+            return;
+        end
         selectedItems = listbox.Value; % Get the selected items
         uiresume(fig); % Resume execution
         delete(fig); % Close the dialog
@@ -554,4 +644,7 @@ function selectedItems = grocerySelectionDialog()
         uiresume(fig); % Resume execution
         delete(fig); % Close the dialog
     end
+
+    % Pause execution until user action
+    uiwait(fig);
 end
