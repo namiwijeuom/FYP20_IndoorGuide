@@ -58,6 +58,23 @@ for i = 1:length(items)
    text(item_locations(i,1)+0.2, item_locations(i,2), items{i}, 'Color', 'blue');
 end
 
+%% Create a UI figure for the map if it doesn’t already exist
+% Define normalized position for text (annotation uses normalized coordinates)
+textPosition = [0.8, 0.9, 0.1, 0.1]; % [x, y, width, height]
+
+% Create a background box for the text
+statusBox = annotation('textbox', textPosition, ...
+                       'String', 'Initializing...', ...
+                       'FontSize', 12, ...
+                       'FontWeight', 'bold', ...
+                       'BackgroundColor', 'y', ...
+                       'EdgeColor', 'k', ...
+                       'LineWidth', 1.5, ...
+                       'HorizontalAlignment', 'center', ...
+                       'VerticalAlignment', 'middle');
+
+% Store it properly inside figure UserData
+fig.UserData.statusBox = statusBox;
 %% Only for Simulation purpose
 count = 0;
 
@@ -131,6 +148,9 @@ if ~isempty(input_items)
                                                items, ...
                                                item_locations_for_A_Star);
     disp("Optimized Locations:" + num2str(optimized_locations));
+    updateStatus("Locations Updated! Lets Go Shopping!");
+    pause(1);
+
     colors = lines(length(input_items)); % Generate unique colors for each path
 
     %% Initialize instructions and optimized items
@@ -185,6 +205,8 @@ if ~isempty(input_items)
         while true
             %new_pos = get_current_position(start_pos);
             disp("Monitoring the Tag Location");
+            updateStatus("Monitoring the Tag Location");
+
             % %-
             % % Add the BLE coordinate read code here 
             % 
@@ -233,10 +255,13 @@ if ~isempty(input_items)
             end
             
             disp("New position:" + mat2str(new_pos));
+            %updateStatus("New position: " + mat2str(new_pos));
+
 
             %% Check if the position has drifted
             drift_distance = sqrt((new_pos(1) - current_pos(1))^2 + (new_pos(2) - current_pos(2))^2);
             disp("Drift distance: " + num2str(drift_distance));
+            %updateStatus("Drift distance: " + num2str(drift_distance));
 
             if drift_distance >= drift_threshold
                 % Re-plan the path from the new position to the goal
@@ -253,6 +278,8 @@ if ~isempty(input_items)
                 end
 
                 disp('Re-planning path due to drift...');
+                updateStatus('Re-planning path due to drift...');
+
                 planned_path = A_star_pathfinding(environment, ...
                                                   [new_pos(2), new_pos(1)], ...
                                                   goal_pos);
@@ -295,6 +322,7 @@ if ~isempty(input_items)
             %% Check if the tag has reached the goal position
             if isequal(round(new_pos), round([goal_pos(2), goal_pos(1)]))
                 disp(['Reached item: ' current_item]);
+                updateStatus('Reached Item');
 
                 % Wait for user confirmation to proceed
                 choice = questdlg(['Did you collect the item at location ' sprintf('[%d, %d, %s]', goal_pos(2), goal_pos(1),current_item) '?'], ...
@@ -305,9 +333,13 @@ if ~isempty(input_items)
                     % Update the current position to the goal position
                     current_pos = [goal_pos(2),goal_pos(1)];
                     disp(['User confirmed collecting item at location: ' num2str(goal_pos)]);
+                    updateStatus(['User Confirmed Collecting ' current_item]);
+
                     break; % Move to the next item
                 else
                     disp('Waiting for user confirmation...');
+                    updateStatus('Waiting for user confirmation...');
+
                     % Optionally, handle "No" case here if needed
                 end
             end
@@ -485,77 +517,6 @@ end
 
 
 %% User Input Dialog Box
-% % Create a dialog box with customized appearance
-% [selectedIndices, ok] = listdlg('PromptString', {'Select the items you need:', '', 'Hold Ctrl to select multiple items'}, ...
-%                                 'SelectionMode', 'multiple', ...
-%                                 'ListString', items, ...
-%                                 'Name', 'Grocery Selection', ...
-%                                 'ListSize', [300, 200], ...  % Set size of the dialog
-%                                 'OKString', 'Confirm', ...  % Change OK button text
-%                                 'CancelString', 'Dismiss'); % Change Cancel button text
-% 
-% % Check if the user pressed OK
-% if ok
-%     % Get the selected items
-%     input_items = items(selectedIndices);
-%     disp('You selected:');
-%     disp(input_items);
-% else
-%     disp('No items were selected.');
-% end
-% function selectedItems = grocerySelectionDialog()
-%     % Define your items for selection
-%     items = {'Vegetables', 'Fruits', 'Meat', 'Grains','Juices', 'Snacks', 'Fish', 'Bread','MilkPowder', 'Rice', 'Nuts', 'Spices','IceCream', 'Chocolates', 'Oil', 'Soda'};
-% 
-%     % Create a UI figure
-%     fig = uifigure('Name', 'Grocery Selection', 'Position', [200 200 400 400]);
-% 
-%     % Add a logo to the dialog
-%     logo = uiimage(fig);
-%     logo.Position = [150 320 100 50]; % Adjust position [x, y, width, height]
-%     logo.ImageSource = 'logo.png'; % Provide the path to your logo file
-% 
-%     % Add a label for the prompt
-%     lbl = uilabel(fig, 'Text', 'Select the Items You Need:');
-%     lbl.Position = [50 280 300 30];
-%     lbl.FontSize = 12;
-% 
-%     % Add a listbox for item selection
-%     listbox = uilistbox(fig, 'Items', items, 'MultiSelect', 'on');
-%     listbox.Position = [50 100 300 150];
-%     listbox.FontSize = 12;
-% 
-%     % Add a confirmation button
-%     btnConfirm = uibutton(fig, 'Text', 'Confirm', ...
-%         'Position', [100 40 100 30], ...
-%         'ButtonPushedFcn', @(btn, event) confirmSelection());
-% 
-%     % Add a dismissal button
-%     btnDismiss = uibutton(fig, 'Text', 'Dismiss', ...
-%         'Position', [200 40 100 30], ...
-%         'ButtonPushedFcn', @(btn, event) dismissDialog());
-% 
-%     % Initialize selectedItems as empty
-%     selectedItems = {};
-% 
-%     % Pause execution until user action
-%     uiwait(fig);
-% 
-%     % Callback for confirm button
-%     function confirmSelection()
-%         selectedItems = listbox.Value; % Get the selected items
-%         uiresume(fig); % Resume execution
-%         delete(fig); % Close the dialog
-%     end
-% 
-%     % Callback for dismiss button
-%     function dismissDialog()
-%         selectedItems = {}; % Set selectedItems to empty
-%         uiresume(fig); % Resume execution
-%         delete(fig); % Close the dialog
-%     end
-% end
-
 function selectedItems = grocerySelectionDialog()
     % Load the database of telephone numbers from a CSV file
     phoneData = readtable('Modified_User_Purchase_History.csv', 'TextType', 'string');
@@ -647,4 +608,39 @@ function selectedItems = grocerySelectionDialog()
 
     % Pause execution until user action
     uiwait(fig);
+end
+
+% Function to update the status box dynamically
+function updateStatus(newMessage)
+    fig = gcf; % Get the current figure
+
+    % Debugging: Check if UserData exists
+    if isfield(fig.UserData, 'statusBox')
+        statusBox = fig.UserData.statusBox;
+        if isvalid(statusBox)
+            set(statusBox, 'String', newMessage);
+            drawnow; % Force UI refresh
+        else
+            warning('Stored statusBox is invalid. Recreating...');
+            recreateStatusBox(fig, newMessage);
+        end
+    else
+        warning('statusBox not found. Recreating...');
+        recreateStatusBox(fig, newMessage);
+    end
+end
+
+% Function to recreate the status box if it is missing
+function recreateStatusBox(fig, newMessage)
+    textPosition = [0.8, 0.9, 0.1, 0.1]; % Adjust if needed
+    newStatusBox = annotation('textbox', textPosition, ...
+                              'String', newMessage, ...
+                              'FontSize', 12, ...
+                              'FontWeight', 'bold', ...
+                              'BackgroundColor', 'y', ...
+                              'EdgeColor', 'k', ...
+                              'LineWidth', 1.5, ...
+                              'HorizontalAlignment', 'center', ...
+                              'VerticalAlignment', 'middle');
+    fig.UserData.statusBox = newStatusBox;
 end

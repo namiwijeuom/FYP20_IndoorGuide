@@ -10,7 +10,7 @@ function  environment = createEnvironment(backgroundImg)
     cell_size = 0.5;
 
     % Create the figure
-    figure
+    fig = figure;
     img = imread(backgroundImg);
 
     % Display the image with 'image'
@@ -26,7 +26,6 @@ function  environment = createEnvironment(backgroundImg)
     yticks(0:cell_size:ceil(supermarketLength));
     axis equal;
     % Apply the grid with custom ticks
-    
     
     % Set axis limits and labels
     axis([0 supermarketWidth 0 supermarketLength]);
