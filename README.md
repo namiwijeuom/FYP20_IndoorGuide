@@ -7,4 +7,8 @@ For More Information - https://sites.google.com/d/1sgRMowLkiXn0cbftKqq48a9VC4iBF
 
 End-to-End System - https://drive.google.com/file/d/1L4dQrP4LGbEzoqHtrbHvkKhWELOynQtG/view?usp=drive_link 
 
+Feasibility Presentation - https://www.canva.com/design/DAGL3z9L2-Q/Tk76HP0wMDyfvTggQDq_Qw/edit?utm_content=DAGL3z9L2-Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+Mid Review Presentation - https://www.canva.com/design/DAGb5vD2ECQ/W2fZEDwzw8FA2TsxdhYvag/edit?utm_content=DAGb5vD2ECQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ![Logo](https://github.com/user-attachments/assets/5d63cb22-bd56-49b5-81a8-f62c1640bc21)
