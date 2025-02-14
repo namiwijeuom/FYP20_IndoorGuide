@@ -237,7 +237,10 @@
 /* Configuration option 33.
  * Channel 5, PRF 64M, Preamble Length 128, PAC 8, Preamble code 9, Data Rate 6.8M, STS Length 128
  */
-#define CONFIG_OPTION_33
+//#define CONFIG_OPTION_33
+
+/* Default communication configuration. We use default non-STS DW mode. */
+#define CONFIG_OPTION_COMMON
 
 extern char dist_str[25];
 

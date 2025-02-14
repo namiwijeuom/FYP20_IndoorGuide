@@ -17,8 +17,10 @@ RM := rm -rf
 -include Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/shared_data/subdir.mk
--include Core/Src/Ranging/Tag/subdir.mk
--include Core/Src/Ranging/Anchor/subdir.mk
+-include Core/Src/UWB_tasks/ss_twr_resp/subdir.mk
+-include Core/Src/UWB_tasks/ss_twr_init/subdir.mk
+-include Core/Src/UWB_tasks/Listener/subdir.mk
+-include Core/Src/UWB_tasks/Blink/subdir.mk
 -include Core/Src/Math_utils/subdir.mk
 -include Core/Src/Configurations/subdir.mk
 -include Core/Src/Applications/Tag_app/subdir.mk
@@ -72,8 +74,8 @@ all: main-build
 main-build: STM32_DISCOVERY_F303.elf secondary-outputs
 
 # Tool invocations
-STM32_DISCOVERY_F303.elf STM32_DISCOVERY_F303.map: $(OBJS) $(USER_OBJS) D:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV1.0\STM32_DISCOVERY_F303\STM32F303VCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STM32_DISCOVERY_F303.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV1.0\STM32_DISCOVERY_F303\STM32F303VCTX_FLASH.ld" -Wl,-Map="STM32_DISCOVERY_F303.map" -Wl,--gc-sections -static -L"D:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV1.0\STM32_DISCOVERY_F303\Drivers\dwt_uwb_driver\lib" -Wl,--whole-archive -ldwt_uwb_driver-m4-sfp-6.0.7 -Wl,--no-whole-archive  -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32_DISCOVERY_F303.elf STM32_DISCOVERY_F303.map: $(OBJS) $(USER_OBJS) D:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV2.0\STM32_DISCOVERY_F303\STM32F303VCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STM32_DISCOVERY_F303.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV2.0\STM32_DISCOVERY_F303\STM32F303VCTX_FLASH.ld" -Wl,-Map="STM32_DISCOVERY_F303.map" -Wl,--gc-sections -static -L"D:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV2.0\STM32_DISCOVERY_F303\Drivers\dwt_uwb_driver\lib" -Wl,--whole-archive -ldwt_uwb_driver-m4-sfp-6.0.7 -Wl,--no-whole-archive  -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

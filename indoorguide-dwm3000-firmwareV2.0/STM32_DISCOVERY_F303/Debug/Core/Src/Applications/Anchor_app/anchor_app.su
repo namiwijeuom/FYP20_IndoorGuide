@@ -1,1 +1,3 @@
-../Core/Src/Applications/Anchor_app/anchor_app.c:9:6:anchor_app	16	static
+../Core/Src/Applications/Anchor_app/anchor_app.c:23:6:anchor_uwb_init	24	static
+../Core/Src/Applications/Anchor_app/anchor_app.c:77:6:anchor_application_init	16	static
+../Core/Src/Applications/Anchor_app/anchor_app.c:97:6:anchor_application	24	static

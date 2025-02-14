@@ -1,10 +1,10 @@
 Drivers/dwt_uwb_driver/platform/deca_spi.o: \
  ../Drivers/dwt_uwb_driver/platform/deca_spi.c \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_device_api.h \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/deca_spi.h \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/port.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_device_api.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/deca_spi.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/port.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
  ../Core/Inc/stm32f3xx_hal_conf.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h \
@@ -40,11 +40,11 @@ Drivers/dwt_uwb_driver/platform/deca_spi.o: \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h \
  ../Core/Inc/main.h
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_device_api.h:
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h:
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/deca_spi.h:
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h:
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/port.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_device_api.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/deca_spi.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/port.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:
 ../Core/Inc/stm32f3xx_hal_conf.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:

@@ -1,10 +1,10 @@
 Core/Src/shared_data/shared_functions.o: \
  ../Core/Src/shared_data/shared_functions.c \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Core/Src/Configurations/config_options.h \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_device_api.h \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/port.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Core/Src/Configurations/config_options.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_device_api.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/port.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
  ../Core/Inc/stm32f3xx_hal_conf.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h \
@@ -38,14 +38,13 @@ Core/Src/shared_data/shared_functions.o: \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Core/Src/shared_data/shared_defines.h \
- ../Core/Inc/main.h \
- D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Core/Src/shared_data/shared_functions.h
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Core/Src/Configurations/config_options.h:
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_device_api.h:
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h:
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h:
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/port.h:
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Core/Src/shared_data/shared_defines.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Core/Src/shared_data/shared_functions.h
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Core/Src/Configurations/config_options.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_device_api.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/Inc/deca_types.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Drivers/dwt_uwb_driver/platform/port.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:
 ../Core/Inc/stm32f3xx_hal_conf.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:
@@ -79,6 +78,5 @@ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/S
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h:
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Core/Src/shared_data/shared_defines.h:
-../Core/Inc/main.h:
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM32_DISCOVERY_F303/Core/Src/shared_data/shared_functions.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Core/Src/shared_data/shared_defines.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_DISCOVERY_F303/Core/Src/shared_data/shared_functions.h:

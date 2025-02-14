@@ -1,3 +1,3 @@
-../Core/Src/Math_utils/EKFLocalization.c:12:6:EKF_init	32	static
-../Core/Src/Math_utils/EKFLocalization.c:30:6:EKF_predict	56	static
-../Core/Src/Math_utils/EKFLocalization.c:56:6:EKF_update	488	static
+../Core/Src/Math_utils/EKFLocalization.c:12:6:EKF_init	40	static
+../Core/Src/Math_utils/EKFLocalization.c:43:6:EKF_predict	400	static
+../Core/Src/Math_utils/EKFLocalization.c:88:6:EKF_update	888	static

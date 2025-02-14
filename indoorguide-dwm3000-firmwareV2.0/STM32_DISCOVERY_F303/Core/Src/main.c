@@ -23,6 +23,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <port.h>
+
+#include "Applications/Tag_app/tag_app.h"
+#include "Applications/Anchor_app/anchor_app.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -77,17 +80,14 @@ void test_run_info(unsigned char *data)
     //HAL_UART_Transmit(&huart1, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
 }
 
+void delay_us(uint32_t us)
+{
+	//Todo: Implement this if needed.
+}
+
+
 //#define TAG_APP
 #define ANCHOR_APP
-
-
-#if defined(TAG_APP)
-	extern void tag_app(uint8_t tagID);
-#elif defined(ANCHOR_APP)
-	extern void anchor_app(uint8_t anchorID);
-#else
-	#error "Define the Application, Tag or Anchor"
-#endif
 
 
 /* USER CODE END 0 */
@@ -127,11 +127,16 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
 #if defined(TAG_APP)
-  tag_app(1);
-#elif defined(ANCHOR_APP)
-  anchor_app(4);
+
+  tag_application(1);
+
+#elif  defined(ANCHOR_APP)
+
+  uint16_t coordinates[3] = {10000,20000,30000};  // In centimeters
+  anchor_application(2,coordinates);
+
 #else
-	#error "Define the Application, Tag or Anchor"
+	#error "Define either TAG_APP or ANCHOR_APP before compiling."
 #endif
 
   /* USER CODE END 2 */

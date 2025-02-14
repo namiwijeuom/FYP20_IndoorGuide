@@ -20,7 +20,7 @@
 
 #define FRAME_TRANSMIT_TIME_MS        1  //In milliseconds
 
-#define MAX_NUM_OF_TAGS 50       // Estimated maximum number of tags in the environment
+#define MAX_NUM_OF_TAGS 10       // Estimated maximum number of tags in the environment
 
 
 
