@@ -5,71 +5,74 @@
  *      Author: Kavindu
  */
 
-
+#include <stdint.h>
+#include <string.h>
 #include "blink.h"
 
-                                                           /* LSB    MSB */
-static uint8_t tx_msg[] = { 0xC5, 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0x01 , 0x00 , 0 , 0 };
+
+
+
+extern void test_run_info(unsigned char *data);
+
+//extern dwt_config_t config_options;
+//
+///* Values for the PG_DELAY and TX_POWER registers reflect the bandwidth and power of the spectrum at the current
+// * temperature. These values can be calibrated prior to taking reference measurements. See NOTE 2 below. */
+//extern dwt_txconfig_t txconfig_options;
+
+
+/* Discovery phase BLINK frame format */
+                                                                     /* LSB    MSB */
+static uint8_t tx_msg[] = { 0xC5, 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0,  0x00 , 0x00 , 0 , 0 };
+
+/* Expected RNG_CFG frame format */
+static uint8_t rx_msg[] = { 0x41 , 0x88 , 0 , 0xFF , 0xFF , 0x00 , 0x00 , 0x00 , 0x00 , 0x20 , 0 , 0 , 0 , 0 , 0 , 0};
+
 
 /* Buffer to store received frame. See NOTE 5 below. */
 static uint8_t rx_buffer[FRAME_LEN_MAX];
 
 
-extern void test_run_info(unsigned char *data);
-
-extern dwt_config_t config_options;
-
-/* Values for the PG_DELAY and TX_POWER registers reflect the bandwidth and power of the spectrum at the current
- * temperature. These values can be calibrated prior to taking reference measurements. See NOTE 2 below. */
-extern dwt_txconfig_t txconfig_options;
 
 
-void blink_init(void)
+
+void blink_init(taginfo_t *tag)
 {
-    /* Configure SPI rate, DW3000 supports up to 36 MHz */
-    port_set_dw_ic_spi_fastrate();
-
-    /* Reset DW IC */
-    reset_DWIC(); /* Target specific drive of RSTn line into DW IC low for a period. */
-
-    Sleep(2); // Time needed for DW3000 to start up (transition from INIT_RC to IDLE_RC, or could wait for SPIRDY event)
-
-    /* Probe for the correct device driver. */
-    dwt_probe((struct dwt_probe_s *)&dw3000_probe_interf);
-
-    while (!dwt_checkidlerc()) /* Need to make sure DW IC is in IDLE_RC before proceeding */ { };
-
-    if (dwt_initialise(DWT_DW_INIT) == DWT_ERROR)
-    {
-        test_run_info((unsigned char *)"INIT FAILED     ");
-        while (1) { };
-    }
-
-    //* Enabling LEDs here for debug so that for each TX the D1 LED will flash on DW3000 red eval-shield boards. */
-	dwt_setleds(DWT_LEDS_ENABLE | DWT_LEDS_INIT_BLINK);
-
-    /* Configure DW IC. See NOTE 2 below. */
-    /* if the dwt_configure returns DWT_ERROR either the PLL or RX calibration has failed the host should reset the device */
-    if (dwt_configure(&config_options))
-    {
-        test_run_info((unsigned char *)"CONFIG FAILED     ");
-        while (1) { };
-    }
-
-    /* Configure the TX spectrum parameters (power, PG delay and PG count) */
-    dwt_configuretxrf(&txconfig_options);
+    dwt_configureframefilter(DWT_FF_ENABLE_802_15_4, DWT_FF_DATA_EN); //Todo: this can be added to tag_uwb_init() since always doing frame filtering
 
     /* Set delay to turn reception on after transmission of the frame. See NOTE 3 below. */
-    dwt_setrxaftertxdelay(TX_TO_RX_DELAY_UUS);
+	dwt_setrxaftertxdelay(TX_TO_RX_DELAY_UUS);
+	/* Set response frame timeout. */
+	dwt_setrxtimeout(RX_RESP_TO_UUS);
 
-    /* Set response frame timeout. */
-    dwt_setrxtimeout(RX_RESP_TO_UUS);
 
-    //TODO : Set dwmIC long, short addresses, frame filtering, pan id, so on.
+    /* Set Tag short address in BLINK frame & Destinatin address of expected incoming ranging config frame */
+    for(uint8_t i=0 ; i < ADDR_SHORT_BYTES ; i++)
+    {
+    	tx_msg[BLINK_FRAME_SRC_IDX+i] = tag->short_addr[i];
+    	rx_msg[RNG_CFG_FRAME_DEST_IDX+i] = tag->short_addr[i]; //Todo: do we need this?
+    }
+
 }
 
 
-int blink(void)
+void blink_reinit(fetchedanchor_t *fetchlist) // Todo: may be pass the already fetch anchor addresses, to include in the blink msg.
+{
+	for(uint8_t i = 0 ; i < 4 ; i++)  // Todo: Here 4 should be MAX_NUM_OF_FETCHED_ANCHORS
+	{
+		tx_msg[BLINK_FRAME_FETCHED_AN_IDX_START+2*i]   = LSB(fetchlist->fetched_addr[i]);
+		tx_msg[BLINK_FRAME_FETCHED_AN_IDX_START+2*i+1] = MSB(fetchlist->fetched_addr[i]);
+	}
+	/* Set delay to turn reception on after transmission of the frame. See NOTE 3 below. */
+	dwt_setrxaftertxdelay(TX_TO_RX_DELAY_UUS);
+	/* Set response frame timeout. */
+	dwt_setrxtimeout(RX_RESP_TO_UUS);
+
+}
+
+
+
+int blink(taginfo_t *tag)
 {
     /* Hold copy of status register state here for reference so that it can be examined at a debug breakpoint. */
     uint32_t status_reg = 0;
@@ -83,19 +86,20 @@ int blink(void)
 	dwt_writetxdata(sizeof(tx_msg), tx_msg, 0); /* Zero offset in TX buffer. */
 	dwt_writetxfctrl(sizeof(tx_msg), 0, 0);     /* Zero offset in TX buffer, no ranging. */
 
+
 	/* Start transmission, indicating that a response is expected so that reception is enabled immediately after the frame is sent. */
 	dwt_starttx(DWT_START_TX_IMMEDIATE | DWT_RESPONSE_EXPECTED);
+
+
 
 	/* We assume that the transmission is achieved normally, now poll for reception of a frame or error/timeout. See NOTE 8 below. */
 	waitforsysstatus(&status_reg, NULL, (DWT_INT_RXFCG_BIT_MASK | SYS_STATUS_ALL_RX_TO | SYS_STATUS_ALL_RX_ERR), 0);
 
 	if (status_reg & DWT_INT_RXFCG_BIT_MASK)
 	{
-		int i;
-
 		/* Clear local RX buffer to avoid having leftovers from previous receptions. This is not necessary but is included here to aid reading
 		 * the RX buffer. */
-		for (i = 0; i < FRAME_LEN_MAX; i++)
+		for (uint8_t i = 0; i < FRAME_LEN_MAX; i++)
 		{
 			rx_buffer[i] = 0;
 		}
@@ -104,15 +108,23 @@ int blink(void)
 		frame_len = dwt_getframelength();
 		if (frame_len <= FRAME_LEN_MAX)
 		{
-			dwt_readrxdata(rx_buffer, frame_len - FCS_LEN, 0); /* No need to read the FCS/CRC. */
+			dwt_readrxdata(rx_buffer, frame_len , 0); /* No need to read the FCS/CRC. */
+			// if needed add memcmp() here to check read frame is equal to expected frame.
+			for(uint8_t i = 0; i < ADDR_SHORT_BYTES ; i++ )
+			{
+				tag->current_anchor.short_addr[i] = rx_buffer[RNG_CFG_FRAME_SRC_IDX+i];
+			}
+			tag->current_anchor.loc_x = GET_UINT16(rx_buffer[RNG_CFG_FRAME_AN_X_IDX],rx_buffer[RNG_CFG_FRAME_AN_X_IDX+1]);
+			tag->current_anchor.loc_y = GET_UINT16(rx_buffer[RNG_CFG_FRAME_AN_Y_IDX],rx_buffer[RNG_CFG_FRAME_AN_Y_IDX+1]);
+			tag->current_anchor.loc_z = GET_UINT16(rx_buffer[RNG_CFG_FRAME_AN_Z_IDX],rx_buffer[RNG_CFG_FRAME_AN_Z_IDX+1]);
 
 			ret = 0;
 		}
 
 		/* TESTING BREAKPOINT LOCATION #1 */
 
-		test_run_info((unsigned char *)"Frame Received");
-		test_run_info((unsigned char *)&rx_buffer[2]);
+		//test_run_info((unsigned char *)"RNG_CFG Frame Received");
+		//test_run_info((unsigned char *)&rx_buffer[2]);
 
 		/* At this point, received frame can be examined in global "rx_buffer". An actual application would, for example, start by checking that
 		 * the format and/or data of the response are the expected ones. A developer might put a breakpoint here to examine this frame. */
@@ -130,8 +142,6 @@ int blink(void)
 	return ret;
 
 }
-
-
 
 
 

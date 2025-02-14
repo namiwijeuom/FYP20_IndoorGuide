@@ -1,7 +1,9 @@
-Core/Src/ss_twr_responder.o: ../Core/Src/ss_twr_responder.c \
+Core/Src/UWB_tasks/Listener/tag.o: ../Core/Src/UWB_tasks/Listener/tag.c \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Src/UWB_tasks/Listener/tag.h \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/platform/deca_probe_interface.h \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/Inc/deca_device_api.h \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/Inc/deca_types.h \
+ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Src/Configurations/config_options.h \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/platform/deca_spi.h \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/Inc/deca_types.h \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/platform/port.h \
@@ -69,9 +71,11 @@ Core/Src/ss_twr_responder.o: ../Core/Src/ss_twr_responder.c \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Inc/app_common.h \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Src/shared_data/shared_defines.h \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Src/shared_data/shared_functions.h
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Src/UWB_tasks/Listener/tag.h:
 D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/platform/deca_probe_interface.h:
 D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/Inc/deca_device_api.h:
 D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/Inc/deca_types.h:
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Src/Configurations/config_options.h:
 D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/platform/deca_spi.h:
 D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/Inc/deca_types.h:
 D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/platform/port.h:

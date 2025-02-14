@@ -11,8 +11,6 @@ C_SRCS += \
 ../Core/Src/main.c \
 ../Core/Src/simple_rx.c \
 ../Core/Src/simple_tx.c \
-../Core/Src/ss_twr_initiator.c \
-../Core/Src/ss_twr_responder.c \
 ../Core/Src/stm32_lpm_if.c \
 ../Core/Src/stm32wbxx_hal_msp.c \
 ../Core/Src/stm32wbxx_it.c \
@@ -27,8 +25,6 @@ OBJS += \
 ./Core/Src/main.o \
 ./Core/Src/simple_rx.o \
 ./Core/Src/simple_tx.o \
-./Core/Src/ss_twr_initiator.o \
-./Core/Src/ss_twr_responder.o \
 ./Core/Src/stm32_lpm_if.o \
 ./Core/Src/stm32wbxx_hal_msp.o \
 ./Core/Src/stm32wbxx_it.o \
@@ -43,8 +39,6 @@ C_DEPS += \
 ./Core/Src/main.d \
 ./Core/Src/simple_rx.d \
 ./Core/Src/simple_tx.d \
-./Core/Src/ss_twr_initiator.d \
-./Core/Src/ss_twr_responder.d \
 ./Core/Src/stm32_lpm_if.d \
 ./Core/Src/stm32wbxx_hal_msp.d \
 ./Core/Src/stm32wbxx_it.d \
@@ -60,7 +54,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/app_debug.cyclo ./Core/Src/app_debug.d ./Core/Src/app_debug.o ./Core/Src/app_debug.su ./Core/Src/app_entry.cyclo ./Core/Src/app_entry.d ./Core/Src/app_entry.o ./Core/Src/app_entry.su ./Core/Src/hw_timerserver.cyclo ./Core/Src/hw_timerserver.d ./Core/Src/hw_timerserver.o ./Core/Src/hw_timerserver.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/simple_rx.cyclo ./Core/Src/simple_rx.d ./Core/Src/simple_rx.o ./Core/Src/simple_rx.su ./Core/Src/simple_tx.cyclo ./Core/Src/simple_tx.d ./Core/Src/simple_tx.o ./Core/Src/simple_tx.su ./Core/Src/ss_twr_initiator.cyclo ./Core/Src/ss_twr_initiator.d ./Core/Src/ss_twr_initiator.o ./Core/Src/ss_twr_initiator.su ./Core/Src/ss_twr_responder.cyclo ./Core/Src/ss_twr_responder.d ./Core/Src/ss_twr_responder.o ./Core/Src/ss_twr_responder.su ./Core/Src/stm32_lpm_if.cyclo ./Core/Src/stm32_lpm_if.d ./Core/Src/stm32_lpm_if.o ./Core/Src/stm32_lpm_if.su ./Core/Src/stm32wbxx_hal_msp.cyclo ./Core/Src/stm32wbxx_hal_msp.d ./Core/Src/stm32wbxx_hal_msp.o ./Core/Src/stm32wbxx_hal_msp.su ./Core/Src/stm32wbxx_it.cyclo ./Core/Src/stm32wbxx_it.d ./Core/Src/stm32wbxx_it.o ./Core/Src/stm32wbxx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32wbxx.cyclo ./Core/Src/system_stm32wbxx.d ./Core/Src/system_stm32wbxx.o ./Core/Src/system_stm32wbxx.su
+	-$(RM) ./Core/Src/app_debug.cyclo ./Core/Src/app_debug.d ./Core/Src/app_debug.o ./Core/Src/app_debug.su ./Core/Src/app_entry.cyclo ./Core/Src/app_entry.d ./Core/Src/app_entry.o ./Core/Src/app_entry.su ./Core/Src/hw_timerserver.cyclo ./Core/Src/hw_timerserver.d ./Core/Src/hw_timerserver.o ./Core/Src/hw_timerserver.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/simple_rx.cyclo ./Core/Src/simple_rx.d ./Core/Src/simple_rx.o ./Core/Src/simple_rx.su ./Core/Src/simple_tx.cyclo ./Core/Src/simple_tx.d ./Core/Src/simple_tx.o ./Core/Src/simple_tx.su ./Core/Src/stm32_lpm_if.cyclo ./Core/Src/stm32_lpm_if.d ./Core/Src/stm32_lpm_if.o ./Core/Src/stm32_lpm_if.su ./Core/Src/stm32wbxx_hal_msp.cyclo ./Core/Src/stm32wbxx_hal_msp.d ./Core/Src/stm32wbxx_hal_msp.o ./Core/Src/stm32wbxx_hal_msp.su ./Core/Src/stm32wbxx_it.cyclo ./Core/Src/stm32wbxx_it.d ./Core/Src/stm32wbxx_it.o ./Core/Src/stm32wbxx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32wbxx.cyclo ./Core/Src/system_stm32wbxx.d ./Core/Src/system_stm32wbxx.o ./Core/Src/system_stm32wbxx.su
 
 .PHONY: clean-Core-2f-Src
 

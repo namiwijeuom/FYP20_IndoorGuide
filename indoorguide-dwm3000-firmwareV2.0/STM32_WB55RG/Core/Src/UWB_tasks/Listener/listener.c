@@ -5,6 +5,7 @@
  *      Author: Kavindu
  */
 
+#include <string.h>
 #include "listener.h"
 
 
@@ -12,61 +13,68 @@
 
 extern void test_run_info(unsigned char *data);
 
+
 extern dwt_config_t config_options;
 
 /* Values for the PG_DELAY and TX_POWER registers reflect the bandwidth and power of the spectrum at the current
  * temperature. These values can be calibrated prior to taking reference measurements. See NOTE 2 below. */
 extern dwt_txconfig_t txconfig_options;
 
-/* Ranging Config Message frame format */
-/* short - short address mode & Broadcast PAN_ID 0xFFFF */
-static uint8_t tx_msg[] = { 0x41 , 0x88 , 0 , 0xFF , 0xFF , 0x01 , 0x00 , 0x02 , 0x00 , 0 , 0 , 0 , 0};
+
+/* Buffer to store received frame. See NOTE 1 below. */
+static uint8_t rx_buffer[FRAME_LEN_MAX];
+
+
+/* Ranging Config Message frame format */ // Todo: add a description about frame format here.
+/* short - short address mode & Broadcast PAN_ID 0xFFFF *//* LSB   MSB   LSB    MSB   fcode */
+static uint8_t tx_msg[] = { 0x41 , 0x88 , 0 , 0xFF , 0xFF ,   0 ,   0 ,   0  ,   0  , 0x20 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0};
+
+
+/* Private function prototypes Begin */
+int is_already_fetched(uint8_t *msg, uint16_t anchor_addr);
+/* Private function prototypes End */
 
 
 
-void listener(void)
+
+void listener_init(anchorinfo_t *anchor)
 {
-	/* Configure SPI rate, DW3000 supports up to 36 MHz */
-	port_set_dw_ic_spi_fastrate();
 
-	/* Reset DW IC */
-	reset_DWIC(); /* Target specific drive of RSTn line into DW IC low for a period. */
-
-	Sleep(2); // Time needed for DW3000 to start up (transition from INIT_RC to IDLE_RC, or could wait for SPIRDY event)
-
-	/* Probe for the correct device driver. */
-	dwt_probe((struct dwt_probe_s *)&dw3000_probe_interf);
-
-	while (!dwt_checkidlerc()) /* Need to make sure DW IC is in IDLE_RC before proceeding */ { };
-
-	if (dwt_initialise(DWT_DW_INIT) == DWT_ERROR)
+	for(uint8_t i = 0; i < ADDR_SHORT_BYTES; i++)
 	{
-		test_run_info((unsigned char *)"INIT FAILED     ");
-		while (1) { };
+		tx_msg[RNG_CFG_FRAME_SRC_IDX+i] = anchor->short_addr[i];
 	}
 
-	/* Enabling LEDs here for debug so that for each TX the D1 LED will flash on DW3000 red eval-shield boards. */
-	dwt_setleds(DWT_LEDS_ENABLE | DWT_LEDS_INIT_BLINK);
-
-	/* Configure DW IC. See NOTE 8 below. */
-	/* if the dwt_configure returns DWT_ERROR either the PLL or RX calibration has failed the host should reset the device */
-	if (dwt_configure(&config_options))
+	for(uint8_t i = 0; i < CORD_BYTES_LEN; i++)
 	{
-		test_run_info((unsigned char *)"CONFIG FAILED     ");
-		while (1) { };
+		tx_msg[RNG_CFG_FRAME_AN_X_IDX+i] = (uint8_t)(anchor->loc_x >> (8*i));
+		tx_msg[RNG_CFG_FRAME_AN_Y_IDX+i] = (uint8_t)(anchor->loc_y >> (8*i));
+		tx_msg[RNG_CFG_FRAME_AN_Z_IDX+i] = (uint8_t)(anchor->loc_z >> (8*i));
+
 	}
 
-	/* Configure the TX spectrum parameters (power, PG delay and PG count) */
-	dwt_configuretxrf(&txconfig_options);
-
-	//Todo: Set frame filtering options properly. IC address so on.
 }
 
 
 
-int listener(void)
+void listener_reinit(void)
 {
+	/* Disable frame filtering to get any incoming BLINK frame */
+	dwt_configureframefilter(DWT_FF_DISABLE,DWT_FF_DATA_EN);
+
+}
+
+
+
+int listener(anchorinfo_t *anchor)
+{
+	/* Hold copy of status register state here for reference so that it can be examined at a debug breakpoint. */
+	uint32_t status_reg = 0;
+	/* Hold copy of frame length of frame received (if good) so that it can be examined at a debug breakpoint. */
+	uint16_t frame_len = 0;
+
 	int ret = -1; // Success or fail.
+
 
 	/* Activate reception immediately. See NOTE 4 below. */
 	dwt_rxenable(DWT_START_RX_IMMEDIATE);
@@ -82,38 +90,48 @@ int listener(void)
 		frame_len = dwt_getframelength();
 		if (frame_len <= FRAME_LEN_MAX)
 		{
-			dwt_readrxdata(rx_buffer, frame_len-FCS_LEN, 0);
+			dwt_readrxdata(rx_buffer, frame_len , 0);
 
-			/* TESTING BREAKPOINT LOCATION #1 */
-			test_run_info((unsigned char *)"Frame Received");
-			test_run_info((unsigned char *)&rx_buffer[2]);
+			if(rx_buffer[BLINK_FRAME_FC_IDX] == 0xC5)        // Confirming it is a Blink frame
+			{												 // Todo: Do this filtering using DWT_configureframefilter()
+				uint16_t anchor_addr = GET_UINT16(anchor->short_addr[0],anchor->short_addr[1]);
 
-			/* Clear good RX frame event in the DW IC status register. */
-			dwt_writesysstatuslo(DWT_INT_RXFCG_BIT_MASK);
+				if(!is_already_fetched(rx_buffer, anchor_addr)) // Checking already fetched one or not.
+				{
 
+					/* TESTING BREAKPOINT LOCATION #1 */
+					test_run_info((unsigned char *)"Frame Received");
+					//test_run_info((unsigned char *)&rx_buffer[2]);
 
-	//		int i;
+					/* Clear good RX frame event in the DW IC status register. */
+					dwt_writesysstatuslo(DWT_INT_RXFCG_BIT_MASK);
 
-	//		/* Copy source address of blink in response destination address. */ TODO
-	//		for (i = 0; i < 8; i++)
-	//		{
-	//			tx_msg[DATA_FRAME_DEST_IDX + i] = rx_buffer[BLINK_FRAME_SRC_IDX + i];
-	//		}
+					for(uint8_t i = 0 ; i < ADDR_SHORT_BYTES ; i++)
+					{
+						anchor->current_tag_addr[i] = rx_buffer[BLINK_FRAME_SRC_IDX+i];
+						tx_msg[RNG_CFG_FRAME_DEST_IDX+i] = rx_buffer[BLINK_FRAME_SRC_IDX+i];
+					}
+					// Todo: set Sequence Number too.
 
-			/* Write response frame data to DW IC and prepare transmission. See NOTE 6 below.*/
-			dwt_writetxdata(sizeof(tx_msg), tx_msg, 0); /* Zero offset in TX buffer. */
-			dwt_writetxfctrl(sizeof(tx_msg), 0, 0);     /* Zero offset in TX buffer, no ranging. */
+					/* Write response frame data to DW IC and prepare transmission. See NOTE 6 below.*/
+					dwt_writetxdata(sizeof(tx_msg), tx_msg, 0); /* Zero offset in TX buffer. */
+					dwt_writetxfctrl(sizeof(tx_msg), 0, 0);     /* Zero offset in TX buffer, no ranging. */
 
-			/* Send the response. */
-			dwt_starttx(DWT_START_TX_IMMEDIATE);
+					/* Send the response. */
+					dwt_starttx(DWT_START_TX_IMMEDIATE);
 
-			/* Poll DW IC until TX frame sent event set. */
-			waitforsysstatus(NULL, NULL, DWT_INT_TXFRS_BIT_MASK, 0);
+					/* Poll DW IC until TX frame sent event set. */
+					waitforsysstatus(NULL, NULL, DWT_INT_TXFRS_BIT_MASK, 0);
 
-			/* Clear TX frame sent event. */
-			dwt_writesysstatuslo(DWT_INT_TXFRS_BIT_MASK);
+					/* Clear TX frame sent event. */
+					dwt_writesysstatuslo(DWT_INT_TXFRS_BIT_MASK);
 
-			ret = 0;
+	//				/* Enabling frame filter for incoming POLL_MSG with correct 16-bit destination short address*/
+	//				dwt_configureframefilter(DWT_FF_ENABLE_802_15_4, DWT_FF_DATA_EN); //Todo: Maybe add this to ss_twr_responder_reinit()
+
+					ret = 0;
+				}
+			}
 		}
 
 	}
@@ -124,6 +142,23 @@ int listener(void)
 	}
 
 	return ret;
+}
+
+
+
+/* Private function definitions */
+int is_already_fetched(uint8_t *msg, uint16_t anchor_addr)
+{
+    for (int i = BLINK_FRAME_FETCHED_AN_IDX_START; i <= 9; i += 2)
+    {  // Iterate over LSB-MSB pairs
+        uint16_t extracted_addr = GET_UINT16(msg[i],msg[i+1]);  // Reconstruct uint16_t from LSB and MSB
+
+        if (extracted_addr == anchor_addr)
+        {
+            return 1;  // Found
+        }
+    }
+    return 0;  // Not found
 }
 
 

@@ -8,73 +8,82 @@
 #ifndef TAG_APP_H
 #define TAG_APP_H
 
-/* Defined the state estimation filter */
-//#define FILTER_EKF
-//#define FILTER_PF
+#include <stdint.h>
+
+#include "../../UWB_tasks/Blink/blink.h"
+#include "../../UWB_tasks/ss_twr_init/ss_twr_init.h"
+
+#include "../../Common/common_defines.h"
+
+
+#define MAX_NUM_OF_FETCHED_ANCHORS 4
+
+#define FRAME_TRANSMIT_TIME_MS        1  //In milliseconds
+
+#define MAX_NUM_OF_TAGS 10       // Estimated maximum number of tags in the environment
+
+
+
+/* Define the state estimation filter */
 #define FILTER_ARKF
-//#define FILTER_MULTILATERATION
-
-
 
 /* Common Defines */
 #define NUM_OF_ANCHORS 4
 
-#define TIME_STEP      0.5
+#define TIME_STEP      1
 #define TIME_STEP_MS   TIME_STEP * 1000
 
 
-/* Filter parameters initialization */
-#if defined(FILTER_EKF)
 
-#include "../../Math_utils/EKFLocalization.h"
-
-
-/* EKF Parameters */
-
-#define TUNE_RT        0.5
-#define TUNE_QT	       30
-
-
-#elif defined(FILTER_PF)
-
-#include "../../Math_utils/PFLocalization.h"
-
-/* PF Parameters */
-
-#define TUNE_RT        0.1   /* RT 0.1 and QT 5 worked much better */
-#define TUNE_QT	       5
-#define RESAMPLING_THRESHOLD 0.1  // alpha value 0.5,0.1
-
-
-#elif defined(FILTER_ARKF)
+#if defined(FILTER_ARKF)
 
 #include "../../Math_utils/ARKFLocalization.h"
 
 
 /* ARKF Parameters */
 
-#define TUNE_RT        0.5
-#define TUNE_QT	       30
+#define TUNE_RT          0.5
+#define TUNE_QT	         30
 #define MODULATION_INDEX 0.8
 
-#elif defined(FILTER_MULTILATERATION)
-
-#include "../../Math_utils/multilateration.h"
-
 #else
-//
+	#error "FILTER_ARKF is not defined."
+
 #endif /* Filter parameters initialization */
 
+//Todo: Add below descriptions properly.
 
-extern void test_run_info(unsigned char *data);
+/**
+ * @brief Brief description of the function.
+ * @details (Optional) More detailed explanation of what the function does.
+ *
+ * @param[in] param1 Description of the first parameter.
+ * @param[out] param2 Description of the second parameter (if modified).
+ * @param[in,out] param3 Description if it's both input and output.
+ * @return Description of the return value.
+ * @retval Specific return values and their meaning.
+ * @throws List of exceptions the function might throw.
+ * @warning Important warnings about usage.
+ * @note Additional notes.
+ */
+void tag_application_init(uint16_t tagAddr);
 
 
-/* Function prototypes */
-void tag_app_init(void);
 
-void tag_app(void);
-
-
+/**
+ * @brief Brief description of the function.
+ * @details (Optional) More detailed explanation of what the function does.
+ *
+ * @param[in] param1 Description of the first parameter.
+ * @param[out] param2 Description of the second parameter (if modified).
+ * @param[in,out] param3 Description if it's both input and output.
+ * @return Description of the return value.
+ * @retval Specific return values and their meaning.
+ * @throws List of exceptions the function might throw.
+ * @warning Important warnings about usage.
+ * @note Additional notes.
+ */
+void tag_application(uint16_t tagAddr);
 
 
 #endif /* TAG_APP_H */

@@ -27,8 +27,10 @@ RM := rm -rf
 -include Drivers/STM32WBxx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/shared_data/subdir.mk
--include Core/Src/Ranging/Tag/subdir.mk
--include Core/Src/Ranging/Anchor/subdir.mk
+-include Core/Src/UWB_tasks/ss_twr_resp/subdir.mk
+-include Core/Src/UWB_tasks/ss_twr_init/subdir.mk
+-include Core/Src/UWB_tasks/Listener/subdir.mk
+-include Core/Src/UWB_tasks/Blink/subdir.mk
 -include Core/Src/Math_utils/subdir.mk
 -include Core/Src/Configurations/subdir.mk
 -include Core/Src/Applications/Tag_app/subdir.mk

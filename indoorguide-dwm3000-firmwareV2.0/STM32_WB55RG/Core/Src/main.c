@@ -24,6 +24,9 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include <port.h>
+
+#include "Applications/Tag_app/tag_app.h"
+#include "Applications/Anchor_app/anchor_app.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -86,32 +89,15 @@ void test_run_info(unsigned char *data)
 
 
 /* Overwritting _write function - for printf() */
-int _write(int file, char *ptr, int len)
+void delay_us(uint32_t us)
 {
-	int i = 0;
-	for (i=0; i<len; i++)
-	{
-		ITM_SendChar(*ptr++);
-	}
-	return len;
+	//Todo: Implement this if needed.
 }
-
 
 
 #define TAG_APP
 //#define ANCHOR_APP
 
-extern int simple_tx(void);
-extern int simple_rx(void);
-
-
-//#if defined(TAG_APP)
-//	extern void tag_app(uint8_t tagID);
-//#elif defined(ANCHOR_APP)
-//	extern void anchor_app(uint8_t anchorID);
-//#else
-//	#error "Define the Application, Tag or Anchor"
-//#endif
 
 /* USER CODE END 0 */
 
@@ -160,13 +146,18 @@ int main(void)
   MX_USART1_UART_Init();    // Added externally
 
 
-//#if defined(TAG_APP)
-//  tag_app(1);
-//#elif defined(ANCHOR_APP)
-//  anchor_app(1);
-//#else
-//	#error "Define the Application, Tag or Anchor"
-//#endif
+#if defined(TAG_APP)
+
+  tag_application(1);
+
+#elif  defined(ANCHOR_APP)
+
+  uint16_t coordinates[3] = {10000,20000,30000};  // In centimeters
+  anchor_application(2,coordinates);
+
+#else
+	#error "Define either TAG_APP or ANCHOR_APP before compiling."
+#endif
 
   //simple_tx();
   //simple_rx();

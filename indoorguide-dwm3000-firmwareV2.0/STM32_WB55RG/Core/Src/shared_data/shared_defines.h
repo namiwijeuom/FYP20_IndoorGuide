@@ -18,9 +18,9 @@ extern "C"
 {
 #endif
 
-#ifdef STM32WB55xx
+#ifdef STM32F446xx
 #include <main.h>
-#endif // STM32WB55xx
+#endif // STM32F429xx
 
 #define SPEED_OF_LIGHT   (299702547)
 #define FRAME_LEN_MAX    (127)
