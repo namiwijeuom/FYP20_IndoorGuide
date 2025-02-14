@@ -93,6 +93,8 @@ int simple_rx(void)
         while (1) { };
     }
 
+    //dwt_configureframefilter(DWT_FF_ENABLE_802_15_4,DWT_FF_BEACON_EN); // Frame filtering option
+
     /* Loop forever receiving frames. */
     while (TRUE)
     {

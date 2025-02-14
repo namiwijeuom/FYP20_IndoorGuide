@@ -135,11 +135,10 @@ int ss_twr_initiator(taginfo_t *tag)
 				distance = tof * SPEED_OF_LIGHT;
 				/* Display computed distance on LCD. */
 
-				/* Todo: Add LOG_ENABLED
 				uint16_t anchor_name = GET_UINT16(tag->current_anchor.short_addr[0],tag->current_anchor.short_addr[1]);
 
 				snprintf(dist_str, sizeof(dist_str), "AN %d  DIST: %3.2f m",anchor_name, distance);
-				test_run_info((unsigned char *)dist_str);  */
+				test_run_info((unsigned char *)dist_str);
 
 				tag->distance = distance * 100; // In centimeters
 

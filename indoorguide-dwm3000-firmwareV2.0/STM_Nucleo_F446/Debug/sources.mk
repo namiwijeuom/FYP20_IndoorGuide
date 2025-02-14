@@ -26,8 +26,10 @@ Core/Src/Applications/Anchor_app \
 Core/Src/Applications/Tag_app \
 Core/Src/Configurations \
 Core/Src/Math_utils \
-Core/Src/Ranging/Anchor \
-Core/Src/Ranging/Tag \
+Core/Src/UWB_tasks/Blink \
+Core/Src/UWB_tasks/Listener \
+Core/Src/UWB_tasks/ss_twr_init \
+Core/Src/UWB_tasks/ss_twr_resp \
 Core/Src \
 Core/Src/shared_data \
 Core/Startup \

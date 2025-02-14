@@ -50,7 +50,8 @@ static dwt_config_t config = {
  *     - byte 1: sequence number, incremented for each new frame.
  *     - byte 2 -> 9: device ID, see NOTE 1 below.
  */
-static uint8_t tx_msg[] = { 0xC5, 0, 'D', 'E', 'C', 'A', 'W', 'A', 'V', 'E', 'K', 'A', 'V', 'I', 'N', 'D', 'U','S','H','E' };
+//static uint8_t tx_msg[] = { 0xC5, 0, 'D', 'E', 'C', 'A', 'W', 'A', 'V', 'E', 'K', 'A', 'V', 'I', 'N', 'D', 'U','S','H','E' };
+static uint8_t tx_msg[] = { 0x41, 0x88, 0, 0xCA, 0xDE, 'V', 'E', 'W', 'A', 0xE1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 //static uint8_t tx_msg[] = {0xC5, 0, 'K', 'A', 'V', 'I', 'N', 'D', 'U', 'S'};
 /* Index to access to sequence number of the blink frame in the tx_msg array. */
 #define BLINK_FRAME_SN_IDX 1
@@ -58,7 +59,7 @@ static uint8_t tx_msg[] = { 0xC5, 0, 'D', 'E', 'C', 'A', 'W', 'A', 'V', 'E', 'K'
 #define FRAME_LENGTH (sizeof(tx_msg) + FCS_LEN) // The real length that is going to be transmitted
 
 /* Inter-frame delay period, in milliseconds. */
-#define TX_DELAY_MS 500
+#define TX_DELAY_MS 100
 
 /* Values for the PG_DELAY and TX_POWER registers reflect the bandwidth and power of the spectrum at the current
  * temperature. These values can be calibrated prior to taking reference measurements. See NOTE 2 below. */
@@ -119,8 +120,8 @@ int simple_tx(void)
          * nor the other parameters of the dwt_writetxfctrl function, the
          * dwt_writetxfctrl call could be outside the main while(1) loop.
          */
-        dwt_writetxfctrl(FRAME_LENGTH, 0, 0); /* Zero offset in TX buffer, no ranging. */
-
+        //dwt_writetxfctrl(FRAME_LENGTH, 0, 0); /* Zero offset in TX buffer, no ranging. */
+        dwt_writetxfctrl(FRAME_LENGTH, 0, 1); // delete this
         /* Start transmission. */
         dwt_starttx(DWT_START_TX_IMMEDIATE);
         /* Poll DW IC until TX frame sent event set. See NOTE 4 below.

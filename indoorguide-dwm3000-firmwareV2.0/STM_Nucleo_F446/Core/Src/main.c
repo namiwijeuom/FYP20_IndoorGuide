@@ -23,6 +23,10 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <port.h>
+
+#include "Applications/Tag_app/tag_app.h"
+#include "Applications/Anchor_app/anchor_app.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -76,27 +80,30 @@ void test_run_info(unsigned char *data)
     HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
 }
 
+
+void delay_us(uint32_t us)
+{
+	//Todo: Implement this if needed.
+}
+
+
 //#define TAG_APP
 #define ANCHOR_APP
 
-extern int simple_rx(void);
-extern int simple_tx(void);
-extern int ss_twr_initiator(void);
-extern int ss_twr_responder(void);
-extern int ds_twr_initiator(void);
-extern int ds_twr_responder(void);
-extern int simple_rx_nlos(void);
+//extern int simple_rx(void);
+//extern int simple_tx(void);
+//extern int ss_twr_initiator(void);
+//extern int ss_twr_responder(void);
+//extern int ds_twr_initiator(void);
+//extern int ds_twr_responder(void);
+//extern int simple_rx_nlos(void);
+//
+//
+//extern void blink_init(void);
+//extern void listener_init(void);
+//extern int blink(void);
+//extern int listener(void);
 
-
-
-
-//#if defined(TAG_APP)
-//	extern void tag_app(uint8_t tagID);
-//#elif defined(ANCHOR_APP)
-//	extern void anchor_app(uint8_t anchorID);
-//#else
-//	#error "Define the Application, Tag or Anchor"
-//#endif
 /* USER CODE END 0 */
 
 /**
@@ -133,26 +140,41 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
-
-//#if defined(TAG_APP)
-//  tag_app(1);
-//#elif defined(ANCHOR_APP)
-//  anchor_app(3);
-//#else
-//	#error "Define the Application, Tag or Anchor"
-//#endif
   //simple_rx();
   //simple_tx();
-  simple_rx_nlos();
+  //simple_rx_nlos();
   //ss_twr_initiator();
   //ss_twr_responder();
+
+
+#if defined(TAG_APP)
+
+  tag_application(1);
+
+#elif  defined(ANCHOR_APP)
+
+  uint16_t coordinates[3] = {10000,20000,30000};  // In centimeters
+  anchor_application(2,coordinates);
+
+#else
+	#error "Define either TAG_APP or ANCHOR_APP before compiling."
+#endif
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+  //blink_init();
+  //listener_init();
+
   while (1)
   {
+	  //test_run_info((unsigned char*)"Hello");
+	  //delay_us(5000);
+	  //blink();
+	  //listener();
+	  //HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -341,6 +363,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
 
 /* USER CODE END 4 */
 

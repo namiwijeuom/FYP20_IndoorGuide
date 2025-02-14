@@ -1,4 +1,4 @@
-D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV1.0/STM_Nucleo_F446/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:424:26:SWAPBYTE	32	static
+D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM_Nucleo_F446/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:424:26:SWAPBYTE	32	static
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:104:20:USBD_StdDevReq	24	static
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:167:20:USBD_StdItfReq	24	static
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:239:20:USBD_StdEPReq	24	static

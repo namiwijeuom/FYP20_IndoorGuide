@@ -102,6 +102,10 @@ extern dwt_txconfig_t txconfig_options;
  *
  * @return none
  */
+
+uint16_t short_addr = 17750;
+uint16_t pan_id     = 57034;  // 0xDECA
+
 int ss_twr_initiator(void)
 {
 
@@ -152,6 +156,10 @@ int ss_twr_initiator(void)
     /* Next can enable TX/RX states output on GPIOs 5 and 6 to help debug, and also TX/RX LEDs
      * Note, in real low power applications the LEDs should not be used. */
     dwt_setlnapamode(DWT_LNA_ENABLE | DWT_PA_ENABLE);
+
+    dwt_setaddress16(short_addr); // sets the short address of DW IC.
+    dwt_setpanid(pan_id);         // sets the PAN ID of DW IC.
+    dwt_configureframefilter(DWT_FF_ENABLE_802_15_4,DWT_FF_DATA_EN); // Enabled the frame filtering
 
     /* Loop forever initiating ranging exchanges. */
     while (1)

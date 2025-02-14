@@ -122,9 +122,9 @@ int blink(taginfo_t *tag)
 		}
 
 		/* TESTING BREAKPOINT LOCATION #1 */
-		/* todo: ADD LOG_ENABLED
+
 		test_run_info((unsigned char *)"RNG_CFG Frame Received");
-		//test_run_info((unsigned char *)&rx_buffer[2]); */
+		//test_run_info((unsigned char *)&rx_buffer[2]);
 
 		/* At this point, received frame can be examined in global "rx_buffer". An actual application would, for example, start by checking that
 		 * the format and/or data of the response are the expected ones. A developer might put a breakpoint here to examine this frame. */

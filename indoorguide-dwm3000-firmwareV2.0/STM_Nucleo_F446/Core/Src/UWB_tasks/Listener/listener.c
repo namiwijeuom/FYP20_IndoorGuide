@@ -100,9 +100,8 @@ int listener(anchorinfo_t *anchor)
 				{
 
 					/* TESTING BREAKPOINT LOCATION #1 */
-					/* todo : ADD LOG_ENABLED
 					test_run_info((unsigned char *)"Frame Received");
-					//test_run_info((unsigned char *)&rx_buffer[2]);   */
+					//test_run_info((unsigned char *)&rx_buffer[2]);
 
 					/* Clear good RX frame event in the DW IC status register. */
 					dwt_writesysstatuslo(DWT_INT_RXFCG_BIT_MASK);
