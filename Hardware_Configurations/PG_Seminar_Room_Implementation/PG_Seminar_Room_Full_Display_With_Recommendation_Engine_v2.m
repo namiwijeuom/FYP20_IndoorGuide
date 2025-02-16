@@ -58,7 +58,7 @@ for i = 1:length(items)
    text(item_locations(i,1)+0.2, item_locations(i,2), items{i}, 'Color', 'blue');
 end
 
-%% Create a UI figure for the map if it doesn’t already exist
+%% Create a UI figure for the map 
 % Define normalized position for text (annotation uses normalized coordinates)
 textPosition = [0.8, 0.9, 0.1, 0.1]; % [x, y, width, height]
 
@@ -80,7 +80,7 @@ textPositionforNearbyItems = [0.1, 0.1, 0.1, 0.1]; % [x, y, width, height]
 
 % Create a background box for the text
 statusBoxforNearbyItems = annotation('textbox', textPositionforNearbyItems, ...
-                       'String', 'Initializing...', ...
+                       'String', 'Nearby Items...', ...
                        'FontSize', 12, ...
                        'FontWeight', 'bold', ...
                        'BackgroundColor', 'cyan', ...
@@ -91,6 +91,22 @@ statusBoxforNearbyItems = annotation('textbox', textPositionforNearbyItems, ...
 
 % Store it properly inside figure UserData
 fig.UserData.statusBoxforNearbyItems = statusBoxforNearbyItems;
+
+textPositionforDiscountedItems = [0.1, 0.5, 0.1, 0.1]; % [x, y, width, height]
+
+% Create a background box for the text
+statusBoxforDiscountedItems = annotation('textbox', textPositionforDiscountedItems, ...
+                       'String', 'Discounts...', ...
+                       'FontSize', 12, ...
+                       'FontWeight', 'bold', ...
+                       'BackgroundColor', 'green', ...
+                       'EdgeColor', 'k', ...
+                       'LineWidth', 1.5, ...
+                       'HorizontalAlignment', 'center', ...
+                       'VerticalAlignment', 'middle');
+
+% Store it properly inside figure UserData
+fig.UserData.statusBoxforDiscountedItems = statusBoxforDiscountedItems;
 %% Only for Simulation purpose
 count = 0;
 
@@ -327,7 +343,7 @@ if ~isempty(input_items)
                     current_pos = [goal_pos(2),goal_pos(1)];
                     disp(['User confirmed collecting item at location: ' num2str(goal_pos)]);
                     updateStatus(['User Confirmed Collecting ' current_item]);
-                    updateStatusforNearbyItems(['User Confirmed Collecting ' current_item])
+                    %updateStatusforNearbyItems(['User Confirmed Collecting ' current_item])
 
                     break; % Move to the next item
                 else
@@ -477,6 +493,11 @@ function pathPoints = reconstructPath(cameFrom, current, nodeKey)
 end
 
 function findNearbyItems(path, item_locations)
+    % Define discount information
+    discounted_items = { 'MilkPowder', 'Rice', 'Snacks', 'Chocolates', 'Grains', 'Bread' }; 
+    discount_rates = struct('MilkPowder', 10, 'Rice', 15, 'Snacks', 5, ...
+                            'Chocolates', 20, 'Grains', 12, 'Bread', 8);
+
     % Define proximity threshold
     proximityThreshold = 2.0; % Distance to consider items as "nearby"
 
@@ -487,18 +508,29 @@ function findNearbyItems(path, item_locations)
 
     % Find items near the path
     nearbyItems = [];
+    discountedNearbyItems = [];
+    discountedItemNames = {};
+    discountedPercentages = [];
+
     for i = 1:size(item_locations, 1)
         itemLocation = item_locations(i, :);
         for j = 1:size(path, 1)
             pathPoint = path(j, :);
             if norm(itemLocation - pathPoint) <= proximityThreshold
                 nearbyItems = [nearbyItems; i]; % Store item index
+
+                % Check if the item has a discount
+                if ismember(item_names{i}, discounted_items)
+                    discountedNearbyItems = [discountedNearbyItems; i];
+                    discountedItemNames{end+1} = item_names{i}; % Store name
+                    discountedPercentages(end+1) = discount_rates.(item_names{i}); % Store discount
+                end
                 break;
             end
         end
     end
-    
-    % Display nearby items as a single array
+
+    % Display nearby items
     if isempty(nearbyItems)
         disp('No nearby items found along the path.');
         updateStatusforNearbyItems('No nearby items');
@@ -506,12 +538,29 @@ function findNearbyItems(path, item_locations)
         nearbyItemNames = item_names(nearbyItems); % Extract item names
         disp('Nearby items along the path:');
         disp(strjoin(nearbyItemNames, ', ')); % Display as comma-separated list
-        
-        % Send entire list at once
         updateStatusforNearbyItems(nearbyItemNames);
+    end
+
+    % Display discounted items with their percentages
+    if ~isempty(discountedNearbyItems)
+        discountMessages = cellfun(@(name, percent) sprintf('%s (%d%% off)', name, percent), ...
+                                    discountedItemNames, num2cell(discountedPercentages), ...
+                                    'UniformOutput', false);
+        disp('Discounted items nearby:');
+        disp(strjoin(discountMessages, ', ')); % Highlight discounted items with percentage
+        updateStatusforDiscountedItems(strjoin(discountMessages, ', '));
+    else
+        disp('No Nearby Items Have Discounts');
+        updateStatusforDiscountedItems('No Nearby Items Have Discounts');
     end
 end
 
+% Function to update the discounted items list
+function updateDiscountedItems(new_discounted_items)
+    discounted_items = new_discounted_items;
+    disp('Discounted items list updated:');
+    disp(strjoin(discounted_items, ', '));
+end
 
 %% -------- Optimize The Item Order using nearest neighbor heuristic-------
 function [start_pos, optimized_locations] = optimize_order(start_pos, input_items, items, item_locations)
@@ -698,3 +747,37 @@ function recreateStatusBoxforNearbyItems(fig, newMessages)
     fig.UserData.statusBoxforNearbyItems = statusBoxforNearbyItems;
 end
 
+%% Status Box for Discounted Items
+function updateStatusforDiscountedItems(newMessages)
+    fig = gcf; % Get the current figure
+
+    % Check if UserData and status box exist
+    if isfield(fig.UserData, 'statusBoxforDiscountedItems')
+        statusBoxforDiscountedItems = fig.UserData.statusBoxforDiscountedItems;
+        if isvalid(statusBoxforDiscountedItems)
+            % Replace the text with the latest nearby items
+            set(statusBoxforDiscountedItems, 'String', newMessages);
+            drawnow; % Force UI refresh
+        else
+            warning('Stored statusBox is invalid. Recreating...');
+            recreateStatusBoxforDiscountedItems(fig, newMessages);
+        end
+    else
+        warning('statusBox not found. Recreating...');
+        recreateStatusBoxforDiscountedItems(fig, newMessages);
+    end
+end
+
+function recreateStatusBoxforDiscountedItems(fig, newMessages)
+    textPosition = [0.1, 0.5, 0.15, 0.15]; % Adjust position and size
+    statusBoxforDiscountedItems = annotation('textbox', textPosition, ...
+                              'String', newMessages, ... % Directly set the new messages
+                              'FontSize', 12, ...
+                              'FontWeight', 'bold', ...
+                              'BackgroundColor', 'green', ...
+                              'EdgeColor', 'k', ...
+                              'LineWidth', 1.5, ...
+                              'HorizontalAlignment', 'left', ...
+                              'VerticalAlignment', 'top'); % Align to top
+    fig.UserData.statusBoxforDiscountedItems = statusBoxforDiscountedItems;
+end
