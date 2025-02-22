@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "DWM3000"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-11-04-10:06:16)
+    (mountForm default
+        (footprintRef "DWM3000")
+        (spec "System")
+    )
+)

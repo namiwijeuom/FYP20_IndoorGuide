@@ -1,0 +1,377 @@
+
+% ---------------------- Environment Layout ------------------------
+
+anchors = [11.5 , 0.25;
+           1.5  , 3.25;
+           1.5  ,   10;
+           11.5 , 11.5];
+
+      
+environment  = createEnvironment('PG_Seminar_Room_Inverted.jpg');
+
+expanded_env = expand_obstacles(environment);
+
+showBaseStations(anchors); % plotting anchor locations
+
+% Define items and their locations
+items = {'Vegetables', 'Fruits', 'Meat', 'MilkPowder', 'Biscuits'};
+item_locations = [7 , 8; 
+                  2 ,10; 
+                  6 , 2; 
+                  11, 5; 
+                  7 ,4];
+
+% Mark item locations
+for i = 1:length(items)
+    plot(item_locations(i,1), item_locations(i,2), 'bo', 'MarkerSize', 8, 'LineWidth', 2); 
+    text(item_locations(i,1) + 0.5, item_locations(i,2), items{i}, 'Color', 'blue');
+end
+
+
+% Plot handle initialization
+ekfpath_handle  = plot(nan, nan, 'r-', 'LineWidth', 1);
+ekfpoint_handle = plot(nan, nan, 'ko', 'MarkerSize', 5, 'MarkerFaceColor', 'black');
+
+% Initialize history of coordinates
+ekfXHistory = [];
+ekfYHistory = [];
+
+% ------------------  Initialize BLE connection ------------------
+
+deviceName = "00:80:E1:27:9A:83";    % Replace with your BLE device name or address
+disp("Scanning for BLE devices...");
+device = ble(deviceName);            % Connect to the BLE device
+disp("Connected to BLE device.");
+
+service_uuid         = "0000fe40-cc7a-482a-984a-7f2ed5b3e58f";  
+characteristic_uuid  = "0000fe41-8e22-4541-9d4c-21edae82ed19";
+
+% characteristics for LOC_XY
+loc_xy_char = characteristic(device, service_uuid, characteristic_uuid);
+
+% ------------------  Real-time location update -------------------
+try
+    while true
+        % Read LOC_XY characteristic
+        xy_location = read(loc_xy_char);
+        
+        % Extract x and y from the byte array (xy_location)
+        % First 2 bytes: MSB and LSB of x in cm
+        % Next  2 bytes: MSB and LSB of y in cm
+        x_cm = double(bitor(bitshift(uint16(xy_location(1)), 8), uint16(xy_location(2))));
+        y_cm = double(bitor(bitshift(uint16(xy_location(3)), 8), uint16(xy_location(4))));
+        
+        % Convert to meters
+        x_m = x_cm / 100; 
+        y_m = y_cm / 100;
+        
+        % Update marker position (assuming map is in meters)
+        ekfXHistory(end+1) = x_m;
+        ekfYHistory(end+1) = y_m;
+
+        % Update EKF path and current location
+        set(ekfpath_handle  , 'XData', ekfXHistory, 'YData', ekfYHistory);
+        set(ekfpoint_handle , 'XData', x_m, 'YData', y_m);
+
+        % Plan Path to Next Item if Items Are Selected
+        selected_items = items;
+        if ~isempty(selected_items)
+            % Get the current EKF position as the starting point
+            start_pos = approximateToMidpoint([x_m, y_m]);
+            % [~, optimized_locations] = optimize_order(start_pos, selected_items, items, item_locations);
+
+            % Calculate path to the next item
+            planned_path = A_star_pathfinding(expanded_env, start_pos, selected_items);
+
+            % Plot the planned path
+            for i = 1:size(planned_path, 1) - 1
+                plot([planned_path(i, 2), planned_path(i+1, 2)], [planned_path(i, 1), planned_path(i+1, 1)], 'g-', 'LineWidth', 2);
+            end
+
+            % Remove the visited item from the list
+            selected_items(1) = [];
+        end
+
+        drawnow;
+        pause(0.1); % Adjust refresh rate as needed
+    end
+catch ME
+    disp("Error or stopped: " + ME.message);
+    clear device;
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% ------------------  Helper functions -------------------------
+
+%@brief: Function to expand obstacles (buffer zone)
+
+function expanded_grid = expand_obstacles(grid)
+    padding = 0; % 50 cm corresponds to 1 cell in the new grid resolution
+    padded_grid = padarray(grid, [padding, padding], 0, 'both');
+    expanded_grid = grid;
+    for row = padding + 1:size(padded_grid, 1) - padding
+        for col = padding + 1:size(padded_grid, 2) - padding
+            if padded_grid(row, col) == 1
+                expanded_grid(row-padding:row+padding, col-padding:col+padding) = 1;
+            end
+        end
+    end
+end
+
+
+
+%@brief: Function for A* Algorithm
+function pathPoints = A_star_pathfinding(environment, startNode, goalNode)
+    openList = [startNode]; % Nodes to be evaluated
+    cameFrom = containers.Map(); % Map to track the path
+    gScore = containers.Map(); % Cost from start to the node
+    fScore = containers.Map(); % Estimated total cost (gScore + heuristic)
+
+    key = nodeKey(startNode);
+    gScore(key) = 0;
+    fScore(key) = heuristic(startNode, goalNode);
+
+    while ~isempty(openList)
+        current = getLowestFScore(openList, fScore);
+
+        if isequal(current, goalNode) % Reached the goal
+            pathPoints = reconstructPath(cameFrom, current);
+            return;
+        end
+
+        openList = removeFromOpenList(openList, current);
+        keyCurrent = nodeKey(current);
+
+        neighbors = getNeighbors(current, environment);
+        for i = 1:size(neighbors, 1)
+            neighbor = neighbors(i, :);
+            keyNeighbor = nodeKey(neighbor);
+            tentative_gScore = gScore(keyCurrent) + 1;
+
+            if ~isKey(gScore, keyNeighbor) || tentative_gScore < gScore(keyNeighbor)
+                cameFrom(keyNeighbor) = current;
+                gScore(keyNeighbor) = tentative_gScore;
+                fScore(keyNeighbor) = tentative_gScore + heuristic(neighbor, goalNode);
+
+                if ~inOpenList(openList, neighbor)
+                    openList = [openList; neighbor];
+                end
+            end
+        end
+    end
+
+    pathPoints = [];
+end
+
+
+%@brief: Function to get the midpoint
+function midpoint = approximateToMidpoint(point)
+    % Snap point to the nearest midpoint of the grid
+    midpoint = round(point) - 0.5;
+end
+
+
+%@brief:
+function h = heuristic(node, goalNode)
+    % Manhattan distance heuristic (grid-based movement)
+    h = abs(node(1) - goalNode(1)) + abs(node(2) - goalNode(2));
+end
+
+
+%@brief:
+function neighbors = getNeighbors(node, environment)
+    % Get the neighbors (up, down, left, right) for the current node
+    potentialMoves = [1 0; -1 0; 0 1; 0 -1];  % Right, left, down, up
+    neighbors = [];
+
+    for i = 1:size(potentialMoves, 1)
+        newNode = node + potentialMoves(i, :);
+        if newNode(1) > 0 && newNode(1) <= size(environment, 1) && ...
+           newNode(2) > 0 && newNode(2) <= size(environment, 2) && ...
+           environment(round(newNode(1)), round(newNode(2))) == 0  % Valid free space
+            neighbors = [neighbors; newNode];
+        end
+    end
+end
+
+
+%@brief:
+function key = nodeKey(node)
+    % Generate a string key for the node for use in containers.Map
+    key = sprintf('%f_%f', node(1), node(2));
+end
+
+
+%@brief:
+function lowestNode = getLowestFScore(openList, fScore)
+    % Get the node in the openList with the lowest fScore
+    lowestNode = openList(1, :);
+    lowestScore = fScore(nodeKey(lowestNode));
+
+    for i = 2:size(openList, 1)
+        node = openList(i, :);
+        score = fScore(nodeKey(node));
+        if score < lowestScore
+            lowestNode = node;
+            lowestScore = score;
+        end
+    end
+end
+
+
+%@brief:
+function openList = removeFromOpenList(openList, node)
+    % Remove a node from the openList
+    for i = 1:size(openList, 1)
+        if isequal(openList(i, :), node)
+            openList(i, :) = [];
+            break;
+        end
+    end
+end
+
+
+%@brief:
+function inList = inOpenList(openList, node)
+    % Check if a node is in the openList
+    inList = false;
+    for i = 1:size(openList, 1)
+        if isequal(openList(i, :), node)
+            inList = true;
+            break;
+        end
+    end
+end
+
+
+%@brief:
+function path = reconstructPath(cameFrom, current)
+    % Reconstruct the path from the cameFrom map
+    path = current;
+    while isKey(cameFrom, nodeKey(current))
+        current = cameFrom(nodeKey(current));
+        path = [current; path];
+    end
+end
+
+
+%@brief: Function to optimize order using nearest neighbor heuristic
+function [start_pos, optimized_locations] = optimize_order(start_pos, input_items, items, item_locations)
+    % Get locations of input items
+    idxs = cellfun(@(x) find(strcmp(items, x)), input_items);
+    locations = [start_pos; item_locations(idxs, :)];
+
+    % Nearest neighbor TSP heuristic
+    optimized_locations = [start_pos];
+    current = start_pos;
+    remaining = locations(2:end, :); % Exclude start position
+
+    while ~isempty(remaining)
+        distances = sqrt(sum((remaining - current).^2, 2));
+        [~, idx] = min(distances);
+        optimized_locations = [optimized_locations; remaining(idx, :)];
+        current = remaining(idx, :);
+        remaining(idx, :) = [];
+    end
+end
+
+
+%@brief Function for dynamic updates
+function [items, item_locations, selected_items] = dynamic_updates(items, item_locations, selected_items)
+    % Ensure selected_items is a cell array
+    if isempty(selected_items)
+        selected_items = {};
+    end
+    
+    % Dynamic menu for adding/removing items from the predefined list
+    disp('Dynamic Updates:');
+    disp('1. Add an item');
+    disp('2. Remove an item');
+    disp('3. Finish');
+    
+    while true
+        choice = input('Choose an option: ');
+        switch choice
+            case 1 % Add an item
+                disp('Available items to add:');
+                available_items = setdiff(items, selected_items); % Items not yet selected
+                if isempty(available_items)
+                    disp('No items available to add.');
+                else
+                    for i = 1:length(available_items)
+                        fprintf('%d. %s\n', i, available_items{i});
+                    end
+                    idx = input('Enter the number of the item to add: ');
+                    if idx > 0 && idx <= length(available_items)
+                        selected_items{end+1} = available_items{idx};
+                        disp([available_items{idx}, ' added.']);
+                    else
+                        disp('Invalid selection.');
+                    end
+                end
+                
+            case 2 % Remove an item
+                disp('Currently selected items:');
+                if isempty(selected_items)
+                    disp('No items to remove.');
+                else
+                    for i = 1:length(selected_items)
+                        fprintf('%d. %s\n', i, selected_items{i});
+                    end
+                    idx = input('Enter the number of the item to remove: ');
+                    if idx > 0 && idx <= length(selected_items)
+                        removed_item = selected_items{idx};
+                        selected_items(idx) = [];
+                        disp([removed_item, ' removed.']);
+                    else
+                        disp('Invalid selection.');
+                    end
+                end
+                
+            case 3 % Finish
+                break;
+                
+            otherwise
+                disp('Invalid choice. Please select 1, 2, or 3.');
+        end
+    end
+end
+
+
+%@brief: Always show middle path
+function [corridor_mask, corridor_bounds] = identify_corridor(grid, start_pos, goal_pos)
+    corridor_mask = zeros(size(grid));
+    corridor_bounds = [];
+    
+    % Define the range where a corridor is required
+    obstacles = (grid == 1);
+    vertical_lines = any(obstacles, 2); % Vertical obstacles
+    horizontal_lines = any(obstacles, 1); % Horizontal obstacles
+    
+    % Check for gaps
+    [rows, cols] = size(grid);
+    for r = 1:rows - 1
+        for c = 1:cols - 1
+            if obstacles(r, c) && obstacles(r, c+1) && ~obstacles(r+1, c) && ~obstacles(r+1, c+1)
+                corridor_bounds = [c + 0.5, r + 0.5, 1, 1]; % Box for 1m gap
+                corridor_mask(r:r+1, c:c+1) = 1; % Allow path only within the corridor
+                break;
+            end
+        end
+    end
+end
