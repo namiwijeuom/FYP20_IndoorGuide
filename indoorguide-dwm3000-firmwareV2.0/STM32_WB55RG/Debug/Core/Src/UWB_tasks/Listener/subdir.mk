@@ -5,16 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Core/Src/UWB_tasks/Listener/listener.c \
-../Core/Src/UWB_tasks/Listener/tag.c 
+../Core/Src/UWB_tasks/Listener/listener.c 
 
 OBJS += \
-./Core/Src/UWB_tasks/Listener/listener.o \
-./Core/Src/UWB_tasks/Listener/tag.o 
+./Core/Src/UWB_tasks/Listener/listener.o 
 
 C_DEPS += \
-./Core/Src/UWB_tasks/Listener/listener.d \
-./Core/Src/UWB_tasks/Listener/tag.d 
+./Core/Src/UWB_tasks/Listener/listener.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +21,7 @@ Core/Src/UWB_tasks/Listener/%.o Core/Src/UWB_tasks/Listener/%.su Core/Src/UWB_ta
 clean: clean-Core-2f-Src-2f-UWB_tasks-2f-Listener
 
 clean-Core-2f-Src-2f-UWB_tasks-2f-Listener:
-	-$(RM) ./Core/Src/UWB_tasks/Listener/listener.cyclo ./Core/Src/UWB_tasks/Listener/listener.d ./Core/Src/UWB_tasks/Listener/listener.o ./Core/Src/UWB_tasks/Listener/listener.su ./Core/Src/UWB_tasks/Listener/tag.cyclo ./Core/Src/UWB_tasks/Listener/tag.d ./Core/Src/UWB_tasks/Listener/tag.o ./Core/Src/UWB_tasks/Listener/tag.su
+	-$(RM) ./Core/Src/UWB_tasks/Listener/listener.cyclo ./Core/Src/UWB_tasks/Listener/listener.d ./Core/Src/UWB_tasks/Listener/listener.o ./Core/Src/UWB_tasks/Listener/listener.su
 
 .PHONY: clean-Core-2f-Src-2f-UWB_tasks-2f-Listener
 

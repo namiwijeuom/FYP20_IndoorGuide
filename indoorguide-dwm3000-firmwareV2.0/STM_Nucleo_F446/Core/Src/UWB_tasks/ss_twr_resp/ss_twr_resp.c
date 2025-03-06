@@ -91,14 +91,19 @@ int ss_twr_responder(void)
 		dwt_writesysstatuslo(DWT_INT_RXFCG_BIT_MASK);
 
 		/* A frame has been received, read it into the local buffer. */
+		//memset(rx_buffer,0,RX_BUF_LEN);
+
 		frame_len = dwt_getframelength();
 		if (frame_len <= sizeof(rx_buffer))
 		{
 			dwt_readrxdata(rx_buffer, frame_len, 0);
 
-			/* Check that the frame is a poll sent by "SS TWR initiator" example.
-			 * As the sequence number field of the frame is not relevant, it is cleared to simplify the validation of the frame. */
-			rx_buffer[ALL_MSG_SN_IDX] = 0;
+			/* Setting sequence number of transmit response msg. */
+			tx_resp_msg[ALL_MSG_SN_IDX] = rx_buffer[ALL_MSG_SN_IDX];
+			/* Setting sequence number of expected poll msg. */
+			rx_poll_msg[ALL_MSG_SN_IDX] = rx_buffer[ALL_MSG_SN_IDX];
+
+			/* Check that the frame is a poll msg sent by corresponding tag. */
 			if (memcmp(rx_buffer, rx_poll_msg, ALL_MSG_COMMON_LEN) == 0)
 			{
 				uint32_t resp_tx_time;
@@ -119,7 +124,6 @@ int ss_twr_responder(void)
 				resp_msg_set_ts(&tx_resp_msg[RESP_MSG_RESP_TX_TS_IDX], resp_tx_ts);
 
 				/* Write and send the response message. See NOTE 9 below. */
-				//tx_resp_msg[ALL_MSG_SN_IDX] = frame_seq_nb; //Todo: Set sequence number too.
 				dwt_writetxdata(sizeof(tx_resp_msg), tx_resp_msg, 0); /* Zero offset in TX buffer. */
 				dwt_writetxfctrl(sizeof(tx_resp_msg), 0, 1);          /* Zero offset in TX buffer, ranging. */
 				ret = dwt_starttx(DWT_START_TX_DELAYED);
@@ -133,8 +137,6 @@ int ss_twr_responder(void)
 					/* Clear TXFRS event. */
 					dwt_writesysstatuslo(DWT_INT_TXFRS_BIT_MASK);
 
-					/* Increment frame sequence number after transmission of the poll message (modulo 256). */
-					//frame_seq_nb++;
 				}
 			}
 		}

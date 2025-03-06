@@ -1,2 +1,0 @@
-../Core/Src/UWB_tasks/Listener/tag.c:44:6:tag_init	16	static
-../Core/Src/UWB_tasks/Listener/tag.c:99:6:start_ss_ranging	48	static

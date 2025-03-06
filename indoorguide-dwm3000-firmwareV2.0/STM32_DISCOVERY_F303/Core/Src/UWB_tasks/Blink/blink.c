@@ -32,7 +32,8 @@ static uint8_t rx_msg[] = { 0x41 , 0x88 , 0 , 0xFF , 0xFF , 0x00 , 0x00 , 0x00 ,
 /* Buffer to store received frame. See NOTE 5 below. */
 static uint8_t rx_buffer[FRAME_LEN_MAX];
 
-
+/* Sequence number of the transmit BLINK frame */
+static uint8_t seq_num = 0 ;
 
 
 
@@ -45,6 +46,7 @@ void blink_init(taginfo_t *tag)
 	/* Set response frame timeout. */
 	dwt_setrxtimeout(RX_RESP_TO_UUS);
 
+	//dwt_setpreambledetecttimeout(3);
 
     /* Set Tag short address in BLINK frame & Destinatin address of expected incoming ranging config frame */
     for(uint8_t i=0 ; i < ADDR_SHORT_BYTES ; i++)
@@ -58,8 +60,8 @@ void blink_init(taginfo_t *tag)
 
 void blink_reinit(fetchedanchor_t *fetchlist) // Todo: may be pass the already fetch anchor addresses, to include in the blink msg.
 {
-	for(uint8_t i = 0 ; i < 4 ; i++)  // Todo: Here 4 should be MAX_NUM_OF_FETCHED_ANCHORS
-	{
+	for(uint8_t i = 0 ; i < 4 ; i++)  // Todo: Here 4 should be MAX_NUM_OF_FETCHED_ANCHORS - Actually here no need to add all the fetched anchors, just the last fetched anchor is enough.
+	{							      // Because blink reinit is called when there is a ranging happened successfully.
 		tx_msg[BLINK_FRAME_FETCHED_AN_IDX_START+2*i]   = LSB(fetchlist->fetched_addr[i]);
 		tx_msg[BLINK_FRAME_FETCHED_AN_IDX_START+2*i+1] = MSB(fetchlist->fetched_addr[i]);
 	}
@@ -76,10 +78,19 @@ int blink(taginfo_t *tag)
 {
     /* Hold copy of status register state here for reference so that it can be examined at a debug breakpoint. */
     uint32_t status_reg = 0;
+    //uint32_t status_regh = 0;
     /* Hold copy of frame length of frame received (if good) so that it can be examined at a debug breakpoint. */
     uint16_t frame_len = 0;
 
     int ret = -1; // success or fail.
+
+
+    /* Setting sequence number of the blink message. */
+    tx_msg[BLINK_FRAME_SN_IDX] = seq_num;
+    /* Setting sequence number of expected incoming ranging config msg. */
+    rx_msg[ALL_MSG_SN_IDX]     = seq_num;
+    /* Incrementing SN by 1. */
+    seq_num++;
 
 
 	/* Write frame data to DW3000 and prepare transmission. See NOTE 7 below. */
@@ -89,41 +100,59 @@ int blink(taginfo_t *tag)
 
 	/* Start transmission, indicating that a response is expected so that reception is enabled immediately after the frame is sent. */
 	dwt_starttx(DWT_START_TX_IMMEDIATE | DWT_RESPONSE_EXPECTED);
+	//dwt_starttx(DWT_START_TX_CCA | DWT_RESPONSE_EXPECTED);
 
 
 
 	/* We assume that the transmission is achieved normally, now poll for reception of a frame or error/timeout. See NOTE 8 below. */
 	waitforsysstatus(&status_reg, NULL, (DWT_INT_RXFCG_BIT_MASK | SYS_STATUS_ALL_RX_TO | SYS_STATUS_ALL_RX_ERR), 0);
+	//waitforsysstatus(&status_reg, &status_regh, ( DWT_INT_RXFCG_BIT_MASK | SYS_STATUS_ALL_RX_TO | SYS_STATUS_ALL_RX_ERR), DWT_INT_HI_CCA_FAIL_BIT_MASK);
+
+	// Todo: Add if else condition to check CCA fail event.
+
 
 	if (status_reg & DWT_INT_RXFCG_BIT_MASK)
 	{
 		/* Clear local RX buffer to avoid having leftovers from previous receptions. This is not necessary but is included here to aid reading
 		 * the RX buffer. */
-		for (uint8_t i = 0; i < FRAME_LEN_MAX; i++)
-		{
-			rx_buffer[i] = 0;
-		}
+//		for (uint8_t i = 0; i < FRAME_LEN_MAX; i++)
+//		{
+//			rx_buffer[i] = 0;
+//		}
+		//memset(rx_buffer,0,FRAME_LEN_MAX); //Todo: clearing is not necessary.
 
 		/* A frame has been received, copy it to our local buffer. */
 		frame_len = dwt_getframelength();
 		if (frame_len <= FRAME_LEN_MAX)
 		{
 			dwt_readrxdata(rx_buffer, frame_len , 0); /* No need to read the FCS/CRC. */
-			// if needed add memcmp() here to check read frame is equal to expected frame.
-			for(uint8_t i = 0; i < ADDR_SHORT_BYTES ; i++ )
-			{
-				tag->current_anchor.short_addr[i] = rx_buffer[RNG_CFG_FRAME_SRC_IDX+i];
-			}
-			tag->current_anchor.loc_x = GET_UINT16(rx_buffer[RNG_CFG_FRAME_AN_X_IDX],rx_buffer[RNG_CFG_FRAME_AN_X_IDX+1]);
-			tag->current_anchor.loc_y = GET_UINT16(rx_buffer[RNG_CFG_FRAME_AN_Y_IDX],rx_buffer[RNG_CFG_FRAME_AN_Y_IDX+1]);
-			tag->current_anchor.loc_z = GET_UINT16(rx_buffer[RNG_CFG_FRAME_AN_Z_IDX],rx_buffer[RNG_CFG_FRAME_AN_Z_IDX+1]);
 
-			ret = 0;
+			uint8_t temp_anchor_addr[ADDR_SHORT_BYTES];
+
+			for(uint8_t i = 0 ; i < ADDR_SHORT_BYTES; i++)
+			{
+				temp_anchor_addr[i] = rx_buffer[RNG_CFG_FRAME_SRC_IDX+i];
+				rx_buffer[RNG_CFG_FRAME_SRC_IDX+i] = 0;
+			}
+
+
+			if(memcmp(rx_buffer,rx_msg,ALL_MSG_COMMON_LEN) == 0)
+			{
+				for(uint8_t i = 0; i < ADDR_SHORT_BYTES ; i++ )
+				{
+					tag->current_anchor.short_addr[i] = temp_anchor_addr[i]; //rx_buffer[RNG_CFG_FRAME_SRC_IDX+i]
+				}
+				tag->current_anchor.loc_x = GET_UINT16(rx_buffer[RNG_CFG_FRAME_AN_X_IDX],rx_buffer[RNG_CFG_FRAME_AN_X_IDX+1]);
+				tag->current_anchor.loc_y = GET_UINT16(rx_buffer[RNG_CFG_FRAME_AN_Y_IDX],rx_buffer[RNG_CFG_FRAME_AN_Y_IDX+1]);
+				tag->current_anchor.loc_z = GET_UINT16(rx_buffer[RNG_CFG_FRAME_AN_Z_IDX],rx_buffer[RNG_CFG_FRAME_AN_Z_IDX+1]);
+
+				ret = 0;
+			}
 		}
 
 		/* TESTING BREAKPOINT LOCATION #1 */
 
-		test_run_info((unsigned char *)"RNG_CFG Frame Received");
+		//test_run_info((unsigned char *)"RNG_CFG Frame Received");
 		//test_run_info((unsigned char *)&rx_buffer[2]);
 
 		/* At this point, received frame can be examined in global "rx_buffer". An actual application would, for example, start by checking that

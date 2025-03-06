@@ -1,4 +1,4 @@
 ../Core/Src/UWB_tasks/Listener/listener.c:40:6:listener_init	3
 ../Core/Src/UWB_tasks/Listener/listener.c:60:6:listener_reinit	1
 ../Core/Src/UWB_tasks/Listener/listener.c:69:5:listener	6
-../Core/Src/UWB_tasks/Listener/listener.c:150:5:is_already_fetched	3
+../Core/Src/UWB_tasks/Listener/listener.c:149:5:is_already_fetched	3

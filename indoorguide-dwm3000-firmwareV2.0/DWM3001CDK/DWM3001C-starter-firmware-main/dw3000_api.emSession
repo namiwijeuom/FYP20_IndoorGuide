@@ -28,8 +28,11 @@
   <ProjectSessionItem path="dw3000_api;dw3000_api;Src;Shared"/>
   <ProjectSessionItem path="dw3000_api;dw3000_api;Src;Shared;dwt_uwb_driver"/>
   <ProjectSessionItem path="dw3000_api;dw3000_api;Src;Shared;dwt_uwb_driver;Inc"/>
+  <ProjectSessionItem path="dw3000_api;dw3000_api;Src;Timer"/>
   <ProjectSessionItem path="dw3000_api;dw3000_api;Src;UWB_tasks"/>
+  <ProjectSessionItem path="dw3000_api;dw3000_api;Src;UWB_tasks;Blink"/>
   <ProjectSessionItem path="dw3000_api;dw3000_api;Src;UWB_tasks;Listener"/>
+  <ProjectSessionItem path="dw3000_api;dw3000_api;Src;UWB_tasks;ss_twr_init"/>
   <ProjectSessionItem path="dw3000_api;dw3000_api;Src;UWB_tasks;ss_twr_resp"/>
  </Project>
  <Register1>
@@ -63,10 +66,9 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="168" useTextEdit="1" openedFrom="D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/DWM3001CDK/DWM3001C-starter-firmware-main/Src/examples/ex_01a_simple_tx/simple_tx.c" useBinaryEdit="0" left="0" path="Src/main.c" selected="0" top="56" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="22" useTextEdit="1" openedFrom="D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/DWM3001CDK/DWM3001C-starter-firmware-main/Src/main.c" useBinaryEdit="0" left="0" path="Src/Applications/Tag_app/tag_app.h" selected="0" top="11" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="11" y="303" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="44" path="Src/Applications/Tag_app/tag_app.c" selected="1" top="275" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="18" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Src/UWB_tasks/Listener/listener.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="182" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Src/main.c" selected="0" top="101" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="33" y="295" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Src/Applications/Tag_app/tag_app.c" selected="0" top="279" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="20" useTextEdit="1" openedFrom="D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/DWM3001CDK/DWM3001C-starter-firmware-main/Src/Applications/Tag_app/tag_app.c" useBinaryEdit="0" left="0" path="Src/Applications/Tag_app/tag_app.h" selected="1" top="0" codecName="Default"/>
  </Files>
  <ARMCrossStudioWindow activeProject="dw3000_api" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/DWM3001CDK/DWM3001C-starter-firmware-main/SDK/modules/nrfx/drivers/src" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

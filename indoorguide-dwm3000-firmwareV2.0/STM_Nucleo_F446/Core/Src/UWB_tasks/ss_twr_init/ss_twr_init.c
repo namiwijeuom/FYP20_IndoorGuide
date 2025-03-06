@@ -31,7 +31,8 @@ static uint8_t rx_buffer[RX_BUF_LEN];
 /* Hold copy of status register state here for reference so that it can be examined at a debug breakpoint. */
 static uint32_t status_reg = 0;
 
-
+/* Sequence number of transmit tx_poll msg */
+static uint8_t seq_num = 0;
 
 
 
@@ -71,6 +72,12 @@ void ss_twr_initiator_reinit(taginfo_t *tag)
 		tx_poll_msg[POLL_MSG_FRAME_DEST_IDX+i] = tag->current_anchor.short_addr[i];
 		rx_resp_msg[RESP_MSG_FRAME_SRC_IDX+i]  = tag->current_anchor.short_addr[i];
 	}
+
+	/* Setting sequence number of tx_poll_msg. */
+	tx_poll_msg[ALL_MSG_SN_IDX] = seq_num;
+	/* Setting sequence number of expected incoming rx_resp_msg */
+	rx_resp_msg[ALL_MSG_SN_IDX] = seq_num;
+
 }
 
 
@@ -79,7 +86,7 @@ int ss_twr_initiator(taginfo_t *tag)
 {
 	int ret = -1;
 	/* Write frame data to DW IC and prepare transmission. See NOTE 7 below. */
-	//tx_poll_msg[ALL_MSG_SN_IDX] = frame_seq_nb;  // Set sequence number if needed.
+
 	dwt_writesysstatuslo(DWT_INT_TXFRS_BIT_MASK);
 	dwt_writetxdata(sizeof(tx_poll_msg), tx_poll_msg, 0); /* Zero offset in TX buffer. */
 	dwt_writetxfctrl(sizeof(tx_poll_msg), 0, 1);          /* Zero offset in TX buffer, ranging. */
@@ -107,9 +114,7 @@ int ss_twr_initiator(taginfo_t *tag)
 		{
 			dwt_readrxdata(rx_buffer, frame_len, 0);
 
-			/* Check that the frame is the expected response from the companion "SS TWR responder" example.
-			 * As the sequence number field of the frame is not relevant, it is cleared to simplify the validation of the frame. */
-			rx_buffer[ALL_MSG_SN_IDX] = 0;
+			/* Check that the frame is the expected response */
 			if (memcmp(rx_buffer, rx_resp_msg, ALL_MSG_COMMON_LEN) == 0)
 			{
 				uint32_t poll_tx_ts, resp_rx_ts, poll_rx_ts, resp_tx_ts;
@@ -135,12 +140,14 @@ int ss_twr_initiator(taginfo_t *tag)
 				distance = tof * SPEED_OF_LIGHT;
 				/* Display computed distance on LCD. */
 
-				uint16_t anchor_name = GET_UINT16(tag->current_anchor.short_addr[0],tag->current_anchor.short_addr[1]);
-
-				snprintf(dist_str, sizeof(dist_str), "AN %d  DIST: %3.2f m",anchor_name, distance);
-				test_run_info((unsigned char *)dist_str);
+//				uint16_t anchor_name = GET_UINT16(tag->current_anchor.short_addr[0],tag->current_anchor.short_addr[1]);
+//
+//				snprintf(dist_str, sizeof(dist_str), "AN %d  DIST: %3.2f m",anchor_name, distance);
+//				test_run_info((unsigned char *)dist_str);
 
 				tag->distance = distance * 100; // In centimeters
+
+				seq_num++;
 
 				ret = 0;
 			}

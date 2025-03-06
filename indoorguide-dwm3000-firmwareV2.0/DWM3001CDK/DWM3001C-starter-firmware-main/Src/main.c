@@ -102,7 +102,7 @@ void test_run_info(unsigned char *data)
 int main(void)
 {     
     /* Initializing system tick */
-    //nrfx_systick_init();
+    nrfx_systick_init();
     /* Initialize all configured peripherals */
     bsp_board_init(BSP_INIT_LEDS | BSP_INIT_BUTTONS);
 
@@ -180,7 +180,7 @@ int main(void)
     // extern int simple_aes(void); simple_aes();
 #if defined(TAG_APP)
 
-  tag_application(2);
+  tag_application(1);
 
 #elif  defined(ANCHOR_APP)
 

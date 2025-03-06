@@ -231,6 +231,7 @@ void tag_application(uint16_t tagAddr)
 {
 	tag_application_init(tagAddr);
 	int ret = 0; // Return status of tasks.
+	int ret_ranging = -1;
 
 	while(1) /* Infinite while loop */
 	{
@@ -246,7 +247,7 @@ void tag_application(uint16_t tagAddr)
 			{
 				blink_reinit(&already_fe_anchors);
 			}
-
+			//Todo: A clear channel assesment before blinking - Try that.
 			ret = blink(&tagDevice);
 
 			if(ret == 0)
@@ -255,19 +256,23 @@ void tag_application(uint16_t tagAddr)
 
 				if(is_anchor_valid(&already_fe_anchors, new_anchor) == 0)
 				{
-					already_fe_anchors.fetched_count++;
-					already_fe_anchors.fetched_addr[already_fe_anchors.fetched_count-1] = new_anchor;
 
 					ss_twr_initiator_reinit(&tagDevice);
 
-					ss_twr_initiator(&tagDevice);
+					ret_ranging = ss_twr_initiator(&tagDevice);
 
-					zt.distance = (tagDevice.distance)/100.0;             // In meters.
-					zt.anchor_x = (tagDevice.current_anchor.loc_x)/100.0;
-					zt.anchor_y = (tagDevice.current_anchor.loc_y)/100.0;
-					zt.anchor_z = (tagDevice.current_anchor.loc_z)/100.0;
+					if(ret_ranging == 0)
+					{
+						zt.distance = (tagDevice.distance)/100.0;             // In meters.
+						zt.anchor_x = (tagDevice.current_anchor.loc_x)/100.0;
+						zt.anchor_y = (tagDevice.current_anchor.loc_y)/100.0;
+						zt.anchor_z = (tagDevice.current_anchor.loc_z)/100.0;
 
-					ARKF_update(&arkf, &zt);
+						ARKF_update(&arkf, &zt);
+
+						already_fe_anchors.fetched_count++;
+						already_fe_anchors.fetched_addr[already_fe_anchors.fetched_count-1] = new_anchor;
+					}
 				}
 
 
@@ -287,12 +292,16 @@ void tag_application(uint16_t tagAddr)
 		snprintf(str_buffer, sizeof(str_buffer), "{\"X\":\"%.2f\",\"Y\":\"%.2f\"}",arkf.mubar_t[0],arkf.mubar_t[1]);
 		test_run_info(str_buffer);
 
-		uint32_t step_stop_time = HAL_GetTick();  //Todo: Do this using simple while do nothing while loop.
-		int delay_time = TIME_STEP_MS - (step_stop_time - step_start_time);
-
-		if(delay_time > 0)
+//		uint32_t step_stop_time = HAL_GetTick();  //Todo: Do this using simple while do nothing while loop.
+//		int delay_time = TIME_STEP_MS - (step_stop_time - step_start_time);
+//
+//		if(delay_time > 0)
+//		{
+//			HAL_Delay(delay_time);
+//		}
+		while(HAL_GetTick()- step_start_time < TIME_STEP_MS)
 		{
-			HAL_Delay(delay_time);
+			// Do nothing.
 		}
 
 

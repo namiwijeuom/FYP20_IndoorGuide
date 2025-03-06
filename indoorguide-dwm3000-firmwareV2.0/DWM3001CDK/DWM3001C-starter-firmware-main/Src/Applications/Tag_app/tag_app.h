@@ -18,9 +18,9 @@
 
 #define MAX_NUM_OF_FETCHED_ANCHORS 4
 
-#define FRAME_TRANSMIT_TIME_MS        1  //In milliseconds
+#define FRAME_TRANSMIT_TIME_MS        40  //In milliseconds
 
-#define MAX_NUM_OF_TAGS 10       // Estimated maximum number of tags in the environment
+#define MAX_NUM_OF_TAGS 5       // Estimated maximum number of tags in the environment
 
 
 
@@ -30,7 +30,7 @@
 /* Common Defines */
 #define NUM_OF_ANCHORS 4
 
-#define TIME_STEP      1
+#define TIME_STEP      0.5
 #define TIME_STEP_MS   TIME_STEP * 1000
 
 

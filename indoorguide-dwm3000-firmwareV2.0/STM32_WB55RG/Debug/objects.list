@@ -7,7 +7,6 @@
 "./Core/Src/Math_utils/multilateration.o"
 "./Core/Src/UWB_tasks/Blink/blink.o"
 "./Core/Src/UWB_tasks/Listener/listener.o"
-"./Core/Src/UWB_tasks/Listener/tag.o"
 "./Core/Src/UWB_tasks/ss_twr_init/ss_twr_init.o"
 "./Core/Src/UWB_tasks/ss_twr_resp/ss_twr_resp.o"
 "./Core/Src/app_debug.o"

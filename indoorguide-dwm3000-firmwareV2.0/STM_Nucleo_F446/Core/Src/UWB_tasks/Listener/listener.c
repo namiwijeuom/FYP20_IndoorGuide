@@ -87,6 +87,8 @@ int listener(anchorinfo_t *anchor)
 	if (status_reg & DWT_INT_RXFCG_BIT_MASK)
 	{
 		/* A frame has been received, read it into the local buffer. */
+		//memset(rx_buffer,0,FRAME_LEN_MAX); // Todo: clearing rx_buffer is not necessary.
+
 		frame_len = dwt_getframelength();
 		if (frame_len <= FRAME_LEN_MAX)
 		{
@@ -100,7 +102,7 @@ int listener(anchorinfo_t *anchor)
 				{
 
 					/* TESTING BREAKPOINT LOCATION #1 */
-					test_run_info((unsigned char *)"Frame Received");
+					//test_run_info((unsigned char *)"Frame Received");
 					//test_run_info((unsigned char *)&rx_buffer[2]);
 
 					/* Clear good RX frame event in the DW IC status register. */
@@ -111,7 +113,7 @@ int listener(anchorinfo_t *anchor)
 						anchor->current_tag_addr[i] = rx_buffer[BLINK_FRAME_SRC_IDX+i];
 						tx_msg[RNG_CFG_FRAME_DEST_IDX+i] = rx_buffer[BLINK_FRAME_SRC_IDX+i];
 					}
-					// Todo: set Sequence Number too.
+					tx_msg[ALL_MSG_SN_IDX] = rx_buffer[BLINK_FRAME_SN_IDX];
 
 					/* Write response frame data to DW IC and prepare transmission. See NOTE 6 below.*/
 					dwt_writetxdata(sizeof(tx_msg), tx_msg, 0); /* Zero offset in TX buffer. */
@@ -125,9 +127,6 @@ int listener(anchorinfo_t *anchor)
 
 					/* Clear TX frame sent event. */
 					dwt_writesysstatuslo(DWT_INT_TXFRS_BIT_MASK);
-
-	//				/* Enabling frame filter for incoming POLL_MSG with correct 16-bit destination short address*/
-	//				dwt_configureframefilter(DWT_FF_ENABLE_802_15_4, DWT_FF_DATA_EN); //Todo: Maybe add this to ss_twr_responder_reinit()
 
 					ret = 0;
 				}

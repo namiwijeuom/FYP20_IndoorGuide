@@ -224,7 +224,8 @@ void tag_application_init(uint16_t tagAddr)
 	ARKF_init(&arkf, At, Rt, Qt, mu_t0, sigma_t0, MODULATION_INDEX);
 
         //app_timer_util_init();
-        rtc_timer_init();
+        //rtc_timer_init();
+        timer_init(TIME_STEP_MS);
 
 }
 
@@ -235,23 +236,25 @@ void tag_application(uint16_t tagAddr)
 {
 	tag_application_init(tagAddr);
 	int ret = 0; // Return status of tasks.
+        int ret_ranging = -1;
 
 	while(1) /* Infinite while loop */
 	{
 		ret = 0;
 
 		ARKF_predict(&arkf); //Predict step of ARKF
-
-                start_rtc_timer(TIME_STEP_MS);
+                
+                start_timer();
+                //start_rtc_timer(TIME_STEP_MS);
                 bool timer_expired = false;
                 
-                /* Test code - Remove
-                while(!timer_expired)
-                {
-                   nrf_delay_ms(100);
-                   is_timer_expired(&timer_expired);
-                   printf("Timer\n");
-                } */
+                
+                //while(!timer_expired)
+                //{
+                //   nrf_delay_ms(100);
+                //   is_rtc_timer_expired(&timer_expired);
+                //   printf("Timer\n");
+                //} 
 
 		while( (!timer_expired) && (already_fe_anchors.fetched_count < MAX_NUM_OF_FETCHED_ANCHORS))
 		{
@@ -259,7 +262,7 @@ void tag_application(uint16_t tagAddr)
 			{
 				blink_reinit(&already_fe_anchors);
 			}
-
+                        //Todo: A clear channel assesment before blinking - Try that.
 			ret = blink(&tagDevice);
 
 			if(ret == 0)
@@ -268,19 +271,21 @@ void tag_application(uint16_t tagAddr)
 
 				if(is_anchor_valid(&already_fe_anchors, new_anchor) == 0)
 				{
-					already_fe_anchors.fetched_count++;
-					already_fe_anchors.fetched_addr[already_fe_anchors.fetched_count-1] = new_anchor;
-
 					ss_twr_initiator_reinit(&tagDevice);
 
-					ss_twr_initiator(&tagDevice);
+					ret_ranging = ss_twr_initiator(&tagDevice);
+                                        if(ret_ranging == 0)
+                                        {
+                                            zt.distance = (tagDevice.distance)/100.0;             // In meters.
+                                            zt.anchor_x = (tagDevice.current_anchor.loc_x)/100.0;
+                                            zt.anchor_y = (tagDevice.current_anchor.loc_y)/100.0;
+                                            zt.anchor_z = (tagDevice.current_anchor.loc_z)/100.0;
 
-					zt.distance = (tagDevice.distance)/100.0;             // In meters.
-					zt.anchor_x = (tagDevice.current_anchor.loc_x)/100.0;
-					zt.anchor_y = (tagDevice.current_anchor.loc_y)/100.0;
-					zt.anchor_z = (tagDevice.current_anchor.loc_z)/100.0;
+                                            ARKF_update(&arkf, &zt);
 
-					ARKF_update(&arkf, &zt);
+                                            already_fe_anchors.fetched_count++;
+                                            already_fe_anchors.fetched_addr[already_fe_anchors.fetched_count-1] = new_anchor;
+                                        }
 				}
 
 
@@ -291,7 +296,7 @@ void tag_application(uint16_t tagAddr)
 				nrf_delay_ms(FRAME_TRANSMIT_TIME_MS * r);           // Radome backoff time delay before next BLINK
 			}
 
-                        is_rtc_timer_expired(&timer_expired);
+                        is_timer_expired(&timer_expired);
 
 		}
 
@@ -304,8 +309,9 @@ void tag_application(uint16_t tagAddr)
                 while(!timer_expired)
                 {
                   //Do nothing. Wait until TIME_STEP_MS evolves
+                  is_timer_expired(&timer_expired);
                 }
-                restart_timer(TIME_STEP_MS);
+          
 
 	}
 

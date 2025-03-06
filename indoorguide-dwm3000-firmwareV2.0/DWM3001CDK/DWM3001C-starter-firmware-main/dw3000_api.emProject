@@ -351,8 +351,12 @@
         path="Src/UWB_tasks"
         recurse="Yes" />
       <folder Name="Timer">
-        <file file_name="app_timer_util.c" />
-        <file file_name="app_timer_util.h" />
+        <file file_name="app_timer_util.c">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="app_timer_util.h">
+          <configuration Name="Debug" build_exclude_from_build="Yes" />
+        </file>
         <file file_name="rtc_timer.c" />
         <file file_name="rtc_timer.h" />
       </folder>

@@ -65,7 +65,7 @@
 /* Delay between frames, in UWB microseconds. See NOTE 1 below. */
 #define POLL_TX_TO_RESP_RX_DLY_UUS 240
 /* Receive response timeout. See NOTE 5 below. */
-#define RESP_RX_TIMEOUT_UUS 400
+#define RESP_RX_TIMEOUT_UUS 2000 //Previous value was 400
 
 
 void ss_twr_initiator_init(taginfo_t *tag);

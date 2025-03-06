@@ -148,7 +148,7 @@ int main(void)
 
 #if defined(TAG_APP)
 
-  tag_application(1);
+  tag_application(4);
 
 #elif  defined(ANCHOR_APP)
 

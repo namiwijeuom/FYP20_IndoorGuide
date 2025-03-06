@@ -50,6 +50,10 @@
 #define RNG_CFG_FRAME_AN_Z_IDX 14
 /* Common part of all ranging frames */
 #define ALL_MSG_COMMON_LEN     10
+/* Index to access sequence number of ranging frames */
+#define ALL_MSG_SN_IDX         2
+
+
 
 
 

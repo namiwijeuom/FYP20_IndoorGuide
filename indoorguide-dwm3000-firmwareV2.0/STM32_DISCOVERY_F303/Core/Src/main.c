@@ -132,8 +132,8 @@ int main(void)
 
 #elif  defined(ANCHOR_APP)
 
-  uint16_t coordinates[3] = {10000,20000,30000};  // In centimeters
-  anchor_application(2,coordinates);
+  	uint16_t coordinates[3] = {1143,1164,100};  // In centimeters
+    anchor_application(4,coordinates);
 
 #else
 	#error "Define either TAG_APP or ANCHOR_APP before compiling."

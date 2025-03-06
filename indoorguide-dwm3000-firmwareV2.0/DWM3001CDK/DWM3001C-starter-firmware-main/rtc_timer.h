@@ -1,19 +1,20 @@
 #ifndef RTC_TIMER_H
 #define RTC_TIMER_H
 
-#include <stdbool.h>
+
 #include <stdint.h>
+#include <stdbool.h>
 
-// Initialize RTC timer (call once in main)
-void rtc_timer_init(void);
+void timer_init(const int time_step_value);
 
-// Start RTC timer with given milliseconds
-void start_rtc_timer(uint32_t ms);
+void start_timer(void);
 
-// Check if the timer has expired
-void is_rtc_timer_expired(bool *timer_expired_state);
+void stop_timer(void);
 
-// Reset timer expired flag
-void reset_rtc_timer_flag(void);
+void is_timer_expired(bool *state);
+
+
+
+
 
 #endif // RTC_TIMER_H
