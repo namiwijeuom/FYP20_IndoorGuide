@@ -1,0 +1,17 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/IndoorGuide_App/.kivy/logs/kivy_25-02-28_4.txt
+[INFO   ] Kivy: v2.2.1
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.11/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.11.4 (main, Sep 30 2023, 10:54:38) [GCC 11.4.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/bin/python3"
+[INFO   ] Logger: Purge log fired. Processing...
+[INFO   ] Logger: Purge finished!
+[INFO   ] Factory: 190 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/IndoorGuide_App/main.py", line 8, in <module>
+[WARNING] stderr:     from kivy.garden.matplotlib.backend_kivyagg import FigureCanvasKivyAgg
+[WARNING] stderr:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+[WARNING] stderr:   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+[WARNING] stderr:   File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+[WARNING] stderr:   File "<frozen importlib._bootstrap>", line 642, in _load_backward_compatible
+[WARNING] stderr: KeyError: 'kivy.garden.matplotlib'
