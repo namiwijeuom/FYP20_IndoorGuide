@@ -18,7 +18,7 @@ from kivy.core.window import Window
 MAP_IMAGE = 'top view.png'
 MAP_WIDTH_PIXELS = 647
 MAP_HEIGHT_PIXELS = 787
-MAP_WIDTH_METERS = 15.34
+MAP_WIDTH_METERS = 19.02
 MAP_HEIGHT_METERS = 18.34
 
 # Load items from JSON file
@@ -169,7 +169,9 @@ class PlotWidget(Widget):
             # Draw the path
             if self.selected_item_location:
                 environment = [[0] * MAP_WIDTH_PIXELS for _ in range(MAP_HEIGHT_PIXELS)]  # Example environment
-                path = a_star_pathfinding(environment, self.current_location, self.selected_item_location, item_locations)
+                start_node = [int(round(self.current_location[0])), int(round(self.current_location[1]))]  # Round to integers
+                goal_node = [int(round(self.selected_item_location[0])), int(round(self.selected_item_location[1]))]  # Round to integers
+                path = a_star_pathfinding(environment, start_node, goal_node, item_locations)
                 if path:
                     Color(0, 0, 1, 1)  # Blue for path
                     Line(points=[(p[0] * self.scale_x + self.offset_x, p[1] * self.scale_y + self.offset_y) for p in path], width=2)
