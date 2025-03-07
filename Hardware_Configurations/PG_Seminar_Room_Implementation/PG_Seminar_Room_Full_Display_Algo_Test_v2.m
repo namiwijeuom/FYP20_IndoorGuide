@@ -84,7 +84,7 @@ ekfYHistory = [];
 
 %% ------------------  Initialize Serial communication --------------------
 
-port = "COM10"; % Second serial port (adjust as needed)
+port = "COM11"; % Second serial port (adjust as needed)
 baudRate = 115200; % Adjust if necessary
 
 % Open serial connections
@@ -159,6 +159,7 @@ try
 catch ME
     disp("Error or stopped: " + ME.message);
     clear device;
+    clc;
 end
 
 
