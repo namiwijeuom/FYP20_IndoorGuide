@@ -16,9 +16,9 @@ from kivy.core.window import Window
 
 # Load the supermarket map image
 MAP_IMAGE = 'top view.png'
-MAP_WIDTH_PIXELS = 647
+MAP_WIDTH_PIXELS  = 647
 MAP_HEIGHT_PIXELS = 787
-MAP_WIDTH_METERS = 19.02
+MAP_WIDTH_METERS  = 15.34
 MAP_HEIGHT_METERS = 18.34
 
 # Load items from JSON file
