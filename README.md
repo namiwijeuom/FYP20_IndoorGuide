@@ -3,9 +3,11 @@
 * The user will get a mobile application and the user’s real-time location is obtained from the UWB-based indoor localization system. The shortest path to the closest item based on the user’s current location is shown first and the shortest path to the next closest item is displayed when the user collects the current item. If the user doesn’t follow the given path, the user is rerouted to the item showing another path.
 * In the meantime, the user can get valuable information in the mobile application, such as the availability of items, advertisements, discounts, and ongoing offers, when they use the indoor positioning system to find items in the environment.
 
+Explore Our Product - https://youtu.be/IXNKlyKqeg8 
+
 For More Information - https://sites.google.com/d/1sgRMowLkiXn0cbftKqq48a9VC4iBFUIC/p/1TkrK2qJ4OmHgVszJBvMgPmF_efE4no1N/edit?pli=1
 
-End-to-End System - https://drive.google.com/file/d/1L4dQrP4LGbEzoqHtrbHvkKhWELOynQtG/view?usp=drive_link 
+End-to-End System Test 01 - https://drive.google.com/file/d/1L4dQrP4LGbEzoqHtrbHvkKhWELOynQtG/view?usp=drive_link 
 
 Feasibility Presentation - https://www.canva.com/design/DAGL3z9L2-Q/Tk76HP0wMDyfvTggQDq_Qw/edit?utm_content=DAGL3z9L2-Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
