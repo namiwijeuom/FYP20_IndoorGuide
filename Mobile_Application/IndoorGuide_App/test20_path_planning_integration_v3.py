@@ -59,6 +59,7 @@ def is_valid_point(x,y):
     else:
         #print("Invalid point")
         return False
+
 # Load item locations from JSON file
 with open('items_v3.json', 'r') as file:
     item_data = json.load(file)
@@ -196,7 +197,6 @@ class PlotWidget(Widget):
         square_center_x_m = round(x*2)/2
         square_center_y_m = round(y*2)/2
 
-
         if(not is_valid_point(square_center_x_m,square_center_y_m)):
             print('not valid point')
             #square_center_x_m = self.prev_point[0]
@@ -244,6 +244,7 @@ class PlotWidget(Widget):
             # Color(0, 0, 1, 1)  # Blue Path
             # if len(self.path_x) > 1:
             #     Line(points=[coord for pair in zip(self.path_x, self.path_y) for coord in pair], width=2)
+
             self.draw_item_locations()
 
             # Draw the A* path if it exists
@@ -253,17 +254,17 @@ class PlotWidget(Widget):
                 for (row, col) in self.path:
                     x_path = col * grid_size * self.scale + self.offset_x
                     y_path = row * grid_size * self.scale + self.offset_y
-                    points.extend([x_path, y_path])
+
+                    square_center_x_m_path = round(x_path*2)/2
+                    square_center_y_m_path = round(y_path*2)/2
+
+                    points.extend([square_center_x_m_path, square_center_y_m_path])
+                    
                 Line(points=points, width=2)
 
             Color(1, 0, 0, 1)  # Red Dot
             Ellipse(pos=(scaled_x - 5, scaled_y - 5), size=(10, 10))
             Line(rectangle=(square_bottom_left_x,square_bottom_left_y,square_width, square_width), width=2)
-
-    def set_path(self, path):
-        """Set the A* path to be drawn."""
-        self.path = path
-        self.update_plot(0, 0)  # Trigger a redraw
 
     def set_path(self, path):
         """Set the A* path to be drawn."""
