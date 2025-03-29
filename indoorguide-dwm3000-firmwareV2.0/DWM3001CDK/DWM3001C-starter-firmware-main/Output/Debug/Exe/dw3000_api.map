@@ -3,7 +3,7 @@ Archive member included to satisfy reference by file (symbol)
 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
                               Output/Debug/Obj/dw3000_api/ARKFLocalization.o (__aeabi_dadd)
 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
-                              Output/Debug/Obj/dw3000_api/PFLocalization.o (cos)
+                              Output/Debug/Obj/dw3000_api/tag_app.o (atan2)
 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
                               Output/Debug/Obj/dw3000_api/shared_functions.o (abs)
 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
@@ -19340,8 +19340,6 @@ Discarded input sections
                 0x0000000000000000       0x64 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
  .text.__aeabi_f2iz
                 0x0000000000000000       0x10 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
- .text.__aeabi_d2iz
-                0x0000000000000000       0x4c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
  .text.__aeabi_f2lz
                 0x0000000000000000       0x74 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
  .text.__aeabi_d2lz
@@ -19407,10 +19405,6 @@ Discarded input sections
                 0x0000000000000000      0x150 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
  .text.libc.asinf
                 0x0000000000000000      0x12c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
- .text.libc.atan
-                0x0000000000000000      0x290 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
- .text.libc.atan2
-                0x0000000000000000      0x14c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
  .text.libc.atanf
                 0x0000000000000000      0x12c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
  .text.libc.atan2f
@@ -21744,7 +21738,7 @@ FLASH            0x0000000000000000 0x0000000000080000 xw
 Linker script and memory map
 
                 0x0000000000000000                __do_debug_operation = __do_debug_operation_mempoll
-                0x00000000000274c0                __vfprintf = __vfprintf_float_long
+                0x0000000000027930                __vfprintf = __vfprintf_float_long
                 0x0000000000000000                __vfscanf = __vfscanf_long
                 0x0000000020000000                __RAM1_segment_start__ = 0x20000000
                 0x0000000020020000                __RAM1_segment_end__ = 0x20020000
@@ -21883,7 +21877,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .init_rodata is too large to fit in FLASH memory segment)
                 0x000000000001f1d0                __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x000000000001f1d0    0x16db8
+.text           0x000000000001f1d0    0x17228
                 0x000000000001f1d0                __text_start__ = .
  *(.text .text.* .glue_7t .glue_7 .gnu.linkonce.t.* .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x000000000001f1d0        0x0 linker stubs
@@ -22700,753 +22694,767 @@ Linker script and memory map
                 0x0000000000025070       0xb8 Output/Debug/Obj/dw3000_api/tag_app.o
                 0x0000000000025070                tag_application_init
  .text.tag_application
-                0x0000000000025128      0x1d0 Output/Debug/Obj/dw3000_api/tag_app.o
+                0x0000000000025128      0x21c Output/Debug/Obj/dw3000_api/tag_app.o
                 0x0000000000025128                tag_application
  .text.is_anchor_valid
-                0x00000000000252f8       0x58 Output/Debug/Obj/dw3000_api/tag_app.o
+                0x0000000000025344       0x58 Output/Debug/Obj/dw3000_api/tag_app.o
  .text.clear_fetched_anchors
-                0x0000000000025350       0x42 Output/Debug/Obj/dw3000_api/tag_app.o
+                0x000000000002539c       0x42 Output/Debug/Obj/dw3000_api/tag_app.o
  .text.random_init
-                0x0000000000025392       0x1c Output/Debug/Obj/dw3000_api/tag_app.o
+                0x00000000000253de       0x1c Output/Debug/Obj/dw3000_api/tag_app.o
  .text.get_random_integer
-                0x00000000000253ae       0x24 Output/Debug/Obj/dw3000_api/tag_app.o
+                0x00000000000253fa       0x24 Output/Debug/Obj/dw3000_api/tag_app.o
  .text.ARKF_init
-                0x00000000000253d2      0x12c Output/Debug/Obj/dw3000_api/ARKFLocalization.o
-                0x00000000000253d2                ARKF_init
+                0x000000000002541e      0x12c Output/Debug/Obj/dw3000_api/ARKFLocalization.o
+                0x000000000002541e                ARKF_init
  .text.ARKF_predict
-                0x00000000000254fe      0x25a Output/Debug/Obj/dw3000_api/ARKFLocalization.o
-                0x00000000000254fe                ARKF_predict
+                0x000000000002554a      0x25a Output/Debug/Obj/dw3000_api/ARKFLocalization.o
+                0x000000000002554a                ARKF_predict
  .text.ARKF_update
-                0x0000000000025758      0x774 Output/Debug/Obj/dw3000_api/ARKFLocalization.o
-                0x0000000000025758                ARKF_update
+                0x00000000000257a4      0x774 Output/Debug/Obj/dw3000_api/ARKFLocalization.o
+                0x00000000000257a4                ARKF_update
  .text.blink_init
-                0x0000000000025ecc       0x6c Output/Debug/Obj/dw3000_api/blink.o
-                0x0000000000025ecc                blink_init
+                0x0000000000025f18       0x6c Output/Debug/Obj/dw3000_api/blink.o
+                0x0000000000025f18                blink_init
  .text.blink_reinit
-                0x0000000000025f38       0x74 Output/Debug/Obj/dw3000_api/blink.o
-                0x0000000000025f38                blink_reinit
- .text.blink    0x0000000000025fac      0x180 Output/Debug/Obj/dw3000_api/blink.o
-                0x0000000000025fac                blink
+                0x0000000000025f84       0x74 Output/Debug/Obj/dw3000_api/blink.o
+                0x0000000000025f84                blink_reinit
+ .text.blink    0x0000000000025ff8      0x180 Output/Debug/Obj/dw3000_api/blink.o
+                0x0000000000025ff8                blink
  .text.ss_twr_initiator_init
-                0x000000000002612c       0x54 Output/Debug/Obj/dw3000_api/ss_twr_init.o
-                0x000000000002612c                ss_twr_initiator_init
+                0x0000000000026178       0x54 Output/Debug/Obj/dw3000_api/ss_twr_init.o
+                0x0000000000026178                ss_twr_initiator_init
  .text.ss_twr_initiator_reinit
-                0x0000000000026180       0x7c Output/Debug/Obj/dw3000_api/ss_twr_init.o
-                0x0000000000026180                ss_twr_initiator_reinit
- *fill*         0x00000000000261fc        0x4 
+                0x00000000000261cc       0x7c Output/Debug/Obj/dw3000_api/ss_twr_init.o
+                0x00000000000261cc                ss_twr_initiator_reinit
  .text.ss_twr_initiator
-                0x0000000000026200      0x1cc Output/Debug/Obj/dw3000_api/ss_twr_init.o
-                0x0000000000026200                ss_twr_initiator
+                0x0000000000026248      0x1cc Output/Debug/Obj/dw3000_api/ss_twr_init.o
+                0x0000000000026248                ss_twr_initiator
  .text.timer_init
-                0x00000000000263cc       0x3c Output/Debug/Obj/dw3000_api/rtc_timer.o
-                0x00000000000263cc                timer_init
+                0x0000000000026414       0x3c Output/Debug/Obj/dw3000_api/rtc_timer.o
+                0x0000000000026414                timer_init
  .text.get_time_ms
-                0x0000000000026408       0x18 Output/Debug/Obj/dw3000_api/rtc_timer.o
+                0x0000000000026450       0x18 Output/Debug/Obj/dw3000_api/rtc_timer.o
  .text.start_timer
-                0x0000000000026420       0x20 Output/Debug/Obj/dw3000_api/rtc_timer.o
-                0x0000000000026420                start_timer
+                0x0000000000026468       0x20 Output/Debug/Obj/dw3000_api/rtc_timer.o
+                0x0000000000026468                start_timer
  .text.is_timer_expired
-                0x0000000000026440       0x40 Output/Debug/Obj/dw3000_api/rtc_timer.o
-                0x0000000000026440                is_timer_expired
+                0x0000000000026488       0x40 Output/Debug/Obj/dw3000_api/rtc_timer.o
+                0x0000000000026488                is_timer_expired
  .text.__aeabi_read_tp
-                0x0000000000026480        0x8 Output/Debug/Obj/dw3000_api/thumb_crt0.o
-                0x0000000000026480                __aeabi_read_tp
+                0x00000000000264c8        0x8 Output/Debug/Obj/dw3000_api/thumb_crt0.o
+                0x00000000000264c8                __aeabi_read_tp
  .text.__aeabi_dadd
-                0x0000000000026488      0x244 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026488                __aeabi_dadd
+                0x00000000000264d0      0x244 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x00000000000264d0                __aeabi_dadd
  .text.__aeabi_dsub
-                0x00000000000266cc        0x8 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x00000000000266cc                __aeabi_dsub
+                0x0000000000026714        0x8 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026714                __aeabi_dsub
  .text.__aeabi_dmul
-                0x00000000000266d4      0x138 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x00000000000266d4                __aeabi_dmul
+                0x000000000002671c      0x138 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x000000000002671c                __aeabi_dmul
  .text.__aeabi_ddiv
-                0x000000000002680c      0x1cc D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x000000000002680c                __aeabi_ddiv
+                0x0000000000026854      0x1cc D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026854                __aeabi_ddiv
  .text.__aeabi_dcmple
-                0x00000000000269d8       0x3c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x00000000000269d8                __aeabi_dcmple
+                0x0000000000026a20       0x3c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026a20                __aeabi_dcmple
  .text.__aeabi_dcmpeq
-                0x0000000000026a14       0x34 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026a14                __aeabi_dcmpeq
+                0x0000000000026a5c       0x34 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026a5c                __aeabi_dcmpeq
  .text.__aeabi_dcmpge
-                0x0000000000026a48       0x3c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026a48                __aeabi_dcmpge
+                0x0000000000026a90       0x3c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026a90                __aeabi_dcmpge
  .text.__aeabi_dcmpgt
-                0x0000000000026a84       0x38 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026a84                __aeabi_dcmpgt
+                0x0000000000026acc       0x38 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026acc                __aeabi_dcmpgt
  .text.__aeabi_dcmplt
-                0x0000000000026abc       0x38 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026abc                __aeabi_dcmplt
+                0x0000000000026b04       0x38 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026b04                __aeabi_dcmplt
+ .text.__aeabi_d2iz
+                0x0000000000026b3c       0x4c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026b3c                __aeabi_d2iz
  .text.__aeabi_d2uiz
-                0x0000000000026af4       0x28 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026af4                __aeabi_d2uiz
+                0x0000000000026b88       0x28 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026b88                __aeabi_d2uiz
  .text.__aeabi_d2ulz
-                0x0000000000026b1c       0x40 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026b1c                __aeabi_d2ulz
+                0x0000000000026bb0       0x40 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026bb0                __aeabi_d2ulz
  .text.__aeabi_i2d
-                0x0000000000026b5c       0x28 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026b5c                __aeabi_i2d
+                0x0000000000026bf0       0x28 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026bf0                __aeabi_i2d
  .text.__aeabi_ul2d
-                0x0000000000026b84       0x5c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026b84                __aeabi_ul2d
+                0x0000000000026c18       0x5c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026c18                __aeabi_ul2d
  .text.__aeabi_f2d
-                0x0000000000026be0       0x34 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026be0                __aeabi_f2d
+                0x0000000000026c74       0x34 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026c74                __aeabi_f2d
  .text.__float64_isfinite
-                0x0000000000026c14       0x14 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026c14                __float64_isfinite
+                0x0000000000026ca8       0x14 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026ca8                __float64_isfinite
  .text.__float64_isinf
-                0x0000000000026c28       0x14 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026c28                __float64_isinf
+                0x0000000000026cbc       0x14 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026cbc                __float64_isinf
  .text.__float64_isnan
-                0x0000000000026c3c       0x14 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026c3c                __float64_isnan
+                0x0000000000026cd0       0x14 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026cd0                __float64_isnan
  .text.__float64_signbit
-                0x0000000000026c50        0xc D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026c50                __float64_signbit
- .text.fabs     0x0000000000026c5c       0x10 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
-                0x0000000000026c5c                fabs(double)
-                0x0000000000026c5c                fabs
+                0x0000000000026ce4        0xc D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026ce4                __float64_signbit
+ .text.fabs     0x0000000000026cf0       0x10 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm_asm.o)
+                0x0000000000026cf0                fabs(double)
+                0x0000000000026cf0                fabs
+ .text.libc.atan
+                0x0000000000026d00      0x290 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
+                0x0000000000026d00                atanl
+                0x0000000000026d00                atan
+                0x0000000000026d00                atanl(long double)
+                0x0000000000026d00                atan(double)
+ .text.libc.atan2
+                0x0000000000026f90      0x14c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
+                0x0000000000026f90                atan2(double, double)
+                0x0000000000026f90                atan2
+                0x0000000000026f90                atan2l(long double, long double)
+                0x0000000000026f90                atan2l
  .text.libc.frexp
-                0x0000000000026c6c       0x50 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
-                0x0000000000026c6c                frexpl(long double, int*)
-                0x0000000000026c6c                frexpl
-                0x0000000000026c6c                frexp
-                0x0000000000026c6c                frexp(double, int*)
- *fill*         0x0000000000026cbc        0x4 
+                0x00000000000270dc       0x50 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
+                0x00000000000270dc                frexpl(long double, int*)
+                0x00000000000270dc                frexpl
+                0x00000000000270dc                frexp
+                0x00000000000270dc                frexp(double, int*)
+ *fill*         0x000000000002712c        0x4 
  .text.libc.ldexp
-                0x0000000000026cc0       0x7c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
-                0x0000000000026cc0                ldexpl(long double, int)
-                0x0000000000026cc0                ldexp
-                0x0000000000026cc0                ldexpl
-                0x0000000000026cc0                ldexp(double, int)
+                0x0000000000027130       0x7c D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
+                0x0000000000027130                ldexpl(long double, int)
+                0x0000000000027130                ldexp
+                0x0000000000027130                ldexpl
+                0x0000000000027130                ldexp(double, int)
  .text.libc.modf
-                0x0000000000026d3c       0x94 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
-                0x0000000000026d3c                modf
-                0x0000000000026d3c                modf(double, double*)
-                0x0000000000026d3c                modfl(long double, long double*)
-                0x0000000000026d3c                modfl
+                0x00000000000271ac       0x94 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
+                0x00000000000271ac                modf
+                0x00000000000271ac                modf(double, double*)
+                0x00000000000271ac                modfl(long double, long double*)
+                0x00000000000271ac                modfl
  .text.libc.sqrt
-                0x0000000000026dd0      0x134 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
-                0x0000000000026dd0                sqrtl
-                0x0000000000026dd0                sqrtl(long double)
-                0x0000000000026dd0                sqrt(double)
-                0x0000000000026dd0                sqrt
- *fill*         0x0000000000026f04        0x4 
+                0x0000000000027240      0x134 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
+                0x0000000000027240                sqrtl
+                0x0000000000027240                sqrtl(long double)
+                0x0000000000027240                sqrt(double)
+                0x0000000000027240                sqrt
+ *fill*         0x0000000000027374        0x4 
  .text.libc.floor
-                0x0000000000026f08       0xa8 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
-                0x0000000000026f08                floorl
-                0x0000000000026f08                floorl(long double)
-                0x0000000000026f08                floor(double)
-                0x0000000000026f08                floor
+                0x0000000000027378       0xa8 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
+                0x0000000000027378                floorl
+                0x0000000000027378                floorl(long double)
+                0x0000000000027378                floor(double)
+                0x0000000000027378                floor
  .text.libc.fmod
-                0x0000000000026fb0      0x1a4 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
-                0x0000000000026fb0                fmod
-                0x0000000000026fb0                fmodl
-                0x0000000000026fb0                fmodl(long double, long double)
-                0x0000000000026fb0                fmod(double, double)
+                0x0000000000027420      0x1a4 D:/Segger Embedded Studio/lib/libm_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libm2.o)
+                0x0000000000027420                fmod
+                0x0000000000027420                fmodl
+                0x0000000000027420                fmodl(long double, long double)
+                0x0000000000027420                fmod(double, double)
  .text.libc.__RAL_pow10
-                0x0000000000027154       0x54 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000027154                __RAL_pow10
+                0x00000000000275c4       0x54 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000275c4                __RAL_pow10
  .text.libc.__putc
-                0x00000000000271a8       0x36 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000271a8                __putc
+                0x0000000000027618       0x36 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000027618                __putc
  .text.libc.__RAL_print_padding
-                0x00000000000271de       0x1c D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000271de                __RAL_print_padding
+                0x000000000002764e       0x1c D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x000000000002764e                __RAL_print_padding
  .text.libc.__RAL_pre_padding
-                0x00000000000271fa       0x1a D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000271fa                __RAL_pre_padding
+                0x000000000002766a       0x1a D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x000000000002766a                __RAL_pre_padding
  .text.libc.abs
-                0x0000000000027214        0x8 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000027214                abs
+                0x0000000000027684        0x8 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000027684                abs
  .text.libc.__aeabi_errno_addr
-                0x000000000002721c       0x14 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x000000000002721c                __aeabi_errno_addr
+                0x000000000002768c       0x14 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x000000000002768c                __aeabi_errno_addr
  .text.libc.malloc
-                0x0000000000027230       0x90 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000027230                malloc
+                0x00000000000276a0       0x90 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000276a0                malloc
  .text.libc.memcmp
-                0x00000000000272c0       0x6e D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000272c0                memcmp
- *fill*         0x000000000002732e        0x2 
+                0x0000000000027730       0x6e D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000027730                memcmp
+ *fill*         0x000000000002779e        0x2 
  .text.libc.rand
-                0x0000000000027330       0x20 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000027330                rand
+                0x00000000000277a0       0x20 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000277a0                rand
  .text.libc.snprintf
-                0x0000000000027350       0x28 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000027350                snprintf
+                0x00000000000277c0       0x28 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000277c0                snprintf
  .text.libc.srand
-                0x0000000000027378        0xc D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000027378                srand
+                0x00000000000277e8        0xc D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000277e8                srand
  .text.libc.strnlen
-                0x0000000000027384       0x22 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000027384                strnlen
+                0x00000000000277f4       0x22 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000277f4                strnlen
  .text.libc.memcpy
-                0x00000000000273a6       0x52 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
-                0x00000000000273a6                __aeabi_memcpy
-                0x00000000000273a6                memcpy
-                0x00000000000273b2                __aeabi_memcpy8
-                0x00000000000273b2                __aeabi_memcpy4
+                0x0000000000027816       0x52 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
+                0x0000000000027816                __aeabi_memcpy
+                0x0000000000027816                memcpy
+                0x0000000000027822                __aeabi_memcpy8
+                0x0000000000027822                __aeabi_memcpy4
  .text.libc.memset
-                0x00000000000273f8       0x66 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
-                0x00000000000273f8                memset
+                0x0000000000027868       0x66 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
+                0x0000000000027868                memset
  .text.libc.strlen
-                0x000000000002745e       0x60 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
-                0x000000000002745e                strlen
- *fill*         0x00000000000274be        0x2 
+                0x00000000000278ce       0x60 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
+                0x00000000000278ce                strlen
+ *fill*         0x000000000002792e        0x2 
  .text.libc.__vfprintf_float_long
-                0x00000000000274c0     0x10e8 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libvfprintf.o)
-                0x00000000000274c0                __vfprintf_float_long
+                0x0000000000027930     0x10e8 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libvfprintf.o)
+                0x0000000000027930                __vfprintf_float_long
  .text.libc.__heap_lock
-                0x00000000000285a8        0x2 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc.o)
-                0x00000000000285a8                __heap_lock
+                0x0000000000028a18        0x2 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc.o)
+                0x0000000000028a18                __heap_lock
  .text.libc.__heap_unlock
-                0x00000000000285aa        0x2 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc.o)
-                0x00000000000285aa                __heap_unlock
+                0x0000000000028a1a        0x2 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc.o)
+                0x0000000000028a1a                __heap_unlock
  .text.libc.__int64_udivmod
-                0x00000000000285ac       0xce D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc_asm.o)
-                0x00000000000285ac                __aeabi_uldivmod
-                0x00000000000285ac                __int64_udiv
-                0x00000000000285ac                __udivdi3
-                0x00000000000285ac                __int64_udivmod
+                0x0000000000028a1c       0xce D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc_asm.o)
+                0x0000000000028a1c                __aeabi_uldivmod
+                0x0000000000028a1c                __int64_udiv
+                0x0000000000028a1c                __udivdi3
+                0x0000000000028a1c                __int64_udivmod
  .text.interface_tx_frame
-                0x000000000002867a       0x92 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_interface.c.obj)
-                0x000000000002867a                interface_tx_frame
+                0x0000000000028aea       0x92 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_interface.c.obj)
+                0x0000000000028aea                interface_tx_frame
  .text.interface_get_timestamp
-                0x000000000002870c       0x22 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_interface.c.obj)
-                0x000000000002870c                interface_get_timestamp
+                0x0000000000028b7c       0x22 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_interface.c.obj)
+                0x0000000000028b7c                interface_get_timestamp
  .text.interface_rx_disable
-                0x000000000002872e       0x12 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_interface.c.obj)
-                0x000000000002872e                interface_rx_disable
+                0x0000000000028b9e       0x12 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_interface.c.obj)
+                0x0000000000028b9e                interface_rx_disable
  .text.interface_rx_enable
-                0x0000000000028740      0x1d8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_interface.c.obj)
-                0x0000000000028740                interface_rx_enable
+                0x0000000000028bb0      0x1d8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_interface.c.obj)
+                0x0000000000028bb0                interface_rx_enable
  .text.interface_read_rx_frame
-                0x0000000000028918       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_interface.c.obj)
-                0x0000000000028918                interface_read_rx_frame
+                0x0000000000028d88       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_interface.c.obj)
+                0x0000000000028d88                interface_read_rx_frame
  .text.dwt_probe
-                0x0000000000028938       0x98 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028938                dwt_probe
+                0x0000000000028da8       0x98 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028da8                dwt_probe
  .text.dwt_setlnapamode
-                0x00000000000289d0       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x00000000000289d0                dwt_setlnapamode
+                0x0000000000028e40       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028e40                dwt_setlnapamode
  .text.dwt_initialise
-                0x00000000000289ec       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x00000000000289ec                dwt_initialise
+                0x0000000000028e5c       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028e5c                dwt_initialise
  .text.dwt_configure
-                0x0000000000028a04       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028a04                dwt_configure
+                0x0000000000028e74       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028e74                dwt_configure
  .text.dwt_configuretxrf
-                0x0000000000028a1c       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028a1c                dwt_configuretxrf
+                0x0000000000028e8c       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028e8c                dwt_configuretxrf
  .text.dwt_setrxantennadelay
-                0x0000000000028a34       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028a34                dwt_setrxantennadelay
+                0x0000000000028ea4       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028ea4                dwt_setrxantennadelay
  .text.dwt_settxantennadelay
-                0x0000000000028a58       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028a58                dwt_settxantennadelay
+                0x0000000000028ec8       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028ec8                dwt_settxantennadelay
  .text.dwt_writetxdata
-                0x0000000000028a7c       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028a7c                dwt_writetxdata
+                0x0000000000028eec       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028eec                dwt_writetxdata
  .text.dwt_writetxfctrl
-                0x0000000000028a98       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028a98                dwt_writetxfctrl
+                0x0000000000028f08       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028f08                dwt_writetxfctrl
  .text.dwt_starttx
-                0x0000000000028ab4       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028ab4                dwt_starttx
+                0x0000000000028f24       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028f24                dwt_starttx
  .text.dwt_readtxtimestamplo32
-                0x0000000000028ad8       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028ad8                dwt_readtxtimestamplo32
+                0x0000000000028f48       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028f48                dwt_readtxtimestamplo32
  .text.dwt_readrxtimestamplo32
-                0x0000000000028afc       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028afc                dwt_readrxtimestamplo32
+                0x0000000000028f6c       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028f6c                dwt_readrxtimestamplo32
  .text.dwt_forcetrxoff
-                0x0000000000028b20       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028b20                dwt_forcetrxoff
+                0x0000000000028f90       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028f90                dwt_forcetrxoff
  .text.dwt_rxenable
-                0x0000000000028b3c       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028b3c                dwt_rxenable
+                0x0000000000028fac       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028fac                dwt_rxenable
  .text.dwt_setrxtimeout
-                0x0000000000028b54       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028b54                dwt_setrxtimeout
+                0x0000000000028fc4       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028fc4                dwt_setrxtimeout
  .text.dwt_checkidlerc
-                0x0000000000028b78       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028b78                dwt_checkidlerc
+                0x0000000000028fe8       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000028fe8                dwt_checkidlerc
  .text.dwt_setaddress16
-                0x0000000000028ba0       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028ba0                dwt_setaddress16
+                0x0000000000029010       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000029010                dwt_setaddress16
  .text.dwt_configureframefilter
-                0x0000000000028bc4       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028bc4                dwt_configureframefilter
+                0x0000000000029034       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000029034                dwt_configureframefilter
  .text.dwt_generatecrc8
-                0x0000000000028bec       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028bec                dwt_generatecrc8
+                0x000000000002905c       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x000000000002905c                dwt_generatecrc8
  .text.dwt_setrxaftertxdelay
-                0x0000000000028c14       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028c14                dwt_setrxaftertxdelay
+                0x0000000000029084       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000029084                dwt_setrxaftertxdelay
  .text.dwt_readrxdata
-                0x0000000000028c38       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028c38                dwt_readrxdata
+                0x00000000000290a8       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x00000000000290a8                dwt_readrxdata
  .text.dwt_readclockoffset
-                0x0000000000028c54       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028c54                dwt_readclockoffset
+                0x00000000000290c4       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x00000000000290c4                dwt_readclockoffset
  .text.dwt_setleds
-                0x0000000000028c7c       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028c7c                dwt_setleds
+                0x00000000000290ec       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x00000000000290ec                dwt_setleds
  .text.dwt_writesysstatuslo
-                0x0000000000028ca0       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028ca0                dwt_writesysstatuslo
+                0x0000000000029110       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000029110                dwt_writesysstatuslo
  .text.dwt_readsysstatuslo
-                0x0000000000028cc4       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028cc4                dwt_readsysstatuslo
+                0x0000000000029134       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000029134                dwt_readsysstatuslo
  .text.dwt_readsysstatushi
-                0x0000000000028ce8       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028ce8                dwt_readsysstatushi
+                0x0000000000029158       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000029158                dwt_readsysstatushi
  .text.dwt_getframelength
-                0x0000000000028d0c       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000028d0c                dwt_getframelength
+                0x000000000002917c       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x000000000002917c                dwt_getframelength
  .text.dwt_dbg_fn
-                0x0000000000028d34       0x10 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- .text._deinit  0x0000000000028d44        0x2 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x00000000000291a4       0x10 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ .text._deinit  0x00000000000291b4        0x2 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_xfer3xxx
-                0x0000000000028d46      0x106 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x00000000000291b6      0x106 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_readfromdevice
-                0x0000000000028e4c       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x00000000000292bc       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_read32bitoffsetreg
-                0x0000000000028e60       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x00000000000292d0       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_read16bitoffsetreg
-                0x0000000000028e8c       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x00000000000292fc       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_read8bitoffsetreg
-                0x0000000000028eb0       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029320       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_readdiagnostics
-                0x0000000000028ecc      0x718 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002933c      0x718 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_readrxtimestamp
-                0x00000000000295e4       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029a54       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_writetodevice
-                0x0000000000029628       0x16 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029a98       0x16 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_write8bitoffsetreg
-                0x000000000002963e       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- *fill*         0x0000000000029656        0x2 
+                0x0000000000029aae       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ *fill*         0x0000000000029ac6        0x2 
  .text.ull_getframelength
-                0x0000000000029658       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029ac8       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_configeventcounters
-                0x00000000000296bc       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029b2c       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_write16bitoffsetreg
-                0x00000000000296e2       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- *fill*         0x0000000000029702        0x2 
+                0x0000000000029b52       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ *fill*         0x0000000000029b72        0x2 
  .text.ull_clearaonconfig
-                0x0000000000029704       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029b74       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_force_clocks
-                0x0000000000029744       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029bb4       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.__dwt_otp_write_wdata_id_reg
-                0x0000000000029770       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- *fill*         0x0000000000029796        0x2 
+                0x0000000000029be0       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ *fill*         0x0000000000029c06        0x2 
  .text._dwt_otpread
-                0x0000000000029798       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029c08       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_aon_read
-                0x00000000000297dc       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029c4c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_aon_write
-                0x000000000002981c       0x50 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029c8c       0x50 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_configuresleep
-                0x000000000002986c       0x54 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029cdc       0x54 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_signal_rx_buff_free
-                0x00000000000298c0       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029d30       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_write32bitoffsetreg
-                0x00000000000298e4       0x2a Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- *fill*         0x000000000002990e        0x2 
- .text.ull_isr  0x0000000000029910      0x2bc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000029d54       0x2a Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ *fill*         0x0000000000029d7e        0x2 
+ .text.ull_isr  0x0000000000029d80      0x2bc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text._dwt_adjust_delaytime
-                0x0000000000029bcc       0x50 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a03c       0x50 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_setrxaftertxdelay
-                0x0000000000029c1c       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a08c       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_setlnapamode
-                0x0000000000029c48       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a0b8       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_configurestskey
-                0x0000000000029c8c       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a0fc       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_configurestsiv
-                0x0000000000029cd4       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a144       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_configmrxlut
-                0x0000000000029d1c      0x104 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a18c      0x104 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_disable_rftx_blocks
-                0x0000000000029e20       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a290       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_disable_rf_tx
-                0x0000000000029e34       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a2a4       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_readrxdata
-                0x0000000000029e70       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a2e0       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_rxenable
-                0x0000000000029edc       0xc8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a34c       0xc8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_writetxdata
-                0x0000000000029fa4       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a414       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_modify32bitoffsetreg
-                0x000000000002a008       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a478       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text._dwt_kick_dgc_on_wakeup
-                0x000000000002a050       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a4c0       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_enable_rf_tx
-                0x000000000002a08c       0x68 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a4fc       0x68 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_enable_rftx_blocks
-                0x000000000002a0f4       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a564       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text._dwt_otpprogword32
-                0x000000000002a118      0x170 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a588      0x170 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_setgpiomode
-                0x000000000002a288       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a6f8       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_setinterrupt
-                0x000000000002a2c4       0xb2 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- *fill*         0x000000000002a376        0x2 
+                0x000000000002a734       0xb2 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ *fill*         0x000000000002a7e6        0x2 
  .text.ull_writetxfctrl
-                0x000000000002a378       0x4c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a7e8       0x4c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.prs_sys_status_and_or
-                0x000000000002a3c4       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a834       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_modify8bitoffsetreg
-                0x000000000002a3dc       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a84c       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_configciadiag
-                0x000000000002a404       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a874       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_calcbandwidthadj
-                0x000000000002a470       0x84 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a8e0       0x84 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_configuretxrf
-                0x000000000002a4f4       0x34 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a964       0x34 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_repeated_frames
-                0x000000000002a528       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a998       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_setdwstate
-                0x000000000002a558       0xbc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002a9c8       0xbc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_configureframefilter
-                0x000000000002a614       0x46 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- *fill*         0x000000000002a65a        0x2 
+                0x000000000002aa84       0x46 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ *fill*         0x000000000002aaca        0x2 
  .text.ull_run_pgfcal
-                0x000000000002a65c       0xc4 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002aacc       0xc4 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.prs_ack_enable
-                0x000000000002a720       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002ab90       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_modify16bitoffsetreg
-                0x000000000002a740       0x32 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- *fill*         0x000000000002a772        0x2 
+                0x000000000002abb0       0x32 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ *fill*         0x000000000002abe2        0x2 
  .text._dwt_prog_ldo_and_bias_tune
-                0x000000000002a774       0x38 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002abe4       0x38 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_setleds
-                0x000000000002a7ac       0x9c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002ac1c       0x9c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_pgf_cal
-                0x000000000002a848       0x60 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002acb8       0x60 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_setgpiovalue
-                0x000000000002a8a8       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002ad18       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_readaccdata
-                0x000000000002a8d8       0x88 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002ad48       0x88 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_repeated_cw
-                0x000000000002a960       0x54 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002add0       0x54 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_configure
-                0x000000000002a9b4      0x454 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002ae24      0x454 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_ioctl
-                0x000000000002ae08     0x1f00 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002b278     0x1f00 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.ull_initialise
-                0x000000000002cd08      0x124 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- .text._init    0x000000000002ce2c      0x1b0 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x000000000002d178      0x124 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ .text._init    0x000000000002d29c      0x1b0 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
  .text.dwt_dbg_fn
-                0x000000000002cfdc       0x10 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- .text._deinit  0x000000000002cfec        0x2 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002d44c       0x10 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ .text._deinit  0x000000000002d45c        0x2 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_xfer3xxx
-                0x000000000002cfee       0xfc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002d45e       0xfc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_readfromdevice
-                0x000000000002d0ea       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002d55a       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_read32bitoffsetreg
-                0x000000000002d0fe       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002d56e       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_read16bitoffsetreg
-                0x000000000002d12a       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002d59a       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_read8bitoffsetreg
-                0x000000000002d14e       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002d5be       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_readdiagnostics
-                0x000000000002d16a      0x768 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- *fill*         0x000000000002d8d2        0x2 
+                0x000000000002d5da      0x768 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ *fill*         0x000000000002dd42        0x2 
  .text.ull_readrxtimestamp
-                0x000000000002d8d4       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002dd44       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_writetodevice
-                0x000000000002d918       0x16 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002dd88       0x16 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_write16bitoffsetreg
-                0x000000000002d92e       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- *fill*         0x000000000002d94e        0x2 
+                0x000000000002dd9e       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ *fill*         0x000000000002ddbe        0x2 
  .text.ull_force_clocks
-                0x000000000002d950       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002ddc0       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.__dwt_otp_write_wdata_id_reg
-                0x000000000002d97c       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- *fill*         0x000000000002d9a2        0x2 
+                0x000000000002ddec       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ *fill*         0x000000000002de12        0x2 
  .text._dwt_otpread
-                0x000000000002d9a4       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002de14       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_write32bitoffsetreg
-                0x000000000002d9e8       0x2a Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002de58       0x2a Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text._dwt_adjust_delaytime
-                0x000000000002da12       0x4c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002de82       0x4c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_setrxaftertxdelay
-                0x000000000002da5e       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002dece       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_setlnapamode
-                0x000000000002da86       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- *fill*         0x000000000002dac6        0x2 
+                0x000000000002def6       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ *fill*         0x000000000002df36        0x2 
  .text.ull_configurestskey
-                0x000000000002dac8       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002df38       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_configurestsiv
-                0x000000000002db10       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002df80       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_configmrxlut
-                0x000000000002db58       0xf0 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002dfc8       0xf0 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_disable_rftx_blocks
-                0x000000000002dc48       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e0b8       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_disable_rf_tx
-                0x000000000002dc5c       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e0cc       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_readrxdata
-                0x000000000002dc98       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e108       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_write8bitoffsetreg
-                0x000000000002dd04       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e174       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_getframelength
-                0x000000000002dd1c       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e18c       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text._dwt_clear_db_events
-                0x000000000002dd80       0x34 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e1f0       0x34 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_clearaonconfig
-                0x000000000002ddb4       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e224       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_configeventcounters
-                0x000000000002ddf4       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- *fill*         0x000000000002de1a        0x2 
+                0x000000000002e264       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ *fill*         0x000000000002e28a        0x2 
  .text.ull_aon_read
-                0x000000000002de1c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e28c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_aon_write
-                0x000000000002de5c       0x50 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e2cc       0x50 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_configuresleep
-                0x000000000002deac       0x54 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e31c       0x54 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_writetxdata
-                0x000000000002df00       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e370       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_signal_rx_buff_free
-                0x000000000002df64       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- .text.ull_isr  0x000000000002df8c      0x300 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e3d4       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ .text.ull_isr  0x000000000002e3fc      0x300 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_modify32bitoffsetreg
-                0x000000000002e28c       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e6fc       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_enable_rf_tx
-                0x000000000002e2d4       0x68 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e744       0x68 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_enable_rftx_blocks
-                0x000000000002e33c       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e7ac       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text._dwt_otpprogword32
-                0x000000000002e360      0x170 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e7d0      0x170 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_setgpiomode
-                0x000000000002e4d0       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e940       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_writetxfctrl
-                0x000000000002e50c       0x4c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e97c       0x4c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.prs_sys_status_and_or
-                0x000000000002e558       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e9c8       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_modify8bitoffsetreg
-                0x000000000002e570       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002e9e0       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_configciadiag
-                0x000000000002e598       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002ea08       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_calcbandwidthadj
-                0x000000000002e604       0x84 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002ea74       0x84 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_configuretxrf
-                0x000000000002e688       0x34 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002eaf8       0x34 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_repeated_frames
-                0x000000000002e6bc       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002eb2c       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_setdwstate
-                0x000000000002e6ec       0xb8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002eb5c       0xb8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_configureframefilter
-                0x000000000002e7a4       0x46 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- *fill*         0x000000000002e7ea        0x2 
+                0x000000000002ec14       0x46 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ *fill*         0x000000000002ec5a        0x2 
  .text.ull_run_pgfcal
-                0x000000000002e7ec       0xc4 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002ec5c       0xc4 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_setinterrupt
-                0x000000000002e8b0       0xd8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002ed20       0xd8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.prs_ack_enable
-                0x000000000002e988       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002edf8       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_modify16bitoffsetreg
-                0x000000000002e9a8       0x32 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- *fill*         0x000000000002e9da        0x2 
+                0x000000000002ee18       0x32 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ *fill*         0x000000000002ee4a        0x2 
  .text.ull_setleds
-                0x000000000002e9dc       0x9c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002ee4c       0x9c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_pgf_cal
-                0x000000000002ea78       0x60 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002eee8       0x60 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_setgpiovalue
-                0x000000000002ead8       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002ef48       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_readaccdata
-                0x000000000002eb08       0x88 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002ef78       0x88 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_repeated_cw
-                0x000000000002eb90       0x54 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002f000       0x54 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_configure
-                0x000000000002ebe4      0x480 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002f054      0x480 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_initialise
-                0x000000000002f064      0x128 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002f4d4      0x128 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_rxenable
-                0x000000000002f18c       0xe0 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002f5fc       0xe0 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_softreset_no_sema_fcmd
-                0x000000000002f26c       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002f6dc       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_softreset_fcmd
-                0x000000000002f294       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002f704       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.dwt_ioctl
-                0x000000000002f2bc     0x20ec Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- .text._init    0x00000000000313a8      0x1b0 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000002f72c     0x20ec Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ .text._init    0x0000000000031818      0x1b0 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .text.ull_wakeup_ic
-                0x0000000000031558        0x8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000319c8        0x8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.get_sts_mnth
-                0x0000000000031560       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000319d0       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_dbg_fn
-                0x0000000000031588       0x10 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- .text._deinit  0x0000000000031598        0x2 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000319f8       0x10 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ .text._deinit  0x0000000000031a08        0x2 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_xfer3xxx
-                0x000000000003159a       0xfc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000031a0a       0xfc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_readfromdevice
-                0x0000000000031696       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000031b06       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_read32bitoffsetreg
-                0x00000000000316aa       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000031b1a       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_read16bitoffsetreg
-                0x00000000000316d6       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000031b46       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_getrxantennadelay
-                0x00000000000316fa        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000031b6a        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_gettxantennadelay
-                0x0000000000031708        0xc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000031b78        0xc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_readclockoffset
-                0x0000000000031714       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000031b84       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_read8bitoffsetreg
-                0x0000000000031754       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000031bc4       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_readcarrierintegrator
-                0x0000000000031770       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000031be0       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_readdiagnostics
-                0x00000000000317b0      0x786 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- *fill*         0x0000000000031f36        0x2 
+                0x0000000000031c20      0x786 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ *fill*         0x00000000000323a6        0x2 
  .text.ull_readrxtimestamp
-                0x0000000000031f38       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000323a8       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_writetodevice
-                0x0000000000031f7c       0x16 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000323ec       0x16 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_write16bitoffsetreg
-                0x0000000000031f92       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032402       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_setrxantennadelay
-                0x0000000000031fb2       0x10 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032422       0x10 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_settxantennadelay
-                0x0000000000031fc2        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032432        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_force_clocks
-                0x0000000000031fd0       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032440       0x2c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.__dwt_otp_write_wdata_id_reg
-                0x0000000000031ffc       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- *fill*         0x0000000000032022        0x2 
+                0x000000000003246c       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ *fill*         0x0000000000032492        0x2 
  .text._dwt_otpread
-                0x0000000000032024       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032494       0x44 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_write32bitoffsetreg
-                0x0000000000032068       0x2a Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000324d8       0x2a Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text._dwt_adjust_delaytime
-                0x0000000000032092       0x4c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032502       0x4c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_setrxaftertxdelay
-                0x00000000000320de       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- *fill*         0x0000000000032106        0x2 
+                0x000000000003254e       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ *fill*         0x0000000000032576        0x2 
  .text.ull_setfinegraintxseq
-                0x0000000000032108       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032578       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_setlnapamode
-                0x0000000000032130       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000325a0       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_configurestskey
-                0x0000000000032170       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000325e0       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_configurestsiv
-                0x00000000000321b8       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032628       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_configmrxlut
-                0x0000000000032200      0x12c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032670      0x12c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_disable_rftx_blocks
-                0x000000000003232c       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x000000000003279c       0x14 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_disable_rf_tx
-                0x0000000000032340       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000327b0       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_repeated_cw
-                0x000000000003237c       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000327ec       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_readrxdata
-                0x00000000000323c4       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032834       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_write8bitoffsetreg
-                0x0000000000032430       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000328a0       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_getframelength
-                0x0000000000032448       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000328b8       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text._dwt_clear_db_events
-                0x00000000000324ac       0x34 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x000000000003291c       0x34 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_clearaonconfig
-                0x00000000000324e0       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032950       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_configeventcounters
-                0x0000000000032520       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- *fill*         0x0000000000032546        0x2 
+                0x0000000000032990       0x26 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ *fill*         0x00000000000329b6        0x2 
  .text.ull_aon_read
-                0x0000000000032548       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000329b8       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_aon_write
-                0x0000000000032588       0x50 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000329f8       0x50 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_configuresleep
-                0x00000000000325d8       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032a48       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_setplenfine
-                0x000000000003263c        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- *fill*         0x000000000003264a        0x2 
+                0x0000000000032aac        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ *fill*         0x0000000000032aba        0x2 
  .text.ull_update_nonce_GCM
-                0x000000000003264c       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032abc       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_update_nonce_CCM
-                0x0000000000032668       0x7c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032ad8       0x7c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_writetxdata
-                0x00000000000326e4       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032b54       0x64 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_signal_rx_buff_free
-                0x0000000000032748       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- .text.ull_isr  0x0000000000032770      0x304 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032bb8       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ .text.ull_isr  0x0000000000032be0      0x304 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_modify32bitoffsetreg
-                0x0000000000032a74       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032ee4       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_enablegpioclocks
-                0x0000000000032abc       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032f2c       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_enable_rf_tx
-                0x0000000000032adc       0x68 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032f4c       0x68 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_enable_rftx_blocks
-                0x0000000000032b44       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032fb4       0x24 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text._dwt_otpprogword32
-                0x0000000000032b68      0x170 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000032fd8      0x170 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_setgpiomode
-                0x0000000000032cd8       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033148       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_writetxfctrl
-                0x0000000000032d14       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033184       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.prs_sys_status_and_or
-                0x0000000000032d3c       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000331ac       0x18 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_modify8bitoffsetreg
-                0x0000000000032d54       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000331c4       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_enablespicrccheck
-                0x0000000000032d7c       0x36 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- *fill*         0x0000000000032db2        0x2 
+                0x00000000000331ec       0x36 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ *fill*         0x0000000000033222        0x2 
  .text.ull_configciadiag
-                0x0000000000032db4       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033224       0x6c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_configurestsloadiv
-                0x0000000000032e20       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033290       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_adcoffsetscalibration
-                0x0000000000032e3c      0x230 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000332ac      0x230 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_restoreconfig
-                0x000000000003306c       0x60 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000334dc       0x60 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_calcbandwidthadj
-                0x00000000000330cc       0x84 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x000000000003353c       0x84 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_configuretxrf
-                0x0000000000033150       0x34 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000335c0       0x34 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_repeated_frames
-                0x0000000000033184       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000335f4       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_setdwstate
-                0x00000000000331b4       0xbc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033624       0xbc Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_configureframefilter
-                0x0000000000033270       0x46 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- *fill*         0x00000000000332b6        0x2 
+                0x00000000000336e0       0x46 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ *fill*         0x0000000000033726        0x2 
  .text.ull_run_pgfcal
-                0x00000000000332b8       0xc4 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033728       0xc4 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_setinterrupt
-                0x000000000003337c       0xd8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000337ec       0xd8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.prs_ack_enable
-                0x0000000000033454       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000338c4       0x20 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_modify16bitoffsetreg
-                0x0000000000033474       0x32 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- *fill*         0x00000000000334a6        0x2 
+                0x00000000000338e4       0x32 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ *fill*         0x0000000000033916        0x2 
  .text.ull_configurestsmode
-                0x00000000000334a8       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033918       0x48 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_setleds
-                0x00000000000334f0       0x9c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033960       0x9c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_pgf_cal
-                0x000000000003358c       0x60 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000339fc       0x60 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_setgpiovalue
-                0x00000000000335ec       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033a5c       0x30 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_readaccdata
-                0x000000000003361c       0x88 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033a8c       0x88 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_configure
-                0x00000000000336a4      0x49c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033b14      0x49c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_initialise
-                0x0000000000033b40      0x13c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000033fb0      0x13c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_rxenable
-                0x0000000000033c7c       0xe0 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000340ec       0xe0 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_softreset_no_sema_fcmd
-                0x0000000000033d5c       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000341cc       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.ull_softreset_fcmd
-                0x0000000000033d84       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000341f4       0x28 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .text.dwt_ioctl
-                0x0000000000033dac     0x2044 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- .text._init    0x0000000000035df0      0x198 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
-                0x0000000000035f88                __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x0000000000016db8                __text_size__ = SIZEOF (.text)
-                0x0000000000035f88                __text_load_end__ = __text_end__
+                0x000000000003421c     0x2044 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ .text._init    0x0000000000036260      0x198 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000363f8                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x0000000000017228                __text_size__ = SIZEOF (.text)
+                0x00000000000363f8                __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x0000000100000000        0x0
  .vfp11_veneer  0x0000000100000000        0x0 linker stubs
@@ -23457,96 +23465,96 @@ Linker script and memory map
 .iplt           0x0000000100000000        0x0
  .iplt          0x0000000100000000        0x0 Output/Debug/Obj/dw3000_api/deca_mutex.o
                 0x0000000000000001                . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .text is too large to fit in FLASH memory segment)
-                0x0000000000035f88                __dw_drivers_load_start__ = ALIGN (__text_end__, 0x4)
+                0x00000000000363f8                __dw_drivers_load_start__ = ALIGN (__text_end__, 0x4)
 
-.dw_drivers     0x0000000000035f88       0x54
-                0x0000000000035f88                __dw_drivers_start__ = .
-                0x0000000000035f88                __dw_drivers_start = __dw_drivers_start__
+.dw_drivers     0x00000000000363f8       0x54
+                0x00000000000363f8                __dw_drivers_start__ = .
+                0x00000000000363f8                __dw_drivers_start = __dw_drivers_start__
  *(SORT_BY_NAME(.dw_drivers*))
- .dw_drivers    0x0000000000035f88       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
-                0x0000000000035f88                dw3000_driver
- .dw_drivers    0x0000000000035fa4       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
-                0x0000000000035fa4                dw3700_driver
- .dw_drivers    0x0000000000035fc0       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
-                0x0000000000035fc0                dw3720_driver
-                0x0000000000035fdc                __dw_drivers_end__ = (__dw_drivers_start__ + SIZEOF (.dw_drivers))
+ .dw_drivers    0x00000000000363f8       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x00000000000363f8                dw3000_driver
+ .dw_drivers    0x0000000000036414       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x0000000000036414                dw3700_driver
+ .dw_drivers    0x0000000000036430       0x1c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000036430                dw3720_driver
+                0x000000000003644c                __dw_drivers_end__ = (__dw_drivers_start__ + SIZEOF (.dw_drivers))
                 0x0000000000000054                __dw_drivers_size__ = SIZEOF (.dw_drivers)
-                0x0000000000035fdc                __dw_drivers_end = __dw_drivers_end__
-                0x0000000000035fdc                __dw_drivers_load_end__ = __dw_drivers_end__
+                0x000000000003644c                __dw_drivers_end = __dw_drivers_end__
+                0x000000000003644c                __dw_drivers_load_end__ = __dw_drivers_end__
                 0x0000000000000001                . = ASSERT (((__dw_drivers_start__ == __dw_drivers_end__) || ((__dw_drivers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .dw_drivers is too large to fit in FLASH memory segment)
-                0x0000000000035fdc                __log_const_data_load_start__ = ALIGN (__dw_drivers_end__, 0x4)
+                0x000000000003644c                __log_const_data_load_start__ = ALIGN (__dw_drivers_end__, 0x4)
 
 .log_const_data
-                0x0000000000035fdc       0x70
-                0x0000000000035fdc                __log_const_data_start__ = .
-                0x0000000000035fdc                __start_log_const_data = __log_const_data_start__
+                0x000000000003644c       0x70
+                0x000000000003644c                __log_const_data_start__ = .
+                0x000000000003644c                __start_log_const_data = __log_const_data_start__
  *(SORT_BY_NAME(.log_const_data*))
  .log_const_data_CLOCK
-                0x0000000000035fdc        0x8 Output/Debug/Obj/dw3000_api/nrfx_clock.o
-                0x0000000000035fdc                m_nrf_log_CLOCK_logs_data_const
+                0x000000000003644c        0x8 Output/Debug/Obj/dw3000_api/nrfx_clock.o
+                0x000000000003644c                m_nrf_log_CLOCK_logs_data_const
  .log_const_data_GPIOTE
-                0x0000000000035fe4        0x8 Output/Debug/Obj/dw3000_api/nrfx_gpiote.o
-                0x0000000000035fe4                m_nrf_log_GPIOTE_logs_data_const
+                0x0000000000036454        0x8 Output/Debug/Obj/dw3000_api/nrfx_gpiote.o
+                0x0000000000036454                m_nrf_log_GPIOTE_logs_data_const
  .log_const_data_PRS
-                0x0000000000035fec        0x8 Output/Debug/Obj/dw3000_api/nrfx_prs.o
-                0x0000000000035fec                m_nrf_log_PRS_logs_data_const
+                0x000000000003645c        0x8 Output/Debug/Obj/dw3000_api/nrfx_prs.o
+                0x000000000003645c                m_nrf_log_PRS_logs_data_const
  .log_const_data_RTC
-                0x0000000000035ff4        0x8 Output/Debug/Obj/dw3000_api/nrfx_rtc.o
-                0x0000000000035ff4                m_nrf_log_RTC_logs_data_const
+                0x0000000000036464        0x8 Output/Debug/Obj/dw3000_api/nrfx_rtc.o
+                0x0000000000036464                m_nrf_log_RTC_logs_data_const
  .log_const_data_SPIM
-                0x0000000000035ffc        0x8 Output/Debug/Obj/dw3000_api/nrfx_spim.o
-                0x0000000000035ffc                m_nrf_log_SPIM_logs_data_const
+                0x000000000003646c        0x8 Output/Debug/Obj/dw3000_api/nrfx_spim.o
+                0x000000000003646c                m_nrf_log_SPIM_logs_data_const
  .log_const_data_UART
-                0x0000000000036004        0x8 Output/Debug/Obj/dw3000_api/nrfx_uart.o
-                0x0000000000036004                m_nrf_log_UART_logs_data_const
+                0x0000000000036474        0x8 Output/Debug/Obj/dw3000_api/nrfx_uart.o
+                0x0000000000036474                m_nrf_log_UART_logs_data_const
  .log_const_data_UARTE
-                0x000000000003600c        0x8 Output/Debug/Obj/dw3000_api/nrfx_uarte.o
-                0x000000000003600c                m_nrf_log_UARTE_logs_data_const
+                0x000000000003647c        0x8 Output/Debug/Obj/dw3000_api/nrfx_uarte.o
+                0x000000000003647c                m_nrf_log_UARTE_logs_data_const
  .log_const_data_app
-                0x0000000000036014        0x8 Output/Debug/Obj/dw3000_api/nrf_log_frontend.o
-                0x0000000000036014                m_nrf_log_app_logs_data_const
+                0x0000000000036484        0x8 Output/Debug/Obj/dw3000_api/nrf_log_frontend.o
+                0x0000000000036484                m_nrf_log_app_logs_data_const
  .log_const_data_app_button
-                0x000000000003601c        0x8 Output/Debug/Obj/dw3000_api/app_button.o
-                0x000000000003601c                m_nrf_log_app_button_logs_data_const
+                0x000000000003648c        0x8 Output/Debug/Obj/dw3000_api/app_button.o
+                0x000000000003648c                m_nrf_log_app_button_logs_data_const
  .log_const_data_app_usbd
-                0x0000000000036024        0x8 Output/Debug/Obj/dw3000_api/app_usbd.o
-                0x0000000000036024                m_nrf_log_app_usbd_logs_data_const
+                0x0000000000036494        0x8 Output/Debug/Obj/dw3000_api/app_usbd.o
+                0x0000000000036494                m_nrf_log_app_usbd_logs_data_const
  .log_const_data_app_usbd_core
-                0x000000000003602c        0x8 Output/Debug/Obj/dw3000_api/app_usbd_core.o
-                0x000000000003602c                m_nrf_log_app_usbd_core_logs_data_const
+                0x000000000003649c        0x8 Output/Debug/Obj/dw3000_api/app_usbd_core.o
+                0x000000000003649c                m_nrf_log_app_usbd_core_logs_data_const
  .log_const_data_cdc_acm
-                0x0000000000036034        0x8 Output/Debug/Obj/dw3000_api/app_usbd_cdc_acm.o
-                0x0000000000036034                m_nrf_log_cdc_acm_logs_data_const
+                0x00000000000364a4        0x8 Output/Debug/Obj/dw3000_api/app_usbd_cdc_acm.o
+                0x00000000000364a4                m_nrf_log_cdc_acm_logs_data_const
  .log_const_data_clock
-                0x000000000003603c        0x8 Output/Debug/Obj/dw3000_api/nrf_drv_clock.o
-                0x000000000003603c                m_nrf_log_clock_logs_data_const
+                0x00000000000364ac        0x8 Output/Debug/Obj/dw3000_api/nrf_drv_clock.o
+                0x00000000000364ac                m_nrf_log_clock_logs_data_const
  .log_const_data_sortlist
-                0x0000000000036044        0x8 Output/Debug/Obj/dw3000_api/nrf_sortlist.o
-                0x0000000000036044                m_nrf_log_sortlist_logs_data_const
-                0x000000000003604c                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
+                0x00000000000364b4        0x8 Output/Debug/Obj/dw3000_api/nrf_sortlist.o
+                0x00000000000364b4                m_nrf_log_sortlist_logs_data_const
+                0x00000000000364bc                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
                 0x0000000000000070                __log_const_data_size__ = SIZEOF (.log_const_data)
-                0x000000000003604c                __stop_log_const_data = __log_const_data_end__
-                0x000000000003604c                __log_const_data_load_end__ = __log_const_data_end__
+                0x00000000000364bc                __stop_log_const_data = __log_const_data_end__
+                0x00000000000364bc                __log_const_data_load_end__ = __log_const_data_end__
                 0x0000000000000001                . = ASSERT (((__log_const_data_start__ == __log_const_data_end__) || ((__log_const_data_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .log_const_data is too large to fit in FLASH memory segment)
-                0x000000000003604c                __nrf_sections_load_start__ = ALIGN (__log_const_data_end__, 0x4)
+                0x00000000000364bc                __nrf_sections_load_start__ = ALIGN (__log_const_data_end__, 0x4)
 
-.nrf_sections   0x000000000003604c        0x0
-                0x000000000003604c                __nrf_sections_start__ = .
-                0x000000000003604c                __start_nrf_sections = __nrf_sections_start__
+.nrf_sections   0x00000000000364bc        0x0
+                0x00000000000364bc                __nrf_sections_start__ = .
+                0x00000000000364bc                __start_nrf_sections = __nrf_sections_start__
  *(.nrf_sections .nrf_sections.*)
-                0x000000000003604c                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
+                0x00000000000364bc                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
                 0x0000000000000000                __nrf_sections_size__ = SIZEOF (.nrf_sections)
-                0x000000000003604c                __nrf_sections_load_end__ = __nrf_sections_end__
+                0x00000000000364bc                __nrf_sections_load_end__ = __nrf_sections_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_start__ == __nrf_sections_end__) || ((__nrf_sections_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .nrf_sections is too large to fit in FLASH memory segment)
-                0x000000000003604c                __log_dynamic_data_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
+                0x00000000000364bc                __log_dynamic_data_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
 
 .log_dynamic_data
-                0x0000000020000000        0x0 load address 0x000000000003604c
+                0x0000000020000000        0x0 load address 0x00000000000364bc
                 0x0000000020000000                __log_dynamic_data_start__ = .
  *(SORT_BY_NAME(.log_dynamic_data*))
                 0x0000000020000000                __log_dynamic_data_end__ = (__log_dynamic_data_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000000                __log_dynamic_data_size__ = SIZEOF (.log_dynamic_data)
-                0x000000000003604c                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
+                0x00000000000364bc                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000001                . = ASSERT (((__log_dynamic_data_load_start__ == __log_dynamic_data_load_end__) || ((__log_dynamic_data_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .log_dynamic_data is too large to fit in FLASH memory segment)
 
 .log_dynamic_data_run
@@ -23569,224 +23577,224 @@ Linker script and memory map
                 0x0000000000000000                __nrf_sections_run_end_size__ = SIZEOF (.nrf_sections_run_end)
                 0x0000000020000000                __nrf_sections_run_end_load_end__ = __nrf_sections_run_end_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_run_end_start__ == __nrf_sections_run_end_end__) || ((__nrf_sections_run_end_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .nrf_sections_run_end is too large to fit in RAM1 memory segment)
-                0x000000000003604c                __dtors_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
+                0x00000000000364bc                __dtors_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
 
-.dtors          0x000000000003604c        0x0
-                0x000000000003604c                __dtors_start__ = .
+.dtors          0x00000000000364bc        0x0
+                0x00000000000364bc                __dtors_start__ = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x000000000003604c                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x00000000000364bc                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x0000000000000000                __dtors_size__ = SIZEOF (.dtors)
-                0x000000000003604c                __dtors_load_end__ = __dtors_end__
+                0x00000000000364bc                __dtors_load_end__ = __dtors_end__
                 0x0000000000000001                . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .dtors is too large to fit in FLASH memory segment)
-                0x000000000003604c                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x00000000000364bc                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x000000000003604c        0x0
-                0x000000000003604c                __ctors_start__ = .
+.ctors          0x00000000000364bc        0x0
+                0x00000000000364bc                __ctors_start__ = .
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT_BY_NAME(.init_array.*))
-                0x000000000003604c                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x00000000000364bc                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x0000000000000000                __ctors_size__ = SIZEOF (.ctors)
-                0x000000000003604c                __ctors_load_end__ = __ctors_end__
+                0x00000000000364bc                __ctors_load_end__ = __ctors_end__
                 0x0000000000000001                . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ctors is too large to fit in FLASH memory segment)
-                0x000000000003604c                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x00000000000364bc                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x000000000003604c      0xf2a
-                0x000000000003604c                __rodata_start__ = .
+.rodata         0x00000000000364bc      0xf3a
+                0x00000000000364bc                __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- *fill*         0x000000000003604c        0x4 
+ *fill*         0x00000000000364bc        0x4 
  .rodata.delay_machine_code.0
-                0x0000000000036050        0x6 Output/Debug/Obj/dw3000_api/deca_sleep.o
- *fill*         0x0000000000036056        0x2 
- .rodata        0x0000000000036058       0x95 Output/Debug/Obj/dw3000_api/deca_spi.o
- *fill*         0x00000000000360ed        0x3 
+                0x00000000000364c0        0x6 Output/Debug/Obj/dw3000_api/deca_sleep.o
+ *fill*         0x00000000000364c6        0x2 
+ .rodata        0x00000000000364c8       0x95 Output/Debug/Obj/dw3000_api/deca_spi.o
+ *fill*         0x000000000003655d        0x3 
  .rodata.delay_machine_code.0
-                0x00000000000360f0        0x6 Output/Debug/Obj/dw3000_api/deca_spi.o
- *fill*         0x00000000000360f6        0x2 
- .rodata        0x00000000000360f8       0x93 Output/Debug/Obj/dw3000_api/port.o
- *fill*         0x000000000003618b        0x5 
+                0x0000000000036560        0x6 Output/Debug/Obj/dw3000_api/deca_spi.o
+ *fill*         0x0000000000036566        0x2 
+ .rodata        0x0000000000036568       0x93 Output/Debug/Obj/dw3000_api/port.o
+ *fill*         0x00000000000365fb        0x5 
  .rodata.delay_machine_code.0
-                0x0000000000036190        0x6 Output/Debug/Obj/dw3000_api/port.o
- *fill*         0x0000000000036196        0x2 
+                0x0000000000036600        0x6 Output/Debug/Obj/dw3000_api/port.o
+ *fill*         0x0000000000036606        0x2 
  .rodata.dw3000_spi_fct
-                0x0000000000036198       0x14 Output/Debug/Obj/dw3000_api/deca_probe_interface.o
+                0x0000000000036608       0x14 Output/Debug/Obj/dw3000_api/deca_probe_interface.o
  .rodata.dw3000_probe_interf
-                0x00000000000361ac        0xc Output/Debug/Obj/dw3000_api/deca_probe_interface.o
-                0x00000000000361ac                dw3000_probe_interf
- .rodata        0x00000000000361b8        0x3 Output/Debug/Obj/dw3000_api/main.o
- *fill*         0x00000000000361bb        0x5 
+                0x000000000003661c        0xc Output/Debug/Obj/dw3000_api/deca_probe_interface.o
+                0x000000000003661c                dw3000_probe_interf
+ .rodata        0x0000000000036628        0x3 Output/Debug/Obj/dw3000_api/main.o
+ *fill*         0x000000000003662b        0x5 
  .rodata.delay_machine_code.0
-                0x00000000000361c0        0x6 Output/Debug/Obj/dw3000_api/main.o
- *fill*         0x00000000000361c6        0x2 
- .rodata        0x00000000000361c8       0x70 Output/Debug/Obj/dw3000_api/app_error_weak.o
- .rodata        0x0000000000036238       0x15 Output/Debug/Obj/dw3000_api/nrf_log_frontend.o
- *fill*         0x000000000003624d        0x3 
+                0x0000000000036630        0x6 Output/Debug/Obj/dw3000_api/main.o
+ *fill*         0x0000000000036636        0x2 
+ .rodata        0x0000000000036638       0x70 Output/Debug/Obj/dw3000_api/app_error_weak.o
+ .rodata        0x00000000000366a8       0x15 Output/Debug/Obj/dw3000_api/nrf_log_frontend.o
+ *fill*         0x00000000000366bd        0x3 
  .rodata.m_unknown_str
-                0x0000000000036250       0x13 Output/Debug/Obj/dw3000_api/nrf_strerror.o
- *fill*         0x0000000000036263        0x1 
- .rodata        0x0000000000036264      0x3bd Output/Debug/Obj/dw3000_api/nrf_strerror.o
- *fill*         0x0000000000036621        0x3 
+                0x00000000000366c0       0x13 Output/Debug/Obj/dw3000_api/nrf_strerror.o
+ *fill*         0x00000000000366d3        0x1 
+ .rodata        0x00000000000366d4      0x3bd Output/Debug/Obj/dw3000_api/nrf_strerror.o
+ *fill*         0x0000000000036a91        0x3 
  .rodata.nrf_strerror_array
-                0x0000000000036624      0x118 Output/Debug/Obj/dw3000_api/nrf_strerror.o
- .rodata        0x000000000003673c       0xae Output/Debug/Obj/dw3000_api/app_usbd.o
- *fill*         0x00000000000367ea        0x2 
- .rodata        0x00000000000367ec        0xe Output/Debug/Obj/dw3000_api/app_usbd_core.o
- *fill*         0x00000000000367fa        0x2 
- .rodata        0x00000000000367fc       0xb6 Output/Debug/Obj/dw3000_api/app_usbd_cdc_acm.o
- *fill*         0x00000000000368b2        0x2 
- .rodata        0x00000000000368b4        0xb Output/Debug/Obj/dw3000_api/app_button.o
- *fill*         0x00000000000368bf        0x1 
- .rodata        0x00000000000368c0        0x9 Output/Debug/Obj/dw3000_api/nrf_sortlist.o
- *fill*         0x00000000000368c9        0x7 
+                0x0000000000036a94      0x118 Output/Debug/Obj/dw3000_api/nrf_strerror.o
+ .rodata        0x0000000000036bac       0xae Output/Debug/Obj/dw3000_api/app_usbd.o
+ *fill*         0x0000000000036c5a        0x2 
+ .rodata        0x0000000000036c5c        0xe Output/Debug/Obj/dw3000_api/app_usbd_core.o
+ *fill*         0x0000000000036c6a        0x2 
+ .rodata        0x0000000000036c6c       0xb6 Output/Debug/Obj/dw3000_api/app_usbd_cdc_acm.o
+ *fill*         0x0000000000036d22        0x2 
+ .rodata        0x0000000000036d24        0xb Output/Debug/Obj/dw3000_api/app_button.o
+ *fill*         0x0000000000036d2f        0x1 
+ .rodata        0x0000000000036d30        0x9 Output/Debug/Obj/dw3000_api/nrf_sortlist.o
+ *fill*         0x0000000000036d39        0x7 
  .rodata.delay_machine_code.0
-                0x00000000000368d0        0x6 Output/Debug/Obj/dw3000_api/app_timer.o
- *fill*         0x00000000000368d6        0x2 
- .rodata.m_board_led_list
-                0x00000000000368d8        0x4 Output/Debug/Obj/dw3000_api/boards.o
- .rodata        0x00000000000368dc       0x10 Output/Debug/Obj/dw3000_api/nrf_drv_spi.o
- .rodata        0x00000000000368ec        0x4 Output/Debug/Obj/dw3000_api/nrfx_prs.o
- .rodata        0x00000000000368f0        0x5 Output/Debug/Obj/dw3000_api/nrfx_spim.o
- *fill*         0x00000000000368f5        0x3 
- .rodata.irq_handlers.0
-                0x00000000000368f8        0xc Output/Debug/Obj/dw3000_api/nrfx_spim.o
- .rodata        0x0000000000036904        0xf Output/Debug/Obj/dw3000_api/nrfx_gpiote.o
- *fill*         0x0000000000036913        0x1 
- .rodata        0x0000000000036914        0x6 Output/Debug/Obj/dw3000_api/nrf_drv_clock.o
- *fill*         0x000000000003691a        0x2 
- .rodata        0x000000000003691c        0x6 Output/Debug/Obj/dw3000_api/nrfx_clock.o
- *fill*         0x0000000000036922        0x2 
- .rodata        0x0000000000036924        0x5 Output/Debug/Obj/dw3000_api/nrfx_uart.o
- *fill*         0x0000000000036929        0x3 
- .rodata.irq_handlers.0
-                0x000000000003692c        0x4 Output/Debug/Obj/dw3000_api/nrfx_uart.o
- .rodata        0x0000000000036930        0x6 Output/Debug/Obj/dw3000_api/nrfx_uarte.o
- *fill*         0x0000000000036936        0x2 
- .rodata.irq_handlers.0
-                0x0000000000036938        0x4 Output/Debug/Obj/dw3000_api/nrfx_uarte.o
- .rodata        0x000000000003693c        0x4 Output/Debug/Obj/dw3000_api/nrfx_rtc.o
- .rodata.uart_instance
-                0x0000000000036940       0x14 Output/Debug/Obj/dw3000_api/uart.o
- .rodata        0x0000000000036954       0x20 Output/Debug/Obj/dw3000_api/uart.o
- *fill*         0x0000000000036974        0xc 
- .rodata.delay_machine_code.0
-                0x0000000000036980        0x6 Output/Debug/Obj/dw3000_api/uart.o
- *fill*         0x0000000000036986        0x2 
- .rodata        0x0000000000036988       0x40 Output/Debug/Obj/dw3000_api/tag_app.o
- *fill*         0x00000000000369c8        0x8 
- .rodata.delay_machine_code.0
-                0x00000000000369d0        0x6 Output/Debug/Obj/dw3000_api/tag_app.o
- *fill*         0x00000000000369d6        0x2 
- .rodata.libc.__RAL_hex_lc
-                0x00000000000369d8       0x10 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000369d8                __RAL_hex_lc
- .rodata.libc.__RAL_hex_uc
-                0x00000000000369e8       0x10 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000369e8                __RAL_hex_uc
- .rodata.libc.__aeabi_EDOM
-                0x00000000000369f8        0x4 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000369f8                __aeabi_EDOM
- .rodata.libc.__aeabi_ERANGE
-                0x00000000000369fc        0x4 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000369fc                __aeabi_ERANGE
- .rodata.libc.power
-                0x0000000000036a00       0x48 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
- .rodata.libc.__vfprintf_int.str1.4
-                0x0000000000036a48        0x7 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libvfprintf.o)
- *fill*         0x0000000000036a4f        0x1 
- .rodata.libc.__vfprintf_float_long.str1.4
-                0x0000000000036a50       0x28 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libvfprintf.o)
- .rodata.libc.ipow10
-                0x0000000000036a78       0xa0 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libvfprintf.o)
- .rodata.crcTable
-                0x0000000000036b18      0x100 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
-                0x0000000000036b18                crcTable
- .rodata.dw3000_mcps_ops
-                0x0000000000036c18       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
-                0x0000000000036c18                dw3000_mcps_ops
- .rodata.dw3000_ops
-                0x0000000000036c54       0x38 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
-                0x0000000000036c54                dw3000_ops
- .rodata.fine_gain_lut_chan5
-                0x0000000000036c8c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- .rodata.fine_gain_lut_chan9
-                0x0000000000036ccc       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- .rodata.lut_coarse_gain
-                0x0000000000036d0c        0x3 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- *fill*         0x0000000000036d0f        0x1 
- .rodata.regNames
-                0x0000000000036d10        0x8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- .rodata.str1.4
-                0x0000000000036d18       0x2e Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000036d40        0x6 Output/Debug/Obj/dw3000_api/app_timer.o
  *fill*         0x0000000000036d46        0x2 
+ .rodata.m_board_led_list
+                0x0000000000036d48        0x4 Output/Debug/Obj/dw3000_api/boards.o
+ .rodata        0x0000000000036d4c       0x10 Output/Debug/Obj/dw3000_api/nrf_drv_spi.o
+ .rodata        0x0000000000036d5c        0x4 Output/Debug/Obj/dw3000_api/nrfx_prs.o
+ .rodata        0x0000000000036d60        0x5 Output/Debug/Obj/dw3000_api/nrfx_spim.o
+ *fill*         0x0000000000036d65        0x3 
+ .rodata.irq_handlers.0
+                0x0000000000036d68        0xc Output/Debug/Obj/dw3000_api/nrfx_spim.o
+ .rodata        0x0000000000036d74        0xf Output/Debug/Obj/dw3000_api/nrfx_gpiote.o
+ *fill*         0x0000000000036d83        0x1 
+ .rodata        0x0000000000036d84        0x6 Output/Debug/Obj/dw3000_api/nrf_drv_clock.o
+ *fill*         0x0000000000036d8a        0x2 
+ .rodata        0x0000000000036d8c        0x6 Output/Debug/Obj/dw3000_api/nrfx_clock.o
+ *fill*         0x0000000000036d92        0x2 
+ .rodata        0x0000000000036d94        0x5 Output/Debug/Obj/dw3000_api/nrfx_uart.o
+ *fill*         0x0000000000036d99        0x3 
+ .rodata.irq_handlers.0
+                0x0000000000036d9c        0x4 Output/Debug/Obj/dw3000_api/nrfx_uart.o
+ .rodata        0x0000000000036da0        0x6 Output/Debug/Obj/dw3000_api/nrfx_uarte.o
+ *fill*         0x0000000000036da6        0x2 
+ .rodata.irq_handlers.0
+                0x0000000000036da8        0x4 Output/Debug/Obj/dw3000_api/nrfx_uarte.o
+ .rodata        0x0000000000036dac        0x4 Output/Debug/Obj/dw3000_api/nrfx_rtc.o
+ .rodata.uart_instance
+                0x0000000000036db0       0x14 Output/Debug/Obj/dw3000_api/uart.o
+ .rodata        0x0000000000036dc4       0x20 Output/Debug/Obj/dw3000_api/uart.o
+ *fill*         0x0000000000036de4        0xc 
+ .rodata.delay_machine_code.0
+                0x0000000000036df0        0x6 Output/Debug/Obj/dw3000_api/uart.o
+ *fill*         0x0000000000036df6        0x2 
+ .rodata        0x0000000000036df8       0x4b Output/Debug/Obj/dw3000_api/tag_app.o
+ *fill*         0x0000000000036e43        0xd 
+ .rodata.delay_machine_code.0
+                0x0000000000036e50        0x6 Output/Debug/Obj/dw3000_api/tag_app.o
+ *fill*         0x0000000000036e56        0x2 
+ .rodata.libc.__RAL_hex_lc
+                0x0000000000036e58       0x10 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000036e58                __RAL_hex_lc
+ .rodata.libc.__RAL_hex_uc
+                0x0000000000036e68       0x10 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000036e68                __RAL_hex_uc
+ .rodata.libc.__aeabi_EDOM
+                0x0000000000036e78        0x4 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000036e78                __aeabi_EDOM
+ .rodata.libc.__aeabi_ERANGE
+                0x0000000000036e7c        0x4 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000036e7c                __aeabi_ERANGE
+ .rodata.libc.power
+                0x0000000000036e80       0x48 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+ .rodata.libc.__vfprintf_int.str1.4
+                0x0000000000036ec8        0x7 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libvfprintf.o)
+ *fill*         0x0000000000036ecf        0x1 
+ .rodata.libc.__vfprintf_float_long.str1.4
+                0x0000000000036ed0       0x28 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libvfprintf.o)
+ .rodata.libc.ipow10
+                0x0000000000036ef8       0xa0 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libvfprintf.o)
+ .rodata.crcTable
+                0x0000000000036f98      0x100 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x0000000000036f98                crcTable
+ .rodata.dw3000_mcps_ops
+                0x0000000000037098       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x0000000000037098                dw3000_mcps_ops
+ .rodata.dw3000_ops
+                0x00000000000370d4       0x38 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+                0x00000000000370d4                dw3000_ops
+ .rodata.fine_gain_lut_chan5
+                0x000000000003710c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ .rodata.fine_gain_lut_chan9
+                0x000000000003714c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ .rodata.lut_coarse_gain
+                0x000000000003718c        0x3 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ *fill*         0x000000000003718f        0x1 
+ .rodata.regNames
+                0x0000000000037190        0x8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ .rodata.str1.4
+                0x0000000000037198       0x2e Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ *fill*         0x00000000000371c6        0x2 
  .rodata.sts_length_factors
-                0x0000000000036d48        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
- *fill*         0x0000000000036d56        0x2 
+                0x00000000000371c8        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3000_device.c.obj)
+ *fill*         0x00000000000371d6        0x2 
  .rodata.dw3700_mcps_ops
-                0x0000000000036d58       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
-                0x0000000000036d58                dw3700_mcps_ops
+                0x00000000000371d8       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x00000000000371d8                dw3700_mcps_ops
  .rodata.dw3700_ops
-                0x0000000000036d94       0x38 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
-                0x0000000000036d94                dw3700_ops
+                0x0000000000037214       0x38 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x0000000000037214                dw3700_ops
  .rodata.fine_gain_lut_chan5
-                0x0000000000036dcc       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000003724c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .rodata.fine_gain_lut_chan9
-                0x0000000000036e0c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x000000000003728c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .rodata.lut_coarse_gain
-                0x0000000000036e4c        0x3 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- *fill*         0x0000000000036e4f        0x1 
+                0x00000000000372cc        0x3 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ *fill*         0x00000000000372cf        0x1 
  .rodata.regNames
-                0x0000000000036e50        0x8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x00000000000372d0        0x8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .rodata.str1.4
-                0x0000000000036e58       0x2e Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+                0x00000000000372d8       0x2e Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
  .rodata.sts_length_factors
-                0x0000000000036e58        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
- *fill*         0x0000000000036e66        0x2 
+                0x00000000000372d8        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3700_device.c.obj)
+ *fill*         0x00000000000372e6        0x2 
  .rodata.dw3720_mcps_ops
-                0x0000000000036e68       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
-                0x0000000000036e68                dw3720_mcps_ops
+                0x00000000000372e8       0x3c Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000372e8                dw3720_mcps_ops
  .rodata.dw3720_ops
-                0x0000000000036ea4       0x38 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
-                0x0000000000036ea4                dw3720_ops
+                0x0000000000037324       0x38 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x0000000000037324                dw3720_ops
  .rodata.fine_gain_lut_chan5
-                0x0000000000036edc       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x000000000003735c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .rodata.fine_gain_lut_chan9
-                0x0000000000036f1c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x000000000003739c       0x40 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .rodata.lut_coarse_gain
-                0x0000000000036f5c        0x3 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
- *fill*         0x0000000000036f5f        0x1 
+                0x00000000000373dc        0x3 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+ *fill*         0x00000000000373df        0x1 
  .rodata.regNames
-                0x0000000000036f60        0x8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000373e0        0x8 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .rodata.str1.4
-                0x0000000000036f68       0x2e Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000373e8       0x2e Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
  .rodata.sts_length_factors
-                0x0000000000036f68        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
-                0x0000000000036f76                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
-                0x0000000000000f2a                __rodata_size__ = SIZEOF (.rodata)
-                0x0000000000036f76                __rodata_load_end__ = __rodata_end__
+                0x00000000000373e8        0xe Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(dw3720_device.c.obj)
+                0x00000000000373f6                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x0000000000000f3a                __rodata_size__ = SIZEOF (.rodata)
+                0x00000000000373f6                __rodata_load_end__ = __rodata_end__
                 0x0000000000000001                . = ASSERT (((__rodata_start__ == __rodata_end__) || ((__rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .rodata is too large to fit in FLASH memory segment)
-                0x0000000000036f78                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
+                0x00000000000373f8                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
 
-.ARM.exidx      0x0000000000036f78        0x0
-                0x0000000000036f78                __ARM.exidx_start__ = .
-                0x0000000000036f78                __exidx_start = __ARM.exidx_start__
+.ARM.exidx      0x00000000000373f8        0x0
+                0x00000000000373f8                __ARM.exidx_start__ = .
+                0x00000000000373f8                __exidx_start = __ARM.exidx_start__
  *(.ARM.exidx .ARM.exidx.*)
-                0x0000000000036f78                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
+                0x00000000000373f8                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
                 0x0000000000000000                __ARM.exidx_size__ = SIZEOF (.ARM.exidx)
-                0x0000000000036f78                __exidx_end = __ARM.exidx_end__
-                0x0000000000036f78                __ARM.exidx_load_end__ = __ARM.exidx_end__
+                0x00000000000373f8                __exidx_end = __ARM.exidx_end__
+                0x00000000000373f8                __ARM.exidx_load_end__ = __ARM.exidx_end__
                 0x0000000000000001                . = ASSERT (((__ARM.exidx_start__ == __ARM.exidx_end__) || ((__ARM.exidx_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ARM.exidx is too large to fit in FLASH memory segment)
-                0x0000000000036f78                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
+                0x00000000000373f8                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
 
-.fast           0x0000000020000000        0x0 load address 0x0000000000036f78
+.fast           0x0000000020000000        0x0 load address 0x00000000000373f8
                 0x0000000020000000                __fast_start__ = .
  *(.fast .fast.*)
                 0x0000000020000000                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
                 0x0000000000000000                __fast_size__ = SIZEOF (.fast)
-                0x0000000000036f78                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x00000000000373f8                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
                 0x0000000000000001                . = ASSERT (((__fast_load_start__ == __fast_load_end__) || ((__fast_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .fast is too large to fit in FLASH memory segment)
 
 .fast_run       0x0000000020000000        0x0
@@ -23795,9 +23803,9 @@ Linker script and memory map
                 0x0000000000000000                __fast_run_size__ = (__fast_run_end__ - __fast_run_start__)
                 0x0000000020000000                __fast_run_load_end__ = __fast_run_end__
                 0x0000000000000001                . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .fast_run is too large to fit in RAM1 memory segment)
-                0x0000000000036f78                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
+                0x00000000000373f8                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x0000000020000000      0x3e8 load address 0x0000000000036f78
+.data           0x0000000020000000      0x3e8 load address 0x00000000000373f8
                 0x0000000020000000                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.pgSpiHandler
@@ -23848,7 +23856,7 @@ Linker script and memory map
                 0x00000000200003e4        0x4 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
                 0x00000000200003e8                __data_end__ = (__data_start__ + SIZEOF (.data))
                 0x00000000000003e8                __data_size__ = SIZEOF (.data)
-                0x0000000000037360                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x00000000000377e0                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x0000000100000000        0x0
  .igot.plt      0x0000000100000000        0x0 Output/Debug/Obj/dw3000_api/deca_mutex.o
@@ -23860,16 +23868,16 @@ Linker script and memory map
                 0x00000000000003e8                __data_run_size__ = (__data_run_end__ - __data_run_start__)
                 0x00000000200003e8                __data_run_load_end__ = __data_run_end__
                 0x0000000000000001                . = ASSERT (((__data_run_start__ == __data_run_end__) || ((__data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .data_run is too large to fit in RAM1 memory segment)
-                0x0000000000037360                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x00000000000377e0                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x00000000200003e8        0x0 load address 0x0000000000037360
+.tdata          0x00000000200003e8        0x0 load address 0x00000000000377e0
                 0x00000000200003e8                __tdata_start__ = .
  *(.tdata .tdata.*)
                 0x00000000200003e8                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_size__ = SIZEOF (.tdata)
-                0x0000000000037360                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x0000000000037360                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x0000000000037360                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
+                0x00000000000377e0                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x00000000000377e0                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x00000000000377e0                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
                 0x0000000000000001                . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .tdata is too large to fit in FLASH memory segment)
 
 .tdata_run      0x00000000200003e8        0x0
@@ -23880,7 +23888,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__tdata_run_start__ == __tdata_run_end__) || ((__tdata_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .tdata_run is too large to fit in RAM1 memory segment)
                 0x00000000200003e8                __bss_load_start__ = ALIGN (__tdata_run_end__, 0x4)
 
-.bss            0x00000000200003e8      0xed0
+.bss            0x00000000200003e8      0xf18
                 0x00000000200003e8                __bss_start__ = .
  *(.bss .bss.* .gnu.linkonce.b.*)
  .bss.spi_handler
@@ -23951,85 +23959,86 @@ Linker script and memory map
  .bss.m_handlers
                 0x0000000020000d4c        0x8 Output/Debug/Obj/dw3000_api/nrfx_rtc.o
  .bss.str_buffer
-                0x0000000020000d54       0x3c Output/Debug/Obj/dw3000_api/tag_app.o
+                0x0000000020000d54       0x7f Output/Debug/Obj/dw3000_api/tag_app.o
                 0x0000000020000d54                str_buffer
- .bss.zt        0x0000000020000d90       0x20 Output/Debug/Obj/dw3000_api/tag_app.o
- .bss.mu_t0     0x0000000020000db0       0x30 Output/Debug/Obj/dw3000_api/tag_app.o
-                0x0000000020000db0                mu_t0
- .bss.arkf      0x0000000020000de0      0x3a0 Output/Debug/Obj/dw3000_api/tag_app.o
-                0x0000000020000de0                arkf
+ *fill*         0x0000000020000dd3        0x5 
+ .bss.zt        0x0000000020000dd8       0x20 Output/Debug/Obj/dw3000_api/tag_app.o
+ .bss.mu_t0     0x0000000020000df8       0x30 Output/Debug/Obj/dw3000_api/tag_app.o
+                0x0000000020000df8                mu_t0
+ .bss.arkf      0x0000000020000e28      0x3a0 Output/Debug/Obj/dw3000_api/tag_app.o
+                0x0000000020000e28                arkf
  .bss.tagDevice
-                0x0000000020001180       0x12 Output/Debug/Obj/dw3000_api/tag_app.o
-                0x0000000020001180                tagDevice
- *fill*         0x0000000020001192        0x2 
+                0x00000000200011c8       0x12 Output/Debug/Obj/dw3000_api/tag_app.o
+                0x00000000200011c8                tagDevice
+ *fill*         0x00000000200011da        0x2 
  .bss.already_fe_anchors
-                0x0000000020001194        0x9 Output/Debug/Obj/dw3000_api/tag_app.o
-                0x0000000020001194                already_fe_anchors
- *fill*         0x000000002000119d        0x3 
+                0x00000000200011dc        0x9 Output/Debug/Obj/dw3000_api/tag_app.o
+                0x00000000200011dc                already_fe_anchors
+ *fill*         0x00000000200011e5        0x3 
  .bss.rx_buffer
-                0x00000000200011a0       0x7f Output/Debug/Obj/dw3000_api/blink.o
- .bss.seq_num   0x000000002000121f        0x1 Output/Debug/Obj/dw3000_api/blink.o
+                0x00000000200011e8       0x7f Output/Debug/Obj/dw3000_api/blink.o
+ .bss.seq_num   0x0000000020001267        0x1 Output/Debug/Obj/dw3000_api/blink.o
  .bss.rx_buffer
-                0x0000000020001220       0x14 Output/Debug/Obj/dw3000_api/ss_twr_init.o
+                0x0000000020001268       0x14 Output/Debug/Obj/dw3000_api/ss_twr_init.o
  .bss.status_reg
-                0x0000000020001234        0x4 Output/Debug/Obj/dw3000_api/ss_twr_init.o
- .bss.seq_num   0x0000000020001238        0x1 Output/Debug/Obj/dw3000_api/ss_twr_init.o
- *fill*         0x0000000020001239        0x7 
- .bss.tof       0x0000000020001240        0x8 Output/Debug/Obj/dw3000_api/ss_twr_init.o
- .bss.distance  0x0000000020001248        0x8 Output/Debug/Obj/dw3000_api/ss_twr_init.o
+                0x000000002000127c        0x4 Output/Debug/Obj/dw3000_api/ss_twr_init.o
+ .bss.seq_num   0x0000000020001280        0x1 Output/Debug/Obj/dw3000_api/ss_twr_init.o
+ *fill*         0x0000000020001281        0x7 
+ .bss.tof       0x0000000020001288        0x8 Output/Debug/Obj/dw3000_api/ss_twr_init.o
+ .bss.distance  0x0000000020001290        0x8 Output/Debug/Obj/dw3000_api/ss_twr_init.o
  .bss.start_time
-                0x0000000020001250        0x4 Output/Debug/Obj/dw3000_api/rtc_timer.o
+                0x0000000020001298        0x4 Output/Debug/Obj/dw3000_api/rtc_timer.o
  .bss.timer_expired
-                0x0000000020001254        0x1 Output/Debug/Obj/dw3000_api/rtc_timer.o
- *fill*         0x0000000020001255        0x3 
+                0x000000002000129c        0x1 Output/Debug/Obj/dw3000_api/rtc_timer.o
+ *fill*         0x000000002000129d        0x3 
  .bss.time_step
-                0x0000000020001258        0x4 Output/Debug/Obj/dw3000_api/rtc_timer.o
+                0x00000000200012a0        0x4 Output/Debug/Obj/dw3000_api/rtc_timer.o
  .bss.libc.__user_format_extender
-                0x000000002000125c        0x4 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x000000002000125c                __user_format_extender
- .bss.dw        0x0000000020001260        0x4 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x00000000200012a4        0x4 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000200012a4                __user_format_extender
+ .bss.dw        0x00000000200012a8        0x4 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
  .bss.static_dw
-                0x0000000020001264       0x54 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
+                0x00000000200012ac       0x54 Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a(deca_compat.c.obj)
  *(COMMON)
-                0x00000000200012b8                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
-                0x0000000000000ed0                __bss_size__ = SIZEOF (.bss)
-                0x00000000200012b8                __bss_load_end__ = __bss_end__
+                0x0000000020001300                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
+                0x0000000000000f18                __bss_size__ = SIZEOF (.bss)
+                0x0000000020001300                __bss_load_end__ = __bss_end__
                 0x0000000000000001                . = ASSERT (((__bss_start__ == __bss_end__) || ((__bss_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .bss is too large to fit in RAM1 memory segment)
-                0x00000000200012b8                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
+                0x0000000020001300                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
 
-.tbss           0x00000000200012b8        0x4
-                0x00000000200012b8                __tbss_start__ = .
+.tbss           0x0000000020001300        0x4
+                0x0000000020001300                __tbss_start__ = .
  *(.tbss .tbss.*)
  .tbss.errno_val
-                0x00000000200012b8        0x4 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000200012bc                __tbss_end__ = (__tbss_start__ + SIZEOF (.tbss))
+                0x0000000020001300        0x4 D:/Segger Embedded Studio/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000020001304                __tbss_end__ = (__tbss_start__ + SIZEOF (.tbss))
                 0x0000000000000004                __tbss_size__ = SIZEOF (.tbss)
-                0x00000000200012bc                __tbss_load_end__ = __tbss_end__
+                0x0000000020001304                __tbss_load_end__ = __tbss_end__
                 0x0000000000000001                . = ASSERT (((__tbss_start__ == __tbss_end__) || ((__tbss_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .tbss is too large to fit in RAM1 memory segment)
-                0x00000000200012bc                __nrf_balloc_load_start__ = ALIGN (__tbss_end__, 0x4)
+                0x0000000020001304                __nrf_balloc_load_start__ = ALIGN (__tbss_end__, 0x4)
 
-.nrf_balloc     0x00000000200012bc       0x14
-                0x00000000200012bc                __nrf_balloc_start__ = .
+.nrf_balloc     0x0000000020001304       0x14
+                0x0000000020001304                __nrf_balloc_start__ = .
  *(.nrf_balloc .nrf_balloc.*)
- .nrf_balloc    0x00000000200012bc       0x14 Output/Debug/Obj/dw3000_api/nrf_log_frontend.o
-                0x00000000200012bc                log_mempool
-                0x00000000200012d0                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
+ .nrf_balloc    0x0000000020001304       0x14 Output/Debug/Obj/dw3000_api/nrf_log_frontend.o
+                0x0000000020001304                log_mempool
+                0x0000000020001318                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
                 0x0000000000000014                __nrf_balloc_size__ = SIZEOF (.nrf_balloc)
-                0x00000000200012d0                __nrf_balloc_load_end__ = __nrf_balloc_end__
+                0x0000000020001318                __nrf_balloc_load_end__ = __nrf_balloc_end__
 
-.rel.dyn        0x00000000200012d0        0x0
- .rel.iplt      0x00000000200012d0        0x0 Output/Debug/Obj/dw3000_api/deca_mutex.o
+.rel.dyn        0x0000000020001318        0x0
+ .rel.iplt      0x0000000020001318        0x0 Output/Debug/Obj/dw3000_api/deca_mutex.o
                 0x0000000000000001                . = ASSERT (((__nrf_balloc_start__ == __nrf_balloc_end__) || ((__nrf_balloc_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .nrf_balloc is too large to fit in RAM1 memory segment)
-                0x00000000200012d0                __heap_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
+                0x0000000020001318                __heap_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
 
-.heap           0x00000000200012d0     0x2000
-                0x00000000200012d0                __heap_start__ = .
+.heap           0x0000000020001318     0x2000
+                0x0000000020001318                __heap_start__ = .
  *(.heap .heap.*)
-                0x00000000200032d0                . = ALIGN (MAX ((__heap_start__ + __HEAPSIZE__), .), 0x4)
- *fill*         0x00000000200012d0     0x2000 
-                0x00000000200032d0                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
+                0x0000000020003318                . = ALIGN (MAX ((__heap_start__ + __HEAPSIZE__), .), 0x4)
+ *fill*         0x0000000020001318     0x2000 
+                0x0000000020003318                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
                 0x0000000000002000                __heap_size__ = SIZEOF (.heap)
-                0x00000000200032d0                __heap_load_end__ = __heap_end__
+                0x0000000020003318                __heap_load_end__ = __heap_end__
                 0x0000000000000001                . = ASSERT (((__heap_start__ == __heap_end__) || ((__heap_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .heap is too large to fit in RAM1 memory segment)
                 0x000000002001e000                __stack_load_start__ = (__RAM1_segment_start__ + (__RAM1_segment_size__ - 0x2000))
 
@@ -24204,7 +24213,7 @@ LOAD Shared/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.7.a
 OUTPUT(Output/Debug/Exe/dw3000_api.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_frame    0x0000000000000000     0xd57c
+.debug_frame    0x0000000000000000     0xd580
  .debug_frame   0x0000000000000000       0x60 Output/Debug/Obj/dw3000_api/deca_mutex.o
  .debug_frame   0x0000000000000060       0x88 Output/Debug/Obj/dw3000_api/deca_sleep.o
  .debug_frame   0x00000000000000e8      0x270 Output/Debug/Obj/dw3000_api/deca_spi.o
@@ -24241,13 +24250,13 @@ LOAD linker stubs
  .debug_frame   0x000000000000c4b8      0x7d4 Output/Debug/Obj/dw3000_api/nrfx_uarte.o
  .debug_frame   0x000000000000cc8c      0x458 Output/Debug/Obj/dw3000_api/nrfx_rtc.o
  .debug_frame   0x000000000000d0e4       0xfc Output/Debug/Obj/dw3000_api/uart.o
- .debug_frame   0x000000000000d1e0      0x160 Output/Debug/Obj/dw3000_api/tag_app.o
- .debug_frame   0x000000000000d340       0xa0 Output/Debug/Obj/dw3000_api/ARKFLocalization.o
- .debug_frame   0x000000000000d3e0       0x88 Output/Debug/Obj/dw3000_api/blink.o
- .debug_frame   0x000000000000d468       0x80 Output/Debug/Obj/dw3000_api/ss_twr_init.o
- .debug_frame   0x000000000000d4e8       0x94 Output/Debug/Obj/dw3000_api/rtc_timer.o
+ .debug_frame   0x000000000000d1e0      0x164 Output/Debug/Obj/dw3000_api/tag_app.o
+ .debug_frame   0x000000000000d344       0xa0 Output/Debug/Obj/dw3000_api/ARKFLocalization.o
+ .debug_frame   0x000000000000d3e4       0x88 Output/Debug/Obj/dw3000_api/blink.o
+ .debug_frame   0x000000000000d46c       0x80 Output/Debug/Obj/dw3000_api/ss_twr_init.o
+ .debug_frame   0x000000000000d4ec       0x94 Output/Debug/Obj/dw3000_api/rtc_timer.o
 
-.debug_info     0x0000000000000000    0x2c830
+.debug_info     0x0000000000000000    0x2c840
  .debug_info    0x0000000000000000       0xeb Output/Debug/Obj/dw3000_api/deca_mutex.o
  .debug_info    0x00000000000000eb      0x178 Output/Debug/Obj/dw3000_api/deca_sleep.o
  .debug_info    0x0000000000000263     0x15fc Output/Debug/Obj/dw3000_api/deca_spi.o
@@ -24285,15 +24294,15 @@ LOAD linker stubs
  .debug_info    0x0000000000026485     0x1f52 Output/Debug/Obj/dw3000_api/nrfx_uarte.o
  .debug_info    0x00000000000283d7     0x123a Output/Debug/Obj/dw3000_api/nrfx_rtc.o
  .debug_info    0x0000000000029611      0xd6b Output/Debug/Obj/dw3000_api/uart.o
- .debug_info    0x000000000002a37c      0xb63 Output/Debug/Obj/dw3000_api/tag_app.o
- .debug_info    0x000000000002aedf      0x448 Output/Debug/Obj/dw3000_api/config_options.o
- .debug_info    0x000000000002b327      0x675 Output/Debug/Obj/dw3000_api/ARKFLocalization.o
- .debug_info    0x000000000002b99c      0x5c2 Output/Debug/Obj/dw3000_api/blink.o
- .debug_info    0x000000000002bf5e      0x569 Output/Debug/Obj/dw3000_api/ss_twr_init.o
- .debug_info    0x000000000002c4c7      0x301 Output/Debug/Obj/dw3000_api/rtc_timer.o
- .debug_info    0x000000000002c7c8       0x22 Output/Debug/Obj/dw3000_api/thumb_crt0.o
- .debug_info    0x000000000002c7ea       0x23 Output/Debug/Obj/dw3000_api/ses_startup_nrf52833.o
- .debug_info    0x000000000002c80d       0x23 Output/Debug/Obj/dw3000_api/ses_startup_nrf_common.o
+ .debug_info    0x000000000002a37c      0xb73 Output/Debug/Obj/dw3000_api/tag_app.o
+ .debug_info    0x000000000002aeef      0x448 Output/Debug/Obj/dw3000_api/config_options.o
+ .debug_info    0x000000000002b337      0x675 Output/Debug/Obj/dw3000_api/ARKFLocalization.o
+ .debug_info    0x000000000002b9ac      0x5c2 Output/Debug/Obj/dw3000_api/blink.o
+ .debug_info    0x000000000002bf6e      0x569 Output/Debug/Obj/dw3000_api/ss_twr_init.o
+ .debug_info    0x000000000002c4d7      0x301 Output/Debug/Obj/dw3000_api/rtc_timer.o
+ .debug_info    0x000000000002c7d8       0x22 Output/Debug/Obj/dw3000_api/thumb_crt0.o
+ .debug_info    0x000000000002c7fa       0x23 Output/Debug/Obj/dw3000_api/ses_startup_nrf52833.o
+ .debug_info    0x000000000002c81d       0x23 Output/Debug/Obj/dw3000_api/ses_startup_nrf_common.o
 
 .debug_abbrev   0x0000000000000000     0x6180
  .debug_abbrev  0x0000000000000000       0xbb Output/Debug/Obj/dw3000_api/deca_mutex.o
@@ -24838,7 +24847,7 @@ LOAD linker stubs
  .debug_macro   0x0000000000020892      0x33b Output/Debug/Obj/dw3000_api/ss_twr_init.o
  .debug_macro   0x0000000000020bcd       0xc1 Output/Debug/Obj/dw3000_api/rtc_timer.o
 
-.debug_line     0x0000000000000000    0x24837
+.debug_line     0x0000000000000000    0x24842
  .debug_line    0x0000000000000000      0x667 Output/Debug/Obj/dw3000_api/deca_mutex.o
  .debug_line    0x0000000000000667      0x68b Output/Debug/Obj/dw3000_api/deca_sleep.o
  .debug_line    0x0000000000000cf2      0xa9a Output/Debug/Obj/dw3000_api/deca_spi.o
@@ -24876,17 +24885,17 @@ LOAD linker stubs
  .debug_line    0x000000000001fab3     0x1093 Output/Debug/Obj/dw3000_api/nrfx_uarte.o
  .debug_line    0x0000000000020b46      0xb45 Output/Debug/Obj/dw3000_api/nrfx_rtc.o
  .debug_line    0x000000000002168b      0x64f Output/Debug/Obj/dw3000_api/uart.o
- .debug_line    0x0000000000021cda      0xc3a Output/Debug/Obj/dw3000_api/tag_app.o
- .debug_line    0x0000000000022914      0x15c Output/Debug/Obj/dw3000_api/config_options.o
- .debug_line    0x0000000000022a70      0x5b3 Output/Debug/Obj/dw3000_api/ARKFLocalization.o
- .debug_line    0x0000000000023023      0x8d3 Output/Debug/Obj/dw3000_api/blink.o
- .debug_line    0x00000000000238f6      0x8bd Output/Debug/Obj/dw3000_api/ss_twr_init.o
- .debug_line    0x00000000000241b3      0x2a3 Output/Debug/Obj/dw3000_api/rtc_timer.o
- .debug_line    0x0000000000024456      0x1fc Output/Debug/Obj/dw3000_api/thumb_crt0.o
- .debug_line    0x0000000000024652       0xe3 Output/Debug/Obj/dw3000_api/ses_startup_nrf52833.o
- .debug_line    0x0000000000024735      0x102 Output/Debug/Obj/dw3000_api/ses_startup_nrf_common.o
+ .debug_line    0x0000000000021cda      0xc45 Output/Debug/Obj/dw3000_api/tag_app.o
+ .debug_line    0x000000000002291f      0x15c Output/Debug/Obj/dw3000_api/config_options.o
+ .debug_line    0x0000000000022a7b      0x5b3 Output/Debug/Obj/dw3000_api/ARKFLocalization.o
+ .debug_line    0x000000000002302e      0x8d3 Output/Debug/Obj/dw3000_api/blink.o
+ .debug_line    0x0000000000023901      0x8bd Output/Debug/Obj/dw3000_api/ss_twr_init.o
+ .debug_line    0x00000000000241be      0x2a3 Output/Debug/Obj/dw3000_api/rtc_timer.o
+ .debug_line    0x0000000000024461      0x1fc Output/Debug/Obj/dw3000_api/thumb_crt0.o
+ .debug_line    0x000000000002465d       0xe3 Output/Debug/Obj/dw3000_api/ses_startup_nrf52833.o
+ .debug_line    0x0000000000024740      0x102 Output/Debug/Obj/dw3000_api/ses_startup_nrf_common.o
 
-.debug_str      0x0000000000000000    0xb1521
+.debug_str      0x0000000000000000    0xb1531
  .debug_str     0x0000000000000000    0x92f8f Output/Debug/Obj/dw3000_api/deca_mutex.o
                                       0x9519d (size before relaxing)
  .debug_str     0x0000000000092f8f       0xfe Output/Debug/Obj/dw3000_api/deca_sleep.o
@@ -24961,23 +24970,23 @@ LOAD linker stubs
                                       0x954c5 (size before relaxing)
  .debug_str     0x00000000000b0791       0xce Output/Debug/Obj/dw3000_api/uart.o
                                       0x92c88 (size before relaxing)
- .debug_str     0x00000000000b085f      0x3db Output/Debug/Obj/dw3000_api/tag_app.o
-                                      0x96ac2 (size before relaxing)
- .debug_str     0x00000000000b0c3a       0xbb Output/Debug/Obj/dw3000_api/config_options.o
+ .debug_str     0x00000000000b085f      0x3eb Output/Debug/Obj/dw3000_api/tag_app.o
+                                      0x96ad2 (size before relaxing)
+ .debug_str     0x00000000000b0c4a       0xbb Output/Debug/Obj/dw3000_api/config_options.o
                                        0x49ec (size before relaxing)
- .debug_str     0x00000000000b0cf5      0x148 Output/Debug/Obj/dw3000_api/ARKFLocalization.o
+ .debug_str     0x00000000000b0d05      0x148 Output/Debug/Obj/dw3000_api/ARKFLocalization.o
                                        0x3d93 (size before relaxing)
- .debug_str     0x00000000000b0e3d      0x296 Output/Debug/Obj/dw3000_api/blink.o
+ .debug_str     0x00000000000b0e4d      0x296 Output/Debug/Obj/dw3000_api/blink.o
                                       0x95ca0 (size before relaxing)
- .debug_str     0x00000000000b10d3      0x155 Output/Debug/Obj/dw3000_api/ss_twr_init.o
+ .debug_str     0x00000000000b10e3      0x155 Output/Debug/Obj/dw3000_api/ss_twr_init.o
                                       0x95e4e (size before relaxing)
- .debug_str     0x00000000000b1228      0x171 Output/Debug/Obj/dw3000_api/rtc_timer.o
+ .debug_str     0x00000000000b1238      0x171 Output/Debug/Obj/dw3000_api/rtc_timer.o
                                       0x782e7 (size before relaxing)
- .debug_str     0x00000000000b1399       0x3c Output/Debug/Obj/dw3000_api/thumb_crt0.o
+ .debug_str     0x00000000000b13a9       0x3c Output/Debug/Obj/dw3000_api/thumb_crt0.o
                                          0xb5 (size before relaxing)
- .debug_str     0x00000000000b13d5       0xa5 Output/Debug/Obj/dw3000_api/ses_startup_nrf52833.o
+ .debug_str     0x00000000000b13e5       0xa5 Output/Debug/Obj/dw3000_api/ses_startup_nrf52833.o
                                         0x12c (size before relaxing)
- .debug_str     0x00000000000b147a       0xa7 Output/Debug/Obj/dw3000_api/ses_startup_nrf_common.o
+ .debug_str     0x00000000000b148a       0xa7 Output/Debug/Obj/dw3000_api/ses_startup_nrf_common.o
                                         0x12e (size before relaxing)
 
 .comment        0x0000000000000000       0xa4

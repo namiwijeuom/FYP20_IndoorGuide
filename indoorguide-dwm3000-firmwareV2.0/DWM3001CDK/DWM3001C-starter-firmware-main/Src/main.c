@@ -180,7 +180,7 @@ int main(void)
     // extern int simple_aes(void); simple_aes();
 #if defined(TAG_APP)
 
-  tag_application(1);
+  tag_application(3);
 
 #elif  defined(ANCHOR_APP)
 

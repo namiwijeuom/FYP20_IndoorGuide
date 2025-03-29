@@ -16,7 +16,7 @@
 #include "../../Common/common_defines.h"
 
 
-#define MAX_NUM_OF_FETCHED_ANCHORS 4
+#define MAX_NUM_OF_FETCHED_ANCHORS 4 
 
 #define FRAME_TRANSMIT_TIME_MS        40  //In milliseconds
 
@@ -44,7 +44,7 @@
 
 #define TUNE_RT          0.5
 #define TUNE_QT	         30
-#define MODULATION_INDEX 0.8
+#define MODULATION_INDEX 0.8 
 
 #else
 	#error "FILTER_ARKF is not defined."

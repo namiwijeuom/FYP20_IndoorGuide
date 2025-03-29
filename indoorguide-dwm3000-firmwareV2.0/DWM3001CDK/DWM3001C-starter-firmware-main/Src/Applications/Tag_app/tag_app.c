@@ -19,7 +19,7 @@
 static double measurements[NUM_OF_ANCHORS];     // Todo: need this or not ? Stores distance measurements
 double current_location[2] = {0};               // Global variable to store current (x,y) location
 
-unsigned char str_buffer[60];   // buffer to store printing texts
+unsigned char str_buffer[127];   // buffer to store printing texts
 
 /* END Common Variables */
 
@@ -303,7 +303,14 @@ void tag_application(uint16_t tagAddr)
 		clear_fetched_anchors(&already_fe_anchors);
 
                 memset(str_buffer,0,sizeof(str_buffer));
-		snprintf(str_buffer, sizeof(str_buffer), "{\"X\":\"%.2f\",\"Y\":\"%.2f\"}",arkf.mubar_t[0],arkf.mubar_t[1]);
+		//snprintf(str_buffer, sizeof(str_buffer), "{\"X\":\"%.2f\",\"Y\":\"%.2f\"}",arkf.mubar_t[0],arkf.mubar_t[1]);
+
+                int heading_dir_deg   = atan2(arkf.mubar_t[4],arkf.mubar_t[3]) * (180.0 / M_PI);
+
+		//snprintf(str_buffer, sizeof(str_buffer), "{\"X\":\"%.2f\",\"Y\":\"%.2f\"}",arkf.mubar_t[0],arkf.mubar_t[1]);
+		snprintf(str_buffer, sizeof(str_buffer), "{\"X\":\"%.2f\",\"Y\":\"%.2f\",\"deg\":\"%d\"}"
+				,arkf.mubar_t[0],arkf.mubar_t[1],heading_dir_deg);
+
 		test_run_info(str_buffer);
 
                 while(!timer_expired)
