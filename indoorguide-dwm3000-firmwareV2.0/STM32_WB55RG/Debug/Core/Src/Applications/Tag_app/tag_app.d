@@ -77,7 +77,7 @@ Core/Src/Applications/Tag_app/tag_app.o: \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Src/Configurations/config_options.h \
  ../Core/Src/Applications/Tag_app/../../UWB_tasks/ss_twr_init/../../Common/common_defines.h \
  ../Core/Src/Applications/Tag_app/../../Common/common_defines.h \
- ../Core/Src/Applications/Tag_app/../../Math_utils/ARKFLocalization.h
+ ../Core/Src/Applications/Tag_app/../../Math_utils/EKFLocalization.h
 ../Core/Src/Applications/Tag_app/tag_app.h:
 ../Core/Src/Applications/Tag_app/../../UWB_tasks/Blink/blink.h:
 D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Drivers/dwt_uwb_driver/platform/deca_probe_interface.h:
@@ -155,4 +155,4 @@ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/S
 D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Src/Configurations/config_options.h:
 ../Core/Src/Applications/Tag_app/../../UWB_tasks/ss_twr_init/../../Common/common_defines.h:
 ../Core/Src/Applications/Tag_app/../../Common/common_defines.h:
-../Core/Src/Applications/Tag_app/../../Math_utils/ARKFLocalization.h:
+../Core/Src/Applications/Tag_app/../../Math_utils/EKFLocalization.h:

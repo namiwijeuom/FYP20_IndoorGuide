@@ -17,7 +17,7 @@
 static double measurements[NUM_OF_ANCHORS];     // Todo: need this or not ? Stores distance measurements
 double current_location[2] = {0};               // Global variable to store current (x,y) location
 
-unsigned char str_buffer[60];   // buffer to store printing texts
+unsigned char str_buffer[127];   // buffer to store printing texts
 
 /* END Common Variables */
 
@@ -64,14 +64,62 @@ double sigma_t0[6][6] = {
     {0.0, 0.0, 0.0, 0.0, 0.0, 1.0}
 };
 
+/* Arkf Localization Object */
+ARKFLocalization arkf;
+
+#elif defined(FILTER_EKF)
+
+static sensor_measurement zt;
+
+// Define state transition matrix A
+double At[6][6] = {                     //Todo: instead of 6x6 , use STATE_DIM define
+    {1, 0, 0, TIME_STEP, 0, 0},
+    {0, 1, 0, 0, TIME_STEP, 0},
+    {0, 0, 1, 0, 0, TIME_STEP},
+    {0, 0, 0, 1, 0, 0},
+    {0, 0, 0, 0, 1, 0},
+    {0, 0, 0, 0, 0, 1}
+};
+
+// Define process noise covariance matrix Q
+double Qt[1][1] = {
+	{1*TUNE_QT}
+};
+
+// Define measurement noise covariance matrix R
+double Rt[6][6] = {
+    {1 * TUNE_RT, 0, 0, 0, 0, 0},
+    {0, 1 * TUNE_RT, 0, 0, 0, 0},
+    {0, 0, 1 * TUNE_RT, 0, 0, 0},
+    {0, 0, 0, 1 * TUNE_RT, 0, 0},
+    {0, 0, 0, 0, 1 * TUNE_RT, 0},
+    {0, 0, 0, 0, 0, 1 * TUNE_RT}
+};
+
+
+// Define initial state vector (mu_tm1)
+double mu_t0[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};  // [x, y, vx, vy]
+
+// Define initial covariance matrix (sigma_tm1)
+double sigma_t0[6][6] = {
+    {1.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+    {0.0, 1.0, 0.0, 0.0, 0.0, 0.0},
+    {0.0, 0.0, 1.0, 0.0, 0.0, 0.0},
+    {0.0, 0.0, 0.0, 1.0, 0.0, 0.0},
+    {0.0, 0.0, 0.0, 0.0, 1.0, 0.0},
+    {0.0, 0.0, 0.0, 0.0, 0.0, 1.0}
+};
+
+/* Ekf Localization Object */
+EKFLocalization ekf;
+
 
 #else
-	#error "FILTER_ARKF is not defined."
+	#error "Filter is not defined."
 #endif /* Filter variable initialization */
 
 
-/* Ekf Localization Object */
-ARKFLocalization arkf;
+
 
 
 
@@ -220,7 +268,18 @@ void tag_application_init(uint16_t tagAddr)
 
 	random_init();
 
+#if defined(FILTER_ARKF)
+
 	ARKF_init(&arkf, At, Rt, Qt, mu_t0, sigma_t0, MODULATION_INDEX);
+
+#elif defined(FILTER_EKF)
+
+	EKF_init(&ekf, At, Rt, Qt, mu_t0, sigma_t0);
+
+#else
+	#error "Filter is not defined."
+#endif /* Filter initialization */
+
 
 }
 
@@ -237,7 +296,13 @@ void tag_application(uint16_t tagAddr)
 	{
 		ret = 0;
 
+#if defined(FILTER_ARKF)
 		ARKF_predict(&arkf); //Predict step of ARKF
+#elif defined(FILTER_EKF)
+		EKF_predict(&ekf);
+#else
+	#error "Filter is not defined."
+#endif /* Filter prediction */
 
 		uint32_t step_start_time = HAL_GetTick();
 
@@ -268,7 +333,14 @@ void tag_application(uint16_t tagAddr)
 						zt.anchor_y = (tagDevice.current_anchor.loc_y)/100.0;
 						zt.anchor_z = (tagDevice.current_anchor.loc_z)/100.0;
 
+#if defined(FILTER_ARKF)
 						ARKF_update(&arkf, &zt);
+#elif defined(FILTER_EKF)
+						EKF_update(&ekf, &zt);
+#else
+	#error "Filter is not defined."
+#endif /* Filter update */
+
 
 						already_fe_anchors.fetched_count++;
 						already_fe_anchors.fetched_addr[already_fe_anchors.fetched_count-1] = new_anchor;
@@ -289,7 +361,21 @@ void tag_application(uint16_t tagAddr)
 		clear_fetched_anchors(&already_fe_anchors);
 
 		memset(str_buffer,0,sizeof(str_buffer));
+
+		//float heading_dir_rad = atan2(arkf.mubar_t[4],arkf.mubar_t[3]);
+		//int heading_dir_deg   = atan2(arkf.mubar_t[4],arkf.mubar_t[3]) * (180.0 / M_PI);
+
+#if defined(FILTER_ARKF)
 		snprintf(str_buffer, sizeof(str_buffer), "{\"X\":\"%.2f\",\"Y\":\"%.2f\"}",arkf.mubar_t[0],arkf.mubar_t[1]);
+#elif defined(FILTER_EKF)
+		snprintf(str_buffer, sizeof(str_buffer), "{\"X\":\"%.2f\",\"Y\":\"%.2f\"}",ekf.mubar_t[0],ekf.mubar_t[1]);
+#else
+	#error "Filter is not defined."
+#endif /* Copying data to the buffer */
+
+//		snprintf(str_buffer, sizeof(str_buffer), "{\"X\":\"%.2f\",\"Y\":\"%.2f\",\"deg\":\"%d\"}"
+//				,arkf.mubar_t[0],arkf.mubar_t[1],heading_dir_deg);
+
 		test_run_info(str_buffer);
 
 //		uint32_t step_stop_time = HAL_GetTick();  //Todo: Do this using simple while do nothing while loop.

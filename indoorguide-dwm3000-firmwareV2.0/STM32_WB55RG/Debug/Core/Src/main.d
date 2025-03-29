@@ -79,7 +79,7 @@ Core/Src/main.o: ../Core/Src/main.c \
  D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Src/Configurations/config_options.h \
  ../Core/Src/Applications/Tag_app/../../UWB_tasks/ss_twr_init/../../Common/common_defines.h \
  ../Core/Src/Applications/Tag_app/../../Common/common_defines.h \
- ../Core/Src/Applications/Tag_app/../../Math_utils/ARKFLocalization.h \
+ ../Core/Src/Applications/Tag_app/../../Math_utils/EKFLocalization.h \
  ../Core/Src/Applications/Anchor_app/anchor_app.h \
  ../Core/Src/Applications/Anchor_app/../../UWB_tasks/Listener/listener.h \
  ../Core/Src/Applications/Anchor_app/../../UWB_tasks/Listener/../../Common/common_defines.h \
@@ -166,7 +166,7 @@ D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/S
 D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/STM32_WB55RG/Core/Src/Configurations/config_options.h:
 ../Core/Src/Applications/Tag_app/../../UWB_tasks/ss_twr_init/../../Common/common_defines.h:
 ../Core/Src/Applications/Tag_app/../../Common/common_defines.h:
-../Core/Src/Applications/Tag_app/../../Math_utils/ARKFLocalization.h:
+../Core/Src/Applications/Tag_app/../../Math_utils/EKFLocalization.h:
 ../Core/Src/Applications/Anchor_app/anchor_app.h:
 ../Core/Src/Applications/Anchor_app/../../UWB_tasks/Listener/listener.h:
 ../Core/Src/Applications/Anchor_app/../../UWB_tasks/Listener/../../Common/common_defines.h:

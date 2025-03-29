@@ -25,7 +25,8 @@
 
 
 /* Define the state estimation filter */
-#define FILTER_ARKF
+//#define FILTER_ARKF
+#define FILTER_EKF
 
 /* Common Defines */
 #define NUM_OF_ANCHORS 4
@@ -46,8 +47,15 @@
 #define TUNE_QT	         30
 #define MODULATION_INDEX 0.8
 
+#elif defined(FILTER_EKF)
+
+#include "../../Math_utils/EKFLocalization.h"
+
+#define TUNE_RT          0.5
+#define TUNE_QT          30
+
 #else
-	#error "FILTER_ARKF is not defined."
+	#error "Filter is not defined."
 
 #endif /* Filter parameters initialization */
 
