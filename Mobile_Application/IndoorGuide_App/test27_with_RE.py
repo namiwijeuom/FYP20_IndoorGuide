@@ -46,6 +46,7 @@ map_grid[34:,:]         = 1
 # ----------------------------------------------------------------------
 
 valid_points = set()
+
 for row in range(num_of_rows):
     for col in range(num_of_cols):
         if map_grid[row, col] == 0:
@@ -534,6 +535,10 @@ class PlotScreen(Screen):
         self.path = []
         self.start_time = None  # Track shopping start time
 
+        self.last_data_time = time.time()  # Track last successful data reception
+        self.signal_lost_popup = None  # Track signal lost popup
+        self.signal_check_event = None  # For signal monitoring
+
         layout = BoxLayout(orientation='vertical')
         
         # Current item display
@@ -566,6 +571,118 @@ class PlotScreen(Screen):
         
         self.add_widget(layout)
         Clock.schedule_interval(self.update_plot, 0.05)
+
+    def start_signal_monitoring(self):
+        """Start checking for signal loss periodically"""
+        if self.signal_check_event is None:
+            self.signal_check_event = Clock.schedule_interval(self.check_signal, 1.0)
+    
+    def stop_signal_monitoring(self):
+        """Stop checking for signal loss"""
+        if self.signal_check_event:
+            self.signal_check_event.cancel()
+            self.signal_check_event = None
+    
+    def check_signal(self, dt):
+        """Check if we've lost signal for too long"""
+        if time.time() - self.last_data_time > 2.0:  # 2 seconds without data
+            self.handle_signal_loss()
+    
+    def check_connection_health(self):
+        """Periodically check the overall connection quality"""
+        now = time.time()
+        if now - self.last_data_time > 5.0:  # 5 seconds without data
+            self.connection_quality = "poor"
+        elif now - self.last_data_time > 2.0:  # 2 seconds without data
+            self.connection_quality = "unstable"
+        else:
+            self.connection_quality = "good"
+        
+        # Optional: Visual indicator
+        if hasattr(self, 'connection_label'):
+            colors = {
+                "good": (0, 1, 0, 1),      # Green
+                "unstable": (1, 1, 0, 1),   # Yellow
+                "poor": (1, 0, 0, 1)        # Red
+            }
+            self.connection_label.color = colors[self.connection_quality]
+            self.connection_label.text = f"Connection: {self.connection_quality.upper()}"
+
+    def handle_signal_loss(self):
+        """Handle UWB signal loss"""
+        if self.signal_lost_popup is not None:
+            return  # Already showing popup
+        
+        # First try to reconnect automatically
+        if self.attempt_reconnect():
+            self.last_data_time = time.time()
+            return
+                
+        self.stop_signal_monitoring()
+        
+        # Create popup
+        content = BoxLayout(orientation='vertical', spacing=10)
+        content.add_widget(Label(text='UWB Signal Lost!\nTrying to reconnect...'))
+        
+        self.signal_lost_popup = Popup(
+            title='Connection Error',
+            content=content,
+            size_hint=(0.8, 0.4),
+            auto_dismiss=False
+        )
+        self.signal_lost_popup.open()
+        
+        # Start countdown
+        self.reconnect_start_time = time.time()
+        Clock.schedule_once(self.wait_for_reconnection, 0.1)
+    
+    def wait_for_reconnection(self, dt):
+        """Wait for reconnection for up to 10 seconds"""
+        if time.time() - self.reconnect_start_time > 10.0:
+            # Timeout reached
+            self.signal_lost_popup.dismiss()
+            self.show_restart_message()
+            return
+            
+        if serial_port and serial_port.is_open:
+            try:
+                # Try to read a line to check connection
+                line = serial_port.readline()
+                if line:
+                    # Got data - dismiss popup and continue
+                    self.signal_lost_popup.dismiss()
+                    self.signal_lost_popup = None
+                    self.last_data_time = time.time()
+                    self.start_signal_monitoring()
+                    return
+            
+            except:
+                pass
+                
+        # Schedule next check
+        Clock.schedule_once(self.wait_for_reconnection, 0.1)
+    
+    def show_restart_message(self):
+        """Show message asking user to restart"""
+        content = BoxLayout(orientation='vertical', spacing=10)
+        content.add_widget(Label(text='Could not reconnect to UWB device.\nPlease restart the application.'))
+        
+        close_button = Button(text='OK', size_hint=(1, 0.4))
+        content.add_widget(close_button)
+        
+        popup = Popup(
+            title='Connection Lost',
+            content=content,
+            size_hint=(0.8, 0.4)
+        )
+        
+        close_button.bind(on_press=popup.dismiss)
+        popup.open()
+        
+        # Disable navigation while showing this error
+        self.prev_button.disabled = True
+        self.next_button.disabled = True
+        self.cancel_button.disabled = True
 
     def update_progress(self, current_x, current_y, goal_x, goal_y, path):
         """Update progress bar based on distance to current goal."""
@@ -703,25 +820,40 @@ class PlotScreen(Screen):
     def update_plot(self, dt):
         if serial_port and serial_port.is_open:
             try:
-                line = serial_port.readline().decode().strip()
-                if line:
-                    data = json.loads(line)
-                    x, y = float(data["X"]), float(data["Y"])
-                    self.plot_widget.prev_point = [x, y]
-                    
-                    # Only update path if we have items left
-                    if self.current_item_index < len(self.shopping_list):
-                        # Check deviation with optimized function
-                        if self.plot_widget.check_deviation(x, y):
-                            item = self.shopping_list[self.current_item_index]
-                            self.select_item(item)  # Recalculate path
-                            
-                        # Update progress more efficiently
-                        self.update_progress(x, y, *self.get_current_goal(), self.path)
+                # Use in_waiting to check for available data first
+                if serial_port.in_waiting > 0:
+                    line = serial_port.readline()
+                    try:
+                        data = json.loads(line.decode().strip())
+                        x, y = float(data["X"]), float(data["Y"])
+                        self.last_data_time = time.time()  # Update last successful data time
                         
-                    self.plot_widget.update_plot(x, y)
-            except (json.JSONDecodeError, ValueError, KeyError):
-                pass  # Handle JSON parsing errors gracefully
+                        self.plot_widget.prev_point = [x, y]
+                        
+                        if self.current_item_index < len(self.shopping_list):
+                            if self.plot_widget.check_deviation(x, y):
+                                item = self.shopping_list[self.current_item_index]
+                                self.select_item(item)
+                            
+                            self.update_progress(x, y, *self.get_current_goal(), self.path)
+                            
+                        self.plot_widget.update_plot(x, y)
+                        
+                    except (json.JSONDecodeError, ValueError, KeyError, UnicodeDecodeError):
+                        # Handle parsing errors but don't count as signal loss
+                        pass
+            
+            except Exception as e:
+                print(f"Serial error: {e}")
+                self.handle_signal_loss()
+
+    def on_enter(self):
+        """Start signal monitoring when screen is entered"""
+        self.start_signal_monitoring()
+    
+    def on_leave(self):
+        """Stop signal monitoring when leaving screen"""
+        self.stop_signal_monitoring()
 
     def get_current_goal(self):
         """Helper to get current goal coordinates"""
