@@ -1,5 +1,5 @@
 ../Core/Src/Applications/Tag_app/tag_app.c:200:6:tag_uwb_init	24	static
-../Core/Src/Applications/Tag_app/tag_app.c:251:6:tag_application_init	32	static
+../Core/Src/Applications/Tag_app/tag_app.c:251:6:tag_application_init	40	static
 ../Core/Src/Applications/Tag_app/tag_app.c:289:6:tag_application	56	static
 ../Core/Src/Applications/Tag_app/tag_app.c:402:12:is_anchor_valid	24	static
 ../Core/Src/Applications/Tag_app/tag_app.c:424:13:clear_fetched_anchors	24	static

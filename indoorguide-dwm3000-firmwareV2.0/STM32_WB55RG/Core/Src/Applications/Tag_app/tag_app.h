@@ -25,8 +25,8 @@
 
 
 /* Define the state estimation filter */
-//#define FILTER_ARKF
-#define FILTER_EKF
+#define FILTER_ARKF
+//#define FILTER_EKF
 
 /* Common Defines */
 #define NUM_OF_ANCHORS 4
