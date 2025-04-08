@@ -1,0 +1,42 @@
+Output/Debug/Obj/dw3000_api/nrf_memobj.o: \
+ D\:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV2.0\DWM3001CDK\DWM3001C-starter-firmware-main\SDK\components\libraries\memobj\nrf_memobj.c \
+ D\:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV2.0\DWM3001CDK\DWM3001C-starter-firmware-main\SDK\components\libraries\memobj\nrf_memobj.h \
+ D\:/Segger\ Embedded\ Studio/include/stdint.h \
+ D\:/Segger\ Embedded\ Studio/include/stdlib.h \
+ D\:/Segger\ Embedded\ Studio/include/__crossworks.h \
+ SDK/components/libraries/util/sdk_errors.h \
+ SDK/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ SDK/components/libraries/balloc/nrf_balloc.h Src/sdk_config.h \
+ SDK/components/libraries/util/app_util_platform.h \
+ SDK/modules/nrfx/mdk/compiler_abstraction.h SDK/modules/nrfx/mdk/nrf.h \
+ SDK/modules/nrfx/mdk/nrf52833.h \
+ SDK/components/toolchain/cmsis/include/core_cm4.h \
+ SDK/components/toolchain/cmsis/include/cmsis_version.h \
+ SDK/components/toolchain/cmsis/include/cmsis_compiler.h \
+ SDK/components/toolchain/cmsis/include/cmsis_gcc.h \
+ SDK/components/toolchain/cmsis/include/mpu_armv7.h \
+ SDK/modules/nrfx/mdk/system_nrf52833.h \
+ SDK/modules/nrfx/mdk/nrf52833_bitfields.h \
+ SDK/modules/nrfx/mdk/nrf52_to_nrf52833.h \
+ SDK/modules/nrfx/mdk/nrf51_to_nrf52.h \
+ SDK/modules/nrfx/mdk/compiler_abstraction.h \
+ SDK/components/libraries/util/nrf_assert.h \
+ SDK/components/libraries/util/app_error.h \
+ D\:/Segger\ Embedded\ Studio/include/stdio.h \
+ D\:/Segger\ Embedded\ Studio/include/stdbool.h \
+ SDK/components/libraries/util/sdk_errors.h \
+ SDK/components/libraries/util/nordic_common.h \
+ SDK/components/libraries/util/app_error_weak.h \
+ SDK/components/libraries/util/app_util.h \
+ D\:/Segger\ Embedded\ Studio/include/stddef.h \
+ SDK/components/libraries/log/nrf_log_instance.h \
+ SDK/components/libraries/experimental_section_vars/nrf_section.h \
+ SDK/components/libraries/util/nordic_common.h \
+ SDK/components/libraries/log/nrf_log_types.h \
+ SDK/components/libraries/atomic/nrf_atomic.h \
+ SDK/components/libraries/util/sdk_common.h \
+ D\:/Segger\ Embedded\ Studio/include/string.h \
+ SDK/components/libraries/util/sdk_os.h \
+ SDK/components/libraries/util/app_util.h \
+ SDK/components/libraries/util/sdk_macros.h \
+ SDK/components/libraries/util/nrf_assert.h

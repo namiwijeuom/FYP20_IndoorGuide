@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DWM3000
+D 6.5 & 8.0 GHz Ultra-Wideband (UWB) Module,Supply voltage: 2.5 to 3.6 V (VDD3V3), 1.62 to 3.6 V (VDD1).
+K
+F https://www.qorvo.com/products/p/DWM3000#documents
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,9 @@
+Manufacturer=Qorvo
+PartNumber=DWM3000
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=24
+Version=1.6
+Released=2022-11-04 10:06:16
+Downloaded=2025-02-03 05:53:08
+3D=Y

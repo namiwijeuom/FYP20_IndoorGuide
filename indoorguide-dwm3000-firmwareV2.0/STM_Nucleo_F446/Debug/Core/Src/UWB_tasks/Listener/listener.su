@@ -1,0 +1,4 @@
+../Core/Src/UWB_tasks/Listener/listener.c:40:6:listener_init	24	static
+../Core/Src/UWB_tasks/Listener/listener.c:60:6:listener_reinit	8	static
+../Core/Src/UWB_tasks/Listener/listener.c:69:5:listener	32	static
+../Core/Src/UWB_tasks/Listener/listener.c:150:5:is_already_fetched	24	static

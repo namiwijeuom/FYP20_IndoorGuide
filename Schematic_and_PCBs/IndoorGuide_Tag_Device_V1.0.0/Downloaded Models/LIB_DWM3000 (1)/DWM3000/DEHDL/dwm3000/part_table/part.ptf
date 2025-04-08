@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'DWM3000'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Qorvo", "DWM3000" (!) = "", "DWM3000", "Other", "N/A", "https://www.mouser.co.uk/ProductDetail/Qorvo/DWM3000?qs=iLbezkQI%252BsgcUwU6rIS9AQ%3D%3D", "", "", "6.5 & 8.0 GHz Ultra-Wideband (UWB) Module,Supply voltage: 2.5 to 3.6 V (VDD3V3), 1.62 to 3.6 V (VDD1).", "https://www.qorvo.com/products/p/DWM3000#documents", "2.89 mm"
+END_PART
+
+END.

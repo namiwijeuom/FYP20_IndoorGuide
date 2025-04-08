@@ -1,0 +1,18 @@
+.DWM3000 :1 ;6.5 & 8.0 GHz Ultra-Wideband (UWB) Module,Supply voltage: 2.5 to 3.6 V (VDD3V3), 1.62 to 3.6 V (VDD1).
+DWM3000
+*STM IC
+*NGS
+*PLB 1="EXTON" 2="WAKEUP" 3="RSTN" 4="GPIO7" 5="VDD1" 6="VDD3V3_1" 7="VDD3V3_2" 8="VSS_1" 9="GPIO6" 10="GPIO5" 11="GPIO4" 12="GPIO3" 13="GPIO2" 14="GPIO1" 15="GPIO0" 16="VSS_2" 17="SPICSN" 18="SPIMOSI" 19="SPIMISO" 20="SPICLK" 21="VSS_3" 22="IRQ" 23="VSS_4" 24="VSS_5"
+*MXP 24
+*DFN DWM3000
+~!Manufacturer_Name (Qorvo)
+~!Manufacturer_Part_Number (DWM3000)
+~!Mouser Part Number (N/A)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Qorvo/DWM3000?qs=iLbezkQI%252BsgcUwU6rIS9AQ%3D%3D)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://www.qorvo.com/products/p/DWM3000#documents)
+~!Height (2.89mm)
+~!3D_Model (DWM3000)
+DWM3000
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 18.1!U 19.1!U 20.1!U 21.1!U 22.1!U 23.1!U 24.1!U 
