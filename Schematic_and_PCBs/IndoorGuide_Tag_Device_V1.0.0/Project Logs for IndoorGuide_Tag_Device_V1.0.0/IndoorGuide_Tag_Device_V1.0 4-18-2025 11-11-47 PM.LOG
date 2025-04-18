@@ -1,0 +1,15 @@
+Added Component: Designator=T1(TP-Top)
+Added Component: Designator=T2(TP-Top)
+Added Component: Designator=T3(TP-Top)
+Added Component: Designator=T4(TP-Top)
+Added Component: Designator=T5(TP-Top)
+Add Pin To Net: Unknown Pin: Pin T1-1
+Add Pin To Net: Unknown Pin: Pin T2-1
+Add Pin To Net: Unknown Pin: Pin T3-1
+Add Pin To Net: Unknown Pin: Pin T4-1
+Add Pin To Net: Unknown Pin: Pin T5-1
+Added Member To Class: ClassName=Power Member=Component T1 TP
+Added Member To Class: ClassName=Power Member=Component T2 TP
+Added Member To Class: ClassName=Power Member=Component T3 TP
+Added Member To Class: ClassName=MCU Member=Component T4 TP
+Added Member To Class: ClassName=MCU Member=Component T5 TP

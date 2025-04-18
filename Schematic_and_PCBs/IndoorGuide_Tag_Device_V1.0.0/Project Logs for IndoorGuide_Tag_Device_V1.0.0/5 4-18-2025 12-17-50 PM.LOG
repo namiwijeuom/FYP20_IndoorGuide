@@ -1,0 +1,80 @@
+Removed Parameter ComponentLink1Description:Datasheet from Part J5
+Removed Parameter ComponentLink1Description:Datasheet from Part J6
+Removed Parameter ComponentLink1URL:https://cdn.harwin.com/pdfs/C001XX_M20_Series_Connectors.pdf from Part J5
+Removed Parameter ComponentLink1URL:https://cdn.harwin.com/pdfs/C001XX_M20_Series_Connectors.pdf from Part J6
+Removed Parameter ComponentLink2Description:DigiKey Link from Part J5
+Removed Parameter ComponentLink2Description:DigiKey Link from Part J6
+Removed Parameter ComponentLink2URL:https://www.digikey.com/en/products/detail/harwin-inc/M20-7820842/3727790 from Part J5
+Removed Parameter ComponentLink2URL:https://www.digikey.com/en/products/detail/harwin-inc/M20-7820842/3727790 from Part J6
+Removed Parameter Connector Type:Receptacle from Part J5
+Removed Parameter Connector Type:Receptacle from Part J6
+Removed Parameter Contact Finish - Mating:Gold from Part J5
+Removed Parameter Contact Finish - Mating:Gold from Part J6
+Removed Parameter Contact Finish - Post:Tin from Part J5
+Removed Parameter Contact Finish - Post:Tin from Part J6
+Removed Parameter Contact Finish Thickness - Mating:Flash from Part J5
+Removed Parameter Contact Finish Thickness - Mating:Flash from Part J6
+Removed Parameter Contact Length - Post:0.118" (3.00mm) from Part J5
+Removed Parameter Contact Length - Post:0.118" (3.00mm) from Part J6
+Removed Parameter Contact Type:Female Socket from Part J5
+Removed Parameter Contact Type:Female Socket from Part J6
+Removed Parameter Current Rating (Amps):3A from Part J5
+Removed Parameter Current Rating (Amps):3A from Part J6
+Removed Parameter Fastening Type:Push-Pull from Part J5
+Removed Parameter Fastening Type:Push-Pull from Part J6
+Removed Parameter Insulation Color:Black from Part J5
+Removed Parameter Insulation Color:Black from Part J6
+Removed Parameter Insulation Height:0.335" (8.51mm) from Part J5
+Removed Parameter Insulation Height:0.335" (8.51mm) from Part J6
+Removed Parameter JLCPCB part number:* from Part D9
+Removed Parameter JLCPCB part number:* from Part R25
+Removed Parameter LastUpdated:9/21/2022 6:58:33 PM from Part J5
+Removed Parameter LastUpdated:9/21/2022 6:58:33 PM from Part J6
+Removed Parameter Lifecycle Status:Active from Part J5
+Removed Parameter Lifecycle Status:Active from Part J6
+Removed Parameter Manufacturer:* from Part D9
+Removed Parameter Manufacturer:* from Part R25
+Removed Parameter Manufacturer:Harwin Inc. from Part J5
+Removed Parameter Manufacturer:Harwin Inc. from Part J6
+Removed Parameter Mated Stacking Heights:11.04mm, 12.63mm from Part J5
+Removed Parameter Mated Stacking Heights:11.04mm, 12.63mm from Part J6
+Removed Parameter Material Flammability Rating:UL94 V-0 from Part J5
+Removed Parameter Material Flammability Rating:UL94 V-0 from Part J6
+Removed Parameter Minimum Order:1 from Part J5
+Removed Parameter Minimum Order:1 from Part J6
+Removed Parameter Mounting Type:Through Hole from Part J5
+Removed Parameter Mounting Type:Through Hole from Part J6
+Removed Parameter Number of Positions:8 from Part J5
+Removed Parameter Number of Positions:8 from Part J6
+Removed Parameter Number of Positions Loaded:All from Part J5
+Removed Parameter Number of Positions Loaded:All from Part J6
+Removed Parameter Number of Rows:1 from Part J5
+Removed Parameter Number of Rows:1 from Part J6
+Removed Parameter Operating Temperature:-40°C ~ 105°C from Part J5
+Removed Parameter Operating Temperature:-40°C ~ 105°C from Part J6
+Removed Parameter Packaging:Tube from Part J5
+Removed Parameter Packaging:Tube from Part J6
+Removed Parameter Part Number:M20-7820842 from Part J5
+Removed Parameter Part Number:M20-7820842 from Part J6
+Removed Parameter Part Status:Active from Part J5
+Removed Parameter Part Status:Active from Part J6
+Removed Parameter Pitch - Mating:0.100" (2.54mm) from Part J5
+Removed Parameter Pitch - Mating:0.100" (2.54mm) from Part J6
+Removed Parameter Price:0.62 from Part J5
+Removed Parameter Price:0.62 from Part J6
+Removed Parameter Series:M20 from Part J5
+Removed Parameter Series:M20 from Part J6
+Removed Parameter Style:Board to Board or Cable from Part J5
+Removed Parameter Style:Board to Board or Cable from Part J6
+Removed Parameter Supplier 1:DigiKey from Part J5
+Removed Parameter Supplier 1:DigiKey from Part J6
+Removed Parameter Supplier Part Number 1:952-1823-ND from Part J5
+Removed Parameter Supplier Part Number 1:952-1823-ND from Part J6
+Removed Parameter Termination:Solder from Part J5
+Removed Parameter Termination:Solder from Part J6
+Change Value of Parameter MF in Part D9 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R25 Old=Manufacturer part number New=MF
+Added Parameter LCSC= to Part D9
+Added Parameter LCSC= to Part J5
+Added Parameter LCSC= to Part J6
+Added Parameter LCSC= to Part R25

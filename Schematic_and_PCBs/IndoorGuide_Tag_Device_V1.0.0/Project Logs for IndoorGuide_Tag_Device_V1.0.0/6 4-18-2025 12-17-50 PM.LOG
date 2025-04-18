@@ -1,0 +1,110 @@
+Removed Parameter Accel Range:2/4/8/16g from Part U7
+Removed Parameter Automotive:No from Part U7
+Removed Parameter Automotive:No from Part U8
+Removed Parameter Category:IC from Part U7
+Removed Parameter Category:IC from Part U8
+Removed Parameter ComponentLink2Description:Datasheet from Part U7
+Removed Parameter ComponentLink2Description:Datasheet from Part U8
+Removed Parameter ComponentLink2URL:https://www.st.com/resource/en/datasheet/lis2mdl.pdf from Part U8
+Removed Parameter ComponentLink2URL:https://www.st.com/resource/en/datasheet/lsm6dsr.pdf from Part U7
+Removed Parameter Device Class L1:Sensors from Part U7
+Removed Parameter Device Class L1:Sensors from Part U8
+Removed Parameter Device Class L2:Magnetic Sensors from Part U8
+Removed Parameter Device Class L2:Motion Sensors from Part U7
+Removed Parameter Device Class L3:Inertial Measurement Units (IMUs) from Part U7
+Removed Parameter Device Class L3:unset from Part U8
+Removed Parameter Digikey Description:INEMO INERTIAL MODULE: 3D ACCELE from Part U7
+Removed Parameter Digikey Description:SENSOR MR I2C/SPI 12LGA from Part U8
+Removed Parameter ECCN_EU:n/a from Part SB13
+Removed Parameter ECCN_EU:n/a from Part SB14
+Removed Parameter ECCN_EU:n/a from Part SB15
+Removed Parameter ECCN_US:n/a from Part SB13
+Removed Parameter ECCN_US:n/a from Part SB14
+Removed Parameter ECCN_US:n/a from Part SB15
+Removed Parameter Footprint Url:https://www.st.com/content/ccc/resource/technical/document/technical_note/73/17/9c/16/dd/96/4a/01/CD00134799.pdf/files/CD00134799.pdf/jcr:content/translations/en.CD00134799.pdf from Part U7
+Removed Parameter Gyro Range:125/250/500/1000/2000/4000°/s from Part U7
+Removed Parameter Height:0.7mm from Part U8
+Removed Parameter Height:0.86mm from Part U7
+Removed Parameter Initial_Board_Reference:mb1274 from Part SB13
+Removed Parameter Initial_Board_Reference:mb1274 from Part SB14
+Removed Parameter Initial_Board_Reference:mb1274 from Part SB15
+Removed Parameter Internal_Part_Number:MCD-00071 from Part SB13
+Removed Parameter Internal_Part_Number:MCD-00071 from Part SB14
+Removed Parameter Internal_Part_Number:MCD-00071 from Part SB15
+Removed Parameter JLCPCB part number:* from Part R26
+Removed Parameter JLCPCB part number:* from Part R27
+Removed Parameter JLCPCB part number:* from Part R28
+Removed Parameter JLCPCB part number:* from Part R29
+Removed Parameter Lead Free:Yes from Part U7
+Removed Parameter Lead Free:Yes from Part U8
+Removed Parameter Manufacturer:* from Part R26
+Removed Parameter Manufacturer:* from Part R27
+Removed Parameter Manufacturer:* from Part R28
+Removed Parameter Manufacturer:* from Part R29
+Removed Parameter Manufacturer:STMicroelectronics from Part U7
+Removed Parameter Manufacturer:STMicroelectronics from Part U8
+Removed Parameter Max Supply Voltage:3.6V from Part U7
+Removed Parameter Max Supply Voltage:3.6V from Part U8
+Removed Parameter MF:* from Part C24
+Removed Parameter MF:* from Part C25
+Removed Parameter MF:* from Part C26
+Removed Parameter MF:* from Part C27
+Removed Parameter MF:* from Part C28
+Removed Parameter Min Supply Voltage:1.62V from Part U7
+Removed Parameter Min Supply Voltage:1.71V from Part U8
+Removed Parameter Mouser Description:In a Pack of 2, LSM6DSRTR STMicroelectronics, 3-Axis Accelerometer, Gyroscope, 14-Pin LGA from Part U7
+Removed Parameter MP:* from Part C24
+Removed Parameter MP:* from Part C25
+Removed Parameter MP:* from Part C26
+Removed Parameter MP:* from Part C27
+Removed Parameter MP:* from Part C28
+Removed Parameter MP:PMR03EZPJ000 from Part SB13
+Removed Parameter MP:PMR03EZPJ000 from Part SB14
+Removed Parameter MP:PMR03EZPJ000 from Part SB15
+Removed Parameter Octopart:https://octopart.com/lis2mdltr-stmicroelectronics-81117311 from Part U8
+Removed Parameter Octopart:https://octopart.com/lsm6dsrtr-stmicroelectronics-93180177 from Part U7
+Removed Parameter Operating Supply Current:50-200uA from Part U8
+Removed Parameter Operating Supply Current:360-1200uA from Part U7
+Removed Parameter Package:LGA-12-DM00170568 from Part U8
+Removed Parameter Package:LGA-14L-DM00249496 from Part U7
+Removed Parameter Part_Type:Mechanical from Part SB13
+Removed Parameter Part_Type:Mechanical from Part SB14
+Removed Parameter Part_Type:Mechanical from Part SB15
+Removed Parameter Provided_By:Subcon from Part SB13
+Removed Parameter Provided_By:Subcon from Part SB14
+Removed Parameter Provided_By:Subcon from Part SB15
+Removed Parameter RoHS:TRUE from Part U7
+Removed Parameter RoHS:TRUE from Part U8
+Removed Parameter Sensing Method:Magnetic from Part U8
+Removed Parameter Sensor Output:I2C,SPI from Part U7
+Removed Parameter Sensor Output:I2C,SPI from Part U8
+Removed Parameter Sensor Type:Temperature,Accelerometer,Gyroscope from Part U7
+Removed Parameter Status:Released from Part SB13
+Removed Parameter Status:Released from Part SB14
+Removed Parameter Status:Released from Part SB15
+Removed Parameter Temperature:-40°C to +85°C from Part U7
+Removed Parameter Temperature:-40°C to +85°C from Part U8
+Removed Parameter Temperature Range High:+85°C from Part U7
+Removed Parameter Temperature Range High:+85°C from Part U8
+Removed Parameter Temperature Range Low:-40°C from Part U7
+Removed Parameter Temperature Range Low:-40°C from Part U8
+Change Value of Parameter MF in Part R26 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R27 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R28 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R29 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part U7 Old=Manufacturer Part Number New=MF
+Change Value of Parameter MF in Part U8 Old=Manufacturer Part Number New=MF
+Added Parameter LCSC= to Part C24
+Added Parameter LCSC= to Part C25
+Added Parameter LCSC= to Part C26
+Added Parameter LCSC= to Part C27
+Added Parameter LCSC= to Part C28
+Added Parameter LCSC= to Part R26
+Added Parameter LCSC= to Part R27
+Added Parameter LCSC= to Part R28
+Added Parameter LCSC= to Part R29
+Added Parameter LCSC= to Part SB13
+Added Parameter LCSC= to Part SB14
+Added Parameter LCSC= to Part SB15
+Added Parameter LCSC= to Part U7
+Added Parameter LCSC= to Part U8

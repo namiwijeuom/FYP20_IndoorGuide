@@ -1,0 +1,73 @@
+Added Component: Designator=JP1(SAMTEC_TS-103-T-A-1)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Component: Designator=JP2(SAMTEC_HTSW-101-07-S-D)
+Add component (AddParameter): Name = "Barrier Type"; Value = "2 Wall (Dual)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Bottom Termination"; Value = "PC Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=3-1437664-0&DocType=Customer+Drawing&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "DigiKey Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://digikey.com/product-detail/en/te-connectivity-amp-connectors/NC6-P108-03/A98496-ND/1277927"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating (Amps)"; Value = "20A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LastUpdated"; Value = "1/15/2020 4:12:05 AM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity AMP Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Circuits"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Wire Entries"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NC6-P108-03"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.375" (9.53mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "2.16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "NC6, Buchanan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A98496-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Block Type"; Value = "Barrier Block"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Top Termination"; Value = "Screws with Captive Plate"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge"; Value = "12-22 AWG"; VariantName = "[No Variations]"
+Added Component: Designator=JP3(SAMTEC_HTSW-101-07-S-D)
+Add component (AddParameter): Name = "Barrier Type"; Value = "2 Wall (Dual)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Bottom Termination"; Value = "PC Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=3-1437664-0&DocType=Customer+Drawing&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "DigiKey Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://digikey.com/product-detail/en/te-connectivity-amp-connectors/NC6-P108-03/A98496-ND/1277927"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating (Amps)"; Value = "20A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LastUpdated"; Value = "1/15/2020 4:12:05 AM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity AMP Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Circuits"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Wire Entries"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NC6-P108-03"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.375" (9.53mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "2.16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "NC6, Buchanan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A98496-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Block Type"; Value = "Barrier Block"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Top Termination"; Value = "Screws with Captive Plate"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge"; Value = "12-22 AWG"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=EXT_5V Pin=JP1-1
+Added Pin To Net: NetName=+5V Pin=JP1-2
+Added Pin To Net: NetName=USB_5V Pin=JP1-3
+Added Pin To Net: NetName=BLE_TX Pin=JP2-1
+Added Pin To Net: NetName=NetJP2_2 Pin=JP2-2
+Added Pin To Net: NetName=BLE_RX Pin=JP3-1
+Added Pin To Net: NetName=NetJP3_2 Pin=JP3-2
+Added Member To Class: ClassName=Power Member=Component JP1 3 Pin Jumper
+Added Member To Class: ClassName=BLE Member=Component JP2 2 Pin Jumper_Series
+Added Member To Class: ClassName=BLE Member=Component JP3 2 Pin Jumper_Series

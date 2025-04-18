@@ -1,0 +1,116 @@
+Removed Parameter Barrier Type:2 Wall (Dual) from Part JP2
+Removed Parameter Barrier Type:2 Wall (Dual) from Part JP3
+Removed Parameter Bottom Termination:PC Pin from Part JP2
+Removed Parameter Bottom Termination:PC Pin from Part JP3
+Removed Parameter Check_prices:https://www.snapeda.com/parts/HM-10/Jinan+Huamao+Technology/view-part/?ref=eda from Part U6
+Removed Parameter Color:Black from Part JP2
+Removed Parameter Color:Black from Part JP3
+Removed Parameter ComponentLink1Description:Datasheet from Part J4
+Removed Parameter ComponentLink1Description:Datasheet from Part JP2
+Removed Parameter ComponentLink1Description:Datasheet from Part JP3
+Removed Parameter ComponentLink1URL:https://cdn.harwin.com/pdfs/C001XX_M20_Series_Connectors.pdf from Part J4
+Removed Parameter ComponentLink1URL:https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=3-1437664-0&DocType=Customer+Drawing&DocLang=English from Part JP2
+Removed Parameter ComponentLink1URL:https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=3-1437664-0&DocType=Customer+Drawing&DocLang=English from Part JP3
+Removed Parameter ComponentLink2Description:DigiKey Link from Part J4
+Removed Parameter ComponentLink2Description:DigiKey Link from Part JP2
+Removed Parameter ComponentLink2Description:DigiKey Link from Part JP3
+Removed Parameter ComponentLink2URL:http://digikey.com/product-detail/en/te-connectivity-amp-connectors/NC6-P108-03/A98496-ND/1277927 from Part JP2
+Removed Parameter ComponentLink2URL:http://digikey.com/product-detail/en/te-connectivity-amp-connectors/NC6-P108-03/A98496-ND/1277927 from Part JP3
+Removed Parameter ComponentLink2URL:https://www.digikey.com/en/products/detail/harwin-inc/M20-7820642/3727776 from Part J4
+Removed Parameter Connector Type:Receptacle from Part J4
+Removed Parameter Contact Finish - Mating:Gold from Part J4
+Removed Parameter Contact Finish - Post:Tin from Part J4
+Removed Parameter Contact Finish Thickness - Mating:Flash from Part J4
+Removed Parameter Contact Length - Post:0.118" (3.00mm) from Part J4
+Removed Parameter Contact Type:Female Socket from Part J4
+Removed Parameter Current Rating (Amps):3A from Part J4
+Removed Parameter Current Rating (Amps):20A from Part JP2
+Removed Parameter Current Rating (Amps):20A from Part JP3
+Removed Parameter Fastening Type:Push-Pull from Part J4
+Removed Parameter Insulation Color:Black from Part J4
+Removed Parameter Insulation Height:0.335" (8.51mm) from Part J4
+Removed Parameter JLCPCB part number:* from Part D8
+Removed Parameter JLCPCB part number:* from Part R23
+Removed Parameter JLCPCB part number:* from Part R24
+Removed Parameter LastUpdated:1/15/2020 4:12:05 AM from Part JP2
+Removed Parameter LastUpdated:1/15/2020 4:12:05 AM from Part JP3
+Removed Parameter LastUpdated:9/21/2022 6:58:09 PM from Part J4
+Removed Parameter Lifecycle Status:Active from Part J4
+Removed Parameter Lifecycle Status:Active from Part JP2
+Removed Parameter Lifecycle Status:Active from Part JP3
+Removed Parameter Manufacturer:* from Part D8
+Removed Parameter Manufacturer:* from Part R23
+Removed Parameter Manufacturer:* from Part R24
+Removed Parameter Manufacturer:Harwin Inc. from Part J4
+Removed Parameter Manufacturer:TE Connectivity AMP Connectors from Part JP2
+Removed Parameter Manufacturer:TE Connectivity AMP Connectors from Part JP3
+Removed Parameter Mated Stacking Heights:11.04mm, 12.63mm from Part J4
+Removed Parameter Material Flammability Rating:UL94 V-0 from Part J4
+Removed Parameter MF:* from Part C22
+Removed Parameter MF:* from Part C23
+Removed Parameter MF:Jinan Huamao Technology from Part U6
+Removed Parameter Minimum Order:1 from Part J4
+Removed Parameter Minimum Order:1 from Part JP2
+Removed Parameter Minimum Order:1 from Part JP3
+Removed Parameter Mounting Type:Through Hole from Part J4
+Removed Parameter MP:* from Part C22
+Removed Parameter MP:* from Part C23
+Removed Parameter MP:HM-10 from Part U6
+Removed Parameter Number of Circuits:3 from Part JP2
+Removed Parameter Number of Circuits:3 from Part JP3
+Removed Parameter Number of Positions:6 from Part J4
+Removed Parameter Number of Positions Loaded:All from Part J4
+Removed Parameter Number of Rows:1 from Part J4
+Removed Parameter Number of Rows:1 from Part JP2
+Removed Parameter Number of Rows:1 from Part JP3
+Removed Parameter Number of Wire Entries:3 from Part JP2
+Removed Parameter Number of Wire Entries:3 from Part JP3
+Removed Parameter Operating Temperature:-40°C ~ 105°C from Part J4
+Removed Parameter Package:Package from Part U6
+Removed Parameter Packaging:Bulk from Part JP2
+Removed Parameter Packaging:Bulk from Part JP3
+Removed Parameter Packaging:Tube from Part J4
+Removed Parameter Part Number:M20-7820642 from Part J4
+Removed Parameter Part Number:NC6-P108-03 from Part JP2
+Removed Parameter Part Number:NC6-P108-03 from Part JP3
+Removed Parameter Part Status:Active from Part J4
+Removed Parameter Part Status:Active from Part JP2
+Removed Parameter Part Status:Active from Part JP3
+Removed Parameter Pitch - Mating:0.100" (2.54mm) from Part J4
+Removed Parameter Pitch:0.375" (9.53mm) from Part JP2
+Removed Parameter Pitch:0.375" (9.53mm) from Part JP3
+Removed Parameter Price:0.55 from Part J4
+Removed Parameter Price:2.16 from Part JP2
+Removed Parameter Price:2.16 from Part JP3
+Removed Parameter Series:M20 from Part J4
+Removed Parameter Series:NC6, Buchanan from Part JP2
+Removed Parameter Series:NC6, Buchanan from Part JP3
+Removed Parameter SnapEDA_Link:https://www.snapeda.com/parts/HM-10/Jinan+Huamao+Technology/view-part/?ref=snap from Part U6
+Removed Parameter Style:Board to Board or Cable from Part J4
+Removed Parameter Supplier 1:DigiKey from Part J4
+Removed Parameter Supplier 1:DigiKey from Part JP2
+Removed Parameter Supplier 1:DigiKey from Part JP3
+Removed Parameter Supplier Part Number 1:952-1808-ND from Part J4
+Removed Parameter Supplier Part Number 1:A98496-ND from Part JP2
+Removed Parameter Supplier Part Number 1:A98496-ND from Part JP3
+Removed Parameter Terminal Block Type:Barrier Block from Part JP2
+Removed Parameter Terminal Block Type:Barrier Block from Part JP3
+Removed Parameter Termination:Solder from Part J4
+Removed Parameter Top Termination:Screws with Captive Plate from Part JP2
+Removed Parameter Top Termination:Screws with Captive Plate from Part JP3
+Removed Parameter Value:* from Part U6
+Removed Parameter Wire Gauge:12-22 AWG from Part JP2
+Removed Parameter Wire Gauge:12-22 AWG from Part JP3
+Change Value of Parameter MF in Part D8 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R23 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R24 Old=Manufacturer part number New=MF
+Added Parameter LCSC= to Part C22
+Added Parameter LCSC= to Part C23
+Added Parameter LCSC= to Part D8
+Added Parameter LCSC= to Part J4
+Added Parameter LCSC= to Part JP2
+Added Parameter LCSC= to Part JP3
+Added Parameter LCSC= to Part R23
+Added Parameter LCSC= to Part R24
+Added Parameter LCSC= to Part S3
+Added Parameter LCSC= to Part U6

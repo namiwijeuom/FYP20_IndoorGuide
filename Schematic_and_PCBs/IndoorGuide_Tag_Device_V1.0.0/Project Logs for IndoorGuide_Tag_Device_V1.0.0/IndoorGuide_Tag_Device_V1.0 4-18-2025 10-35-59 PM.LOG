@@ -1,0 +1,19 @@
+Added Component: Designator=X1(FP-ABS25-MFG)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C5369037"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Abracon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ABS25-32.768KHZ-6-1-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Abracon LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ABS25-32.768KHZ-6-1-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin JP1-1
+Add Pin To Net: Unknown Pin: Pin JP1-2
+Add Pin To Net: Unknown Pin: Pin JP1-3
+Add Pin To Net: Unknown Pin: Pin JP2-1
+Add Pin To Net: Unknown Pin: Pin JP2-2
+Add Pin To Net: Unknown Pin: Pin JP3-1
+Add Pin To Net: Unknown Pin: Pin JP3-2
+Added Pin To Net: NetName=NetC17_2 Pin=X1-1
+Added Pin To Net: NetName=NetC18_2 Pin=X1-4
+Added Member To Class: ClassName=MCU Member=Component X1 ABS25-32.768KHZ-6-1-T

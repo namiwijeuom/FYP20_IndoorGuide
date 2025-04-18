@@ -1,0 +1,40 @@
+Removed Parameter .Checked PCB: from Part MH1
+Removed Parameter .Checked PCB: from Part MH2
+Removed Parameter .Checked PCB: from Part MH3
+Removed Parameter .Checked PCB: from Part MH4
+Removed Parameter .Checked SCH: from Part MH1
+Removed Parameter .Checked SCH: from Part MH2
+Removed Parameter .Checked SCH: from Part MH3
+Removed Parameter .Checked SCH: from Part MH4
+Removed Parameter MF: from Part FM1
+Removed Parameter MF: from Part FM2
+Removed Parameter MF: from Part FM3
+Removed Parameter MF: from Part FM4
+Removed Parameter MP: from Part FM1
+Removed Parameter MP: from Part FM2
+Removed Parameter MP: from Part FM3
+Removed Parameter MP: from Part FM4
+Removed Parameter Package: from Part FM1
+Removed Parameter Package: from Part FM2
+Removed Parameter Package: from Part FM3
+Removed Parameter Package: from Part FM4
+Removed Parameter Parameter 1:* from Part FM1
+Removed Parameter Parameter 1:* from Part FM2
+Removed Parameter Parameter 1:* from Part FM3
+Removed Parameter Parameter 1:* from Part FM4
+Removed Parameter SnapEDA_Link: from Part FM1
+Removed Parameter SnapEDA_Link: from Part FM2
+Removed Parameter SnapEDA_Link: from Part FM3
+Removed Parameter SnapEDA_Link: from Part FM4
+Removed Parameter Value:* from Part FM1
+Removed Parameter Value:* from Part FM2
+Removed Parameter Value:* from Part FM3
+Removed Parameter Value:* from Part FM4
+Added Parameter LCSC= to Part FM1
+Added Parameter LCSC= to Part FM2
+Added Parameter LCSC= to Part FM3
+Added Parameter LCSC= to Part FM4
+Added Parameter LCSC= to Part MH1
+Added Parameter LCSC= to Part MH2
+Added Parameter LCSC= to Part MH3
+Added Parameter LCSC= to Part MH4

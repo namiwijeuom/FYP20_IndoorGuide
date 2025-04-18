@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"33-16012020-060575";"";
+"REFERENCE";"STM32F446RET6";"";
+"TraceParts.PartTitle";"Integrated Circuit Quad Flat Packages - STM32F051R8T6TR, STM32F103RBT6, STM32F103RCT6, STM32F405RGT6, STM32F446RET6, STM32F103RET6, STM32L476RGT6";"";
+"TraceParts.InstanceId";"33-16012020-060575576DZ2BAYQFZG59ZZHDGQBQ8K";"";
+"DESIGN";"Integrated Circuit Quad Flat Packages - STM32F446RET6";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"STMicroelectronics";"";
+"TraceParts.PartVersion";"1.1.8";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"STMICROELECTRONICS:33-16012020-060575";"";

@@ -1,0 +1,216 @@
+Removed Parameter Case/Package:SMD/SMT from Part X1
+Removed Parameter ComponentLink1Description:Datasheet from Part J3
+Removed Parameter ComponentLink1Description:Manufacturer URL from Part U4
+Removed Parameter ComponentLink1Description:Manufacturer URL from Part U4
+Removed Parameter ComponentLink1URL:http://www.st.com/ from Part U4
+Removed Parameter ComponentLink1URL:http://www.st.com/ from Part U4
+Removed Parameter ComponentLink1URL:https://cdn.harwin.com/pdfs/C001XX_M20_Series_Connectors.pdf from Part J3
+Removed Parameter ComponentLink2Description:Datasheet from Part U4
+Removed Parameter ComponentLink2Description:Datasheet from Part U4
+Removed Parameter ComponentLink2Description:DigiKey Link from Part J3
+Removed Parameter ComponentLink2URL:http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141306.pdf from Part U4
+Removed Parameter ComponentLink2URL:http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141306.pdf from Part U4
+Removed Parameter ComponentLink2URL:https://www.digikey.com/en/products/detail/harwin-inc/M20-7820642/3727776 from Part J3
+Removed Parameter Connector Type:Receptacle from Part J3
+Removed Parameter Contact Finish - Mating:Gold from Part J3
+Removed Parameter Contact Finish - Post:Tin from Part J3
+Removed Parameter Contact Finish Thickness - Mating:Flash from Part J3
+Removed Parameter Contact Length - Post:0.118" (3.00mm) from Part J3
+Removed Parameter Contact Type:Female Socket from Part J3
+Removed Parameter Core:ARM Cortex-M4 from Part U4
+Removed Parameter Core:ARM Cortex-M4 from Part U4
+Removed Parameter Current Rating (Amps):3A from Part J3
+Removed Parameter D/A Converter:2 from Part U4
+Removed Parameter D/A Converter:2 from Part U4
+Removed Parameter DatasheetVersion:Rev. 6 from Part U4
+Removed Parameter DatasheetVersion:Rev. 6 from Part U4
+Removed Parameter Depth:3.8mm from Part X1
+Removed Parameter ECCN_EU:n/a from Part SB4
+Removed Parameter ECCN_EU:n/a from Part SB5
+Removed Parameter ECCN_EU:n/a from Part SB6
+Removed Parameter ECCN_EU:n/a from Part SB7
+Removed Parameter ECCN_US:n/a from Part SB4
+Removed Parameter ECCN_US:n/a from Part SB5
+Removed Parameter ECCN_US:n/a from Part SB6
+Removed Parameter ECCN_US:n/a from Part SB7
+Removed Parameter ESR (Equivalent Series Resistance):50kR from Part X1
+Removed Parameter Fastening Type:Push-Pull from Part J3
+Removed Parameter FLASH Size (Prog) (kB):512 from Part U4
+Removed Parameter FLASH Size (Prog) (kB):512 from Part U4
+Removed Parameter Frequency:32.768kHz from Part X1
+Removed Parameter Frequency Tolerance:10ppm from Part X1
+Removed Parameter Height:0.098inch from Part X1
+Removed Parameter I/Os (High Current):50 from Part U4
+Removed Parameter I/Os (High Current):50 from Part U4
+Removed Parameter Initial_Board_Reference:mb1274 from Part SB4
+Removed Parameter Initial_Board_Reference:mb1274 from Part SB5
+Removed Parameter Initial_Board_Reference:mb1274 from Part SB6
+Removed Parameter Initial_Board_Reference:mb1274 from Part SB7
+Removed Parameter Insulation Color:Black from Part J3
+Removed Parameter Insulation Height:0.335" (8.51mm) from Part J3
+Removed Parameter Internal_Part_Number:MCD-00071 from Part SB4
+Removed Parameter Internal_Part_Number:MCD-00071 from Part SB5
+Removed Parameter Internal_Part_Number:MCD-00071 from Part SB6
+Removed Parameter Internal_Part_Number:MCD-00071 from Part SB7
+Removed Parameter Internal RAM Size (kB):128 from Part U4
+Removed Parameter Internal RAM Size (kB):128 from Part U4
+Removed Parameter JLCPCB part number:* from Part R7
+Removed Parameter JLCPCB part number:* from Part R8
+Removed Parameter JLCPCB part number:* from Part R9
+Removed Parameter JLCPCB part number:* from Part R10
+Removed Parameter JLCPCB part number:* from Part R11
+Removed Parameter JLCPCB part number:* from Part R12
+Removed Parameter JLCPCB part number:* from Part R13
+Removed Parameter JLCPCB part number:* from Part R14
+Removed Parameter JLCPCB part number:* from Part R15
+Removed Parameter JLCPCB part number:* from Part R16
+Removed Parameter LastUpdated:9/21/2022 6:58:09 PM from Part J3
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part X2
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part X2
+Removed Parameter Lead Free:Lead Free from Part X1
+Removed Parameter Length:8mm from Part X1
+Removed Parameter Lifecycle Status:Active from Part J3
+Removed Parameter Load Capacitance:6pF from Part X1
+Removed Parameter Manufacturer:* from Part R7
+Removed Parameter Manufacturer:* from Part R8
+Removed Parameter Manufacturer:* from Part R9
+Removed Parameter Manufacturer:* from Part R10
+Removed Parameter Manufacturer:* from Part R11
+Removed Parameter Manufacturer:* from Part R12
+Removed Parameter Manufacturer:* from Part R13
+Removed Parameter Manufacturer:* from Part R14
+Removed Parameter Manufacturer:* from Part R15
+Removed Parameter Manufacturer:* from Part R16
+Removed Parameter Manufacturer:Harwin Inc. from Part J3
+Removed Parameter Mated Stacking Heights:11.04mm, 12.63mm from Part J3
+Removed Parameter Material Flammability Rating:UL94 V-0 from Part J3
+Removed Parameter Max Operating Temperature:85°C from Part X1
+Removed Parameter MF:* from Part C9
+Removed Parameter MF:* from Part C10
+Removed Parameter MF:* from Part C11
+Removed Parameter MF:* from Part C12
+Removed Parameter MF:* from Part C13
+Removed Parameter MF:* from Part C14
+Removed Parameter MF:* from Part C15
+Removed Parameter MF:* from Part C16
+Removed Parameter MF:* from Part C17
+Removed Parameter MF:* from Part C18
+Removed Parameter MF:* from Part C19
+Removed Parameter MF:* from Part C20
+Removed Parameter Minimum Order:1 from Part J3
+Removed Parameter Min Operating Temperature:-40°C from Part X1
+Removed Parameter Mount:Surface Mount from Part X1
+Removed Parameter Mounting Technology:Surface Mount from Part U4
+Removed Parameter Mounting Technology:Surface Mount from Part U4
+Removed Parameter Mounting Type:Through Hole from Part J3
+Removed Parameter MP:* from Part C9
+Removed Parameter MP:* from Part C10
+Removed Parameter MP:* from Part C11
+Removed Parameter MP:* from Part C12
+Removed Parameter MP:* from Part C13
+Removed Parameter MP:* from Part C14
+Removed Parameter MP:* from Part C15
+Removed Parameter MP:* from Part C16
+Removed Parameter MP:* from Part C17
+Removed Parameter MP:* from Part C18
+Removed Parameter MP:* from Part C19
+Removed Parameter MP:* from Part C20
+Removed Parameter MP:PMR03EZPJ000 from Part SB4
+Removed Parameter MP:PMR03EZPJ000 from Part SB5
+Removed Parameter MP:PMR03EZPJ000 from Part SB6
+Removed Parameter MP:PMR03EZPJ000 from Part SB7
+Removed Parameter Number of Pins:4 from Part X1
+Removed Parameter Number of Positions:6 from Part J3
+Removed Parameter Number of Positions Loaded:All from Part J3
+Removed Parameter Number of Rows:1 from Part J3
+Removed Parameter Operating Frequency(F) (Processor speed) (MHz):180 from Part U4
+Removed Parameter Operating Frequency(F) (Processor speed) (MHz):180 from Part U4
+Removed Parameter Operating Frequency:32.768 kHz from Part X1
+Removed Parameter Operating Temperature:-40°C ~ 105°C from Part J3
+Removed Parameter PackageDescription:Crystal, Thru-Hole; 2 Leads; Body 3.1 x 8.2 mm (Dia.xH) from Part X2
+Removed Parameter Package Description:LQFP64 from Part U4
+Removed Parameter Package Description:LQFP64 from Part U4
+Removed Parameter Package Quantity:3000 from Part X1
+Removed Parameter Package Reference:64-Pin Low-profile Quad Flat Package, Body 10 x 10 mm, Pitch 0.5 mm from Part U4
+Removed Parameter Package Reference:64-Pin Low-profile Quad Flat Package, Body 10 x 10 mm, Pitch 0.5 mm from Part U4
+Removed Parameter PackageReference:R38 from Part X2
+Removed Parameter Packaging:Tape and Reel from Part X1
+Removed Parameter Packaging:Tube from Part J3
+Removed Parameter Packing:Tray from Part U4
+Removed Parameter Packing:Tray from Part U4
+Removed Parameter Part_Type:Mechanical from Part SB4
+Removed Parameter Part_Type:Mechanical from Part SB5
+Removed Parameter Part_Type:Mechanical from Part SB6
+Removed Parameter Part_Type:Mechanical from Part SB7
+Removed Parameter Part Number:M20-7820642 from Part J3
+Removed Parameter Part Status:Active from Part J3
+Removed Parameter Pitch - Mating:0.100" (2.54mm) from Part J3
+Removed Parameter Price:0.55 from Part J3
+Removed Parameter Provided_By:Subcon from Part SB4
+Removed Parameter Provided_By:Subcon from Part SB5
+Removed Parameter Provided_By:Subcon from Part SB6
+Removed Parameter Provided_By:Subcon from Part SB7
+Removed Parameter Published:8-Jun-2000 from Part X2
+Removed Parameter Publisher:Altium Limited from Part X2
+Removed Parameter Radiation Hardening:No from Part X1
+Removed Parameter REACH SVHC:No SVHC from Part X1
+Removed Parameter RoHS Compliant:Yes from Part X1
+Removed Parameter Series:ABS25 from Part X1
+Removed Parameter Series:M20 from Part J3
+Removed Parameter Series Resistance:50kR from Part X1
+Removed Parameter Status:Released from Part SB4
+Removed Parameter Status:Released from Part SB5
+Removed Parameter Status:Released from Part SB6
+Removed Parameter Status:Released from Part SB7
+Removed Parameter Style:Board to Board or Cable from Part J3
+Removed Parameter Supplier 1:DigiKey from Part J3
+Removed Parameter Supplier Part Number 1:952-1808-ND from Part J3
+Removed Parameter Supply Voltage(Vcc) min (V):1.7 from Part U4
+Removed Parameter Supply Voltage(Vcc) min (V):1.7 from Part U4
+Removed Parameter Termination:SMD/SMT from Part X1
+Removed Parameter Termination:Solder from Part J3
+Removed Parameter Tolerance:10ppm from Part X1
+Removed Parameter Width:0.15inch from Part X1
+Change Value of Parameter MF in Part R7 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R8 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R9 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R10 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R11 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R12 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R13 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R14 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R15 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R16 Old=Manufacturer part number New=MF
+Added Parameter LCSC= to Part C9
+Added Parameter LCSC= to Part C10
+Added Parameter LCSC= to Part C11
+Added Parameter LCSC= to Part C12
+Added Parameter LCSC= to Part C13
+Added Parameter LCSC= to Part C14
+Added Parameter LCSC= to Part C15
+Added Parameter LCSC= to Part C16
+Added Parameter LCSC= to Part C17
+Added Parameter LCSC= to Part C18
+Added Parameter LCSC= to Part C19
+Added Parameter LCSC= to Part C20
+Added Parameter LCSC= to Part J3
+Added Parameter LCSC= to Part R7
+Added Parameter LCSC= to Part R8
+Added Parameter LCSC= to Part R9
+Added Parameter LCSC= to Part R10
+Added Parameter LCSC= to Part R11
+Added Parameter LCSC= to Part R12
+Added Parameter LCSC= to Part R13
+Added Parameter LCSC= to Part R14
+Added Parameter LCSC= to Part R15
+Added Parameter LCSC= to Part R16
+Added Parameter LCSC= to Part S1
+Added Parameter LCSC= to Part S2
+Added Parameter LCSC= to Part SB4
+Added Parameter LCSC= to Part SB5
+Added Parameter LCSC= to Part SB6
+Added Parameter LCSC= to Part SB7
+Added Parameter LCSC= to Part U4
+Added Parameter LCSC= to Part U4
+Added Parameter LCSC= to Part X1
+Added Parameter LCSC= to Part X2

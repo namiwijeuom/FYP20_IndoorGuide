@@ -1,0 +1,1269 @@
+Added Component: Designator=B1(JST XH B2B-XH-A)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C1(FP-TAJD-MFG)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C89596"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TAJD106K050RNJ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C2(FP-TAJD-MFG)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C89596"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TAJD106K050RNJ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C3(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C1779"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Electro-Mechanics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CL21A475KAQNNNE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C4(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C1779"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Electro-Mechanics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CL21A475KAQNNNE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C5(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C77080"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21BR71E105KA99L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C6(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C519981"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CC0805KRX7R8BB104"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C7(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C77080"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21BR71E105KA99L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C8(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C519981"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CC0805KRX7R8BB104"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C9(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C10(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C11(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C12(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C13(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C14(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C15(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C16(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C1779"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Electro-Mechanics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CL21A475KAQNNNE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C17(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C2201928"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CC0805CRNPO9BN4R3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C18(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C2201928"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CC0805CRNPO9BN4R3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C19(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C1798"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Electro-Mechanics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CL21C200JBANNNC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C20(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C1798"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Electro-Mechanics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CL21C200JBANNNC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C21(CAP1411)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C86038"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21BR71A106KE51L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C22(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C519981"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CC0805KRX7R8BB104"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C23(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C24(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C25(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C26(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C27(cap0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C710980"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GRM21B7U1A104JA01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Added Component: Designator=C28(cap0603)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C107139"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CC0805KRX7R8BB224"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=D1(DIOM5126X265N)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C133102"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "STPS2L30A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D2(LED0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C94741"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "BrtLed(Bright LED Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "BL-HUF35A-AV-TRB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D3(LED0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C165984"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "BrtLed(Bright LED Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "BL-HGE35A-AV-TRB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D4(LED0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D5(LED0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D6(LED0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C165984"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "BrtLed(Bright LED Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "BL-HGE35A-AV-TRB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D7(LED0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C94741"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "BrtLed(Bright LED Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "BL-HUF35A-AV-TRB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D8(LED0603)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D9(LED0603)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=FM1(FM)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=FM2(FM)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=FM3(FM)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=FM4(FM)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J1(PJ-102AH)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(JAE_DX07S016JA1R1500)
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "DX07S016JA1R1500"; VariantName = "[No Variations]"
+Added Component: Designator=J3(JST XH B6B-XH-A)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J4(HDR1X6)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J5(HEADER_FEMALE_8POS_P2.54MM)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J6(HEADER_FEMALE_8POS_P2.54MM)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=JP1(SAMTEC_TS-103-T-A-1)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Component: Designator=JP2(SAMTEC_HTSW-101-07-S-D)
+Add component (AddParameter): Name = "Barrier Type"; Value = "2 Wall (Dual)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Bottom Termination"; Value = "PC Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=3-1437664-0&DocType=Customer+Drawing&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "DigiKey Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://digikey.com/product-detail/en/te-connectivity-amp-connectors/NC6-P108-03/A98496-ND/1277927"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating (Amps)"; Value = "20A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LastUpdated"; Value = "1/15/2020 4:12:05 AM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity AMP Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Circuits"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Wire Entries"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NC6-P108-03"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.375" (9.53mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "2.16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "NC6, Buchanan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A98496-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Block Type"; Value = "Barrier Block"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Top Termination"; Value = "Screws with Captive Plate"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge"; Value = "12-22 AWG"; VariantName = "[No Variations]"
+Added Component: Designator=JP3(SAMTEC_HTSW-101-07-S-D)
+Add component (AddParameter): Name = "Barrier Type"; Value = "2 Wall (Dual)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Bottom Termination"; Value = "PC Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=3-1437664-0&DocType=Customer+Drawing&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "DigiKey Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://digikey.com/product-detail/en/te-connectivity-amp-connectors/NC6-P108-03/A98496-ND/1277927"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating (Amps)"; Value = "20A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LastUpdated"; Value = "1/15/2020 4:12:05 AM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity AMP Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Circuits"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Wire Entries"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NC6-P108-03"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.375" (9.53mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "2.16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "NC6, Buchanan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A98496-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Block Type"; Value = "Barrier Block"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Top Termination"; Value = "Screws with Captive Plate"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge"; Value = "12-22 AWG"; VariantName = "[No Variations]"
+Added Component: Designator=MH1(MECHANICAL_M3_NON_PLATED)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=MH2(MECHANICAL_M3_NON_PLATED)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=MH3(MECHANICAL_M3_NON_PLATED)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=MH4(MECHANICAL_M3_NON_PLATED)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Q1(SOT23)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C177033"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Diodes Incorporated"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "DMP1045U-7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R1(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17710"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F4700T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R2(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17414"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1002T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17414"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1002T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R4(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17557"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F2200T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R5(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C26023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8J0512T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R6(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C26023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8J0512T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R7(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17477"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R8(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17477"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R9(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17477"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R10(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17673"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F4701T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R11(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17408"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R12(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17477"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R13(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17477"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R14(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17414"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1002T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R15(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17477"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R16(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17477"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R17(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17407"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1003T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R18(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17414"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1002T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R19(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17471"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1500T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R20(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17471"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1500T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R21(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17471"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1500T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R22(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17471"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1500T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R23(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17710"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F4700T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R24(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17513"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1001T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R25(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17471"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1500T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R26(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17414"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1002T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R27(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17414"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1002T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R28(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17414"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1002T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R29(RES0805)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C17414"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0805W8F1002T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=S1(SW_5-1437565-0)
+Added Component: Designator=S2(SW_5-1437565-0)
+Added Component: Designator=S3(SW_5-1437565-0)
+Added Component: Designator=SB1(SOLDER-BRIDGE_R0805-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C2842889"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ROHM Semicon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "PMR10EZPJ000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB2(SOLDER-BRIDGE_R0805-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C2842889"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ROHM Semicon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "PMR10EZPJ000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB3(SOLDER-BRIDGE_R0805-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C2842889"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ROHM Semicon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "PMR10EZPJ000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB4(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB5(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB6(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB7(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB8(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB9(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB10(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB11(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB12(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB13(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB14(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB15(SOLDER-BRIDGE_R0603-0R)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C15402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0603WAJ0000T5E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U1(SOT-223_M)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C134077"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LD1117S50TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U2(SOT95P280X145-5N)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C14879"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Microchip Tech"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "MCP73831T-2ATI/OT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U3(SON95P300X300X100-7N)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C132827"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LD39050PU33R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U4(QFP50P1200X1200X160-64N)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141306.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Core"; Value = "ARM Cortex-M4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "D/A Converter"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. 6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FLASH Size (Prog) (kB)"; Value = "512"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "I/Os (High Current)"; Value = "50"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Internal RAM Size (kB)"; Value = "128"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Frequency(F) (Processor speed) (MHz)"; Value = "180"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "LQFP64"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "64-Pin Low-profile Quad Flat Package, Body 10 x 10 mm, Pitch 0.5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supply Voltage(Vcc) min (V)"; Value = "1.7"; VariantName = "[No Variations]"
+Added Component: Designator=U5(DWM3000)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Qorvo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = "772-DWM3000TR13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "DWM3000TR13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U6(26.9X13X2.2_BOARD)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U7(FP-LGA-14L-DM00249496-MFG)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "LSM6DSRTR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U8(FP-LGA-12-DM00170568-MFG)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "LIS2MDLTR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found FP-ABS25-MFG
+Added Component: Designator=X2(XTAL_ABLS-8.000MHZ-B2-T)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ABRACON"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = "815-ABLS-8-B2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ABLS-8.000MHZ-B2-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=C9-2
+Added Pin To Net: NetName=+3V3 Pin=C10-2
+Added Pin To Net: NetName=+3V3 Pin=C11-2
+Added Pin To Net: NetName=+3V3 Pin=C12-2
+Added Pin To Net: NetName=+3V3 Pin=C21-1
+Added Pin To Net: NetName=+3V3 Pin=C22-2
+Added Pin To Net: NetName=+3V3 Pin=C24-1
+Added Pin To Net: NetName=+3V3 Pin=C25-1
+Added Pin To Net: NetName=+3V3 Pin=C26-1
+Added Pin To Net: NetName=+3V3 Pin=C27-1
+Added Pin To Net: NetName=+3V3 Pin=J3-1
+Added Pin To Net: NetName=+3V3 Pin=J4-2
+Added Pin To Net: NetName=+3V3 Pin=J5-1
+Added Pin To Net: NetName=+3V3 Pin=J5-2
+Added Pin To Net: NetName=+3V3 Pin=R10-2
+Added Pin To Net: NetName=+3V3 Pin=R18-2
+Added Pin To Net: NetName=+3V3 Pin=R24-2
+Added Pin To Net: NetName=+3V3 Pin=R26-2
+Added Pin To Net: NetName=+3V3 Pin=R27-2
+Added Pin To Net: NetName=+3V3 Pin=R28-2
+Added Pin To Net: NetName=+3V3 Pin=R29-2
+Added Pin To Net: NetName=+3V3 Pin=SB3-2
+Added Pin To Net: NetName=+3V3 Pin=SB5-1
+Added Pin To Net: NetName=+3V3 Pin=SB6-1
+Added Pin To Net: NetName=+3V3 Pin=SB13-1
+Added Pin To Net: NetName=+3V3 Pin=U4-19
+Added Pin To Net: NetName=+3V3 Pin=U4-32
+Added Pin To Net: NetName=+3V3 Pin=U4-48
+Added Pin To Net: NetName=+3V3 Pin=U4-64
+Added Pin To Net: NetName=+3V3 Pin=U5-5
+Added Pin To Net: NetName=+3V3 Pin=U5-6
+Added Pin To Net: NetName=+3V3 Pin=U5-7
+Added Pin To Net: NetName=+3V3 Pin=U6-12
+Added Pin To Net: NetName=+3V3 Pin=U7-5
+Added Pin To Net: NetName=+3V3 Pin=U7-8
+Added Pin To Net: NetName=+3V3 Pin=U7-12
+Added Pin To Net: NetName=+3V3 Pin=U8-3
+Added Pin To Net: NetName=+3V3 Pin=U8-9
+Added Pin To Net: NetName=+3V3 Pin=U8-10
+Added Net: Name=+3V3
+Added Pin To Net: NetName=+5V Pin=C3-2
+Added Pin To Net: NetName=+5V Pin=D1-1
+Added Pin To Net: NetName=+5V Pin=Q1-1
+Added Pin To Net: NetName=+5V Pin=R1-2
+Added Pin To Net: NetName=+5V Pin=R3-2
+Added Pin To Net: NetName=+5V Pin=U2-4
+Added Net: Name=+5V
+Added Pin To Net: NetName=AG_INT1 Pin=U4-25
+Added Pin To Net: NetName=AG_INT1 Pin=U7-4
+Added Net: Name=AG_INT1
+Added Pin To Net: NetName=AG_INT2 Pin=SB15-1
+Added Pin To Net: NetName=AG_INT2 Pin=U4-37
+Added Pin To Net: NetName=AG_INT2 Pin=U7-9
+Added Net: Name=AG_INT2
+Added Pin To Net: NetName=AG_SCL Pin=R29-1
+Added Pin To Net: NetName=AG_SCL Pin=U4-61
+Added Pin To Net: NetName=AG_SCL Pin=U7-13
+Added Net: Name=AG_SCL
+Added Pin To Net: NetName=AG_SDA Pin=R28-1
+Added Pin To Net: NetName=AG_SDA Pin=U4-62
+Added Pin To Net: NetName=AG_SDA Pin=U7-14
+Added Net: Name=AG_SDA
+Added Pin To Net: NetName=AGND Pin=C13-1
+Added Pin To Net: NetName=AGND Pin=SB7-2
+Added Pin To Net: NetName=AGND Pin=U4-12
+Added Net: Name=AGND
+Added Pin To Net: NetName=AVDD Pin=C13-2
+Added Pin To Net: NetName=AVDD Pin=SB6-2
+Added Pin To Net: NetName=AVDD Pin=U4-13
+Added Net: Name=AVDD
+Added Pin To Net: NetName=BLE_BRK Pin=C23-1
+Added Pin To Net: NetName=BLE_BRK Pin=J4-6
+Added Pin To Net: NetName=BLE_BRK Pin=R24-1
+Added Pin To Net: NetName=BLE_BRK Pin=S3-2
+Added Pin To Net: NetName=BLE_BRK Pin=S3-3
+Added Pin To Net: NetName=BLE_BRK Pin=U6-23
+Added Net: Name=BLE_BRK
+Added Pin To Net: NetName=BLE_RX Pin=J4-5
+Added Pin To Net: NetName=BLE_RX Pin=SB12-1
+Added Pin To Net: NetName=BLE_RX Pin=U4-16
+Added Net: Name=BLE_RX
+Added Pin To Net: NetName=BLE_STATE Pin=J4-1
+Added Pin To Net: NetName=BLE_STATE Pin=R23-1
+Added Pin To Net: NetName=BLE_STATE Pin=U6-24
+Added Net: Name=BLE_STATE
+Added Pin To Net: NetName=BLE_TX Pin=J4-4
+Added Pin To Net: NetName=BLE_TX Pin=SB11-1
+Added Pin To Net: NetName=BLE_TX Pin=U4-17
+Added Net: Name=BLE_TX
+Added Pin To Net: NetName=BOOT0 Pin=R14-2
+Added Pin To Net: NetName=BOOT0 Pin=U4-60
+Added Net: Name=BOOT0
+Added Pin To Net: NetName=DEBUG_USB_D_N Pin=J2-5
+Added Pin To Net: NetName=DEBUG_USB_D_N Pin=J2-8
+Added Pin To Net: NetName=DEBUG_USB_D_N Pin=U4-44
+Added Net: Name=DEBUG_USB_D_N
+Added Pin To Net: NetName=DEBUG_USB_D_P Pin=J2-6
+Added Pin To Net: NetName=DEBUG_USB_D_P Pin=J2-7
+Added Pin To Net: NetName=DEBUG_USB_D_P Pin=U4-45
+Added Net: Name=DEBUG_USB_D_P
+Added Pin To Net: NetName=DW_CSn Pin=R18-1
+Added Pin To Net: NetName=DW_CSn Pin=U4-58
+Added Pin To Net: NetName=DW_CSn Pin=U5-17
+Added Net: Name=DW_CSn
+Added Pin To Net: NetName=DW_EXTON Pin=SB8-1
+Added Pin To Net: NetName=DW_EXTON Pin=U4-14
+Added Net: Name=DW_EXTON
+Added Pin To Net: NetName=DW_GPIO0/RXOKLED Pin=D4-1
+Added Pin To Net: NetName=DW_GPIO0/RXOKLED Pin=R19-1
+Added Net: Name=DW_GPIO0/RXOKLED
+Added Pin To Net: NetName=DW_GPIO0 Pin=J6-1
+Added Pin To Net: NetName=DW_GPIO0 Pin=R19-2
+Added Pin To Net: NetName=DW_GPIO0 Pin=U5-15
+Added Net: Name=DW_GPIO0
+Added Pin To Net: NetName=DW_GPIO1/SFDLED Pin=D5-1
+Added Pin To Net: NetName=DW_GPIO1/SFDLED Pin=R20-1
+Added Net: Name=DW_GPIO1/SFDLED
+Added Pin To Net: NetName=DW_GPIO1 Pin=J6-2
+Added Pin To Net: NetName=DW_GPIO1 Pin=R20-2
+Added Pin To Net: NetName=DW_GPIO1 Pin=U5-14
+Added Net: Name=DW_GPIO1
+Added Pin To Net: NetName=DW_GPIO2/RXLED Pin=D6-1
+Added Pin To Net: NetName=DW_GPIO2/RXLED Pin=R21-1
+Added Net: Name=DW_GPIO2/RXLED
+Added Pin To Net: NetName=DW_GPIO2 Pin=J6-3
+Added Pin To Net: NetName=DW_GPIO2 Pin=R21-2
+Added Pin To Net: NetName=DW_GPIO2 Pin=U5-13
+Added Net: Name=DW_GPIO2
+Added Pin To Net: NetName=DW_GPIO3/TXLED Pin=D7-1
+Added Pin To Net: NetName=DW_GPIO3/TXLED Pin=R22-1
+Added Net: Name=DW_GPIO3/TXLED
+Added Pin To Net: NetName=DW_GPIO3 Pin=J6-4
+Added Pin To Net: NetName=DW_GPIO3 Pin=R22-2
+Added Pin To Net: NetName=DW_GPIO3 Pin=U5-12
+Added Net: Name=DW_GPIO3
+Added Pin To Net: NetName=DW_GPIO4 Pin=J6-5
+Added Pin To Net: NetName=DW_GPIO4 Pin=U5-11
+Added Net: Name=DW_GPIO4
+Added Pin To Net: NetName=DW_GPIO5 Pin=J6-6
+Added Pin To Net: NetName=DW_GPIO5 Pin=SB12-2
+Added Pin To Net: NetName=DW_GPIO5 Pin=U5-10
+Added Net: Name=DW_GPIO5
+Added Pin To Net: NetName=DW_GPIO6 Pin=J6-7
+Added Pin To Net: NetName=DW_GPIO6 Pin=SB11-2
+Added Pin To Net: NetName=DW_GPIO6 Pin=U5-9
+Added Net: Name=DW_GPIO6
+Added Pin To Net: NetName=DW_GPIO7/SYNC Pin=SB10-1
+Added Pin To Net: NetName=DW_GPIO7/SYNC Pin=U4-15
+Added Net: Name=DW_GPIO7/SYNC
+Added Pin To Net: NetName=DW_GPIO7 Pin=J6-8
+Added Pin To Net: NetName=DW_GPIO7 Pin=SB10-2
+Added Pin To Net: NetName=DW_GPIO7 Pin=U5-4
+Added Net: Name=DW_GPIO7
+Added Pin To Net: NetName=DW_IRQn Pin=R17-2
+Added Pin To Net: NetName=DW_IRQn Pin=U4-42
+Added Pin To Net: NetName=DW_IRQn Pin=U5-22
+Added Net: Name=DW_IRQn
+Added Pin To Net: NetName=DW_MISO Pin=R8-2
+Added Pin To Net: NetName=DW_MISO Pin=U5-19
+Added Net: Name=DW_MISO
+Added Pin To Net: NetName=DW_MOSI Pin=R9-2
+Added Pin To Net: NetName=DW_MOSI Pin=U5-18
+Added Net: Name=DW_MOSI
+Added Pin To Net: NetName=DW_RESETn Pin=U4-41
+Added Pin To Net: NetName=DW_RESETn Pin=U5-3
+Added Net: Name=DW_RESETn
+Added Pin To Net: NetName=DW_SCK Pin=R7-2
+Added Pin To Net: NetName=DW_SCK Pin=U5-20
+Added Net: Name=DW_SCK
+Added Pin To Net: NetName=DW_WAKEUP Pin=SB9-1
+Added Pin To Net: NetName=DW_WAKEUP Pin=U4-38
+Added Net: Name=DW_WAKEUP
+Added Pin To Net: NetName=EXT_5V Pin=SB1-2
+Added Net: Name=EXT_5V
+Added Pin To Net: NetName=GND Pin=B1-2
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=GND Pin=C16-1
+Added Pin To Net: NetName=GND Pin=C17-1
+Added Pin To Net: NetName=GND Pin=C18-1
+Added Pin To Net: NetName=GND Pin=C19-1
+Added Pin To Net: NetName=GND Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C21-2
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=GND Pin=C23-2
+Added Pin To Net: NetName=GND Pin=C24-2
+Added Pin To Net: NetName=GND Pin=C25-2
+Added Pin To Net: NetName=GND Pin=C26-2
+Added Pin To Net: NetName=GND Pin=C27-2
+Added Pin To Net: NetName=GND Pin=C28-1
+Added Pin To Net: NetName=GND Pin=D3-2
+Added Pin To Net: NetName=GND Pin=D4-2
+Added Pin To Net: NetName=GND Pin=D5-2
+Added Pin To Net: NetName=GND Pin=D6-2
+Added Pin To Net: NetName=GND Pin=D7-2
+Added Pin To Net: NetName=GND Pin=D8-2
+Added Pin To Net: NetName=GND Pin=D9-2
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=GND Pin=J2-12
+Added Pin To Net: NetName=GND Pin=J2-S1
+Added Pin To Net: NetName=GND Pin=J2-S2
+Added Pin To Net: NetName=GND Pin=J2-S3
+Added Pin To Net: NetName=GND Pin=J2-S4
+Added Pin To Net: NetName=GND Pin=J2-S5
+Added Pin To Net: NetName=GND Pin=J2-S6
+Added Pin To Net: NetName=GND Pin=J3-5
+Added Pin To Net: NetName=GND Pin=J4-3
+Added Pin To Net: NetName=GND Pin=J5-8
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=GND Pin=R11-2
+Added Pin To Net: NetName=GND Pin=R14-1
+Added Pin To Net: NetName=GND Pin=R17-1
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-4
+Added Pin To Net: NetName=GND Pin=S2-2
+Added Pin To Net: NetName=GND Pin=S2-3
+Added Pin To Net: NetName=GND Pin=S3-1
+Added Pin To Net: NetName=GND Pin=S3-4
+Added Pin To Net: NetName=GND Pin=SB4-1
+Added Pin To Net: NetName=GND Pin=SB7-1
+Added Pin To Net: NetName=GND Pin=SB14-2
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=GND Pin=U3-2
+Added Pin To Net: NetName=GND Pin=U3-7
+Added Pin To Net: NetName=GND Pin=U4-18
+Added Pin To Net: NetName=GND Pin=U4-31
+Added Pin To Net: NetName=GND Pin=U4-47
+Added Pin To Net: NetName=GND Pin=U4-63
+Added Pin To Net: NetName=GND Pin=U5-8
+Added Pin To Net: NetName=GND Pin=U5-16
+Added Pin To Net: NetName=GND Pin=U5-21
+Added Pin To Net: NetName=GND Pin=U5-23
+Added Pin To Net: NetName=GND Pin=U5-24
+Added Pin To Net: NetName=GND Pin=U6-13
+Added Pin To Net: NetName=GND Pin=U6-14
+Added Pin To Net: NetName=GND Pin=U6-21
+Added Pin To Net: NetName=GND Pin=U6-22
+Added Pin To Net: NetName=GND Pin=U7-6
+Added Pin To Net: NetName=GND Pin=U7-7
+Added Pin To Net: NetName=GND Pin=U8-6
+Added Pin To Net: NetName=GND Pin=U8-8
+Added Net: Name=GND
+Added Pin To Net: NetName=MAG_SCL Pin=R26-1
+Added Pin To Net: NetName=MAG_SCL Pin=U7-3
+Added Pin To Net: NetName=MAG_SCL Pin=U8-1
+Added Net: Name=MAG_SCL
+Added Pin To Net: NetName=MAG_SDA Pin=R27-1
+Added Pin To Net: NetName=MAG_SDA Pin=U7-2
+Added Pin To Net: NetName=MAG_SDA Pin=U8-4
+Added Net: Name=MAG_SDA
+Added Pin To Net: NetName=MCU_GPIO1 Pin=J5-3
+Added Pin To Net: NetName=MCU_GPIO1 Pin=R25-2
+Added Pin To Net: NetName=MCU_GPIO1 Pin=U4-29
+Added Net: Name=MCU_GPIO1
+Added Pin To Net: NetName=MCU_GPIO2 Pin=J5-4
+Added Pin To Net: NetName=MCU_GPIO2 Pin=U4-33
+Added Net: Name=MCU_GPIO2
+Added Pin To Net: NetName=MCU_GPIO3 Pin=J5-5
+Added Pin To Net: NetName=MCU_GPIO3 Pin=U4-34
+Added Net: Name=MCU_GPIO3
+Added Pin To Net: NetName=MCU_GPIO4 Pin=J5-6
+Added Pin To Net: NetName=MCU_GPIO4 Pin=U4-35
+Added Net: Name=MCU_GPIO4
+Added Pin To Net: NetName=MCU_GPIO5 Pin=J5-7
+Added Pin To Net: NetName=MCU_GPIO5 Pin=U4-36
+Added Net: Name=MCU_GPIO5
+Added Pin To Net: NetName=MDRDY Pin=SB15-2
+Added Pin To Net: NetName=MDRDY Pin=U8-7
+Added Net: Name=MDRDY
+Added Pin To Net: NetName=NetB1_1 Pin=B1-1
+Added Pin To Net: NetName=NetB1_1 Pin=C4-2
+Added Pin To Net: NetName=NetB1_1 Pin=Q1-2
+Added Pin To Net: NetName=NetB1_1 Pin=U2-3
+Added Net: Name=NetB1_1
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=J1-1
+Added Pin To Net: NetName=NetC1_1 Pin=U1-3
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=SB1-1
+Added Pin To Net: NetName=NetC2_1 Pin=U1-2
+Added Pin To Net: NetName=NetC2_1 Pin=U1-4
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=C6-2
+Added Pin To Net: NetName=NetC5_2 Pin=R4-2
+Added Pin To Net: NetName=NetC5_2 Pin=SB3-1
+Added Pin To Net: NetName=NetC5_2 Pin=U3-4
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC14_2 Pin=C14-2
+Added Pin To Net: NetName=NetC14_2 Pin=R11-1
+Added Net: Name=NetC14_2
+Added Pin To Net: NetName=NetC16_2 Pin=C16-2
+Added Pin To Net: NetName=NetC16_2 Pin=U4-30
+Added Net: Name=NetC16_2
+Added Pin To Net: NetName=NetC17_2 Pin=C17-2
+Added Pin To Net: NetName=NetC17_2 Pin=R13-1
+Added Net: Name=NetC17_2
+Added Pin To Net: NetName=NetC18_2 Pin=C18-2
+Added Pin To Net: NetName=NetC18_2 Pin=R12-2
+Added Net: Name=NetC18_2
+Added Pin To Net: NetName=NetC19_2 Pin=C19-2
+Added Pin To Net: NetName=NetC19_2 Pin=R15-2
+Added Pin To Net: NetName=NetC19_2 Pin=X2-1
+Added Net: Name=NetC19_2
+Added Pin To Net: NetName=NetC20_2 Pin=C20-2
+Added Pin To Net: NetName=NetC20_2 Pin=R16-2
+Added Pin To Net: NetName=NetC20_2 Pin=X2-2
+Added Net: Name=NetC20_2
+Added Pin To Net: NetName=NetC28_2 Pin=C28-2
+Added Pin To Net: NetName=NetC28_2 Pin=U8-5
+Added Net: Name=NetC28_2
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=Q1-3
+Added Pin To Net: NetName=NetD1_2 Pin=SB2-1
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=R1-1
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=NetD2_2 Pin=U2-1
+Added Net: Name=NetD2_2
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=R4-1
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetD8_1 Pin=D8-1
+Added Pin To Net: NetName=NetD8_1 Pin=R23-2
+Added Net: Name=NetD8_1
+Added Pin To Net: NetName=NetD9_1 Pin=D9-1
+Added Pin To Net: NetName=NetD9_1 Pin=R25-1
+Added Net: Name=NetD9_1
+Added Pin To Net: NetName=NetJ2_3 Pin=J2-3
+Added Pin To Net: NetName=NetJ2_3 Pin=R6-2
+Added Net: Name=NetJ2_3
+Added Pin To Net: NetName=NetJ2_9 Pin=J2-9
+Added Pin To Net: NetName=NetJ2_9 Pin=R5-2
+Added Net: Name=NetJ2_9
+Added Pin To Net: NetName=NetJ3_6 Pin=J3-6
+Added Pin To Net: NetName=NetJ3_6 Pin=SB4-2
+Added Net: Name=NetJ3_6
+Added Pin To Net: NetName=NetJP2_2 Pin=U6-1
+Added Net: Name=NetJP2_2
+Added Pin To Net: NetName=NetJP3_2 Pin=U6-2
+Added Net: Name=NetJP3_2
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=U2-5
+Added Net: Name=NetR2_2
+Added Pin To Net: NetName=NetR7_1 Pin=R7-1
+Added Pin To Net: NetName=NetR7_1 Pin=U4-21
+Added Net: Name=NetR7_1
+Added Pin To Net: NetName=NetR8_1 Pin=R8-1
+Added Pin To Net: NetName=NetR8_1 Pin=U4-22
+Added Net: Name=NetR8_1
+Added Pin To Net: NetName=NetR9_1 Pin=R9-1
+Added Pin To Net: NetName=NetR9_1 Pin=U4-23
+Added Net: Name=NetR9_1
+Added Pin To Net: NetName=NetR12_1 Pin=R12-1
+Added Pin To Net: NetName=NetR12_1 Pin=U4-4
+Added Net: Name=NetR12_1
+Added Pin To Net: NetName=NetR13_2 Pin=R13-2
+Added Pin To Net: NetName=NetR13_2 Pin=U4-3
+Added Net: Name=NetR13_2
+Added Pin To Net: NetName=NetR15_1 Pin=R15-1
+Added Pin To Net: NetName=NetR15_1 Pin=U4-6
+Added Net: Name=NetR15_1
+Added Pin To Net: NetName=NetR16_1 Pin=R16-1
+Added Pin To Net: NetName=NetR16_1 Pin=U4-5
+Added Net: Name=NetR16_1
+Added Pin To Net: NetName=NetSB5_2 Pin=SB5-2
+Added Pin To Net: NetName=NetSB5_2 Pin=U4-1
+Added Net: Name=NetSB5_2
+Added Pin To Net: NetName=NetSB8_2 Pin=SB8-2
+Added Pin To Net: NetName=NetSB8_2 Pin=U5-1
+Added Net: Name=NetSB8_2
+Added Pin To Net: NetName=NetSB9_2 Pin=SB9-2
+Added Pin To Net: NetName=NetSB9_2 Pin=U5-2
+Added Net: Name=NetSB9_2
+Added Pin To Net: NetName=NetSB13_2 Pin=SB13-2
+Added Pin To Net: NetName=NetSB13_2 Pin=SB14-1
+Added Pin To Net: NetName=NetSB13_2 Pin=U7-1
+Added Net: Name=NetSB13_2
+Added Pin To Net: NetName=NRST Pin=C15-2
+Added Pin To Net: NetName=NRST Pin=J3-4
+Added Pin To Net: NetName=NRST Pin=S2-1
+Added Pin To Net: NetName=NRST Pin=S2-4
+Added Pin To Net: NetName=NRST Pin=U4-7
+Added Net: Name=NRST
+Added Pin To Net: NetName=SWCLK Pin=J3-3
+Added Pin To Net: NetName=SWCLK Pin=U4-49
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=J3-2
+Added Pin To Net: NetName=SWDIO Pin=U4-46
+Added Net: Name=SWDIO
+Added Pin To Net: NetName=USB_5V Pin=J2-2
+Added Pin To Net: NetName=USB_5V Pin=J2-11
+Added Net: Name=USB_5V
+Added Pin To Net: NetName=USER_BUTTON Pin=C14-1
+Added Pin To Net: NetName=USER_BUTTON Pin=R10-1
+Added Pin To Net: NetName=USER_BUTTON Pin=S1-2
+Added Pin To Net: NetName=USER_BUTTON Pin=S1-3
+Added Pin To Net: NetName=USER_BUTTON Pin=U4-2
+Added Net: Name=USER_BUTTON
+Added Pin To Net: NetName=VIN_3V3 Pin=C7-2
+Added Pin To Net: NetName=VIN_3V3 Pin=C8-2
+Added Pin To Net: NetName=VIN_3V3 Pin=SB2-2
+Added Pin To Net: NetName=VIN_3V3 Pin=U3-1
+Added Pin To Net: NetName=VIN_3V3 Pin=U3-6
+Added Net: Name=VIN_3V3
+Added Class: Name=BLE
+Added Class: Name=DWM3000
+Added Class: Name=GPIO
+Added Class: Name=IMU
+Added Class: Name=MCU
+Added Class: Name=Mechanical_HW
+Added Class: Name=Power
+Added Class: Name=DW_GPIO[0..7]
+Added Class: Name=N000-1_[1..5]
+Added Differential Pair: Name=DEBUG_USB_D
+Added Room: Name=BLE
+Added Room: Name=GPIO
+Added Room: Name=IMU
+Added Room: Name=Mechanical_HW

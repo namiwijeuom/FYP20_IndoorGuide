@@ -1,0 +1,208 @@
+Removed Parameter Actual Diameter:0.079" (2.00mm ID), 0.256" (6.50mm OD) from Part J1
+Removed Parameter Barrier Type:2 Wall (Dual) from Part JP1
+Removed Parameter Battery Cell Size:18650 from Part B1
+Removed Parameter Battery Type, Function:Cylindrical, Holder from Part B1
+Removed Parameter Bottom Termination:PC Pin from Part JP1
+Removed Parameter Check_prices:https://www.snapeda.com/parts/LD39050PU33R/STMicroelectronics/view-part/?ref=eda from Part U3
+Removed Parameter Check_prices:https://www.snapeda.com/parts/MCP73831T-2ATI/OT/Microchip/view-part/?ref=eda from Part U2
+Removed Parameter Color:Black from Part JP1
+Removed Parameter ComponentLink1Description:Datasheet from Part B1
+Removed Parameter ComponentLink1Description:Datasheet from Part J1
+Removed Parameter ComponentLink1Description:Datasheet from Part JP1
+Removed Parameter ComponentLink1Description:Manufacturer Link from Part Q1
+Removed Parameter ComponentLink1Description:Manufacturer URL from Part U1
+Removed Parameter ComponentLink1URL:http://keyelco.com/userAssets/file/M65p27.pdf from Part B1
+Removed Parameter ComponentLink1URL:http://www.irf.com/ from Part Q1
+Removed Parameter ComponentLink1URL:http://www.st.com from Part U1
+Removed Parameter ComponentLink1URL:https://www.cuidevices.com/product/resource/digikeypdf/pj-102ah.pdf from Part J1
+Removed Parameter ComponentLink1URL:https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=3-1437664-0&DocType=Customer+Drawing&DocLang=English from Part JP1
+Removed Parameter ComponentLink2Description:Datasheet from Part U1
+Removed Parameter ComponentLink2Description:DigiKey Link from Part B1
+Removed Parameter ComponentLink2Description:DigiKey Link from Part J1
+Removed Parameter ComponentLink2Description:DigiKey Link from Part JP1
+Removed Parameter ComponentLink2URL://digikey.com/product-detail/en/cui-devices/PJ-102AH/CP-102AH-ND/408448 from Part J1
+Removed Parameter ComponentLink2URL:http://digikey.com/product-detail/en/keystone-electronics/1043/36-1043-ND/2745669 from Part B1
+Removed Parameter ComponentLink2URL:http://digikey.com/product-detail/en/te-connectivity-amp-connectors/NC6-P108-03/A98496-ND/1277927 from Part JP1
+Removed Parameter ComponentLink2URL:http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00000544.pdf from Part U1
+Removed Parameter Connector Type:Jack from Part J1
+Removed Parameter Current Rating (Amps):5A from Part J1
+Removed Parameter Current Rating (Amps):20A from Part JP1
+Removed Parameter DatasheetVersion:1/11/2011 from Part U1
+Removed Parameter DatasheetVersion:PD-9.390D from Part Q1
+Removed Parameter Digikey part number:52-USB-CC16HMWTR from Part J2
+Removed Parameter ECCN_EU:n/a from Part SB1
+Removed Parameter ECCN_EU:n/a from Part SB2
+Removed Parameter ECCN_EU:n/a from Part SB3
+Removed Parameter ECCN_US:n/a from Part SB1
+Removed Parameter ECCN_US:n/a from Part SB2
+Removed Parameter ECCN_US:n/a from Part SB3
+Removed Parameter Gender:Male from Part J1
+Removed Parameter Height Above Board:0.585" (14.86mm) from Part B1
+Removed Parameter Industry Recognized Mating Diameter:2.00mm ID (0.079"), 5.50mm OD (0.217") from Part J1
+Removed Parameter Initial_Board_Reference:mb1274 from Part SB1
+Removed Parameter Initial_Board_Reference:mb1274 from Part SB2
+Removed Parameter Initial_Board_Reference:mb1274 from Part SB3
+Removed Parameter Internal_Part_Number:MCD-00071 from Part SB1
+Removed Parameter Internal_Part_Number:MCD-00071 from Part SB2
+Removed Parameter Internal_Part_Number:MCD-00071 from Part SB3
+Removed Parameter Internal Switch(s):Single Switch, Normally Closed from Part J1
+Removed Parameter JLCPCB part number:* from Part C1
+Removed Parameter JLCPCB part number:* from Part C2
+Removed Parameter JLCPCB part number:* from Part D2
+Removed Parameter JLCPCB part number:* from Part D3
+Removed Parameter JLCPCB part number:* from Part R1
+Removed Parameter JLCPCB part number:* from Part R2
+Removed Parameter JLCPCB part number:* from Part R3
+Removed Parameter JLCPCB part number:* from Part R4
+Removed Parameter JLCPCB part number:* from Part R5
+Removed Parameter JLCPCB part number:* from Part R6
+Removed Parameter LastUpdated:1/15/2020 4:12:05 AM from Part JP1
+Removed Parameter LastUpdated:2/2/2020 9:19:56 AM from Part B1
+Removed Parameter LastUpdated:12/16/2019 7:01:27 PM from Part J1
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part Q1
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part Q1
+Removed Parameter Lifecycle Status:0 from Part J1
+Removed Parameter Lifecycle Status:Active from Part B1
+Removed Parameter Lifecycle Status:Active from Part JP1
+Removed Parameter Manufacturer:CUI Devices from Part J1
+Removed Parameter Manufacturer:* from Part C1
+Removed Parameter Manufacturer:* from Part C2
+Removed Parameter Manufacturer:* from Part D2
+Removed Parameter Manufacturer:* from Part D3
+Removed Parameter Manufacturer:* from Part R1
+Removed Parameter Manufacturer:* from Part R2
+Removed Parameter Manufacturer:* from Part R3
+Removed Parameter Manufacturer:* from Part R4
+Removed Parameter Manufacturer:* from Part R5
+Removed Parameter Manufacturer:* from Part R6
+Removed Parameter Manufacturer:Keystone Electronics from Part B1
+Removed Parameter Manufacturer:On Shore Technology Inc. from Part J2
+Removed Parameter Manufacturer:TE Connectivity AMP Connectors from Part JP1
+Removed Parameter Material Flammability Rating:UL94 V-0 from Part J1
+Removed Parameter Mating Length/Depth:0.354" (9.00mm) from Part J1
+Removed Parameter MF:* from Part C3
+Removed Parameter MF:* from Part C4
+Removed Parameter MF:* from Part C5
+Removed Parameter MF:* from Part C6
+Removed Parameter MF:* from Part C7
+Removed Parameter MF:* from Part C8
+Removed Parameter MF:Microchip from Part U2
+Removed Parameter MF:STMicroelectronics from Part D1
+Removed Parameter MF:STMicroelectronics from Part U3
+Removed Parameter Minimum Order:1 from Part B1
+Removed Parameter Minimum Order:1 from Part J1
+Removed Parameter Minimum Order:1 from Part JP1
+Removed Parameter Mounting Type:PCB, Through Hole from Part B1
+Removed Parameter Mounting Type:Through Hole, Right Angle from Part J1
+Removed Parameter MP:* from Part C3
+Removed Parameter MP:* from Part C4
+Removed Parameter MP:* from Part C5
+Removed Parameter MP:* from Part C6
+Removed Parameter MP:* from Part C7
+Removed Parameter MP:* from Part C8
+Removed Parameter MP:LD39050PU33R from Part U3
+Removed Parameter MP:MCP73831T-2ATI/OT from Part U2
+Removed Parameter MP:PMR03EZPJ000 from Part SB1
+Removed Parameter MP:PMR03EZPJ000 from Part SB2
+Removed Parameter MP:PMR03EZPJ000 from Part SB3
+Removed Parameter MP:STPS2L30A from Part D1
+Removed Parameter Note:Pin 4 not drawn and electrically connected to Pin 2. from Part Q1
+Removed Parameter Number of Cells:1 from Part B1
+Removed Parameter Number of Circuits:3 from Part JP1
+Removed Parameter Number of Positions/Contacts:2 Conductors, 3 Contacts from Part J1
+Removed Parameter Number of Rows:1 from Part JP1
+Removed Parameter Number of Wire Entries:3 from Part JP1
+Removed Parameter Operating Temperature:-50°C ~ 145°C from Part B1
+Removed Parameter Package:DFN-6 STMicroelectronics from Part U3
+Removed Parameter Package:SOT-23 Microchip from Part U2
+Removed Parameter PackageDescription:4-Pin SOT-223 Package, 6.5 x 3.5 mm Body, 2.3 mm Pitch, 7 mm Lead Span from Part U1
+Removed Parameter PackageDescription:TO, Thru-Hole, Vertical, Heatsink Mounted; 3 In-Line Leads; Pitch 2.54 mm from Part Q1
+Removed Parameter PackageReference:SOT-223 from Part U1
+Removed Parameter PackageReference:TO-220AB from Part Q1
+Removed Parameter PackageVersion:2010 from Part U1
+Removed Parameter PackageVersion:Feb-1997 from Part Q1
+Removed Parameter Packaging:Bulk from Part JP1
+Removed Parameter Packaging:Tray from Part J1
+Removed Parameter Packaging:Unknown from Part B1
+Removed Parameter Part_Type:Mechanical from Part SB1
+Removed Parameter Part_Type:Mechanical from Part SB2
+Removed Parameter Part_Type:Mechanical from Part SB3
+Removed Parameter PartId:2 from Part B1
+Removed Parameter Part Number:1043 from Part B1
+Removed Parameter Part Number:NC6-P108-03 from Part JP1
+Removed Parameter Part Number:PJ-102AH from Part J1
+Removed Parameter Part Status:Active from Part B1
+Removed Parameter Part Status:Active from Part J1
+Removed Parameter Part Status:Active from Part JP1
+Removed Parameter Pitch:0.375" (9.53mm) from Part JP1
+Removed Parameter Price:0.76 from Part J1
+Removed Parameter Price:2.16 from Part JP1
+Removed Parameter Price:2.58 from Part B1
+Removed Parameter Provided_By:Subcon from Part SB1
+Removed Parameter Provided_By:Subcon from Part SB2
+Removed Parameter Provided_By:Subcon from Part SB3
+Removed Parameter Published:8-Jun-2000 from Part Q1
+Removed Parameter Publisher:Altium Limited from Part Q1
+Removed Parameter Series:- from Part B1
+Removed Parameter Series:- from Part J1
+Removed Parameter Series:NC6, Buchanan from Part JP1
+Removed Parameter Shielding:Unshielded from Part J1
+Removed Parameter SnapEDA_Link:https://www.snapeda.com/parts/LD39050PU33R/STMicroelectronics/view-part/?ref=snap from Part U3
+Removed Parameter SnapEDA_Link:https://www.snapeda.com/parts/MCP73831T-2ATI/OT/Microchip/view-part/?ref=snap from Part U2
+Removed Parameter Status:Released from Part SB1
+Removed Parameter Status:Released from Part SB2
+Removed Parameter Status:Released from Part SB3
+Removed Parameter Style:Holder (Open) from Part B1
+Removed Parameter Supplier 1:DigiKey from Part B1
+Removed Parameter Supplier 1:DigiKey from Part J1
+Removed Parameter Supplier 1:DigiKey from Part JP1
+Removed Parameter Supplier Part Number 1:36-1043-ND from Part B1
+Removed Parameter Supplier Part Number 1:A98496-ND from Part JP1
+Removed Parameter Supplier Part Number 1:CP-102AH-ND from Part J1
+Removed Parameter Terminal Block Type:Barrier Block from Part JP1
+Removed Parameter Termination:Solder from Part J1
+Removed Parameter Termination Style:PC Pin from Part B1
+Removed Parameter Top Termination:Screws with Captive Plate from Part JP1
+Removed Parameter Value:* from Part U2
+Removed Parameter Value:* from Part U3
+Removed Parameter Voltage - Rated:24VDC from Part J1
+Removed Parameter Wire Gauge:12-22 AWG from Part JP1
+Change Value of Parameter MF in Part C1 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part C2 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part D2 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part D3 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part J2 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R1 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R2 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R3 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R4 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R5 Old=Manufacturer part number New=MF
+Change Value of Parameter MF in Part R6 Old=Manufacturer part number New=MF
+Added Parameter LCSC= to Part B1
+Added Parameter LCSC= to Part C1
+Added Parameter LCSC= to Part C2
+Added Parameter LCSC= to Part C3
+Added Parameter LCSC= to Part C4
+Added Parameter LCSC= to Part C5
+Added Parameter LCSC= to Part C6
+Added Parameter LCSC= to Part C7
+Added Parameter LCSC= to Part C8
+Added Parameter LCSC= to Part D1
+Added Parameter LCSC= to Part D2
+Added Parameter LCSC= to Part D3
+Added Parameter LCSC= to Part J1
+Added Parameter LCSC= to Part J2
+Added Parameter LCSC= to Part JP1
+Added Parameter LCSC= to Part Q1
+Added Parameter LCSC= to Part R1
+Added Parameter LCSC= to Part R2
+Added Parameter LCSC= to Part R3
+Added Parameter LCSC= to Part R4
+Added Parameter LCSC= to Part R5
+Added Parameter LCSC= to Part R6
+Added Parameter LCSC= to Part SB1
+Added Parameter LCSC= to Part SB2
+Added Parameter LCSC= to Part SB3
+Added Parameter LCSC= to Part U1
+Added Parameter LCSC= to Part U2
+Added Parameter LCSC= to Part U3

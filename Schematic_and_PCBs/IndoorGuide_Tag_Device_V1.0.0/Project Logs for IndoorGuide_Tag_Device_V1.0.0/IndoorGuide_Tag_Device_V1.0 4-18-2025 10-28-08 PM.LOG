@@ -1,0 +1,13 @@
+Change Component Footprint: Designator=U8 Old Footprint=FP-LGA-12-DM00170568-MFG New Footprint=FP-LGA-12-DM00170568-MFG
+Change Component Footprint: Designator=U1 Old Footprint=SOT-223_M New Footprint=SOT-223_M
+Add Component: Footprint Not Found FP-ABS25-MFG
+Add Pin To Net: Unknown Pin: Pin JP1-1
+Add Pin To Net: Unknown Pin: Pin JP1-2
+Add Pin To Net: Unknown Pin: Pin JP1-3
+Add Pin To Net: Unknown Pin: Pin JP2-1
+Add Pin To Net: Unknown Pin: Pin JP2-2
+Add Pin To Net: Unknown Pin: Pin JP3-1
+Add Pin To Net: Unknown Pin: Pin JP3-2
+Add Pin To Net: Unknown Pin: Pin X1-1
+Add Pin To Net: Unknown Pin: Pin X1-4
+Add Class Member: Failed to add class member : Component X1 ABS25-32.768KHZ-6-1-T
