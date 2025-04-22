@@ -1,0 +1,7 @@
+../Core/Src/Applications/Tag_app/tag_app.c:152:6:tag_uwb_init	4
+../Core/Src/Applications/Tag_app/tag_app.c:203:6:tag_application_init	2
+../Core/Src/Applications/Tag_app/tag_app.c:230:6:tag_application	7
+../Core/Src/Applications/Tag_app/tag_app.c:307:12:is_anchor_valid	4
+../Core/Src/Applications/Tag_app/tag_app.c:329:13:clear_fetched_anchors	2
+../Core/Src/Applications/Tag_app/tag_app.c:340:13:random_init	1
+../Core/Src/Applications/Tag_app/tag_app.c:346:17:get_random_integer	1

@@ -1,0 +1,3 @@
+../Core/Src/UWB_tasks/ss_twr_init/ss_twr_init.c:49:6:ss_twr_initiator_init	2
+../Core/Src/UWB_tasks/ss_twr_init/ss_twr_init.c:62:6:ss_twr_initiator_reinit	2
+../Core/Src/UWB_tasks/ss_twr_init/ss_twr_init.c:78:5:ss_twr_initiator	4
