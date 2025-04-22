@@ -831,9 +831,9 @@ class PlotScreen(Screen):
                         self.plot_widget.prev_point = [x, y]
                         
                         if self.current_item_index < len(self.shopping_list):
-                            if self.plot_widget.check_deviation(x, y):
-                                item = self.shopping_list[self.current_item_index]
-                                self.select_item(item)
+                            # if self.plot_widget.check_deviation(x, y):
+                            item = self.shopping_list[self.current_item_index]
+                            self.select_item(item)
                             
                             self.update_progress(x, y, *self.get_current_goal(), self.path)
                             
