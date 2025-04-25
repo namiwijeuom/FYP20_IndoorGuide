@@ -1,0 +1,3 @@
+Added Component: Designator=T25(TP-Top)
+Added Pin To Net: NetName=AG_INT1 Pin=T25-1
+Added Member To Class: ClassName=IMU Member=Component T25 TP

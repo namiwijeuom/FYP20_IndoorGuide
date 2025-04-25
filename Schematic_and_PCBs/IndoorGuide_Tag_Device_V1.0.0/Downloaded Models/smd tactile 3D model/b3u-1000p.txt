@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"10-16052011-063947";"";
+"REFERENCE";"B3U-1000P";"";
+"TraceParts.PartTitle";"Ultra-small Tactile Switch – B3U";"";
+"TraceParts.InstanceId";"10-16052011-06394736GKJM4PJ4TS6JIHIOTQLDLZU";"";
+"DESIGN";"Ultra-small Tactile Switch, Top-actuated, Without ground terminal - Without boss";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"OMRON";"";
+"TraceParts.PartVersion";"1.0.7";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"OMRON:/F_OMRON/OMRON.050/OMRON.050.060/OMRON.050.060.010/10-16052011-063947";"";

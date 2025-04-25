@@ -323,6 +323,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GAQSGNMM
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for IndoorGuide_Tag_Device_V1.0.0\Design Rule Check - IndoorGuide_Tag_Device_V1.0.html
+DItemRevisionGUID=
+
 [Parameter1]
 Name=Drawnby
 Value=ENTC_FYP20_G22

@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=C24 Old Footprint=cap0805 New Footprint=cap0603
+Change Component Footprint: Designator=C25 Old Footprint=cap0805 New Footprint=cap0603
+Change Component Footprint: Designator=C26 Old Footprint=cap0805 New Footprint=cap0603
+Change Component Footprint: Designator=C27 Old Footprint=cap0805 New Footprint=cap0603
+Change Component Footprint: Designator=C28 Old Footprint=cap0805 New Footprint=cap0603
+Change Component Footprint: Designator=R28 Old Footprint=RES0402 New Footprint=res0603
+Change Component Footprint: Designator=R26 Old Footprint=RES0805 New Footprint=res0603
+Change Component Footprint: Designator=R27 Old Footprint=RES0805 New Footprint=res0603
+Change Component Footprint: Designator=R29 Old Footprint=RES0805 New Footprint=res0603

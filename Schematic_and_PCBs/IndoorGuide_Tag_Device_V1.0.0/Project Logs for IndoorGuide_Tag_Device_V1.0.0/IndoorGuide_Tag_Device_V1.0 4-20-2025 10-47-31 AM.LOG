@@ -1,0 +1,57 @@
+Added Component: Designator=T6(TP-Top)
+Added Component: Designator=T7(TP-Top)
+Added Component: Designator=T8(TP-Top)
+Added Component: Designator=T9(TP-Top)
+Added Component: Designator=T10(TP-Top)
+Added Component: Designator=T11(TP-Top)
+Added Component: Designator=T12(TP-Top)
+Added Component: Designator=T13(TP-Top)
+Added Component: Designator=T14(TP-Top)
+Added Component: Designator=T15(TP-Top)
+Added Component: Designator=T16(TP-Top)
+Added Component: Designator=T17(TP-Top)
+Added Component: Designator=T18(TP-Top)
+Added Component: Designator=T19(TP-Top)
+Added Component: Designator=T20(TP-Top)
+Added Component: Designator=T21(TP-Top)
+Added Component: Designator=T22(TP-Top)
+Added Component: Designator=T23(TP-Top)
+Added Component: Designator=T24(tp)
+Added Pin To Net: NetName=AG_SCL Pin=T6-1
+Added Pin To Net: NetName=AG_SDA Pin=T7-1
+Added Pin To Net: NetName=DW_SCK Pin=T8-1
+Added Pin To Net: NetName=DW_MISO Pin=T9-1
+Added Pin To Net: NetName=DW_MOSI Pin=T10-1
+Added Pin To Net: NetName=DW_CSn Pin=T11-1
+Added Pin To Net: NetName=USER_BUTTON Pin=T12-1
+Added Pin To Net: NetName=DW_RESETn Pin=T13-1
+Added Pin To Net: NetName=DW_IRQn Pin=T14-1
+Added Pin To Net: NetName=AG_INT1 Pin=T15-1
+Added Pin To Net: NetName=AG_INT2 Pin=T16-1
+Added Pin To Net: NetName=NRST Pin=T17-1
+Added Pin To Net: NetName=DW_WAKEUP Pin=T18-1
+Added Pin To Net: NetName=BOOT0 Pin=T19-1
+Added Pin To Net: NetName=BLE_BRK Pin=T20-1
+Added Pin To Net: NetName=MDRDY Pin=T21-1
+Added Pin To Net: NetName=MAG_SCL Pin=T22-1
+Added Pin To Net: NetName=MAG_SDA Pin=T23-1
+Added Pin To Net: NetName=GND Pin=T24-1
+Added Member To Class: ClassName=MCU Member=Component T6 TP
+Added Member To Class: ClassName=MCU Member=Component T7 TP
+Added Member To Class: ClassName=MCU Member=Component T8 TP
+Added Member To Class: ClassName=MCU Member=Component T9 TP
+Added Member To Class: ClassName=MCU Member=Component T10 TP
+Added Member To Class: ClassName=MCU Member=Component T11 TP
+Added Member To Class: ClassName=MCU Member=Component T12 TP
+Added Member To Class: ClassName=MCU Member=Component T13 TP
+Added Member To Class: ClassName=MCU Member=Component T14 TP
+Added Member To Class: ClassName=MCU Member=Component T15 TP
+Added Member To Class: ClassName=MCU Member=Component T16 TP
+Added Member To Class: ClassName=MCU Member=Component T17 TP
+Added Member To Class: ClassName=MCU Member=Component T18 TP
+Added Member To Class: ClassName=MCU Member=Component T19 TP
+Added Member To Class: ClassName=BLE Member=Component T20 TP
+Added Member To Class: ClassName=IMU Member=Component T21 TP
+Added Member To Class: ClassName=IMU Member=Component T22 TP
+Added Member To Class: ClassName=IMU Member=Component T23 TP
+Added Member To Class: ClassName=Mechanical_HW Member=Component T24 TP

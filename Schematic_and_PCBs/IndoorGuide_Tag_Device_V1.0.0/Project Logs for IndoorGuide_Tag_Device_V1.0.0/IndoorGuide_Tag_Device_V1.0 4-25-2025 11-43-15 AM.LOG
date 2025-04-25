@@ -1,0 +1,74 @@
+Removed Pin From Net: NetName=AG_INT1 Pin=T25-1
+Removed Member From Class: ClassName=IMU Member=T25
+Change Component Description : Designator=C24 Old Description=10V 100nF U2J ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS New Description=16V 100nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+Change Component Description : Designator=C25 Old Description=10V 100nF U2J ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS New Description=16V 100nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+Change Component Description : Designator=C26 Old Description=10V 100nF U2J ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS New Description=16V 100nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+Change Component Description : Designator=C27 Old Description=10V 100nF U2J ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS New Description=16V 100nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+Change Component Description : Designator=C28 Old Description=25V 220nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS New Description=25V 220nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+Change Component Description : Designator=R26 Old Description=125mW Thick Film Resistors 150V ±100ppm/? ±1% 10kO 0805 Chip Resistor - Surface Mount ROHS New Description=100mW Thick Film Resistors 75V ±100ppm/? ±5% 10kO 0603 Chip Resistor - Surface Mount ROHS
+Change Component Description : Designator=R27 Old Description=125mW Thick Film Resistors 150V ±100ppm/? ±1% 10kO 0805 Chip Resistor - Surface Mount ROHS New Description=100mW Thick Film Resistors 75V ±100ppm/? ±5% 10kO 0603 Chip Resistor - Surface Mount ROHS
+Change Component Description : Designator=R28 Old Description=125mW Thick Film Resistors 150V ±100ppm/? ±1% 10kO 0805 Chip Resistor - Surface Mount ROHS New Description=100mW Thick Film Resistors 75V ±100ppm/? ±5% 10kO 0603 Chip Resistor - Surface Mount ROHS
+Change Component Description : Designator=R29 Old Description=125mW Thick Film Resistors 150V ±100ppm/? ±1% 10kO 0805 Chip Resistor - Surface Mount ROHS New Description=100mW Thick Film Resistors 75V ±100ppm/? ±5% 10kO 0603 Chip Resistor - Surface Mount ROHS
+Change component parameters: Designator = "C24" ("C24"); Footprint = "cap0603"; UniqueID = "\OTSANJRS\RRIWRXWO" ("\OTSANJRS\RRIWRXWO")
+Change component parameters (AddParameter): Name = "JLCPCB"; Value = "C45000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "GRM188R71C104KA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C25" ("C25"); Footprint = "cap0603"; UniqueID = "\OTSANJRS\VNJKQKPU" ("\OTSANJRS\VNJKQKPU")
+Change component parameters (AddParameter): Name = "JLCPCB"; Value = "C45000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "GRM188R71C104KA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C26" ("C26"); Footprint = "cap0603"; UniqueID = "\OTSANJRS\PQSNWUUM" ("\OTSANJRS\PQSNWUUM")
+Change component parameters (AddParameter): Name = "JLCPCB"; Value = "C45000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "GRM188R71C104KA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C27" ("C27"); Footprint = "cap0603"; UniqueID = "\OTSANJRS\USJHUTYF" ("\OTSANJRS\USJHUTYF")
+Change component parameters (AddParameter): Name = "JLCPCB"; Value = "C45000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "GRM188R71C104KA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C28" ("C28"); Footprint = "cap0603"; UniqueID = "\OTSANJRS\QBFQUOJC" ("\OTSANJRS\QBFQUOJC")
+Change component parameters (AddParameter): Name = "JLCPCB"; Value = "C106857"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "YAGEO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "CC0603KRX7R8BB224"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R26" ("R26"); Footprint = "res0603"; UniqueID = "\OTSANJRS\ZZVEPXUC" ("\OTSANJRS\ZZVEPXUC")
+Change component parameters (AddParameter): Name = "JLCPCB"; Value = "C15401"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "0603WAJ0103T5E"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R27" ("R27"); Footprint = "res0603"; UniqueID = "\OTSANJRS\VVNXYCZT" ("\OTSANJRS\VVNXYCZT")
+Change component parameters (AddParameter): Name = "JLCPCB"; Value = "C15401"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "0603WAJ0103T5E"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R28" ("R28"); Footprint = "res0603"; UniqueID = "\OTSANJRS\VJOHKKHZ" ("\OTSANJRS\VJOHKKHZ")
+Change component parameters (AddParameter): Name = "JLCPCB"; Value = "C15401"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "0603WAJ0103T5E"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R29" ("R29"); Footprint = "res0603"; UniqueID = "\OTSANJRS\INIONWOS" ("\OTSANJRS\INIONWOS")
+Change component parameters (AddParameter): Name = "JLCPCB"; Value = "C15401"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "UNI-ROYAL(Uniroyal Elec)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "0603WAJ0103T5E"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"

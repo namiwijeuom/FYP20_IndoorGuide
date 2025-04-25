@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=BLE_BRK Pin=S3-3
+Removed Pin From Net: NetName=GND Pin=S3-4
+Change Component Footprint: Designator=S3 Old Footprint=SW_5-1437565-0 New Footprint=SW_B3U-1000P
