@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=BLE_TX Pin=J4-4
+Removed Pin From Net: NetName=BLE_RX Pin=J4-5
+Added Pin To Net: NetName=BLE_RX_CN Pin=J4-5
+Added Pin To Net: NetName=BLE_RX_CN Pin=JP3-2
+Added Pin To Net: NetName=BLE_RX_CN Pin=U6-2
+Added Net: Name=BLE_RX_CN
+Added Pin To Net: NetName=BLE_TX_CN Pin=J4-4
+Added Pin To Net: NetName=BLE_TX_CN Pin=JP2-2
+Added Pin To Net: NetName=BLE_TX_CN Pin=U6-1
+Added Net: Name=BLE_TX_CN
