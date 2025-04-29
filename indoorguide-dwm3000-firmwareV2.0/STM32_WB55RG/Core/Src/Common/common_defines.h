@@ -57,7 +57,7 @@ taginfo_t;
 
 typedef struct
 {
-	uint16_t fetched_addr[4];
+	uint16_t fetched_addr[5];     // This was 4
 	uint8_t  fetched_count;
 
 }__attribute__((packed))

@@ -13279,7 +13279,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xec ./STM32_WPAN/App/custom_app.o
  .debug_macro   0x00000000       0x16 ./STM32_WPAN/App/custom_app.o
  .debug_line    0x00000000     0x15c4 ./STM32_WPAN/App/custom_app.o
- .debug_str     0x00000000    0xebd45 ./STM32_WPAN/App/custom_app.o
+ .debug_str     0x00000000    0xebd43 ./STM32_WPAN/App/custom_app.o
  .comment       0x00000000       0x44 ./STM32_WPAN/App/custom_app.o
  .debug_frame   0x00000000      0x100 ./STM32_WPAN/App/custom_app.o
  .ARM.attributes
@@ -17791,101 +17791,101 @@ LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .igot.plt      0x20000b98        0x0 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
                 0x20000b98                        . = ALIGN (0x4)
 
-.bss            0x20000b98     0x2558 load address 0x08023214
+.bss            0x20000b98     0x2560 load address 0x08023214
                 0x20000b98                        _sbss = .
                 0x20000b98                        __bss_start__ = _sbss
  *(.bss)
  .bss           0x20000b98       0x1c C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
  *fill*         0x20000bb4        0x4 
- .bss           0x20000bb8      0x4bd ./Core/Src/Applications/Tag_app/tag_app.o
-                0x20000bd8                current_location
-                0x20000be8                str_buffer
-                0x20000c88                mu_t0
-                0x20000cb8                arkf
-                0x20001058                tagDevice
-                0x2000106c                already_fe_anchors
- *fill*         0x20001075        0x3 
- .bss           0x20001078       0x80 ./Core/Src/UWB_tasks/Blink/blink.o
- .bss           0x200010f8       0x30 ./Core/Src/UWB_tasks/ss_twr_init/ss_twr_init.o
- .bss           0x20001128       0xa0 ./Core/Src/hw_timerserver.o
- .bss           0x200011c8      0x1be ./Core/Src/main.o
-                0x200011c8                hipcc
-                0x20001204                hrtc
-                0x20001228                hspi1
-                0x2000128c                huart1
-                0x20001320                hspi4
-                0x20001384                SPI_CS_state
-                0x20001385                host_spi
- *fill*         0x20001386        0x2 
- .bss           0x20001388        0x4 ./Core/Src/sysmem.o
- .bss           0x2000138c        0x4 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.o
-                0x2000138c                uwTick
- .bss           0x20001390        0x1 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
- *fill*         0x20001391        0x3 
- .bss           0x20001394       0x1c ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl_mbox.o
- .bss           0x200013b0        0x4 ./STM32_WPAN/Target/hw_ipcc.o
- .bss           0x200013b4      0x2dc ./USB_Device/App/usb_device.o
-                0x200013b4                hUsbDeviceFS
- .bss           0x20001690     0x1000 ./USB_Device/App/usbd_cdc_if.o
-                0x20001690                UserRxBufferFS
-                0x20001e90                UserTxBufferFS
- .bss           0x20002690      0x200 ./USB_Device/App/usbd_desc.o
-                0x20002690                USBD_StrDesc
- .bss           0x20002890      0x4fc ./USB_Device/Target/usbd_conf.o
-                0x20002890                hpcd_USB_FS
+ .bss           0x20000bb8      0x4c7 ./Core/Src/Applications/Tag_app/tag_app.o
+                0x20000be0                current_location
+                0x20000bf0                str_buffer
+                0x20000c90                mu_t0
+                0x20000cc0                arkf
+                0x20001060                tagDevice
+                0x20001074                already_fe_anchors
+ *fill*         0x2000107f        0x1 
+ .bss           0x20001080       0x80 ./Core/Src/UWB_tasks/Blink/blink.o
+ .bss           0x20001100       0x30 ./Core/Src/UWB_tasks/ss_twr_init/ss_twr_init.o
+ .bss           0x20001130       0xa0 ./Core/Src/hw_timerserver.o
+ .bss           0x200011d0      0x1be ./Core/Src/main.o
+                0x200011d0                hipcc
+                0x2000120c                hrtc
+                0x20001230                hspi1
+                0x20001294                huart1
+                0x20001328                hspi4
+                0x2000138c                SPI_CS_state
+                0x2000138d                host_spi
+ *fill*         0x2000138e        0x2 
+ .bss           0x20001390        0x4 ./Core/Src/sysmem.o
+ .bss           0x20001394        0x4 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.o
+                0x20001394                uwTick
+ .bss           0x20001398        0x1 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+ *fill*         0x20001399        0x3 
+ .bss           0x2000139c       0x1c ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl_mbox.o
+ .bss           0x200013b8        0x4 ./STM32_WPAN/Target/hw_ipcc.o
+ .bss           0x200013bc      0x2dc ./USB_Device/App/usb_device.o
+                0x200013bc                hUsbDeviceFS
+ .bss           0x20001698     0x1000 ./USB_Device/App/usbd_cdc_if.o
+                0x20001698                UserRxBufferFS
+                0x20001e98                UserTxBufferFS
+ .bss           0x20002698      0x200 ./USB_Device/App/usbd_desc.o
+                0x20002698                USBD_StrDesc
+ .bss           0x20002898      0x4fc ./USB_Device/Target/usbd_conf.o
+                0x20002898                hpcd_USB_FS
  *(.bss*)
- .bss.dw        0x20002d8c        0x4 D:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV2.0\STM32_WB55RG\Drivers\dwt_uwb_driver\lib\libdwt_uwb_driver-m4-sfp-6.0.7.a(deca_compat.c.obj)
+ .bss.dw        0x20002d94        0x4 D:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV2.0\STM32_WB55RG\Drivers\dwt_uwb_driver\lib\libdwt_uwb_driver-m4-sfp-6.0.7.a(deca_compat.c.obj)
  .bss.static_dw
-                0x20002d90       0x54 D:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV2.0\STM32_WB55RG\Drivers\dwt_uwb_driver\lib\libdwt_uwb_driver-m4-sfp-6.0.7.a(deca_compat.c.obj)
+                0x20002d98       0x54 D:\Final_Year_Project_(FYP)\FYP20_IndoorGuide\indoorguide-dwm3000-firmwareV2.0\STM32_WB55RG\Drivers\dwt_uwb_driver\lib\libdwt_uwb_driver-m4-sfp-6.0.7.a(deca_compat.c.obj)
  .bss.__malloc_current_mallinfo
-                0x20002de4       0x28 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-mallocr.o)
-                0x20002de4                __malloc_current_mallinfo
+                0x20002dec       0x28 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-mallocr.o)
+                0x20002dec                __malloc_current_mallinfo
  .bss.__malloc_max_total_mem
-                0x20002e0c        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-mallocr.o)
-                0x20002e0c                __malloc_max_total_mem
- .bss.__malloc_max_sbrked_mem
-                0x20002e10        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-mallocr.o)
-                0x20002e10                __malloc_max_sbrked_mem
- .bss.__malloc_top_pad
                 0x20002e14        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-mallocr.o)
-                0x20002e14                __malloc_top_pad
- .bss.__sf      0x20002e18      0x138 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-findfp.o)
-                0x20002e18                __sf
+                0x20002e14                __malloc_max_total_mem
+ .bss.__malloc_max_sbrked_mem
+                0x20002e18        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-mallocr.o)
+                0x20002e18                __malloc_max_sbrked_mem
+ .bss.__malloc_top_pad
+                0x20002e1c        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-mallocr.o)
+                0x20002e1c                __malloc_top_pad
+ .bss.__sf      0x20002e20      0x138 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-findfp.o)
+                0x20002e20                __sf
  .bss.__stdio_exit_handler
-                0x20002f50        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-findfp.o)
-                0x20002f50                __stdio_exit_handler
- .bss.errno     0x20002f54        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-reent.o)
-                0x20002f54                errno
+                0x20002f58        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-findfp.o)
+                0x20002f58                __stdio_exit_handler
+ .bss.errno     0x20002f5c        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-reent.o)
+                0x20002f5c                errno
  .bss.__lock___malloc_recursive_mutex
-                0x20002f58        0x1 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-lock.o)
-                0x20002f58                __lock___malloc_recursive_mutex
+                0x20002f60        0x1 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-lock.o)
+                0x20002f60                __lock___malloc_recursive_mutex
  .bss.__lock___atexit_recursive_mutex
-                0x20002f59        0x1 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-lock.o)
-                0x20002f59                __lock___atexit_recursive_mutex
+                0x20002f61        0x1 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-lock.o)
+                0x20002f61                __lock___atexit_recursive_mutex
  .bss.__lock___sfp_recursive_mutex
-                0x20002f5a        0x1 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-lock.o)
-                0x20002f5a                __lock___sfp_recursive_mutex
- *fill*         0x20002f5b        0x1 
- .bss.__atexit  0x20002f5c        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-__call_atexit.o)
-                0x20002f5c                __atexit
+                0x20002f62        0x1 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-lock.o)
+                0x20002f62                __lock___sfp_recursive_mutex
+ *fill*         0x20002f63        0x1 
+ .bss.__atexit  0x20002f64        0x4 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-__call_atexit.o)
+                0x20002f64                __atexit
  .bss.__atexit0
-                0x20002f60      0x190 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-__atexit.o)
-                0x20002f60                __atexit0
+                0x20002f68      0x190 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc.a(libc_a-__atexit.o)
+                0x20002f68                __atexit0
  *(COMMON)
-                0x200030f0                        . = ALIGN (0x4)
-                0x200030f0                        _ebss = .
-                0x200030f0                        __bss_end__ = _ebss
+                0x200030f8                        . = ALIGN (0x4)
+                0x200030f8                        _ebss = .
+                0x200030f8                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200030f0     0x1400 load address 0x08023214
-                0x200030f0                        . = ALIGN (0x8)
+                0x200030f8     0x1400 load address 0x08023214
+                0x200030f8                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
-                0x200030f0                        PROVIDE (_end = .)
-                0x200034f0                        . = (. + _Min_Heap_Size)
- *fill*         0x200030f0      0x400 
-                0x200044f0                        . = (. + _Min_Stack_Size)
- *fill*         0x200034f0     0x1000 
-                0x200044f0                        . = ALIGN (0x8)
+                0x200030f8                        PROVIDE (_end = .)
+                0x200034f8                        . = (. + _Min_Heap_Size)
+ *fill*         0x200030f8      0x400 
+                0x200044f8                        . = (. + _Min_Stack_Size)
+ *fill*         0x200034f8     0x1000 
+                0x200044f8                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -18631,104 +18631,104 @@ LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x00032c3d      0xd62 ./USB_Device/App/usbd_desc.o
  .debug_line    0x0003399f     0x1324 ./USB_Device/Target/usbd_conf.o
 
-.debug_str      0x00000000    0xfac49
- .debug_str     0x00000000    0xe2d29 ./Core/Src/Applications/Tag_app/tag_app.o
-                              0xe3cf1 (size before relaxing)
- .debug_str     0x000e2d29       0x4a ./Core/Src/Configurations/config_options.o
+.debug_str      0x00000000    0xfac47
+ .debug_str     0x00000000    0xe2d27 ./Core/Src/Applications/Tag_app/tag_app.o
+                              0xe3cef (size before relaxing)
+ .debug_str     0x000e2d27       0x4a ./Core/Src/Configurations/config_options.o
                                0x55c2 (size before relaxing)
- .debug_str     0x000e2d73       0xb9 ./Core/Src/Math_utils/ARKFLocalization.o
+ .debug_str     0x000e2d71       0xb9 ./Core/Src/Math_utils/ARKFLocalization.o
                                0x76d3 (size before relaxing)
- .debug_str     0x000e2e2c      0x59c ./Core/Src/UWB_tasks/Blink/blink.o
+ .debug_str     0x000e2e2a      0x59c ./Core/Src/UWB_tasks/Blink/blink.o
                               0xe30b7 (size before relaxing)
- .debug_str     0x000e33c8      0x10d ./Core/Src/UWB_tasks/ss_twr_init/ss_twr_init.o
+ .debug_str     0x000e33c6      0x10d ./Core/Src/UWB_tasks/ss_twr_init/ss_twr_init.o
                               0xe32bc (size before relaxing)
- .debug_str     0x000e34d5     0xbb4e ./Core/Src/app_entry.o
+ .debug_str     0x000e34d3     0xbb4e ./Core/Src/app_entry.o
                               0xecdc5 (size before relaxing)
- .debug_str     0x000ef023      0xa63 ./Core/Src/hw_timerserver.o
+ .debug_str     0x000ef021      0xa63 ./Core/Src/hw_timerserver.o
                               0xe1a30 (size before relaxing)
- .debug_str     0x000efa86     0x17e9 ./Core/Src/main.o
-                              0xe51a2 (size before relaxing)
- .debug_str     0x000f126f      0x18f ./Core/Src/stm32wbxx_hal_msp.o
+ .debug_str     0x000efa84     0x17e9 ./Core/Src/main.o
+                              0xe51a0 (size before relaxing)
+ .debug_str     0x000f126d      0x18f ./Core/Src/stm32wbxx_hal_msp.o
                               0xe23dc (size before relaxing)
- .debug_str     0x000f13fe      0x436 ./Core/Src/stm32wbxx_it.o
+ .debug_str     0x000f13fc      0x436 ./Core/Src/stm32wbxx_it.o
                               0xe1489 (size before relaxing)
- .debug_str     0x000f1834      0xf7e ./Core/Src/syscalls.o
+ .debug_str     0x000f1832      0xf7e ./Core/Src/syscalls.o
                                0x80c6 (size before relaxing)
- .debug_str     0x000f27b2       0x6b ./Core/Src/sysmem.o
+ .debug_str     0x000f27b0       0x6b ./Core/Src/sysmem.o
                                0x5ab4 (size before relaxing)
- .debug_str     0x000f281d       0xb1 ./Core/Src/system_stm32wbxx.o
+ .debug_str     0x000f281b       0xb1 ./Core/Src/system_stm32wbxx.o
                               0xd8846 (size before relaxing)
- .debug_str     0x000f28ce      0x290 ./Core/Src/shared_data/shared_functions.o
+ .debug_str     0x000f28cc      0x290 ./Core/Src/shared_data/shared_functions.o
                               0xe33c3 (size before relaxing)
- .debug_str     0x000f2b5e       0x44 ./Core/Startup/startup_stm32wb55rgvx.o
+ .debug_str     0x000f2b5c       0x44 ./Core/Startup/startup_stm32wb55rgvx.o
                                  0xa6 (size before relaxing)
- .debug_str     0x000f2ba2      0x8b0 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.o
+ .debug_str     0x000f2ba0      0x8b0 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.o
                               0xd972c (size before relaxing)
- .debug_str     0x000f3452      0x2fd ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.o
+ .debug_str     0x000f3450      0x2fd ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.o
                               0xd8ee4 (size before relaxing)
- .debug_str     0x000f374f      0x10b ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.o
+ .debug_str     0x000f374d      0x10b ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.o
                               0xd8820 (size before relaxing)
- .debug_str     0x000f385a      0x18b ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.o
+ .debug_str     0x000f3858      0x18b ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.o
                               0xd86fc (size before relaxing)
- .debug_str     0x000f39e5      0x285 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_ipcc.o
+ .debug_str     0x000f39e3      0x285 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_ipcc.o
                               0xd8955 (size before relaxing)
- .debug_str     0x000f3c6a      0x577 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.o
+ .debug_str     0x000f3c68      0x577 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.o
                               0xd8ecc (size before relaxing)
- .debug_str     0x000f41e1      0x186 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.o
+ .debug_str     0x000f41df      0x186 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.o
                               0xd8b08 (size before relaxing)
- .debug_str     0x000f4367      0x57a ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.o
+ .debug_str     0x000f4365      0x57a ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.o
                               0xd8cb6 (size before relaxing)
- .debug_str     0x000f48e1      0x805 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.o
+ .debug_str     0x000f48df      0x805 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.o
                               0xd91b7 (size before relaxing)
- .debug_str     0x000f50e6      0xb37 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.o
+ .debug_str     0x000f50e4      0xb37 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.o
                               0xd96a4 (size before relaxing)
- .debug_str     0x000f5c1d      0xc5e ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.o
+ .debug_str     0x000f5c1b      0xc5e ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.o
                               0xd9acd (size before relaxing)
- .debug_str     0x000f687b      0x321 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.o
+ .debug_str     0x000f6879      0x321 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.o
                               0xd8bd3 (size before relaxing)
- .debug_str     0x000f6b9c      0x772 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.o
+ .debug_str     0x000f6b9a      0x772 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.o
                               0xd90d8 (size before relaxing)
- .debug_str     0x000f730e      0x5ac ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi.o
+ .debug_str     0x000f730c      0x5ac ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi.o
                               0xd9083 (size before relaxing)
- .debug_str     0x000f78ba      0x985 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.o
+ .debug_str     0x000f78b8      0x985 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.o
                               0xd9826 (size before relaxing)
- .debug_str     0x000f823f      0x26b ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.o
+ .debug_str     0x000f823d      0x26b ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.o
                               0xd8f12 (size before relaxing)
- .debug_str     0x000f84aa       0xd3 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.o
+ .debug_str     0x000f84a8       0xd3 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.o
                               0xd8a09 (size before relaxing)
- .debug_str     0x000f857d       0x96 ./Drivers/dwt_uwb_driver/platform/deca_mutex.o
+ .debug_str     0x000f857b       0x96 ./Drivers/dwt_uwb_driver/platform/deca_mutex.o
                               0xe2567 (size before relaxing)
- .debug_str     0x000f8613       0xd9 ./Drivers/dwt_uwb_driver/platform/deca_probe_interface.o
+ .debug_str     0x000f8611       0xd9 ./Drivers/dwt_uwb_driver/platform/deca_probe_interface.o
                               0xe274d (size before relaxing)
- .debug_str     0x000f86ec       0x57 ./Drivers/dwt_uwb_driver/platform/deca_sleep.o
+ .debug_str     0x000f86ea       0x57 ./Drivers/dwt_uwb_driver/platform/deca_sleep.o
                               0xe2535 (size before relaxing)
- .debug_str     0x000f8743       0xa4 ./Drivers/dwt_uwb_driver/platform/deca_spi.o
+ .debug_str     0x000f8741       0xa4 ./Drivers/dwt_uwb_driver/platform/deca_spi.o
                               0xe2c02 (size before relaxing)
- .debug_str     0x000f87e7      0x984 ./Drivers/dwt_uwb_driver/platform/port.o
+ .debug_str     0x000f87e5      0x984 ./Drivers/dwt_uwb_driver/platform/port.o
                               0xe3752 (size before relaxing)
- .debug_str     0x000f916b      0x341 ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
+ .debug_str     0x000f9169      0x341 ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
                               0xdcf05 (size before relaxing)
- .debug_str     0x000f94ac      0x357 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+ .debug_str     0x000f94aa      0x357 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
                               0xdc8a0 (size before relaxing)
- .debug_str     0x000f9803      0x142 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+ .debug_str     0x000f9801      0x142 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
                               0xdc6cb (size before relaxing)
- .debug_str     0x000f9945       0x51 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
+ .debug_str     0x000f9943       0x51 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
                               0xdc5a0 (size before relaxing)
- .debug_str     0x000f9996      0xaa0 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl_mbox.o
+ .debug_str     0x000f9994      0xaa0 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl_mbox.o
                               0xe226c (size before relaxing)
- .debug_str     0x000fa436       0x32 ./Middlewares/ST/STM32_WPAN/utilities/otp.o
+ .debug_str     0x000fa434       0x32 ./Middlewares/ST/STM32_WPAN/utilities/otp.o
                               0xe0d05 (size before relaxing)
- .debug_str     0x000fa468       0xd2 ./Middlewares/ST/STM32_WPAN/utilities/stm_list.o
+ .debug_str     0x000fa466       0xd2 ./Middlewares/ST/STM32_WPAN/utilities/stm_list.o
                               0xe0efa (size before relaxing)
- .debug_str     0x000fa53a      0x2eb ./STM32_WPAN/Target/hw_ipcc.o
+ .debug_str     0x000fa538      0x2eb ./STM32_WPAN/Target/hw_ipcc.o
                               0xe1ea8 (size before relaxing)
- .debug_str     0x000fa825       0xba ./USB_Device/App/usb_device.o
+ .debug_str     0x000fa823       0xba ./USB_Device/App/usb_device.o
                               0xdc954 (size before relaxing)
- .debug_str     0x000fa8df       0x8a ./USB_Device/App/usbd_cdc_if.o
+ .debug_str     0x000fa8dd       0x8a ./USB_Device/App/usbd_cdc_if.o
                               0xdc993 (size before relaxing)
- .debug_str     0x000fa969      0x254 ./USB_Device/App/usbd_desc.o
+ .debug_str     0x000fa967      0x254 ./USB_Device/App/usbd_desc.o
                               0xdc487 (size before relaxing)
- .debug_str     0x000fabbd       0x8c ./USB_Device/Target/usbd_conf.o
+ .debug_str     0x000fabbb       0x8c ./USB_Device/Target/usbd_conf.o
                               0xe3334 (size before relaxing)
 
 .comment        0x00000000       0xc2
