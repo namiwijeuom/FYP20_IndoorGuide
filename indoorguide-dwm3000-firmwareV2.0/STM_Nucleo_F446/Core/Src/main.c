@@ -157,9 +157,12 @@ int main(void)
   uint16_t coordinates_an2[3] = {0,1580,320};  // In centimeters
   uint16_t coordinates_an3[3] = {1497,1550,330};  // In centimeters
   uint16_t coordinates_an4[3] = {1497,360,340};  // In centimeters
-  uint16_t coordinates_an5[3] = {1150,375,200};  // In centimeters
+  uint16_t coordinates_an5[3] = {1350,700,190};  // In centimeters
+  uint16_t coordinates_an6[3] = {1350,1550,200};  // In centimeters
+  uint16_t coordinates_an7[3] = {350,700,200};  // In centimeters
+  uint16_t coordinates_an8[3] = {350,1550,190};  // In centimeters
 
-  anchor_application(5,coordinates_an5);
+  anchor_application(8,coordinates_an8);
 
 #else
 	#error "Define either TAG_APP or ANCHOR_APP before compiling."

@@ -1,7 +1,0 @@
-../STM32_WPAN/App/custom_app.c:95:6:Custom_STM_App_Notification	5
-../STM32_WPAN/App/custom_app.c:137:6:Custom_APP_Notification	3
-../STM32_WPAN/App/custom_app.c:174:6:Custom_APP_Init	1
-../STM32_WPAN/App/custom_app.c:205:6:Custom_Loc_xy_Update_Char	2
-../STM32_WPAN/App/custom_app.c:224:6:Custom_Loc_xy_Send_Notification	3
-../STM32_WPAN/App/custom_app.c:248:6:send_tag_app_data_callback	1
-../STM32_WPAN/App/custom_app.c:255:6:send_tag_app_data	1

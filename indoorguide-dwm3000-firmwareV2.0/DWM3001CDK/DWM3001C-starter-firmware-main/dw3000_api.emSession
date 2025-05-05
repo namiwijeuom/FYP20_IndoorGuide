@@ -66,9 +66,9 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="182" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Src/main.c" selected="1" top="171" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="21" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Src/Applications/Tag_app/tag_app.c" selected="0" top="301" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="18" useTextEdit="1" openedFrom="D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/DWM3001CDK/DWM3001C-starter-firmware-main/Src/Applications/Tag_app/tag_app.c" useBinaryEdit="0" left="0" path="Src/Applications/Tag_app/tag_app.h" selected="0" top="11" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="195" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Src/main.c" selected="1" top="181" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Src/Applications/Anchor_app/anchor_app.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Src/Applications/Anchor_app/anchor_app.h" selected="0" top="11" codecName="Default"/>
  </Files>
  <ARMCrossStudioWindow activeProject="dw3000_api" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Final_Year_Project_(FYP)/FYP20_IndoorGuide/indoorguide-dwm3000-firmwareV2.0/DWM3001CDK/DWM3001C-starter-firmware-main/SDK/modules/nrfx/drivers/src" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

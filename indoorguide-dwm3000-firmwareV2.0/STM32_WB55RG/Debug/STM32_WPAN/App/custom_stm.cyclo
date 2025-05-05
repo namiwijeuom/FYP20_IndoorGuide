@@ -1,3 +1,0 @@
-../STM32_WPAN/App/custom_stm.c:115:30:Custom_STM_Event_Handler	7
-../STM32_WPAN/App/custom_stm.c:262:6:SVCCTL_InitCustomSvc	1
-../STM32_WPAN/App/custom_stm.c:352:12:Custom_STM_App_Update_Char	2

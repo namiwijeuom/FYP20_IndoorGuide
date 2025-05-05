@@ -94,8 +94,8 @@ void test_run_info(unsigned char *data)
 }
 
 
-#define TAG_APP
-//#define ANCHOR_APP
+//#define TAG_APP
+#define ANCHOR_APP
 
 
 
@@ -184,8 +184,16 @@ int main(void)
 
 #elif  defined(ANCHOR_APP)
 
-  uint16_t coordinates[3] = {10000,20000,30000};  // In centimeters
-  anchor_application(2,coordinates);
+  uint16_t coordinates_an1[3] = {0,360,310};  // In centimeters
+  uint16_t coordinates_an2[3] = {0,1580,320};  // In centimeters
+  uint16_t coordinates_an3[3] = {1497,1550,330};  // In centimeters
+  uint16_t coordinates_an4[3] = {1497,360,340};  // In centimeters
+  uint16_t coordinates_an5[3] = {1350,700,190};  // In centimeters
+  uint16_t coordinates_an6[3] = {1350,1550,200};  // In centimeters
+  uint16_t coordinates_an7[3] = {350,700,200};  // In centimeters
+  uint16_t coordinates_an8[3] = {350,1550,190};  // In centimeters
+
+  anchor_application(7,coordinates_an7);
 
 #else
 	#error "Define either TAG_APP or ANCHOR_APP before compiling."

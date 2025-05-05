@@ -367,8 +367,15 @@ void tag_application(uint16_t tagAddr)
 
 #if defined(FILTER_ARKF)
 		snprintf(str_buffer, sizeof(str_buffer), "{\"X\":\"%.2f\",\"Y\":\"%.2f\"}",arkf.mubar_t[0],arkf.mubar_t[1]);
+
+		/* For BLE */
+		//snprintf(str_buffer, sizeof(str_buffer), "X:%.2f,Y:%.2f",arkf.mubar_t[0],arkf.mubar_t[1]);
+
 #elif defined(FILTER_EKF)
 		snprintf(str_buffer, sizeof(str_buffer), "{\"X\":\"%.2f\",\"Y\":\"%.2f\"}",ekf.mubar_t[0],ekf.mubar_t[1]);
+
+		/* For BLE */
+		//snprintf(str_buffer, sizeof(str_buffer), "X:%.2f,Y:%.2f",ekf.mubar_t[0],ekf.mubar_t[1]);
 #else
 	#error "Filter is not defined."
 #endif /* Copying data to the buffer */

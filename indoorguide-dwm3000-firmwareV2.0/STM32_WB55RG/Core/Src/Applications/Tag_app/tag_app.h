@@ -16,7 +16,7 @@
 #include "../../Common/common_defines.h"
 
 
-#define MAX_NUM_OF_FETCHED_ANCHORS 5 // before this was 4
+#define MAX_NUM_OF_FETCHED_ANCHORS 7 // before this was 4
 
 #define FRAME_TRANSMIT_TIME_MS        40  //In milliseconds
 
@@ -29,9 +29,9 @@
 //#define FILTER_EKF
 
 /* Common Defines */
-#define NUM_OF_ANCHORS 5 // this was 4
+#define NUM_OF_ANCHORS 7 // this was 4
 
-#define TIME_STEP      1 // this was 0.5
+#define TIME_STEP      0.5 // this was 0.5
 #define TIME_STEP_MS   TIME_STEP * 1000
 
 
