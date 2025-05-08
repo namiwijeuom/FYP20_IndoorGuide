@@ -1,0 +1,13 @@
+Change Component Footprint: Designator=X1 Old Footprint=FP-ABS25-MFG New Footprint=FP-ABS25-MFG
+Added Component: Designator=U1(SOT-223_M)
+Add component (AddParameter): Name = "JLCPCB"; Value = "C134077"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LD1117S50TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=NetC2_1 Pin=U1-2
+Added Pin To Net: NetName=NetC1_1 Pin=U1-3
+Added Pin To Net: NetName=NetC2_1 Pin=U1-4
+Added Member To Class: ClassName=POWER Member=Component U1 LD1117S50TR

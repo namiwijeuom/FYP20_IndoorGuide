@@ -1,0 +1,60 @@
+Added Component: Designator=FM1(FM)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=FM2(FM)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=FM3(FM)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=FM4(FM)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=MH1(MECHANICAL_M3_NON_PLATED)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=MH2(MECHANICAL_M3_NON_PLATED)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=MH3(MECHANICAL_M3_NON_PLATED)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=MH4(MECHANICAL_M3_NON_PLATED)
+Add component (AddParameter): Name = "JLCPCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MOUSER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=T16(tp)
+Added Pin To Net: NetName=GND Pin=T16-1
+Added Class: Name=MECHANICAL
+Added Room: Name=MECHANICAL
