@@ -48,6 +48,7 @@
 SPI_HandleTypeDef hspi1;
 
 UART_HandleTypeDef huart2;
+UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
 SPI_HandleTypeDef   hspi4;
@@ -63,6 +64,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_USART3_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -75,9 +77,9 @@ void test_run_info(unsigned char *data)
 
     data_length = strlen((const char *)data);
 
-    HAL_UART_Transmit(&huart2, (uint8_t *)data, data_length, HAL_MAX_DELAY);
+    HAL_UART_Transmit(&huart3, (uint8_t *)data, data_length, HAL_MAX_DELAY);
     uint8_t newline[] = "\n\r";
-    HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
+    HAL_UART_Transmit(&huart3, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
 }
 
 
@@ -138,6 +140,7 @@ int main(void)
   MX_SPI1_Init();
   MX_USART2_UART_Init();
   MX_USB_DEVICE_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
 
   //simple_rx();
@@ -167,11 +170,15 @@ int main(void)
 
   //blink_init();
   //listener_init();
+  //int num = 0;
+  //unsigned char buff[20];
 
   while (1)
   {
-	  //test_run_info((unsigned char*)"Hello");
-	  //delay_us(5000);
+
+	  //snprintf(buff,sizeof(buff),"Hello%d",num++);
+	  //test_run_info(buff);
+	  //HAL_Delay(1000);
 	  //blink();
 	  //listener();
 	  //HAL_Delay(1000);
@@ -296,6 +303,39 @@ static void MX_USART2_UART_Init(void)
   /* USER CODE BEGIN USART2_Init 2 */
 
   /* USER CODE END USART2_Init 2 */
+
+}
+
+/**
+  * @brief USART3 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART3_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART3_Init 0 */
+
+  /* USER CODE END USART3_Init 0 */
+
+  /* USER CODE BEGIN USART3_Init 1 */
+
+  /* USER CODE END USART3_Init 1 */
+  huart3.Instance = USART3;
+  huart3.Init.BaudRate = 115200;
+  huart3.Init.WordLength = UART_WORDLENGTH_8B;
+  huart3.Init.StopBits = UART_STOPBITS_1;
+  huart3.Init.Parity = UART_PARITY_NONE;
+  huart3.Init.Mode = UART_MODE_TX_RX;
+  huart3.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart3.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART3_Init 2 */
+
+  /* USER CODE END USART3_Init 2 */
 
 }
 
